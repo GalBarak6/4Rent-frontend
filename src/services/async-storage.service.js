@@ -1,3 +1,4 @@
+import profile from '../data/stay.json'
 
 export const storageService = {
     query,
@@ -9,8 +10,9 @@ export const storageService = {
 }
 
 function query(entityType, delay = 600) {
-    var entities = JSON.parse(localStorage.getItem(entityType)) || []
-
+    var entities = JSON.parse(localStorage.getItem(entityType))
+    if(!entities) entities = _createEntities()
+    _save(entityType, entities)
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
             // reject('OOOOPs')
@@ -74,4 +76,8 @@ function postMany(entityType, newEntities) {
             _save(entityType, entities)
             return entities
         })
+}
+
+function _createEntities() {
+    return profile
 }

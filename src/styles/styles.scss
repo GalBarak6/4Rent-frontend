@@ -1,0 +1,24 @@
+// SETUP
+@import 'setup/typography';
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
+
+// BASICS
+@import 'basics/helpers';
+@import 'basics/base';
+@import 'basics/layout';
+
+//PAGES
+
+@import 'pages/home';
+@import 'pages/signup';
+@import 'pages/stay-app';
+@import 'pages/stay-details';
+
+// COMPONENTS
+@import 'cmps/app-header';
+@import 'cmps/app-footer';
+@import 'cmps/stay-filter';
+@import 'cmps/stay-list';
+@import 'cmps/stay-preview';

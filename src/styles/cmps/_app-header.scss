@@ -1,0 +1,15 @@
+.app-header {
+    background-color: rgb(220, 230, 230);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, .08);
+    height: 80px;
+
+    .main-nav {
+        gap: 12px;
+        margin-inline-end: $mainLayoutPadding;
+    }
+
+    .logo {
+        color: $clr1;
+        margin-inline-start: $mainLayoutPadding;
+    }
+}
