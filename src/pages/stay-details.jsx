@@ -1,6 +1,90 @@
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { stayService } from '../services/stay.service'
+import { utilService } from '../services/util.service'
+
 
 export const StayDetails = () => {
-    return <section className="stay-details">
-        <h1>hello from stay details!!</h1>
+
+    const [stay, setStay] = useState(null)
+    const params = useParams()
+
+    useEffect(() => {
+        console.log('loading stay details')
+        loadStay()
+    }, [params.stayId])
+
+    const loadStay = async () => {
+        const stay = await stayService.getById(params.stayId)
+        setStay(stay)
+    }
+
+    if (!stay) return <div>Loading..</div>
+    return <section className="stay-details flex flex-column">
+        <h1>{stay.name}</h1>
+        <div className='start-info flex align-center'>
+            {stay.reviewScores.rating} <span className='dot'></span> <a href="#reviews-container">{stay.reviews.length} Reviews</a> <span className='dot'></span> {stay.loc.city} {stay.loc.address} {stay.loc.country}
+        </div>
+        <div className='stay-gallery'>
+            {stay.imgUrls.map(img => <img src={require(`../assets/Images/${img}`)} alt="" key={img} className={stay.imgUrls[0] === img ? 'main-img' : ''} />)}
+        </div>
+        <div className='stay-info-container flex'>
+            <div className='stay-info'>
+                <div className='host-info flex'>
+                    <div>
+                        <h2>Cabin hosted by {stay.host.fullname}</h2>
+                        <p className='flex align-center'>{stay.capacity} guests <span className='dot'></span> {stay.bedrooms} bedrooms <span className='dot'></span> {stay.beds} beds</p>
+                    </div>
+                    <img src="http://res.cloudinary.com/dqj9g5gso/image/upload/v1643442255/allzuvxs7ig4wxgmdjh0.jpg" alt="" className='host-img' />
+                </div>
+                <ul className='main-amenities flex flex-column'>
+                    <li>
+                        <h3>Self check-in</h3>
+                        <p>Check yourself in with the lockbox.</p>
+                    </li>
+                    <li>
+                        <h3>Free cancellation for 48 hours.</h3>
+                    </li>
+                </ul>
+                <p className='stay-summary'>
+                    {stay.summary}
+                </p>
+                <div className='amenities'>
+                    <h1 className='amenities-list-header'>
+                        What this place offers
+                    </h1>
+                    <ul className='amenities-list'>
+                        {stay.amenities.map(amenity => <li key={utilService.makeId()}>{amenity}</li>)}
+                    </ul>
+                </div>
+            </div>
+            <div className='order-display'>
+                <div className='order-container'>
+                    <div className='order-header flex'>
+                        <div>
+                            ${stay.price} night
+                        </div>
+                        <div>
+                            {stay.reviewScores.rating} <span className='dot'></span> {stay.reviews.length} Reviews
+                        </div>
+                    </div>
+                    <div className='order-data'>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className='reviews-container' id='reviews-container'>
+            {stay.reviews.map(review => {
+                return <div className='review' key={review.id}>
+                    <div className='review-user-info flex align-center'>
+                        <img src={review.by.imgUrl} alt="" className='user-img' />
+                        <h2>{review.by.fullname}</h2>
+                    </div>
+                    <p>{review.txt}</p>
+                </div>
+            })}
+        </div>
+
     </section>
 }
