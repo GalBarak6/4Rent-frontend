@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { stayService } from '../services/stay.service'
 import { utilService } from '../services/util.service'
 import * as React from 'react';
-import {MyComponent} from '../cmps/test'
+import { GoogleMap } from '../cmps/google-map';
 
 export const StayDetails = () => {
 
@@ -50,6 +50,7 @@ export const StayDetails = () => {
         <h1 className='stay-name'>{stay.name}</h1>
         {/* <button onMouseMove={handleMouseMouve} style={{backgroundColor: bgc, backgroundPositionX: x, backgroundPositionY: y}}>testing is bgc working?</button> */}
         <div className='start-info flex align-center'>
+            <img src={require('../assets/icons/star.svg').default} alt="" className='start-icon' />
             {stay.reviewScores.rating} <span className='dot'></span> <a href="#reviews-container">{stay.reviews.length} Reviews</a> <span className='dot'></span> {stay.loc.city} {stay.loc.address} {stay.loc.country}
         </div>
         <div className='stay-gallery'>
@@ -66,21 +67,21 @@ export const StayDetails = () => {
                 </div>
                 <ul className='main-amenities flex flex-column'>
                     <li className='flex'>
-                        <img src={require('../assets/icons/check-in.svg').default} alt="" className='material-icons' />
+                        <img src={require('../assets/icons/check-in.svg').default} alt="" className='amenity-icon' />
                         <div className='main-amenity-info'>
                             <h3>Self check-in</h3>
                             <p>Check yourself in with the lockbox.</p>
                         </div>
                     </li>
                     <li className='flex'>
-                        <img src={require('../assets/icons/location.svg').default} alt="" className='material-icons' />
+                        <img src={require('../assets/icons/location.svg').default} alt="" className='amenity-icon' />
                         <div className='main-amenity-info flex flex-column'>
                             <h3>Great location</h3>
                             <p>Recent guests have given a 5-star rating to this location.</p>
                         </div>
                     </li>
                     <li className='flex'>
-                        <img src={require('../assets/icons/cancellation.svg').default} alt="" className='material-icons' />
+                        <img src={require('../assets/icons/cancellation.svg').default} alt="" className='amenity-icon' />
                         <div className='main-amenity-info'>
                             <h3>Free cancellation for 48 hours.</h3>
                         </div>
@@ -94,7 +95,7 @@ export const StayDetails = () => {
                         What this place offers
                     </h1>
                     <ul className='amenities-list'>
-                        {stay.amenities.map(amenity => <li key={utilService.makeId()}>{amenity}</li>)}
+                        {stay.amenities.map(amenity => <li key={utilService.makeId()} className='flex align-center'><img src={require(`../assets/icons/${amenity}.png`)} alt="" className='amenity-icon' /><span className='amenity-name'>{amenity}</span></li>)}
                     </ul>
                 </div>
             </div>
@@ -105,6 +106,7 @@ export const StayDetails = () => {
                             ${stay.price} night
                         </div>
                         <div>
+                            <img src={require('../assets/icons/star.svg').default} alt="" className='order-icon' />
                             {stay.reviewScores.rating} <span className='dot'></span> {stay.reviews.length} Reviews
                         </div>
                     </div>
@@ -129,14 +131,20 @@ export const StayDetails = () => {
         </div>
         <div className='reviews-container' id='reviews-container'>
             {stay.reviews.map(review => {
-                return <div className='review' key={review.id}>
+                return <div className='review flex flex-column' key={review.id}>
                     <div className='review-user-info flex align-center'>
                         <img src={review.by.imgUrl} alt="" className='user-img' />
-                        <h2>{review.by.fullname}</h2>
+                        <div>
+                            <h2>{review.by.fullname}</h2>
+                            <h4 className='review-date'>{review.date}</h4>
+                        </div>
                     </div>
                     <p>{review.txt}</p>
                 </div>
             })}
+        </div>
+        <div>
+            <GoogleMap lat={stay.loc.lat} lng={stay.loc.lan} />
         </div>
 
     </section>

@@ -5,6 +5,17 @@
         padding-top: 20px;
     }
 
+    .start-info {
+        color: $clr2;
+        font-size: rem(14px);
+        font-weight: bold;
+
+        .start-icon {
+            width: 14px;
+            padding-right: 5px;
+        }
+    }
+
     .stay-gallery {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -51,6 +62,10 @@
         .main-amenity-info {
             padding-left: 30px;
         }
+
+        .amenity-icon {
+            width: 26px;
+        }
     }
 
     .stay-summary {
@@ -65,10 +80,19 @@
         .amenities-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            gap: 15px;
         }
 
         .amenities-list-header {
             padding-bottom: 15px;
+        }
+
+        .amenity-icon {
+            width: 26px;
+        }
+
+        .amenity-name {
+            padding-left: 20px;
         }
     }
 
@@ -91,6 +115,10 @@
         position: sticky;
         top: 20px;
         margin-inline-start: 50px;
+
+        .order-icon {
+            width: 14px;
+        }
     }
 
     .order-header {
@@ -104,6 +132,18 @@
         // grid-gap: 40px 1px;
         gap: 40px;
         padding-bottom: 40px;
+
+        .review {
+            gap: 20px;
+        }
+
+        .review-user-info {
+            gap: 10px;
+        }
+
+        .review-date {
+            color: $clr4;
+        }
     }
 
     .user-img {
@@ -115,9 +155,5 @@
 
     .dot:after {
         content: " \2219 ";
-    }
-
-    .testing {
-        background-color: rgb(62, 139, 139);
     }
 }

@@ -1,5 +1,4 @@
 [
-
 	{
 		"_id": "622f337a75c7d36e498aaaf1551",
 		"name": "All",
@@ -50,6 +49,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -57,7 +57,6 @@
 					"imgUrl": "https://robohash.org/10711825?set=set1"
 				}
 			}
-
 		]
 	},
 	{
@@ -106,6 +105,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "April 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -113,7 +113,6 @@
 					"imgUrl": "https://robohash.org/10711825?set=set1"
 				}
 			}
-
 		]
 	},
 	{
@@ -163,6 +162,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -170,7 +170,6 @@
 					"imgUrl": "https://robohash.org/10711825?set=set1"
 				}
 			}
-
 		]
 	},
 	{
@@ -221,6 +220,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "March 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -228,7 +228,6 @@
 					"imgUrl": "https://robohash.org/10711825?set=set1"
 				}
 			}
-
 		]
 	},
 	{
@@ -248,9 +247,7 @@
 		"bedrooms": 5,
 		"beds": 10,
 		"amenities": [
-
 			"Air conditioning"
-
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164faf98",
@@ -279,6 +276,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -286,11 +284,8 @@
 					"imgUrl": "https://robohash.org/10711825?set=set1"
 				}
 			}
-
 		]
 	},
-
-
 	{
 		"_id": "622f337a75c7d36e498aaaf9",
 		"name": "Eastin Kaanapali KORVN 2BR",
@@ -315,7 +310,7 @@
 			"Kitchen",
 			"Gym",
 			"Hot tub",
-			"Self check-in"
+			"Wheelchair accessible"
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164faf94",
@@ -344,6 +339,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -353,6 +349,7 @@
 			},
 			{
 				"id": "70072865",
+				"date": "May 2022",
 				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
 				"by": {
 					"_id": "622f3403e36c59e6164fb204",
@@ -362,6 +359,7 @@
 			},
 			{
 				"id": "71179725",
+				"date": "May 2022",
 				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
 				"by": {
 					"_id": "622f3405e36c59e6164fb703",
@@ -371,6 +369,7 @@
 			},
 			{
 				"id": "65593239",
+				"date": "May 2022",
 				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
 				"by": {
 					"_id": "622f3404e36c59e6164fb37f",
@@ -380,6 +379,7 @@
 			},
 			{
 				"id": "26215688",
+				"date": "May 2022",
 				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
 				"by": {
 					"_id": "622f3403e36c59e6164fb105",
@@ -389,6 +389,7 @@
 			},
 			{
 				"id": "117390236",
+				"date": "May 2022",
 				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
 				"by": {
 					"_id": "622f3402e36c59e6164fabbe",
@@ -398,6 +399,7 @@
 			},
 			{
 				"id": "15143517",
+				"date": "May 2022",
 				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
 				"by": {
 					"_id": "622f3404e36c59e6164fb4af",
@@ -407,6 +409,7 @@
 			},
 			{
 				"id": "78173091",
+				"date": "May 2022",
 				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
 				"by": {
 					"_id": "622f3405e36c59e6164fb87b",
@@ -416,6 +419,7 @@
 			},
 			{
 				"id": "100535039",
+				"date": "May 2022",
 				"txt": "We love Westin Kaanapalli",
 				"by": {
 					"_id": "622f3405e36c59e6164fb713",
@@ -449,7 +453,7 @@
 			"Kitchen",
 			"Gym",
 			"Hot tub",
-			"Self check-in"
+			"Wheelchair accessible"
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164faf93",
@@ -478,6 +482,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -487,6 +492,7 @@
 			},
 			{
 				"id": "70072865",
+				"date": "May 2022",
 				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
 				"by": {
 					"_id": "622f3403e36c59e6164fb204",
@@ -496,6 +502,7 @@
 			},
 			{
 				"id": "71179725",
+				"date": "May 2022",
 				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
 				"by": {
 					"_id": "622f3405e36c59e6164fb703",
@@ -505,6 +512,7 @@
 			},
 			{
 				"id": "65593239",
+				"date": "May 2022",
 				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
 				"by": {
 					"_id": "622f3404e36c59e6164fb37f",
@@ -514,6 +522,7 @@
 			},
 			{
 				"id": "26215688",
+				"date": "May 2022",
 				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
 				"by": {
 					"_id": "622f3403e36c59e6164fb105",
@@ -523,6 +532,7 @@
 			},
 			{
 				"id": "117390236",
+				"date": "May 2022",
 				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
 				"by": {
 					"_id": "622f3402e36c59e6164fabbe",
@@ -532,6 +542,7 @@
 			},
 			{
 				"id": "15143517",
+				"date": "May 2022",
 				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
 				"by": {
 					"_id": "622f3404e36c59e6164fb4af",
@@ -541,6 +552,7 @@
 			},
 			{
 				"id": "78173091",
+				"date": "May 2022",
 				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
 				"by": {
 					"_id": "622f3405e36c59e6164fb87b",
@@ -550,6 +562,7 @@
 			},
 			{
 				"id": "100535039",
+				"date": "May 2022",
 				"txt": "We love Westin Kaanapalli",
 				"by": {
 					"_id": "622f3405e36c59e6164fb713",
@@ -583,7 +596,7 @@
 			"Kitchen",
 			"Gym",
 			"Hot tub",
-			"Self check-in"
+			"Wheelchair accessible"
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164faf96",
@@ -612,6 +625,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -621,6 +635,7 @@
 			},
 			{
 				"id": "70072865",
+				"date": "May 2022",
 				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
 				"by": {
 					"_id": "622f3403e36c59e6164fb204",
@@ -630,6 +645,7 @@
 			},
 			{
 				"id": "71179725",
+				"date": "May 2022",
 				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
 				"by": {
 					"_id": "622f3405e36c59e6164fb703",
@@ -639,6 +655,7 @@
 			},
 			{
 				"id": "65593239",
+				"date": "May 2022",
 				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
 				"by": {
 					"_id": "622f3404e36c59e6164fb37f",
@@ -648,6 +665,7 @@
 			},
 			{
 				"id": "26215688",
+				"date": "May 2022",
 				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
 				"by": {
 					"_id": "622f3403e36c59e6164fb105",
@@ -657,6 +675,7 @@
 			},
 			{
 				"id": "117390236",
+				"date": "May 2022",
 				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
 				"by": {
 					"_id": "622f3402e36c59e6164fabbe",
@@ -666,6 +685,7 @@
 			},
 			{
 				"id": "15143517",
+				"date": "May 2022",
 				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
 				"by": {
 					"_id": "622f3404e36c59e6164fb4af",
@@ -675,6 +695,7 @@
 			},
 			{
 				"id": "78173091",
+				"date": "May 2022",
 				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
 				"by": {
 					"_id": "622f3405e36c59e6164fb87b",
@@ -684,6 +705,7 @@
 			},
 			{
 				"id": "100535039",
+				"date": "May 2022",
 				"txt": "We love Westin Kaanapalli",
 				"by": {
 					"_id": "622f3405e36c59e6164fb713",
@@ -717,8 +739,7 @@
 			"Kitchen",
 			"Gym",
 			"Hot tub",
-			"Self check-in"
-
+			"Wheelchair accessible"
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164faf98",
@@ -747,6 +768,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -756,6 +778,7 @@
 			},
 			{
 				"id": "70072865",
+				"date": "May 2022",
 				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
 				"by": {
 					"_id": "622f3403e36c59e6164fb204",
@@ -765,6 +788,7 @@
 			},
 			{
 				"id": "71179725",
+				"date": "May 2022",
 				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
 				"by": {
 					"_id": "622f3405e36c59e6164fb703",
@@ -774,6 +798,7 @@
 			},
 			{
 				"id": "65593239",
+				"date": "May 2022",
 				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
 				"by": {
 					"_id": "622f3404e36c59e6164fb37f",
@@ -783,6 +808,7 @@
 			},
 			{
 				"id": "26215688",
+				"date": "May 2022",
 				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
 				"by": {
 					"_id": "622f3403e36c59e6164fb105",
@@ -792,6 +818,7 @@
 			},
 			{
 				"id": "117390236",
+				"date": "May 2022",
 				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
 				"by": {
 					"_id": "622f3402e36c59e6164fabbe",
@@ -801,6 +828,7 @@
 			},
 			{
 				"id": "15143517",
+				"date": "May 2022",
 				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
 				"by": {
 					"_id": "622f3404e36c59e6164fb4af",
@@ -810,6 +838,7 @@
 			},
 			{
 				"id": "78173091",
+				"date": "May 2022",
 				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
 				"by": {
 					"_id": "622f3405e36c59e6164fb87b",
@@ -819,6 +848,7 @@
 			},
 			{
 				"id": "100535039",
+				"date": "May 2022",
 				"txt": "We love Westin Kaanapalli",
 				"by": {
 					"_id": "622f3405e36c59e6164fb713",
@@ -828,11 +858,6 @@
 			}
 		]
 	},
-
-
-
-
-
 	{
 		"_id": "622f337a75c7d36e498aaaf91",
 		"name": "Eastin Kaanapali KORVN 2BR",
@@ -849,9 +874,7 @@
 		"capacity": 6,
 		"bedrooms": 3,
 		"beds": 6,
-		"amenities": [
-
-		],
+		"amenities": [],
 		"host": {
 			"_id": "622f3403e36c59e6164faf942",
 			"fullname": "Lukas Parker",
@@ -879,6 +902,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -888,6 +912,7 @@
 			},
 			{
 				"id": "70072865",
+				"date": "May 2022",
 				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
 				"by": {
 					"_id": "622f3403e36c59e6164fb204",
@@ -897,6 +922,7 @@
 			},
 			{
 				"id": "71179725",
+				"date": "May 2022",
 				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
 				"by": {
 					"_id": "622f3405e36c59e6164fb703",
@@ -906,6 +932,7 @@
 			},
 			{
 				"id": "65593239",
+				"date": "May 2022",
 				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
 				"by": {
 					"_id": "622f3404e36c59e6164fb37f",
@@ -915,6 +942,7 @@
 			},
 			{
 				"id": "26215688",
+				"date": "May 2022",
 				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
 				"by": {
 					"_id": "622f3403e36c59e6164fb105",
@@ -924,6 +952,7 @@
 			},
 			{
 				"id": "117390236",
+				"date": "May 2022",
 				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
 				"by": {
 					"_id": "622f3402e36c59e6164fabbe",
@@ -933,6 +962,7 @@
 			},
 			{
 				"id": "15143517",
+				"date": "May 2022",
 				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
 				"by": {
 					"_id": "622f3404e36c59e6164fb4af",
@@ -942,6 +972,7 @@
 			},
 			{
 				"id": "78173091",
+				"date": "May 2022",
 				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
 				"by": {
 					"_id": "622f3405e36c59e6164fb87b",
@@ -951,6 +982,7 @@
 			},
 			{
 				"id": "100535039",
+				"date": "May 2022",
 				"txt": "We love Westin Kaanapalli",
 				"by": {
 					"_id": "622f3405e36c59e6164fb713",
@@ -984,7 +1016,7 @@
 			"Kitchen",
 			"Gym",
 			"Hot tub",
-			"Self check-in"
+			"Wheelchair accessible"
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164faf93",
@@ -1013,6 +1045,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -1022,6 +1055,7 @@
 			},
 			{
 				"id": "70072865",
+				"date": "May 2022",
 				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
 				"by": {
 					"_id": "622f3403e36c59e6164fb204",
@@ -1031,6 +1065,7 @@
 			},
 			{
 				"id": "71179725",
+				"date": "May 2022",
 				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
 				"by": {
 					"_id": "622f3405e36c59e6164fb703",
@@ -1040,6 +1075,7 @@
 			},
 			{
 				"id": "65593239",
+				"date": "May 2022",
 				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
 				"by": {
 					"_id": "622f3404e36c59e6164fb37f",
@@ -1049,6 +1085,7 @@
 			},
 			{
 				"id": "26215688",
+				"date": "May 2022",
 				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
 				"by": {
 					"_id": "622f3403e36c59e6164fb105",
@@ -1058,6 +1095,7 @@
 			},
 			{
 				"id": "117390236",
+				"date": "May 2022",
 				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
 				"by": {
 					"_id": "622f3402e36c59e6164fabbe",
@@ -1067,6 +1105,7 @@
 			},
 			{
 				"id": "15143517",
+				"date": "May 2022",
 				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
 				"by": {
 					"_id": "622f3404e36c59e6164fb4af",
@@ -1076,6 +1115,7 @@
 			},
 			{
 				"id": "78173091",
+				"date": "May 2022",
 				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
 				"by": {
 					"_id": "622f3405e36c59e6164fb87b",
@@ -1085,6 +1125,7 @@
 			},
 			{
 				"id": "100535039",
+				"date": "May 2022",
 				"txt": "We love Westin Kaanapalli",
 				"by": {
 					"_id": "622f3405e36c59e6164fb713",
@@ -1118,8 +1159,7 @@
 			"Kitchen",
 			"Gym",
 			"Hot tub",
-			"Self check-in"
-	
+			"Wheelchair accessible"
 		],
 		"host": {
 			"_id": "622f3403e36c59e6164faf96",
@@ -1148,6 +1188,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -1157,6 +1198,7 @@
 			},
 			{
 				"id": "70072865",
+				"date": "May 2022",
 				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
 				"by": {
 					"_id": "622f3403e36c59e6164fb204",
@@ -1166,6 +1208,7 @@
 			},
 			{
 				"id": "71179725",
+				"date": "May 2022",
 				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
 				"by": {
 					"_id": "622f3405e36c59e6164fb703",
@@ -1175,6 +1218,7 @@
 			},
 			{
 				"id": "65593239",
+				"date": "May 2022",
 				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
 				"by": {
 					"_id": "622f3404e36c59e6164fb37f",
@@ -1184,6 +1228,7 @@
 			},
 			{
 				"id": "26215688",
+				"date": "May 2022",
 				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
 				"by": {
 					"_id": "622f3403e36c59e6164fb105",
@@ -1193,6 +1238,7 @@
 			},
 			{
 				"id": "117390236",
+				"date": "May 2022",
 				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
 				"by": {
 					"_id": "622f3402e36c59e6164fabbe",
@@ -1202,6 +1248,7 @@
 			},
 			{
 				"id": "15143517",
+				"date": "May 2022",
 				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
 				"by": {
 					"_id": "622f3404e36c59e6164fb4af",
@@ -1211,6 +1258,7 @@
 			},
 			{
 				"id": "78173091",
+				"date": "May 2022",
 				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
 				"by": {
 					"_id": "622f3405e36c59e6164fb87b",
@@ -1220,6 +1268,7 @@
 			},
 			{
 				"id": "100535039",
+				"date": "May 2022",
 				"txt": "We love Westin Kaanapalli",
 				"by": {
 					"_id": "622f3405e36c59e6164fb713",
@@ -1246,7 +1295,6 @@
 		"bedrooms": 5,
 		"beds": 10,
 		"amenities": [
-
 			"TV",
 			"Wifi",
 			"Air conditioning",
@@ -1254,9 +1302,8 @@
 			"Kitchen",
 			"Gym",
 			"Hot tub",
-			"Self check-in"
-
-	],
+			"Wheelchair accessible"
+		],
 		"host": {
 			"_id": "622f3403e36c59e6164faf98",
 			"fullname": "Patrick Star",
@@ -1284,6 +1331,7 @@
 		"reviews": [
 			{
 				"id": "10711825",
+				"date": "May 2022",
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
@@ -1293,6 +1341,7 @@
 			},
 			{
 				"id": "70072865",
+				"date": "May 2022",
 				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
 				"by": {
 					"_id": "622f3403e36c59e6164fb204",
@@ -1302,6 +1351,7 @@
 			},
 			{
 				"id": "71179725",
+				"date": "May 2022",
 				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
 				"by": {
 					"_id": "622f3405e36c59e6164fb703",
@@ -1311,6 +1361,7 @@
 			},
 			{
 				"id": "65593239",
+				"date": "May 2022",
 				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
 				"by": {
 					"_id": "622f3404e36c59e6164fb37f",
@@ -1320,6 +1371,7 @@
 			},
 			{
 				"id": "26215688",
+				"date": "May 2022",
 				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
 				"by": {
 					"_id": "622f3403e36c59e6164fb105",
@@ -1329,6 +1381,7 @@
 			},
 			{
 				"id": "117390236",
+				"date": "May 2022",
 				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
 				"by": {
 					"_id": "622f3402e36c59e6164fabbe",
@@ -1338,6 +1391,7 @@
 			},
 			{
 				"id": "15143517",
+				"date": "May 2022",
 				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
 				"by": {
 					"_id": "622f3404e36c59e6164fb4af",
@@ -1347,6 +1401,7 @@
 			},
 			{
 				"id": "78173091",
+				"date": "May 2022",
 				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
 				"by": {
 					"_id": "622f3405e36c59e6164fb87b",
@@ -1356,6 +1411,7 @@
 			},
 			{
 				"id": "100535039",
+				"date": "May 2022",
 				"txt": "We love Westin Kaanapalli",
 				"by": {
 					"_id": "622f3405e36c59e6164fb713",
@@ -1365,16 +1421,4 @@
 			}
 		]
 	}
-
-
-
-
-
-
-
-
-
-
-
-
 ]
