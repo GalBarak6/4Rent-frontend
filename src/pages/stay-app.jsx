@@ -9,8 +9,10 @@ export const StayApp = () => {
 
     const { stays, filterBy } = useSelector((storeState) => storeState.stayModule)
     const [filterByType, setFilterByType] = useState([])
+    const [filterByPrice, setFilterPrice] = useState(100)
     const [filterByAmenities, setFilterByAmenities] = useState([])
-    
+    const [filterByLabel, setFilterByLabel] = useState('')
+
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -18,67 +20,82 @@ export const StayApp = () => {
         dispatch(loadStays())
     }, [])
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(loadStays())
         console.log(filterBy)
     }, [filterBy])
 
-    useEffect(()=>{
-        if (!filterByType) return
-        dispatch(setFilter({...filterBy, type: filterByType}))
+    useEffect(() => {
+        dispatch(setFilter({ ...filterBy, type: filterByType }))
     }, [filterByType])
 
-    useEffect(()=>{
-        dispatch(setFilter({...filterBy, amenities: filterByAmenities}))
+    useEffect(() => {
+        dispatch(setFilter({ ...filterBy, price: filterByPrice }))
+        console.log(filterBy)
+    }, [filterByPrice])
+
+    useEffect(() => {
+        dispatch(setFilter({ ...filterBy, amenities: filterByAmenities }))
     }, [filterByAmenities])
 
+    useEffect(() => {
+        dispatch(setFilter({ ...filterBy, label: filterByLabel}))
+        console.log('after filterByLabel ',filterBy)
+    }, [filterByLabel])
+
     const onHandleChange = ({ target }) => {
-        console.log({target})
+        console.log({ target })
         const field = target.name
         let { value } = target
-        console.log({value})
-        console.log({field})
+        console.log({ value })
+        console.log({ field })
 
         // if (field==='House'||field==='Apartment'||field==='Guesthouse'||field==='Hotel')
         // {
-            if (target.checked){
-                setFilterByType((prevState)=>(
-                    [...prevState,field]
-                ))
-            }
+        if (target.checked) {
+            setFilterByType((prevState) => (
+                [...prevState, field]
+            ))
+        }
 
-            if (!target.checked){
-                setFilterByType((prevState)=>(
-                    prevState.filter(type => type!==field)
-                ))
-            }
+        if (!target.checked) {
+            setFilterByType((prevState) => (
+                prevState.filter(type => type !== field)
+            ))
+        }
         // }
     }
     const onAmenitiesChange = ({ target }) => {
-        console.log({target})
+        console.log({ target })
         const field = target.name
         let { value } = target
-        console.log({value})
-        console.log({field})
+        console.log({ value })
+        console.log({ field })
 
-            if (target.checked){
-                setFilterByAmenities((prevState)=>(
-                    [...prevState,field]
-                ))
-            }
+        if (target.checked) {
+            setFilterByAmenities((prevState) => (
+                [...prevState, field]
+            ))
+        }
 
-            if (!target.checked){
-                setFilterByAmenities((prevState)=>(
-                    prevState.filter(amenity => amenity!==field)
-                ))
-            }
+        if (!target.checked) {
+            setFilterByAmenities((prevState) => (
+                prevState.filter(amenity => amenity !== field)
+            ))
+        }
     }
 
     const onLabelChange = ({ target }) => {
-        console.log({target})
+        console.log({ target })
+        let { className } = target
+        console.log(className)
+        if (className==='All') setFilterByLabel('')
+        else setFilterByLabel(className)
     }
     const onPriceChange = ({ target }) => {
-        console.log({target})
+        const field = target.name
+        let { value } = target
+        setFilterPrice(value)
     }
 
 
@@ -91,10 +108,10 @@ export const StayApp = () => {
     // }
 
     return <section className="stay-app">
-        <StayFilter filterBy={filterBy} onHandleChange={onHandleChange} 
-        onAmenitiesChange={onAmenitiesChange} 
-        onLabelChange={onLabelChange}
-        onPriceChange={onPriceChange}
+        <StayFilter filterBy={filterBy} onHandleChange={onHandleChange}
+            onAmenitiesChange={onAmenitiesChange}
+            onLabelChange={onLabelChange}
+            onPriceChange={onPriceChange}
         />
         <StayList stays={stays} />
     </section>

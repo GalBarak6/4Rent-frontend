@@ -3,6 +3,7 @@
 		"_id": "622f337a75c7d36e498aaaf1551",
 		"name": "All",
 		"type": "Hotel",
+		"labels":["Design","Beach", "Amazing pools", "Cabins", "OMG!", "Camping"],
 		"imgUrls": [
 			"093.jpeg",
 			"090.jpeg",
@@ -10,7 +11,7 @@
 			"153.jpeg",
 			"094.jpeg"
 		],
-		"price": 1000,
+		"price": 10000,
 		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
 		"capacity": 10,
 		"bedrooms": 5,
@@ -61,8 +62,9 @@
 	},
 	{
 		"_id": "622f337a75c7d36e498aaaf1552",
-		"name": "TV",
+		"name": "TV Label-Design",
 		"type": "Hotel",
+		"labels":["Design"],
 		"imgUrls": [
 			"093.jpeg",
 			"090.jpeg",
@@ -70,7 +72,7 @@
 			"153.jpeg",
 			"094.jpeg"
 		],
-		"price": 1000,
+		"price": 5000,
 		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
 		"capacity": 10,
 		"bedrooms": 5,
@@ -117,8 +119,9 @@
 	},
 	{
 		"_id": "622f337a75c7d36e498aaaf1553",
-		"name": "TV Kitchen",
+		"name": "TV Kitchen label-Beach",
 		"type": "Hotel",
+		"labels":["Beach"],
 		"imgUrls": [
 			"093.jpeg",
 			"090.jpeg",
@@ -174,8 +177,9 @@
 	},
 	{
 		"_id": "622f337a75c7d36e498aaaf1554",
-		"name": "Wifi Pool Kitchen",
+		"name": "Wifi Pool Kitchen OMG!",
 		"type": "Hotel",
+		"labels":["OMG!"],
 		"imgUrls": [
 			"093.jpeg",
 			"090.jpeg",
@@ -183,7 +187,7 @@
 			"153.jpeg",
 			"094.jpeg"
 		],
-		"price": 1000,
+		"price": 1530,
 		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
 		"capacity": 10,
 		"bedrooms": 5,
@@ -232,8 +236,9 @@
 	},
 	{
 		"_id": "622f337a75c7d36e498aaaf1555",
-		"name": "Air conditioning",
+		"name": "Air conditioning labels-Amazing pool, Cabins, OMG!, Camping",
 		"type": "Hotel",
+		"labels":["Amazing pools", "Cabins", "OMG!", "Camping"],
 		"imgUrls": [
 			"093.jpeg",
 			"090.jpeg",
@@ -290,6 +295,8 @@
 		"_id": "622f337a75c7d36e498aaaf9",
 		"name": "Eastin Kaanapali KORVN 2BR",
 		"type": "Apartment",
+		"labels":["Amazing pools", "Cabins", "OMG!"],
+		
 		"imgUrls": [
 			"090.jpeg",
 			"010.jpeg",
@@ -433,6 +440,7 @@
 		"_id": "622f337a75c7d36e498aaaf8",
 		"name": "Westin Kaanapali KORVN 2BR",
 		"type": "House",
+		"labels":["Amazing pools", "Cabins", "OMG!"],
 		"imgUrls": [
 			"010.jpeg",
 			"090.jpeg",
@@ -576,6 +584,7 @@
 		"_id": "622f337a75c7d36e498aaaf10",
 		"name": "Woodburg view",
 		"type": "Guesthouse",
+		"labels":["Amazing pools", "Cabins", "OMG!"],
 		"imgUrls": [
 			"153.jpeg",
 			"090.jpeg",
@@ -719,6 +728,7 @@
 		"_id": "622f337a75c7d36e498aaaf15",
 		"name": "Westview Resort",
 		"type": "Hotel",
+		"labels":["Amazing pools", "Cabins", "OMG!"],
 		"imgUrls": [
 			"093.jpeg",
 			"090.jpeg",
@@ -862,6 +872,7 @@
 		"_id": "622f337a75c7d36e498aaaf91",
 		"name": "Eastin Kaanapali KORVN 2BR",
 		"type": "Apartment",
+		"labels":["Amazing pools", "Cabins", "OMG!"],
 		"imgUrls": [
 			"090.jpeg",
 			"010.jpeg",
@@ -996,6 +1007,7 @@
 		"_id": "622f337a75c7d36e498aaaf8322",
 		"name": "Westin Kaanapali KORVN 2BR",
 		"type": "House",
+		"labels":["Amazing pools", "Cabins", "OMG!"],
 		"imgUrls": [
 			"010.jpeg",
 			"090.jpeg",
@@ -1139,6 +1151,7 @@
 		"_id": "622f337a75c7d36e498aaaf104",
 		"name": "Woodburg view",
 		"type": "Guesthouse",
+		"labels":["Amazing pools", "Cabins", "OMG!"],
 		"imgUrls": [
 			"153.jpeg",
 			"090.jpeg",
@@ -1282,6 +1295,7 @@
 		"_id": "622f337a75c7d36e498aaaf155",
 		"name": "Westview Resort",
 		"type": "Hotel",
+		"labels":["Amazing pools", "Cabins", "OMG!"],
 		"imgUrls": [
 			"093.jpeg",
 			"090.jpeg",

@@ -21,11 +21,18 @@ async function query(filterBy) {
             filterBy.type.includes(stay.type))
     }
     if (filterBy.amenities.length > 0) {
-            stays = stays.filter(stay => 
-                filterBy.amenities.every(amenity=> {return   stay.amenities.includes(amenity) }))
-             
-                // Array.from(stay.amenities).filter(amenity => filterBy.amenities.includes(amenity)).length > 0)
-                // stay.amenities.filter(amenity => filterBy.amenities.includes(amenity)).length > 0)
+        stays = stays.filter(stay =>
+            filterBy.amenities.every(amenity => { return stay.amenities.includes(amenity) }))
+    }
+
+    if (filterBy.price) {
+        stays = stays.filter(stay => stay.price >= filterBy.price)
+    }
+    if (filterBy.label) {
+        // stays = stays.filter(stay => filterBy.label.includes(stay.labels))
+        stays = stays.filter(stay => {
+            console.log(stay.labels)
+           return stay.labels.includes(filterBy.label)})
     }
 
 
