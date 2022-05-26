@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { loadStays } from '../store/actions/stay.actions'
 
 import { StayList } from '../cmps/stay-list'
+import { StayFilter } from '../cmps/stay-filter'
 
 export const StayApp = () => {
 
@@ -16,6 +17,7 @@ export const StayApp = () => {
 
 
     return <section className="stay-app">
+        <StayFilter/>
         <StayList stays={stays} />
     </section>
 }

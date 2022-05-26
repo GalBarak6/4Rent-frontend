@@ -1,4 +1,10 @@
 
 export const AppFooter = () => {
-    return <h1>hello from appfoototototer!</h1>
+    return <section className="app-footer full">
+        <div className="txt-container">
+            <div>hello from appfoototototer!</div>
+
+        </div>
+    </section>
+
 }

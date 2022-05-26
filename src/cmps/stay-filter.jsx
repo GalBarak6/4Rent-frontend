@@ -1,4 +1,6 @@
 
 export const StayFilter = () => {
-    return <h1>hello from filterrr!</h1>
+    return <section className="stay-filter">
+        Filters
+    </section>
 }
