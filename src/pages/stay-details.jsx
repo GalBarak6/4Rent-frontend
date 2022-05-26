@@ -2,10 +2,15 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { stayService } from '../services/stay.service'
 import { utilService } from '../services/util.service'
-
+import * as React from 'react';
+import {MyComponent} from '../cmps/test'
 
 export const StayDetails = () => {
 
+    // const [x, setX] = useState(0)
+    // const [y, setY] = useState(0)
+    // const [bgc, setBgc] = useState('green') 
+    const [order, setOrder] = useState({ startDate: '', endDate: '', guests: 0 })
     const [stay, setStay] = useState(null)
     const params = useParams()
 
@@ -19,9 +24,31 @@ export const StayDetails = () => {
         setStay(stay)
     }
 
+    const onHandleChange = ({ target }) => {
+        // setFields((prevFields) => ({ ...prevFields, [field]: value }))
+        const value = target.type === 'number' ? +target.value : target.value
+        const field = target.name
+        console.log(target.value)
+        console.log(field)
+        setOrder(prevOrder => ({ ...prevOrder, [field]: value }))
+    }
+
+    const onSubmit = (ev) => {
+        ev.preventDefault()
+    }
+
+    // const handleMouseMouve = (e) => {
+    //     console.log(e);
+    //     setX(e.clientX)
+    //     setY(e.clientY)
+    //     console.log(x, y);
+    // }
+
     if (!stay) return <div>Loading..</div>
     return <section className="stay-details flex flex-column">
-        <h1>{stay.name}</h1>
+        {/* <MyComponent /> */}
+        <h1 className='stay-name'>{stay.name}</h1>
+        {/* <button onMouseMove={handleMouseMouve} style={{backgroundColor: bgc, backgroundPositionX: x, backgroundPositionY: y}}>testing is bgc working?</button> */}
         <div className='start-info flex align-center'>
             {stay.reviewScores.rating} <span className='dot'></span> <a href="#reviews-container">{stay.reviews.length} Reviews</a> <span className='dot'></span> {stay.loc.city} {stay.loc.address} {stay.loc.country}
         </div>
@@ -30,7 +57,7 @@ export const StayDetails = () => {
         </div>
         <div className='stay-info-container flex'>
             <div className='stay-info'>
-                <div className='host-info flex'>
+                <div className='host-info flex space-between'>
                     <div>
                         <h2>Cabin hosted by {stay.host.fullname}</h2>
                         <p className='flex align-center'>{stay.capacity} guests <span className='dot'></span> {stay.bedrooms} bedrooms <span className='dot'></span> {stay.beds} beds</p>
@@ -38,12 +65,25 @@ export const StayDetails = () => {
                     <img src="http://res.cloudinary.com/dqj9g5gso/image/upload/v1643442255/allzuvxs7ig4wxgmdjh0.jpg" alt="" className='host-img' />
                 </div>
                 <ul className='main-amenities flex flex-column'>
-                    <li>
-                        <h3>Self check-in</h3>
-                        <p>Check yourself in with the lockbox.</p>
+                    <li className='flex'>
+                        <img src={require('../assets/icons/check-in.svg').default} alt="" className='material-icons' />
+                        <div className='main-amenity-info'>
+                            <h3>Self check-in</h3>
+                            <p>Check yourself in with the lockbox.</p>
+                        </div>
                     </li>
-                    <li>
-                        <h3>Free cancellation for 48 hours.</h3>
+                    <li className='flex'>
+                        <img src={require('../assets/icons/location.svg').default} alt="" className='material-icons' />
+                        <div className='main-amenity-info flex flex-column'>
+                            <h3>Great location</h3>
+                            <p>Recent guests have given a 5-star rating to this location.</p>
+                        </div>
+                    </li>
+                    <li className='flex'>
+                        <img src={require('../assets/icons/cancellation.svg').default} alt="" className='material-icons' />
+                        <div className='main-amenity-info'>
+                            <h3>Free cancellation for 48 hours.</h3>
+                        </div>
                     </li>
                 </ul>
                 <p className='stay-summary'>
@@ -59,7 +99,7 @@ export const StayDetails = () => {
                 </div>
             </div>
             <div className='order-display'>
-                <div className='order-container'>
+                <div className='order-container flex flex-column'>
                     <div className='order-header flex'>
                         <div>
                             ${stay.price} night
@@ -68,6 +108,19 @@ export const StayDetails = () => {
                             {stay.reviewScores.rating} <span className='dot'></span> {stay.reviews.length} Reviews
                         </div>
                     </div>
+                    <form onSubmit={onSubmit}>
+                        <label htmlFor="startDate">
+                            start-date<input type="date" name='startDate' onChange={onHandleChange} />
+                        </label>
+                        <label htmlFor="endDate">
+                            end-date<input type="date" name='endDate' onChange={onHandleChange} />
+                        </label>
+                        <label htmlFor="guests">
+                            Guests<input type="number" name='guests' onChange={onHandleChange} />
+                        </label>
+
+                        <button type='submit'>Reserve</button>
+                    </form>
                     <div className='order-data'>
 
                     </div>

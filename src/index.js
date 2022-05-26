@@ -4,9 +4,13 @@ import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { store } from './store/store'
 
+// import 'react-date-range/dist/styles.css'; // main style file
+// import 'react-date-range/dist/theme/default.css'; // theme css file
 import './styles/styles.scss'
 import App from './root-cmp'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
