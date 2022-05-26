@@ -1,5 +1,10 @@
 const initialState = {
     stays: [],
+    filterBy: {
+        type: [],
+        amenities:[],
+        price:''
+    }
 }
 export function stayReducer(state = initialState, action) {
     var newState = state
@@ -20,6 +25,8 @@ export function stayReducer(state = initialState, action) {
             stays = state.stays.map(stay => (stay._id === action.stay._id) ? action.stay : stay)
             newState = { ...state, stays }
             break
+        case 'SET_STAYS_FILTER':
+            return { ...state, filterBy: action.filterBy }
         default:
     }
     return newState

@@ -1,17 +1,37 @@
 .stay-preview{
-    border: solid 1px $clr9;
+    // border: solid 1px $clr9;
     gap: 1rem;
-
+    
+    
     .img-container{
-        border: solid 1px $clr9;
+        // border: solid 1px $clr9;
         min-width: 275px;
         min-height: 260px;
         border-radius: 15px;
-
+        margin-bottom: 5px;
+        
         img {
             aspect-ratio: 1 / 1;
             border-radius: 15px;
         }
+    }
+    .txt-container{
+
+        color: $clr2;
+    }
+
+    .bold{
+        color: $clr3;
+        font-family: Circular-Bold;
+    }
+    .light{
+        font-family: Circular-Light;
+
+    }
+
+    .icon {
+        height: 1.2rem;
+        width: 1.2rem;
     }
 
 }

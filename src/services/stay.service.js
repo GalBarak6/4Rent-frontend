@@ -10,8 +10,29 @@ export const stayService = {
     remove,
 }
 
-function query() {
-    return storageService.query(STORAGE_KEY)
+async function query(filterBy) {
+    console.log('from stay.service', { filterBy })
+
+    let stays = await storageService.query(STORAGE_KEY)
+    console.log('from stay.service.query', { stays })
+
+    if (filterBy.type.length > 0) {
+        stays = stays.filter(stay =>
+            filterBy.type.includes(stay.type))
+    }
+    if (filterBy.amenities.length > 0) {
+            stays = stays.filter(stay => 
+                filterBy.amenities.every(amenity=> {return   stay.amenities.includes(amenity) }))
+             
+                // Array.from(stay.amenities).filter(amenity => filterBy.amenities.includes(amenity)).length > 0)
+                // stay.amenities.filter(amenity => filterBy.amenities.includes(amenity)).length > 0)
+    }
+
+
+    console.log({ stays })
+    return stays
+
+    // return storageService.query(STORAGE_KEY)
     // return axios.get(`/api/stay`)
 }
 
