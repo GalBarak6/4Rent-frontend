@@ -1,7 +1,5 @@
 .stay-list{
-    border: solid 1px $clr9;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-    // grid-template-columns: repeat(auto-fill, 275px);
-    gap: rem(23px);
+    gap: rem(40px) rem(23px) ;
 }
