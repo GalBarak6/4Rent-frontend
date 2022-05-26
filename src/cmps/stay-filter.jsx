@@ -36,21 +36,59 @@ export const StayFilter = ({ onHandleChange, onAmenitiesChange, onLabelChange, o
             <input type="checkbox" id="Air conditioning" name="Air conditioning" value="Air conditioning" onChange={onAmenitiesChange} />
             <label htmlFor="Air conditioning">Air conditioning</label>
 
-            <input type="checkbox" id="Hot tub" name="Hot tub" value="Hot tub"price />
+            <input type="checkbox" id="Hot tub" name="Hot tub" value="Hot tub" price />
             <label htmlFor="Hot tub">Hot tub</label>
 
             <input type="checkbox" id="Gym" name="Gym" value="Gym" onChange={onAmenitiesChange} />
             <label htmlFor="Gym">Gym</label>
+            <input type="checkbox" id="Self check-in" name="Self check-in" value="Self check-in" onChange={onAmenitiesChange} />
+            <label htmlFor="Self check-in">Self check-in</label>
 
         </div>
         <div>
+            {/* "Labels":["All","Design","Beach", "Amazing pools", "Cabins", "OMG!", "Camping"] */}
+            {/* <input class="All" id="All" type="button" value="All" onClick={onLabelChange} /> */}
+            <input class="Design" id="Design" type="button" className="design" value="Design" onClick={onLabelChange} />
+
+            <button  className="Design" onClick={onLabelChange} >
+                <img src={require(`../assets/icons/allHomes.jpg`)} alt="" />
+                <div>All Homes</div>
+            </button>
+            <button onClick={onLabelChange} >
+                <img src={require(`../assets/icons/design.jpg`)} alt="" />
+                <div>Design</div>
+            </button>
+            <button onClick={onLabelChange} >
+                <img src={require(`../assets/icons/beach.jpg`)} alt="" />
+                <div>Beach</div>
+            </button>
+            <button onClick={onLabelChange} >
+                <img src={require(`../assets/icons/pools.jpg`)} alt="" />
+                <div>Amazing pools</div>
+            </button>
+            <button onClick={onLabelChange} >
+                <img src={require(`../assets/icons/cabins.jpg`)} alt="" />
+                <div>Cabins</div>
+            </button>
+            <button onClick={onLabelChange} >
+                <img src={require(`../assets/icons/omg.jpg`)} alt="" />
+                <div>OMG!</div>
+            </button>
+            <button onClick={onLabelChange} >
+                <img src={require(`../assets/icons/camping.jpg`)} alt="" />
+                <div>Camping</div>
+            </button>
+            {/* <input class="Beach" id="Beach" type="button" value="Beach" onClick={onLabelChange} />
+            <input class="Amazing pools" id="Amazing pools" type="button" value="Amazing pools" onClick={onLabelChange} />
             <input class="Cabins" id="Cabins" type="button" value="Cabins" onClick={onLabelChange} />
+            <input class="OMG!" id="OMG!" type="button" value="OMG!" onClick={onLabelChange} />
+            <input class="Camping" id="Camping" type="button" value="Camping" onClick={onLabelChange} /> */}
         </div>
         <div>
-                <label for="price">price</label>
+            <label for="price">price</label>
             <span>100</span>
-            <input type="range" id="price" name="price" min="100" max="10000" onChange={onPriceChange}/>
-            <span>10000</span>
+            <input type="range" id="price" name="price" min="100" max="10000" onChange={onPriceChange} />
+            <span>10,000</span>
         </div>
 
 

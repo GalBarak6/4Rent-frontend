@@ -2,8 +2,9 @@ const initialState = {
     stays: [],
     filterBy: {
         type: [],
-        amenities:[],
-        price:''
+        amenities: [],
+        price: '',
+        label:''
     }
 }
 export function stayReducer(state = initialState, action) {
