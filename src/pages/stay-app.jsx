@@ -22,7 +22,7 @@ export const StayApp = () => {
 
     useEffect(() => {
         dispatch(loadStays())
-        console.log(filterBy)
+        console.log('from stay-app', filterBy)
     }, [filterBy])
 
     useEffect(() => {
@@ -66,11 +66,7 @@ export const StayApp = () => {
         // }
     }
     const onAmenitiesChange = ({ target }) => {
-        console.log({ target })
         const field = target.name
-        let { value } = target
-        console.log({ value })
-        console.log({ field })
 
         if (target.checked) {
             setFilterByAmenities((prevState) => (
@@ -85,12 +81,18 @@ export const StayApp = () => {
         }
     }
 
-    const onLabelChange = ({ target }) => {
-        console.log({ target })
-        let { className } = target
-        console.log(className)
-        if (className==='All') setFilterByLabel('')
-        else setFilterByLabel(className)
+    // const onLabelChange = ({ target }) => {
+    //     console.log({ target })
+    //     let { value } = target
+    //     console.log(value)
+    //     if (value==='All') setFilterByLabel('')
+    //     else setFilterByLabel(value)
+    // }
+
+    const onLabelChange = (value) => {
+        console.log(value)
+        if (value==='All') setFilterByLabel('')
+        else setFilterByLabel(value)
     }
     const onPriceChange = ({ target }) => {
         const field = target.name

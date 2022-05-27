@@ -14,7 +14,7 @@ async function query(filterBy) {
     console.log('from stay.service', { filterBy })
 
     let stays = await storageService.query(STORAGE_KEY)
-    console.log('from stay.service.query', { stays })
+    // console.log('from stay.service.query', { stays })
 
     if (filterBy.type.length > 0) {
         stays = stays.filter(stay =>
@@ -31,12 +31,12 @@ async function query(filterBy) {
     if (filterBy.label) {
         // stays = stays.filter(stay => filterBy.label.includes(stay.labels))
         stays = stays.filter(stay => {
-            console.log(stay.labels)
+            // console.log(stay.labels)
            return stay.labels.includes(filterBy.label)})
     }
 
 
-    console.log({ stays })
+    // console.log({ stays })
     return stays
 
     // return storageService.query(STORAGE_KEY)
