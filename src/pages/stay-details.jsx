@@ -12,6 +12,7 @@ export const StayDetails = () => {
     // const [bgc, setBgc] = useState('green') 
     const [order, setOrder] = useState({ startDate: '', endDate: '', guests: 0 })
     const [stay, setStay] = useState(null)
+    const [isGuestModal, setIsGuestModal] = useState(false)
     const params = useParams()
     const location = useLocation()
 
@@ -37,6 +38,11 @@ export const StayDetails = () => {
         ev.preventDefault()
     }
 
+    const onOpenGuestModal = () => {
+        console.log('opening');
+        setIsGuestModal(!isGuestModal)
+    }
+
     // const handleMouseMouve = (e) => {
     //     console.log(e);
     //     setX(e.clientX)
@@ -44,10 +50,8 @@ export const StayDetails = () => {
     //     console.log(x, y);
     // }
 
-    console.log(params)
     if (!stay) return <div>Loading..</div>
     return <section className="stay-details flex flex-column">
-        {/* <MyComponent /> */}
         <h1 className='stay-name'>{stay.name}</h1>
         {/* <button onMouseMove={handleMouseMouve} style={{backgroundColor: bgc, backgroundPositionX: x, backgroundPositionY: y}}>testing is bgc working?</button> */}
         <div className='start-info flex align-center'>
@@ -111,21 +115,80 @@ export const StayDetails = () => {
                             {stay.reviewScores.rating} <span className='dot'></span> {stay.reviews.length} Reviews
                         </p>
                     </div>
-                    <form onSubmit={onSubmit}>
-                        <label htmlFor="startDate">
-                            start-date<input type="date" name='startDate' onChange={onHandleChange} />
-                        </label>
-                        <label htmlFor="endDate">
-                            end-date<input type="date" name='endDate' onChange={onHandleChange} />
-                        </label>
-                        <label htmlFor="guests">
-                            Guests<input type="number" name='guests' onChange={onHandleChange} />
-                        </label>
+                    <form onSubmit={onSubmit} className='order-form flex flex-column'>
+                        <div className='order-inputs'>
+                            <div className='flex'>
+                                <label htmlFor="startDate">
+                                    start-date<input type="date" name='startDate' onChange={onHandleChange} />
+                                </label>
+                                <label htmlFor="endDate">
+                                    end-date<input type="date" name='endDate' onChange={onHandleChange} />
+                                </label>
+                            </div>
+                            {/* <label htmlFor="guests">
+                                Guests<input type="number" name='guests' onChange={onHandleChange} />
+                            </label> */}
+                            <div className='guest-input flex flex-column' onClick={onOpenGuestModal}>
+                                <label htmlFor="guests" className='guests-label'>GUESTS</label>
+                                <div className='open-guests-btn flex space-between'>
+                                    <div>1 guest</div>
+                                    <img src={require('../assets/icons/down-arrow.png')} alt="" className='order-icon' />
+                                </div>
 
-                        <button type='submit'>Reserve</button>
+                                {isGuestModal &&
+                                    <div className='guests-modal flex flex-column'>
+                                        <div className='guest-type flex space-between align-center'>
+                                            <div className='guest-detail'>Adults</div>
+                                            <div className='guest-count'>
+                                                <button><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <span>1</span>
+                                                <button><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
+                                            </div>
+                                        </div>
+
+                                        <div className='guest-type flex space-between align-center'>
+                                            <div className='guest-detail'>Children</div>
+                                            <div className='guest-count'>
+                                                <button><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <span>1</span>
+                                                <button><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
+                                            </div>
+                                        </div>
+
+                                        <div className='guest-type flex space-between align-center'>
+                                            <div className='guest-detail'>Infants</div>
+                                            <div className='guest-count'>
+                                                <button><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <span>1</span>
+                                                <button><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
+                                            </div>
+                                        </div>
+                                    </div>}
+
+
+                            </div>
+                        </div>
+
+                        <button type='submit' className='reserve-btn'>Reserve</button>
                     </form>
-                    <div className='order-data'>
-
+                    <p className='order-summary-header align-self-center'>You won't be charged yet</p>
+                    <div className='order-summary flex flex-column'>
+                        <div className='price-sum flex space-between'>
+                            <span>${stay.price} x 5 nights</span>
+                            <span>${stay.price * 5}</span>
+                        </div>
+                        <div className='cleaning-sum flex space-between'>
+                            <span>Cleaning fee</span>
+                            <span>${stay.price * 0.04}</span>
+                        </div>
+                        <div className='service-sum flex space-between'>
+                            <span>Service fee</span>
+                            <span>${stay.price * 0.005}</span>
+                        </div>
+                        <div className='total-sum flex space-between'>
+                            <span>Total</span>
+                            <span>${stay.price * 5 + stay.price * 0.04 + stay.price * 0.005}</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,6 +210,5 @@ export const StayDetails = () => {
         <div>
             <GoogleMap lat={stay.loc.lat} lng={stay.loc.lan} />
         </div>
-
     </section>
 }

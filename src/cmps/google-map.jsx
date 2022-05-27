@@ -9,14 +9,22 @@ export class GoogleMap extends Component {
         center: {
             lat: 32.109333,
             lng: 34.855499
-        },
-        zoom: 10
+        }
     }
 
-    componentDidMount() {
-        console.log(this.props.lat);
-        console.log(this.props.lng);
-    }
+    // componentDidMount() {
+    //     console.log(this.props.lat);
+    //     console.log(this.props.lng);
+    //     // this.setState(prevState => ({ ...prevState, center: { lat: this.props.lat, lng: this.props.lng } }))
+    //     const center = {
+    //         lat: +this.props.lat.toFixed(2),
+    //         lng: this.props.lng
+    //     }
+    //     this.setState({center},() => {
+    //         console.log('workingg', this.state.center)
+    //     })
+    // }
+
     onSetCenter = ({ x, y, lat, lng, event }) => {
         this.setState({
             center: {
@@ -27,18 +35,21 @@ export class GoogleMap extends Component {
     }
 
     render() {
+        const {center} = this.state
+        console.log('render' , center)
+
         return (
             <div style={{ height: '50vh', width: '100%' }}>
                 <GoogleMapReact
                     bootstrapURLKeys={{ key: "AIzaSyAcisAmdvztZYz3ZptoZE1zwPpbSndD_Zs" }}
-                    defaultCenter={this.state.center}
-                    center={this.state.center}
-                    defaultZoom={this.state.zoom}
+                    // defaultCenter={this.state.center}
+                    center={center}
+                    zoom = {10}
                     onClick={this.onSetCenter}
                 >
                     <AnyReactComponent
-                        lat={this.state.center.lat}
-                        lng={this.state.center.lng}
+                        lat={center.lat}
+                        lng={center.lng}
                         text="🚩"
                     />
                 </GoogleMapReact>

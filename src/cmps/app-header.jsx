@@ -20,7 +20,7 @@ export const AppHeader = () => {
     }
 
     // const headerClass = `app-header flex space-between align-center ${layout}`
-    return <header className="app-header flex space-between align-center full">
+    return <header className="app-header flex space-between align-center">
         <div className="logo flex align-center" onClick={onGoBack}>
             {<Logo />}
             <h1>4RENT</h1>

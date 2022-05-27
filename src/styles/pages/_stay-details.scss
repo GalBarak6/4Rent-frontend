@@ -110,7 +110,7 @@
 
     .order-container {
         width: 350px;
-        height: 250px;
+        height: 500px;
         position: sticky;
         top: 3%;
         margin-inline-start: 50px;
@@ -120,10 +120,12 @@
         padding: 20px;
         transition: .5s;
         z-index: 1;
+        gap: 20px;
 
         .order-header {
             align-items: center;
             justify-content: space-between;
+            // flex-grow: 1;
 
             :nth-child(2) {
                 font-size: rem(14px);
@@ -133,6 +135,47 @@
                 font-size: 1.2rem;
                 margin: 0 5px;
             }
+
+        }
+
+        .guest-input {
+            border-top: 1px solid $clr9;
+            cursor: pointer;
+            padding: 12px;
+
+            .guests-label {
+                font-size: rem(10px);
+            }
+        }
+
+        .guests-modal {
+            display: flex;
+            position: absolute;
+            line-height: 20px;
+            bottom: 181px;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+            z-index: 2000;
+            padding: 20px;
+        }
+
+        .open-guests-btn {
+            :nth-child(1) {
+                font-size: rem(16px);
+            }
+        }
+
+        .reserve-btn {
+            height: 48px;
+            width: 100%;
+            background: linear-gradient(90deg, #f1254b 0, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%);
+            border-radius: 13px;
+            font-size: rem(16px);
+            color: $clr8;
+            font-weight: bold;
         }
 
         .order-icon {
@@ -144,6 +187,30 @@
             color: $clr3;
             font-size: rem(22px);
         }
+
+        .order-form {
+            gap: 20px;
+
+            .order-inputs {
+                border: 1px solid $clr11;
+                border-radius: 13px;
+            }
+        }
+
+        .order-summary-header {
+            font-size: rem(14px);
+        }
+
+        .order-summary {
+            gap: 10px;
+        }
+
+        .total-sum {
+            border-top: 1px solid $clr9;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
     }
 
     .reviews-container {
@@ -176,4 +243,13 @@
     .dot:after {
         content: " \2219 ";
     }
+
+    .plus-minus-icon {
+        width: 25px;
+    }
+
+    .guest-type {
+        width: 100%;
+    }
+
 }
