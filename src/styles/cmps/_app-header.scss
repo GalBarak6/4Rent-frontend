@@ -1,5 +1,5 @@
 .app-header {
-    background-color: rgb(220, 230, 230);
+    // background-color: rgb(220, 230, 230);
     box-shadow: 0 1px 12px rgba(0, 0, 0, .08);
     height: 80px;
     // position: fixed;
@@ -12,5 +12,28 @@
     .logo {
         color: $clr1;
         margin-inline-start: $mainLayoutPadding;
+        cursor: pointer;
+    }
+
+    .user-menu {
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: space-between;
+        padding-inline-start: 15px;
+        position: relative;
+        width: 80px;
+        border-radius: 25px;
+        border: 1px solid $clr6;
+
+        img:nth-child(1) {
+            width: 20px;
+            height: 15px;
+        }
+
+        img:nth-child(2) {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
