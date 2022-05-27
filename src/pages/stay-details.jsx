@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 import { stayService } from '../services/stay.service'
 import { utilService } from '../services/util.service'
 import * as React from 'react';
@@ -13,6 +13,7 @@ export const StayDetails = () => {
     const [order, setOrder] = useState({ startDate: '', endDate: '', guests: 0 })
     const [stay, setStay] = useState(null)
     const params = useParams()
+    const location = useLocation()
 
     useEffect(() => {
         console.log('loading stay details')
@@ -25,7 +26,6 @@ export const StayDetails = () => {
     }
 
     const onHandleChange = ({ target }) => {
-        // setFields((prevFields) => ({ ...prevFields, [field]: value }))
         const value = target.type === 'number' ? +target.value : target.value
         const field = target.name
         console.log(target.value)
@@ -44,6 +44,7 @@ export const StayDetails = () => {
     //     console.log(x, y);
     // }
 
+    console.log(params)
     if (!stay) return <div>Loading..</div>
     return <section className="stay-details flex flex-column">
         {/* <MyComponent /> */}
@@ -102,13 +103,13 @@ export const StayDetails = () => {
             <div className='order-display'>
                 <div className='order-container flex flex-column'>
                     <div className='order-header flex'>
-                        <div>
-                            ${stay.price} night
-                        </div>
-                        <div>
+                        <p>
+                            <span className='order-price'>${stay.price}</span> / night
+                        </p>
+                        <p>
                             <img src={require('../assets/icons/star.svg').default} alt="" className='order-icon' />
                             {stay.reviewScores.rating} <span className='dot'></span> {stay.reviews.length} Reviews
-                        </div>
+                        </p>
                     </div>
                     <form onSubmit={onSubmit}>
                         <label htmlFor="startDate">

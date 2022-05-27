@@ -1,0 +1,25 @@
+.user-menu-modal {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 2px 3px #ebebeb;
+    height: 240px;
+    overflow: hidden;
+    position: absolute;
+    right: -2%;
+    top: 25%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .3s;
+    width: 230px;
+    display: none;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        list-style: none;
+        padding-left: 10px;
+    }
+
+}
