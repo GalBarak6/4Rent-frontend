@@ -22,38 +22,37 @@ export const StayApp = () => {
         dispatch(loadStays())
     }, [])
 
-    useEffect(() => {
-        dispatch(loadStays())
-        console.log('from stay-app', filterBy)
-    }, [filterBy])
 
-    useEffect(() => {
-        dispatch(setFilter({ ...filterBy, type: filterByType }))
-    }, [filterByType])
 
-    useEffect(() => {
-        dispatch(setFilter({ ...filterBy, price: filterByPrice }))
-        console.log(filterBy)
-    }, [filterByPrice])
+    // useEffect(() => {
+    //     dispatch(loadStays())
+    //     console.log('from stay-app', filterBy)
+    // }, [filterBy])
 
-    useEffect(() => {
-        dispatch(setFilter({ ...filterBy, amenities: filterByAmenities }))
-    }, [filterByAmenities])
+    // useEffect(() => {
+    //     dispatch(setFilter({ ...filterBy, type: filterByType }))
+    // }, [filterByType])
 
-    useEffect(() => {
-        dispatch(setFilter({ ...filterBy, label: filterByLabel}))
-        console.log('after filterByLabel ',filterBy)
-    }, [filterByLabel])
+    // useEffect(() => {
+    //     dispatch(setFilter({ ...filterBy, price: filterByPrice }))
+    //     console.log(filterBy)
+    // }, [filterByPrice])
+
+    // useEffect(() => {
+    //     dispatch(setFilter({ ...filterBy, amenities: filterByAmenities }))
+    // }, [filterByAmenities])
+
+    // useEffect(() => {
+    //     dispatch(setFilter({ ...filterBy, label: filterByLabel}))
+    //     console.log('after filterByLabel ',filterBy)
+    // }, [filterByLabel])
 
     const onHandleChange = ({ target }) => {
-        console.log({ target })
         const field = target.name
         let { value } = target
         console.log({ value })
         console.log({ field })
 
-        // if (field==='House'||field==='Apartment'||field==='Guesthouse'||field==='Hotel')
-        // {
         if (target.checked) {
             setFilterByType((prevState) => (
                 [...prevState, field]
@@ -65,7 +64,6 @@ export const StayApp = () => {
                 prevState.filter(type => type !== field)
             ))
         }
-        // }
     }
     const onAmenitiesChange = ({ target }) => {
         const field = target.name
@@ -82,14 +80,6 @@ export const StayApp = () => {
             ))
         }
     }
-
-    // const onLabelChange = ({ target }) => {
-    //     console.log({ target })
-    //     let { value } = target
-    //     console.log(value)
-    //     if (value==='All') setFilterByLabel('')
-    //     else setFilterByLabel(value)
-    // }
 
     const onLabelChange = (value) => {
         console.log(value)

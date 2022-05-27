@@ -14,7 +14,7 @@ export const StayPreview = ({ stay }) => {
                     <div className="bold">{stay.loc.city}<span>, {stay.loc.country}</span></div>
                     <div>
                         <span className="light">{stay.reviewScores.rating} </span>
-                        <img  className="icon" src={require('../assets/icons/star.svg')} alt="" />
+                        <img className="icon" src={require('../assets/icons/star.svg')} alt="" />
                     </div>
                 </div>
                 <div>{stay.name}</div>
