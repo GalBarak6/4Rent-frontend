@@ -5,6 +5,9 @@ import { utilService } from '../services/util.service'
 import * as React from 'react';
 import { GoogleMap } from '../cmps/google-map';
 import { useSelector } from 'react-redux'
+import { UserMsg } from '../cmps/user-msg'
+
+import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service'
 
 export const StayDetails = () => {
 
@@ -17,8 +20,8 @@ export const StayDetails = () => {
     const [stay, setStay] = useState(null)
     const [isGuestModal, setIsGuestModal] = useState(false)
     const [arrowIcon, setArrowIcon] = useState('down-arrow')
-    // const [totalCount, setTotalCount] = useState(1)
-    // const [guestCount, setGuestCount] = useState({ adult: 1, children: 1, infant: 1 })
+    const [totalCount, setTotalCount] = useState(1)
+    const [guestCount, setGuestCount] = useState({ adult: 1, children: 0, infant: 0 })
     const params = useParams()
     const location = useLocation()
 
@@ -52,12 +55,17 @@ export const StayDetails = () => {
         setIsGuestModal(!isGuestModal)
     }
 
-    // const onGuestCount = (indicator, type) => {
-    //     const field = type
-    //     setGuestCount(prevCount => ({...prevCount, [field] : prevCount.field + indicator}))
-    //     if ((guestCount + indicator) < 1 || (guestCount + indicator) > 15) return
-    //     setTotalCount(totalCount + indicator)
-    // }
+    const onGuestCount = (indicator, type) => {
+        const field = type
+        const limit = field === 'adult' ? 1 : 0
+        if (guestCount[field] + indicator < limit || guestCount[field] + indicator > 4) return
+        setGuestCount(prevCount => ({ ...prevCount, [field]: prevCount[field] + indicator }))
+        setTotalCount(totalCount + indicator)
+    }
+
+    const onReserve = () => {
+        showSuccessMsg('Reservation succeed!')
+    }
 
     // const handleMouseMouve = (e) => {
     //     console.log(e);
@@ -77,6 +85,7 @@ export const StayDetails = () => {
         <div className='stay-gallery'>
             {stay.imgUrls.map(img => <img src={require(`../assets/Images/${img}`)} alt="" key={img} className={stay.imgUrls[0] === img ? 'main-img' : ''} />)}
         </div>
+
         <div className='stay-info-container flex'>
             <div className='stay-info'>
                 <div className='host-info flex space-between'>
@@ -120,6 +129,7 @@ export const StayDetails = () => {
                     </ul>
                 </div>
             </div>
+
             <div className='order-display'>
                 <div className='order-container flex flex-column'>
                     <div className='order-header flex'>
@@ -131,23 +141,22 @@ export const StayDetails = () => {
                             {stay.reviewScores.rating} <span className='dot'></span> {stay.reviews.length} Reviews
                         </p>
                     </div>
+
                     <form onSubmit={onSubmit} className='order-form flex flex-column'>
                         <div className='order-inputs'>
                             <div className='flex'>
                                 <label htmlFor="startDate">
-                                    start-date<input type="date" name='startDate' onChange={onHandleChange} />
+                                    Check-in<input type="date" name='startDate' onChange={onHandleChange} />
                                 </label>
                                 <label htmlFor="endDate">
-                                    end-date<input type="date" name='endDate' onChange={onHandleChange} />
+                                    Check-out<input type="date" name='endDate' onChange={onHandleChange} />
                                 </label>
                             </div>
-                            {/* <label htmlFor="guests">
-                                Guests<input type="number" name='guests' onChange={onHandleChange} />
-                            </label> */}
+
                             <div className='guest-input flex flex-column'>
                                 <label htmlFor="guests" className='guests-label'>GUESTS</label>
                                 <div className='open-guests-btn flex space-between' onClick={onOpenGuestModal}>
-                                    <div>1 guest</div>
+                                    <div>{totalCount} guest</div>
                                     <img src={require(`../assets/icons/${arrowIcon}.png`)} alt="" className='order-icon' />
                                 </div>
 
@@ -159,9 +168,9 @@ export const StayDetails = () => {
                                                 <div className='type-exact'>Age 13+</div>
                                             </div>
                                             <div className='guest-count flex align-center'>
-                                                <button><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
-                                                <span>1</span>
-                                                <button><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <button onClick={() => onGuestCount(-1, 'adult')}><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <span>{guestCount.adult}</span>
+                                                <button onClick={() => onGuestCount(1, 'adult')}><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
                                             </div>
                                         </div>
 
@@ -171,9 +180,9 @@ export const StayDetails = () => {
                                                 <div className='type-exact'>Ages 2-12</div>
                                             </div>
                                             <div className='guest-count flex align-center'>
-                                                <button><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
-                                                <span>1</span>
-                                                <button><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <button onClick={() => onGuestCount(-1, 'children')}><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <span className='guest-amount'>{guestCount.children}</span>
+                                                <button onClick={() => onGuestCount(1, 'children')}><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
                                             </div>
                                         </div>
 
@@ -183,17 +192,15 @@ export const StayDetails = () => {
                                                 <div className='type-exact'>Under 2</div>
                                             </div>
                                             <div className='guest-count flex align-center'>
-                                                <button><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
-                                                <span>1</span>
-                                                <button><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <button onClick={() => onGuestCount(-1, 'infant')}><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <span>{guestCount.infant}</span>
+                                                <button onClick={() => onGuestCount(1, 'infant')}><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
                                             </div>
                                         </div>
                                     </div>}
-
                             </div>
                         </div>
-
-                        <button type='submit' className='reserve-btn'>Reserve</button>
+                        <button type='submit' className='reserve-btn' onClick={onReserve}>Reserve</button>
                     </form>
                     <p className='order-summary-header align-self-center'>You won't be charged yet</p>
                     <div className='order-summary flex flex-column'>
@@ -217,6 +224,7 @@ export const StayDetails = () => {
                 </div>
             </div>
         </div>
+
         <div className='reviews-container' id='reviews-container'>
             {stay.reviews.map(review => {
                 return <div className='review flex flex-column' key={review.id}>
@@ -231,8 +239,11 @@ export const StayDetails = () => {
                 </div>
             })}
         </div>
+
         <div>
             <GoogleMap lat={stay.loc.lat} lng={stay.loc.lan} />
         </div>
+
+        <UserMsg />
     </section>
 }

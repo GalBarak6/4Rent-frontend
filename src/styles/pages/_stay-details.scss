@@ -163,6 +163,10 @@
             gap: 20px;
             transition: 4s;
             cursor: default;
+
+            .guest-amount {
+                position: relative;
+            }
         }
 
         .open-guests-btn {
