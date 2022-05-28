@@ -229,68 +229,6 @@
 		]
 	},
 	{
-		"_id": "622f337d75c7d36e498aac5d",
-		"name": "Easy 1 Bedroom in Chelsea",
-		"type": "House",
-		"labels": [
-			"Beach",
-			"TV",
-			"Wifi",
-			"Kitchen"
-		],
-		"imgUrls": [
-			"066.jpeg",
-			"105.jpeg",
-			"108.jpeg",
-			"040.jpeg",
-			"138.jpeg"
-		],
-		"price": 1350,
-		"summary": "A comfortable one bedroom for responsible guests. Plenty of natural light. Walk up building. You'll feel like a local staying in this residential neighborhood, right next to great food, bars, subways, the High Line, Chelsea Piers, etc.",
-		"capacity": 2,
-		"bedrooms": 1,
-		"beds": 1,
-		"amenities": [
-			"TV",
-			"Kitchen"
-		],
-		"host": {
-			"_id": "622f3407e36c59e6164fbf46",
-			"fullname": "Scott",
-			"pictureUrl": "https://randomuser.me/portraits/men/75.jpg"
-		},
-		"loc": {
-			"country": "United States",
-			"countryCode": "US",
-			"city": "New York",
-			"address": "New York, NY, United States",
-			"lat": -74.00074,
-			"lan": 40.74577
-		},
-		"bathrooms": 1,
-		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
-			"rating": 3.88
-		},
-		"reviews": [
-			{
-				"id": "10711825",
-				"date": "May 2022",
-				"txt": "Scott place was great. It was clean and very spacious.  It was an easy check in and check out process.  I highly recommend it.  \r\n",
-				"by": {
-					"_id": "622f3405e36c59e6164fb6ac",
-					"fullname": "Fabian",
-					"imgUrl": "https://randomuser.me/api/portraits/men/76.jpg"
-				}
-			}
-		]
-	},
-	{
 		"_id": "622f337d75c7d36e498aac5c",
 		"name": "B & B  Room Yoga Garden's Place",
 		"type": "Guesthouse",

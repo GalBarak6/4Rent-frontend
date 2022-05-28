@@ -25,15 +25,15 @@ export const StayDetails = () => {
     const params = useParams()
     // const location = useLocation()
 
-    useEffect(()=>{
+    useEffect(() => {
         loadStay()
-        return ()=>{
+        return () => {
             document.documentElement.style.setProperty('--padding', '80px')
             document.documentElement.style.setProperty('--position', 'fixed')
         }
 
     }, [])
-   
+
     useEffect(() => {
         console.log('loading stay details')
         loadStay()
@@ -98,7 +98,7 @@ export const StayDetails = () => {
             {stay.imgUrls.map(img => <img src={require(`../assets/Images/${img}`)} alt="" key={img} className={stay.imgUrls[0] === img ? 'main-img' : ''} />)}
         </div>
 
-        <div className='stay-info-container flex'>
+        <div className='stay-info-container'>
             <div className='stay-info'>
                 <div className='host-info flex space-between'>
                     <div>
