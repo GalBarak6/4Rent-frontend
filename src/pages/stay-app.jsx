@@ -13,7 +13,6 @@ export const StayApp = () => {
     const [filterByPrice, setFilterPrice] = useState(100)
     const [filterByAmenities, setFilterByAmenities] = useState([])
     const [filterByLabel, setFilterByLabel] = useState('')
-    const [isOpenModal, setIsOpenModal] = useState(false)
 
     const dispatch = useDispatch()
 
@@ -24,28 +23,28 @@ export const StayApp = () => {
 
 
 
-    // useEffect(() => {
-    //     dispatch(loadStays())
-    //     console.log('from stay-app', filterBy)
-    // }, [filterBy])
+    useEffect(() => {
+        dispatch(loadStays())
+        console.log('from stay-app', filterBy)
+    }, [filterBy])
 
-    // useEffect(() => {
-    //     dispatch(setFilter({ ...filterBy, type: filterByType }))
-    // }, [filterByType])
+    useEffect(() => {
+        dispatch(setFilter({ ...filterBy, type: filterByType }))
+    }, [filterByType])
 
-    // useEffect(() => {
-    //     dispatch(setFilter({ ...filterBy, price: filterByPrice }))
-    //     console.log(filterBy)
-    // }, [filterByPrice])
+    useEffect(() => {
+        dispatch(setFilter({ ...filterBy, price: filterByPrice }))
+        console.log(filterBy)
+    }, [filterByPrice])
 
-    // useEffect(() => {
-    //     dispatch(setFilter({ ...filterBy, amenities: filterByAmenities }))
-    // }, [filterByAmenities])
+    useEffect(() => {
+        dispatch(setFilter({ ...filterBy, amenities: filterByAmenities }))
+    }, [filterByAmenities])
 
-    // useEffect(() => {
-    //     dispatch(setFilter({ ...filterBy, label: filterByLabel}))
-    //     console.log('after filterByLabel ',filterBy)
-    // }, [filterByLabel])
+    useEffect(() => {
+        dispatch(setFilter({ ...filterBy, label: filterByLabel}))
+        console.log('after filterByLabel ',filterBy)
+    }, [filterByLabel])
 
     const onHandleChange = ({ target }) => {
         const field = target.name
@@ -92,15 +91,9 @@ export const StayApp = () => {
         setFilterPrice(value)
     }
 
-    // const onClearFilter = () => {
-    //     const filterBy = {
-    //         type: []
-    //     }
-    //     dispatch(setFilter(filterBy))
-    // }
-
     return <section className="stay-app">
-        <StayFilter filterBy={filterBy} onHandleChange={onHandleChange}
+        <StayFilter filterBy={filterBy} 
+        onHandleChange={onHandleChange}
             onAmenitiesChange={onAmenitiesChange}
             onLabelChange={onLabelChange}
             onPriceChange={onPriceChange}

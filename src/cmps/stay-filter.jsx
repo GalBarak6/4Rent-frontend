@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { loadStays, setFilter } from '../store/actions/stay.actions'
 
-export const StayFilter = ({ onHandleChange, onAmenitiesChange, onLabelChange, onPriceChange }) => {
+export const StayFilter = ({ onHandleChange, onAmenitiesChange, onLabelChange, onPriceChange, onSetFilters }) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
+
 
     const onOpenModal = () => {
         setIsModalOpen(true)
@@ -9,6 +12,7 @@ export const StayFilter = ({ onHandleChange, onAmenitiesChange, onLabelChange, o
     const onCloseModal = () => {
         setIsModalOpen(false)
     }
+
 
     return <section className="stay-filter">
 
@@ -61,90 +65,90 @@ export const StayFilter = ({ onHandleChange, onAmenitiesChange, onLabelChange, o
         </div>
         {isModalOpen &&
             <div className="filters-modal">
-                <form >
+                {/* <form > */}
 
-                <div className="modal-title">
-                    <button className="close-btn" onClick={() => { onCloseModal() }}>X</button>
-                    <div>Filters</div>
-                </div>
-
-                <div className="modal-details">
-                    <div className="property-type">
-                        <div className="title">Property type</div>
-                        <input type="checkbox" id="House" name="House" value="House" onChange={onHandleChange} />
-                        <label htmlFor="House">House</label>
-
-                        <input type="checkbox" id="Apartment" name="Apartment" value="Apartment" onChange={onHandleChange} />
-                        <label htmlFor="Apartment">Apartment</label>
-
-                        <input type="checkbox" id="House" name="Guesthouse" value="Guesthouse" onChange={onHandleChange} />
-                        <label htmlFor="Guesthouse">Guesthouse</label>
-
-                        <input type="checkbox" id="Hotel" name="Hotel" value="Hotel" onChange={onHandleChange} />
-                        <label htmlFor="Hotel">Hotel</label>
-
+                    <div className="modal-title">
+                        <button className="close-btn" onClick={() => { onCloseModal() }}>X</button>
+                        <div>Filters</div>
                     </div>
 
-                    <div className="amenities">
-                        <div className="title">Amenities</div>
-                        <div className="amenities-content">
+                    <div className="modal-details">
+                        <div className="property-type">
+                            <div className="title">Property type</div>
+                            <input type="checkbox" id="House" name="House" value="House" onChange={onHandleChange} />
+                            <label htmlFor="House">House</label>
 
-                            <div>
-                                <div>
-                                    <input type="checkbox" id="TV" name="TV" value="TV" onChange={onAmenitiesChange} />
-                                    <label htmlFor="TV">TV</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="Wifi" name="Wifi" value="Wifi" onChange={onAmenitiesChange} />
-                                    <label htmlFor="Wifi">Wifi</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="Kitchen" name="Kitchen" value="Kitchen" onChange={onAmenitiesChange} />
-                                    <label htmlFor="Kitchen">Kitchen</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="Pool" name="Pool" value="Pool" onChange={onAmenitiesChange} />
-                                    <label htmlFor="Pool">Pool</label>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <input type="checkbox" id="Air conditioning" name="Air conditioning" value="Air conditioning" onChange={onAmenitiesChange} />
-                                    <label htmlFor="Air conditioning">Air conditioning</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="Hot tub" name="Hot tub" value="Hot tub" price />
-                                    <label htmlFor="Hot tub">Hot tub</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="Gym" name="Gym" value="Gym" onChange={onAmenitiesChange} />
-                                    <label htmlFor="Gym">Gym</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="Self check-in" name="Self check-in" value="Self check-in" onChange={onAmenitiesChange} />
-                                    <label htmlFor="Self check-in">Self check-in</label>
-                                </div>
+                            <input type="checkbox" id="Apartment" name="Apartment" value="Apartment" onChange={onHandleChange} />
+                            <label htmlFor="Apartment">Apartment</label>
 
-                            </div>
+                            <input type="checkbox" id="House" name="Guesthouse" value="Guesthouse" onChange={onHandleChange} />
+                            <label htmlFor="Guesthouse">Guesthouse</label>
+
+                            <input type="checkbox" id="Hotel" name="Hotel" value="Hotel" onChange={onHandleChange} />
+                            <label htmlFor="Hotel">Hotel</label>
 
                         </div>
 
+                        <div className="amenities">
+                            <div className="title">Amenities</div>
+                            <div className="amenities-content">
 
+                                <div>
+                                    <div>
+                                        <input type="checkbox" id="TV" name="TV" value="TV" onChange={onAmenitiesChange} />
+                                        <label htmlFor="TV">TV</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="Wifi" name="Wifi" value="Wifi" onChange={onAmenitiesChange} />
+                                        <label htmlFor="Wifi">Wifi</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="Kitchen" name="Kitchen" value="Kitchen" onChange={onAmenitiesChange} />
+                                        <label htmlFor="Kitchen">Kitchen</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="Pool" name="Pool" value="Pool" onChange={onAmenitiesChange} />
+                                        <label htmlFor="Pool">Pool</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <input type="checkbox" id="Air conditioning" name="Air conditioning" value="Air conditioning" onChange={onAmenitiesChange} />
+                                        <label htmlFor="Air conditioning">Air conditioning</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="Hot tub" name="Hot tub" value="Hot tub" price />
+                                        <label htmlFor="Hot tub">Hot tub</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="Gym" name="Gym" value="Gym" onChange={onAmenitiesChange} />
+                                        <label htmlFor="Gym">Gym</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="Self check-in" name="Self check-in" value="Self check-in" onChange={onAmenitiesChange} />
+                                        <label htmlFor="Self check-in">Self check-in</label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div className="price">
+                            <div className="title">Price range</div>
+                            <span>100</span>
+                            <input type="range" id="price" name="price" min="100" max="10000" onChange={onPriceChange} />
+                            <span>10,000</span>
+                        </div>
                     </div>
 
-                    <div className="price">
-                        <div className="title">Price range</div>
-                        <span>100</span>
-                        <input type="range" id="price" name="price" min="100" max="10000" onChange={onPriceChange} />
-                        <span>10,000</span>
+                    <div className="modal-footer">
+                        <button className="clear-btn">Clear all</button>
+                        <button className="show-btn" onClick={() => { onCloseModal() }}>Show 1,000+ stays</button>
                     </div>
-                </div>
-
-                <div className="modal-footer">
-                    <button className="clear-btn">Clear all</button>
-                    <button className="show-btn">Show 1,000+ stays</button>
-                </div>
-            </form>
+                {/* </form> */}
 
             </div>
 

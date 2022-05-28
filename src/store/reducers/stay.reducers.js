@@ -4,7 +4,7 @@ const initialState = {
         type: [],
         amenities: [],
         price: '',
-        label:''
+        label: ''
     }
 }
 export function stayReducer(state = initialState, action) {
@@ -28,6 +28,7 @@ export function stayReducer(state = initialState, action) {
             break
         case 'SET_STAYS_FILTER':
             return { ...state, filterBy: action.filterBy }
+
         default:
     }
     return newState

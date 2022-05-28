@@ -4,12 +4,15 @@ import { stayService } from '../services/stay.service'
 import { utilService } from '../services/util.service'
 import * as React from 'react';
 import { GoogleMap } from '../cmps/google-map';
+import { useSelector } from 'react-redux'
 
 export const StayDetails = () => {
 
     // const [x, setX] = useState(0)
     // const [y, setY] = useState(0)
     // const [bgc, setBgc] = useState('green') 
+
+    const { isDetailsPage } = useSelector((storeState) => storeState.stayModule)
     const [order, setOrder] = useState({ startDate: '', endDate: '', guests: 0 })
     const [stay, setStay] = useState(null)
     const [isGuestModal, setIsGuestModal] = useState(false)
@@ -19,6 +22,7 @@ export const StayDetails = () => {
     useEffect(() => {
         console.log('loading stay details')
         loadStay()
+
     }, [params.stayId])
 
     const loadStay = async () => {

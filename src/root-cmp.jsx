@@ -6,8 +6,9 @@ import { AppFooter } from './cmps/app-footer'
 import { StayDetails } from './pages/stay-details'
 
 function App() {
-  return <Router>
-    <div className='app main-layout'>
+
+ return <Router>
+    <div className="app main-layout">
       <AppHeader />
       <main>
         <Routes>
