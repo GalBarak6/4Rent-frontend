@@ -12,7 +12,7 @@ export const StayPreview = ({ stay }) => {
             <div className="txt-container">
                 <div className="flex space-between align-center">
                     <div className="bold">{stay.loc.city}<span>, {stay.loc.country}</span></div>
-                    <div className="flex align-center">
+                    <div className="flex align-center gap">
                         <span className="light">{stay.reviewScores.rating} </span>
                         <img className="icon" src={require('../assets/icons/star.svg').default} alt="" />
                     </div>

@@ -22,9 +22,9 @@ export const AppHeader = ({ onOpenModal }) => {
     // const headerClass = `app-header flex space-between align-center ${layout}`
 
     return <header className="app-header flex space-between align-center">
-        <div className="logo flex align-center" onClick={onGoBack}>
+        <div className="logo flex align-center gap" onClick={onGoBack}>
             {<Logo />}
-            <h1>4RENT</h1>
+            <div>4RENT</div>
         </div>
 
         <div className="flex align-center">
