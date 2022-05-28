@@ -46,6 +46,24 @@ export const StayFilter = ({ onHandleChange, onAmenitiesChange, onLabelChange, o
                 <img src={require(`../assets/icons/camping.jpg`)} alt="" />
                 <div>Camping</div>
             </button>
+
+
+            <button onClick={() => { onLabelChange("Islands") }} className="btn-label" >
+                <img src={require(`../assets/icons/Islands.jpg`)} alt="" />
+                <div>Islands</div>
+            </button>
+            <button onClick={() => { onLabelChange("Tiny homes") }} className="btn-label" >
+                <img src={require(`../assets/icons/Tiny homes.jpg`)} alt="" />
+                <div>Tiny homes</div>
+            </button>
+            <button onClick={() => { onLabelChange("Lakefront") }} className="btn-label" >
+                <img src={require(`../assets/icons/Lakefront.jpg`)} alt="" />
+                <div>Lakefront</div>
+            </button>
+            <button onClick={() => { onLabelChange("Arctic") }} className="btn-label" >
+                <img src={require(`../assets/icons/Arctic.jpg`)} alt="" />
+                <div>Arctic</div>
+            </button>
             {/* <input class="All" id="All" type="button" value="All" onClick={onLabelChange} /> */}
             {/* <input class="Design" id="Design" type="button" className="design" value="Design" onClick={onLabelChange} /> */}
             {/* <input class="Beach" id="Beach" type="button" value="Beach" onClick={onLabelChange} />

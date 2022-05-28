@@ -3,11 +3,16 @@
     // box-shadow: 0 1px 12px rgba(0, 0, 0, .08);
     // box-shadow: 0 2px 2px $clr6;
     border-bottom: solid 1px $clr9;
+    background-color: none;
 
     height: 80px;
 
-    // position: fixed;
+    // position: var(--position);
+    // position:absolute;
+
     // width: 100%;
+    // z-index: 10;
+
     .main-nav {
         // gap: 12px;
         margin-inline-end: 10px;
@@ -23,7 +28,7 @@
         }
 
         a:hover {
-            background-color: $clr6;
+            background-color:$clr6-opacity
         }
     }
 
