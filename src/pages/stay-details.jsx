@@ -4,7 +4,7 @@ import { stayService } from '../services/stay.service'
 import { utilService } from '../services/util.service'
 import * as React from 'react';
 import { GoogleMap } from '../cmps/google-map';
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
 import { UserMsg } from '../cmps/user-msg'
 
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service'
@@ -15,7 +15,7 @@ export const StayDetails = () => {
     // const [y, setY] = useState(0)
     // const [bgc, setBgc] = useState('green') 
 
-    const { isDetailsPage } = useSelector((storeState) => storeState.stayModule)
+    // const { isDetailsPage } = useSelector((storeState) => storeState.stayModule)
     const [order, setOrder] = useState({ startDate: '', endDate: '', guests: 0 })
     const [stay, setStay] = useState(null)
     const [isGuestModal, setIsGuestModal] = useState(false)
@@ -23,7 +23,7 @@ export const StayDetails = () => {
     const [totalCount, setTotalCount] = useState(1)
     const [guestCount, setGuestCount] = useState({ adult: 1, children: 0, infant: 0 })
     const params = useParams()
-    const location = useLocation()
+    // const location = useLocation()
 
     useEffect(() => {
         console.log('loading stay details')
@@ -49,7 +49,6 @@ export const StayDetails = () => {
     }
 
     const onOpenGuestModal = () => {
-        console.log('opening')
         const arrow = (arrowIcon === 'down-arrow') ? 'up-arrow' : 'down-arrow'
         setArrowIcon(arrow)
         setIsGuestModal(!isGuestModal)
@@ -144,12 +143,12 @@ export const StayDetails = () => {
 
                     <form onSubmit={onSubmit} className='order-form flex flex-column'>
                         <div className='order-inputs'>
-                            <div className='flex'>
-                                <label htmlFor="startDate">
-                                    Check-in<input type="date" name='startDate' onChange={onHandleChange} />
+                            <div className='dates-container flex space-between'>
+                                <label htmlFor="startDate" className='flex flex-column'>
+                                    Check-in<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin"/>
                                 </label>
-                                <label htmlFor="endDate">
-                                    Check-out<input type="date" name='endDate' onChange={onHandleChange} />
+                                <label htmlFor="endDate" className='flex flex-column'>
+                                    Check-out<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout"/>
                                 </label>
                             </div>
 

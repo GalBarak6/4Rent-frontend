@@ -125,7 +125,6 @@
         .order-header {
             align-items: center;
             justify-content: space-between;
-            // flex-grow: 1;
 
             :nth-child(2) {
                 font-size: rem(14px);
@@ -167,6 +166,11 @@
             .guest-amount {
                 position: relative;
             }
+
+            .guest-count {
+                width: 85px;
+                justify-content: space-between;
+            }
         }
 
         .open-guests-btn {
@@ -201,6 +205,18 @@
             .order-inputs {
                 border: 1px solid $clr11;
                 border-radius: 13px;
+
+                .dates-container {
+                    padding: 10px;
+
+                    .check-date {
+                        border: none;
+                    }
+
+                    label {
+                        font-size: rem(13px);
+                    }
+                }
             }
         }
 

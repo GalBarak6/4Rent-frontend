@@ -36,7 +36,6 @@ export class GoogleMap extends Component {
 
     render() {
         const {center} = this.state
-        console.log('render' , center)
 
         return (
             <div style={{ height: '50vh', width: '100%' }} className='map'>

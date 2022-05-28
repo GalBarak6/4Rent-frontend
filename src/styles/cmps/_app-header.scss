@@ -46,6 +46,10 @@
         border-radius: 25px;
         border: 1px solid $clr6;
 
+        &:hover {
+            box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+        }
+
         img:nth-child(1) {
             width: 20px;
             height: 15px;

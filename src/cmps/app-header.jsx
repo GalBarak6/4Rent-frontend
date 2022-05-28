@@ -6,14 +6,13 @@ import { useEffect, useState } from 'react'
 export const AppHeader = ({ onOpenModal }) => {
 
     const history = useNavigate()
-    const location = useLocation()
-    const [layout, setLayout] = useState('')
+    // const location = useLocation()
+    // const [layout, setLayout] = useState('')
 
-    useEffect(() => {
-        console.log(location);
-        if (location.pathname.includes('aaa')) setLayout('details-layout')
-        else setLayout('main-layout')
-    }, [location.pathname])
+    // useEffect(() => {
+    //     if (location.pathname.includes('aaa')) setLayout('details-layout')
+    //     else setLayout('main-layout')
+    // }, [location.pathname])
 
     function onGoBack() {
         history("/")
