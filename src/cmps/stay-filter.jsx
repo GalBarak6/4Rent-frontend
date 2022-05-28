@@ -18,7 +18,7 @@ export const StayFilter = ({ onHandleChange, onAmenitiesChange, onLabelChange, o
 
         <div className="labels-container">
 
-            <button onClick={() => { onLabelChange("All") }} className="btn-label">
+            <button onClick={() => { onLabelChange("All") }} className="btn-label selected">
                 <img src={require(`../assets/icons/allHomes.jpg`)} alt="" />
                 <div>All Homes</div>
             </button>
