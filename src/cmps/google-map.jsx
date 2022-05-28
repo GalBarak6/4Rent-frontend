@@ -39,7 +39,7 @@ export class GoogleMap extends Component {
         console.log('render' , center)
 
         return (
-            <div style={{ height: '50vh', width: '100%' }}>
+            <div style={{ height: '50vh', width: '100%' }} className='map'>
                 <GoogleMapReact
                     bootstrapURLKeys={{ key: "AIzaSyAcisAmdvztZYz3ZptoZE1zwPpbSndD_Zs" }}
                     // defaultCenter={this.state.center}

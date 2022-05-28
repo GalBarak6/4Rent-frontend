@@ -9,8 +9,10 @@ export const Home = () => {
     }
     return <section className="home">
         <div className="hero flex flex-column">
-            <h1>Looking for a place to stay? Let us help you!</h1>
-            <button onClick={onExplore}>Explore</button>
+            <h1 className="hero-title">Looking for a place to stay? Let us help you!</h1>
+            <button onClick={onExplore} className="hero-button">
+                <span>Explore</span>
+            </button>
         </div>
     </section>
 }
