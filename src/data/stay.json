@@ -1,21 +1,28 @@
 [
 	{
 		"_id": "622f337a75c7d36e498aaaf1551",
-		"name": "All",
+		"name": "New 1BD Condo in Napili Ridge, Walk to Beach",
 		"type": "Hotel",
-		"labels":["Design","Beach", "Amazing pools", "Cabins", "OMG!", "Camping"],
-		"imgUrls": [
-			"093.jpeg",
-			"090.jpeg",
-			"010.jpeg",
-			"153.jpeg",
-			"094.jpeg"
+		"labels": [
+			"Design",
+			"Beach",
+			"Amazing pools",
+			"Cabins",
+			"OMG!",
+			"Camping"
 		],
-		"price": 10000,
-		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 10,
-		"bedrooms": 5,
-		"beds": 10,
+		"imgUrls": [
+			"045.jpeg",
+			"022.jpeg",
+			"028.jpeg",
+			"088.jpeg",
+			"140.jpeg"
+		],
+		"price": 12550,
+		"summary": "Newly Renovated 1 BD, 1 BTH Condo With A Brand New Queen Size Bed And New Pull Out Sofa. The complex has Pool, Laundry and Bbq area.  5 minutes walk to the crystal clear waters of Napili Bay. Perfect for snorkeling paddle boarding or just relax on the beach. Sea House Restaurant for Best Happy Hour Pupus on the Island. Restaurants, golf and tennis courts are also in walking distance. Short drive to World Class Kapalua Golf , 15 min to famouse Kaanapali Beach and 25 min to Lahaina. TAX INCLUDED!",
+		"capacity": 3,
+		"bedrooms": 1,
+		"beds": 2,
 		"amenities": [
 			"TV",
 			"Wifi",
@@ -24,20 +31,19 @@
 			"Kitchen"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf98",
-			"fullname": "Patrick Star",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3407e36c59e6164fbd37",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
-			"country": "Mexico",
-			"countryCode": "MX",
-			"city": "New Mexico",
-			"address": "New mexico, United States",
+			"country": "United States",
+			"countryCode": "US",
+			"city": "Maui",
+			"address": "Lahaina, HI, United States",
 			"lat": -156.6917,
 			"lan": 20.93792
 		},
-		"bathrooms": 4,
+		"bathrooms": 1,
 		"reviewScores": {
 			"accuracy": 10,
 			"cleanliness": 10,
@@ -51,50 +57,145 @@
 			{
 				"id": "10711825",
 				"date": "May 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "Our stay at the condo was great.  The host was very easy to work with as far as being able to check in early and check out late, which was very appreciated considering we had two babies with us.  The only downside was that there was no AC. Given, it was my fault for not checking the listing, and although I thought we wouldn't survive a night there, you felt a nice cool breeze when you opened both front and back doors so the AC wasn't needed after all.  (One of the neighbors came to yell at me because one of the babies was crying so I had to keep the door shut) The location was perfect! It was walking distance to the very popular breakfast spot \"The Gazebo\" and to the Napili Bay that is very beautiful and you can see turtles.  There were a couple of issues with roaches, but it's inevitable considering they are condos and not everyone that lives in a complex is clean, although the condo was.  We would stay there again ",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
+					"_id": "622f3402e36c59e6164fadab",
+					"fullname": "Melody",
+					"imgUrl": "https://randomuser.me/api/portraits/women/20.jpg"
+				}
+			},
+			{
+				"id": "10711826",
+				"date": "May 2022",
+				"txt": "Lovely little place for one or two to stay. Car park available at no extra cost, good kitchen which is well furnished, and a quiet place. Good access to the freeway. The beach was walking distance and the area was something from a dream. Would stay here again. ",
+				"by": {
+					"_id": "622f3405e36c59e6164fb848",
+					"fullname": "Abigail",
+					"imgUrl": "https://randomuser.me/api/portraits/women/18.jpg"
+				}
+			},
+			{
+				"id": "10711827",
+				"date": "May 2022",
+				"txt": "\nLocation:\nA place looks as expected, 5 min from Kapalua Beach.  We didn't have any issues with neighborhood  condos. Despite there are a lot of people in this Condo Complex (Napili Ridge), we didn't feel the place to be crowdy (as well as elsewhere in Hawaii). While the most interesting activities (IMHO) are in Lahaina, there is just 12-15 min drive. You can drive elsewhere on Maui within 3.5-4 hours (one way).\n____________________________________________________________________\nFacilities/Equipment:\nIt really looks recently renovated, all facilities and equipment are good. There is a fridge, microwave and regular oven, plates and silverware. We enjoyed having breakfast on Patio with a nice garden view. Parking lots are not the issue - you just need to fill the form and submit it to management office.\n____________________________________________________________________\nCleanliness:\nThe place was clean as expected. Host provided to us beach and bathroom towels which was greatly appreciated\n____________________________________________________________________\nOverall\nGreat value-for-money deal for Hawaii travelers who don't want to spend tons of money for vacation. Note that rental car is required in most cases when travelling to Maui.",
+				"by": {
+					"_id": "622f3406e36c59e6164fbafa",
+					"fullname": "Dmitry",
+					"imgUrl": "https://randomuser.me/api/portraits/men/10.jpg"
+				}
+			},
+			{
+				"id": "10711828",
+				"date": "May 2022",
+				"txt": "Our stay at the condo was great.  The host was very easy to work with as far as being able to check in early and check out late, which was very appreciated considering we had two babies with us.  The only downside was that there was no AC. Given, it was my fault for not checking the listing, and although I thought we wouldn't survive a night there, you felt a nice cool breeze when you opened both front and back doors so the AC wasn't needed after all.  (One of the neighbors came to yell at me because one of the babies was crying so I had to keep the door shut) The location was perfect! It was walking distance to the very popular breakfast spot \"The Gazebo\" and to the Napili Bay that is very beautiful and you can see turtles.  There were a couple of issues with roaches, but it's inevitable considering they are condos and not everyone that lives in a complex is clean, although the condo was.  We would stay there again ",
+				"by": {
+					"_id": "622f3402e36c59e6164fadab",
+					"fullname": "Melody",
+					"imgUrl": "https://randomuser.me/api/portraits/women/20.jpg"
+				}
+			},
+			{
+				"id": "10711829",
+				"date": "May 2022",
+				"txt": "The place was very cute. Perfect size and a 5-10 min walk to the beach. We came when I was pretty high temps and it did get hot at night due to no AC. We made due and enjoyed our stay very much. Would definitely rebook. Thanks!",
+				"by": {
+					"_id": "622f3406e36c59e6164fbbbc",
+					"fullname": "Kristina",
+					"imgUrl": "https://randomuser.me/api/portraits/women/30.jpg"
+				}
+			},
+			{
+				"id": "107118251",
+				"date": "May 2022",
+				"txt": "Linda-Lee's place was in a great location (walkable to the beach and a few restaurants). The remodel is truly done well. The only negative we really had was regarding no AC. When we reserved this Airbnb we didn't see it mentioned in her comments, but it's clearly stated in them now. She was super easy to communicate with and ensured we got settled in okay. Perfect getaway for a couple or small family.",
+				"by": {
+					"_id": "622f3403e36c59e6164fb080",
+					"fullname": "Bradford",
+					"imgUrl": "https://randomuser.me/api/portraits/men/14.jpg"
+				}
+			},
+			{
+				"id": "107118252",
+				"date": "May 2022",
+				"txt": "Everything was simply great. Enjoyed the place. Mostly the opportunity to cook your own meals which is quite important for me. Thank you!",
+				"by": {
+					"_id": "622f3402e36c59e6164fae8f",
+					"fullname": "Anton",
+					"imgUrl": "https://randomuser.me/api/portraits/men/5.jpg"
+				}
+			},
+			{
+				"id": "107118253",
+				"date": "May 2022",
+				"txt": "The flat is really pretty and bigger than I expected. I had a wonderful stay there!",
+				"by": {
+					"_id": "622f3403e36c59e6164fb133",
+					"fullname": "Vivian",
+					"imgUrl": "https://randomuser.me/api/portraits/women/40.jpg"
+				}
+			},
+			{
+				"id": "107118254",
+				"date": "May 2022",
+				"txt": "Our stay at Linda’s was great. We had quick responses to our questions. The place was very clean. Quick walk to Napili beach. Kapalua trail is nearby which is an easy and scenic hike. Overall our stay was great!",
+				"by": {
+					"_id": "622f3402e36c59e6164facf0",
+					"fullname": "Ashlee",
+					"imgUrl": "https://randomuser.me/api/portraits/women/23.jpg"
+				}
+			},
+			{
+				"id": "1071182575",
+				"date": "May 2022",
+				"txt": "We had a great time at this place !! Excellent location.  Close to the beaches (walking distance). Close to Lahaina (15 minutes drive). The condo had everything we needed and even more (we really enjoyed the beach stuff provided - chairs/boogie board and we liked the big fridge with freezer). We also used the BBQ every night and the pool. And the king size bed was a great bonus. We recommend this place !",
+				"by": {
+					"_id": "622f3404e36c59e6164fb469",
+					"fullname": "Genevieve",
+					"imgUrl": "https://randomuser.me/api/portraits/women/27.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf1552",
-		"name": "TV Label-Design",
-		"type": "Hotel",
-		"labels":["Design"],
-		"imgUrls": [
-			"093.jpeg",
-			"090.jpeg",
-			"010.jpeg",
-			"153.jpeg",
-			"094.jpeg"
+		"_id": "622f337d75c7d36e498aac5e",
+		"name": "Artsy Downtown Studio!",
+		"type": "Apartment",
+		"labels": [
+			"Design",
+			"Beach"
 		],
-		"price": 5000,
-		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 10,
-		"bedrooms": 5,
-		"beds": 10,
+		"imgUrls": [
+			"075.jpeg",
+			"062.jpeg",
+			"067.jpeg",
+			"113.jpeg",
+			"106.jpeg"
+		],
+		"price": 5635,
+		"summary": "Downtown, convenient, cosy and bright semi basement. It is both my home and art studio. Perfect for one but could fit 2 people. Near museums, bars, atwater metro and guy-concordia station. One street away from St-Catherine but surprisingly calm! Also; an equipped, separate kitchen + wifi is included.",
+		"capacity": 2,
+		"bedrooms": 0,
+		"beds": 2,
 		"amenities": [
-			"TV"
+			"TV",
+			"Kitchen",
+			"Hot tub",
+			"Wifi"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf98",
-			"fullname": "Patrick Star",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3404e36c59e6164fb3d3",
+			"fullname": "Marie-Amelie",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/44.jpg"
 		},
 		"loc": {
-			"country": "Mexico",
-			"countryCode": "MX",
-			"city": "New Mexico",
-			"address": "New mexico, United States",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "Canada",
+			"countryCode": "CA",
+			"city": "Montreal",
+			"address": "Montréal, Québec, Canada",
+			"lat": 45.508888,
+			"lan": -73.561668
 		},
-		"bathrooms": 4,
+		"bathrooms": 1,
 		"reviewScores": {
 			"accuracy": 10,
 			"cleanliness": 10,
@@ -108,51 +209,65 @@
 			{
 				"id": "10711825",
 				"date": "April 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "Great spot. Small and cozy- perfect for one person. The hostess is friendly and welcoming. I had to leave early and she was very accomodating despite having arranged to only come back to the city after I had left.",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
+					"_id": "622f3402e36c59e6164fae2c",
+					"fullname": "Blake",
+					"imgUrl": "https://randomuser.me/api/portraits/men/42.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "April 2022",
+				"txt": "Nous nous sommes sentis les bienvenus et Marie-Amelie était très disponible en cas de besoin. L'appartement correspond tout à fait à la description et la localisation est parfaite (rue résidentielle très calme à seulement quelques pas de Ste-Catherine). Nous y retournerions sans hésiter !",
+				"by": {
+					"_id": "622f3407e36c59e6164fbeef",
+					"fullname": "Catherine",
+					"imgUrl": "https://randomuser.me/api/portraits/women/41.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf1553",
-		"name": "TV Kitchen label-Beach",
-		"type": "Hotel",
-		"labels":["Beach"],
-		"imgUrls": [
-			"093.jpeg",
-			"090.jpeg",
-			"010.jpeg",
-			"153.jpeg",
-			"094.jpeg"
+		"_id": "622f337d75c7d36e498aac5d",
+		"name": "Easy 1 Bedroom in Chelsea",
+		"type": "House",
+		"labels": [
+			"Beach",
+			"TV",
+			"Wifi",
+			"Kitchen"
 		],
-		"price": 1000,
-		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 10,
-		"bedrooms": 5,
-		"beds": 10,
+		"imgUrls": [
+			"066.jpeg",
+			"105.jpeg",
+			"108.jpeg",
+			"040.jpeg",
+			"138.jpeg"
+		],
+		"price": 1350,
+		"summary": "A comfortable one bedroom for responsible guests. Plenty of natural light. Walk up building. You'll feel like a local staying in this residential neighborhood, right next to great food, bars, subways, the High Line, Chelsea Piers, etc.",
+		"capacity": 2,
+		"bedrooms": 1,
+		"beds": 1,
 		"amenities": [
 			"TV",
 			"Kitchen"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf98",
-			"fullname": "Patrick Star",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3407e36c59e6164fbf46",
+			"fullname": "Scott",
+			"pictureUrl": "https://randomuser.me/portraits/men/75.jpg"
 		},
 		"loc": {
-			"country": "Mexico",
-			"countryCode": "MX",
-			"city": "New Mexico",
-			"address": "New mexico, United States",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "United States",
+			"countryCode": "US",
+			"city": "New York",
+			"address": "New York, NY, United States",
+			"lat": -74.00074,
+			"lan": 40.74577
 		},
-		"bathrooms": 4,
+		"bathrooms": 1,
 		"reviewScores": {
 			"accuracy": 10,
 			"cleanliness": 10,
@@ -166,52 +281,55 @@
 			{
 				"id": "10711825",
 				"date": "May 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "Scott place was great. It was clean and very spacious.  It was an easy check in and check out process.  I highly recommend it.  \r\n",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
+					"_id": "622f3405e36c59e6164fb6ac",
+					"fullname": "Fabian",
+					"imgUrl": "https://randomuser.me/api/portraits/men/76.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf1554",
-		"name": "Wifi Pool Kitchen OMG!",
-		"type": "Hotel",
-		"labels":["OMG!"],
-		"imgUrls": [
-			"093.jpeg",
-			"090.jpeg",
-			"010.jpeg",
-			"153.jpeg",
-			"094.jpeg"
+		"_id": "622f337d75c7d36e498aac5c",
+		"name": "B & B  Room Yoga Garden's Place",
+		"type": "Guesthouse",
+		"labels": [
+			"OMG!",
+			"Amazing pools"
 		],
-		"price": 1530,
-		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 10,
-		"bedrooms": 5,
-		"beds": 10,
+		"imgUrls": [
+			"055.jpeg",
+			"086.jpeg",
+			"117.jpeg",
+			"030.jpeg",
+			"037.jpeg"
+		],
+		"price": 2270,
+		"summary": "We have one  room to rent or with a  big bed or  with double bed  and one extra  bed  or a baby bed if necessary and a yoga room/space.",
+		"capacity": 4,
+		"bedrooms": 1,
+		"beds": 3,
 		"amenities": [
 			"Wifi",
-			"Pool",
-			"Kitchen"
+			"TV",
+			"Kitchen",
+			"Gym"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf98",
-			"fullname": "Patrick Star",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3407e36c59e6164fbd56",
+			"fullname": "Aurora",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/70.jpg"
 		},
 		"loc": {
-			"country": "Mexico",
-			"countryCode": "MX",
-			"city": "New Mexico",
-			"address": "New mexico, United States",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "Portugal",
+			"countryCode": "PT",
+			"city": "Porto",
+			"address": "Porto, Porto, Portugal",
+			"lat": -8.59097,
+			"lan": 41.1541
 		},
-		"bathrooms": 4,
+		"bathrooms": 2,
 		"reviewScores": {
 			"accuracy": 10,
 			"cleanliness": 10,
@@ -225,50 +343,146 @@
 			{
 				"id": "10711825",
 				"date": "March 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "We had a very lovely time with Aurora and Alberto in their beautifull home in the Bom Fin area. We felt very welcome and A & A gave us a lot of usefu tips on what to do and see in Porto. They surprised us with a nice breakfast, the second day even in the garden.\r\nVery fine, trustworthy and fun to talk with people!\r\nNext time we will stay longer to also enjoy the yoga classes :)\r\nMuito obrigado cariñosos Aurora y Alberto!! Hasta la proxima!\r\nMiko & Swaze",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
+					"_id": "622f3407e36c59e6164fbe6a",
+					"fullname": "Mike",
+					"imgUrl": "https://randomuser.me/portraits/men/69.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "March 2022",
+				"txt": "Aurora and Alberto were very welcoming hosts and we really enjoyed our time at their beautiful place in Porto. They are helpful and kind and also prepared breakfast for us with fresh fruits from their wonderful garden.",
+				"by": {
+					"_id": "622f3406e36c59e6164fbcad",
+					"fullname": "Michael",
+					"imgUrl": "https://randomuser.me/portraits/men/32.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "March 2022",
+				"txt": "We really would like to put 6/5. We felt very very well welcomed by Aurora and Alberto, who receive you in a charming house with caractere, originality and calm. \r\nTraveling with our little daughter (2 months) could have raised some issues, being hosted but I didn't at all.\r\nOn the contrary, Aurora & Alberto were careful and we appreciated sharing breakfast, conversations and their knowledge of Porto.\r\nLittle by little we build experience on Airbnb as host and as guest, and Jardim Yoga will ever stay an inspiring reference.",
+				"by": {
+					"_id": "622f3405e36c59e6164fb93f",
+					"fullname": "David",
+					"imgUrl": "https://randomuser.me/portraits/men/42.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "March 2022",
+				"txt": "I had a great experience at Aurora's home. Aurora and Alberto are extremely nice people who will make you feel at home, are very helpful, considerate and are fun to be around. They offered that I join them and their friend to join them on a walk around the city which was very helpful. Also the chance to meet so locals and learn more about their culture and food was very unique. The home is very spacious with a lovely garden, the room is nice, clean and the bathroom is just fantastic. They prepared a healthy breakfast to start my day off and I already miss Alberto's unique and fresh morning juice. Overall I would highly recommend staying at Aurora's home.",
+				"by": {
+					"_id": "622f3402e36c59e6164fae4c",
+					"fullname": "Walid",
+					"imgUrl": "https://randomuser.me/portraits/men/19.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "March 2022",
+				"txt": "Beautiful cosy house! Full of armony and with an outstanding decoration.  Aurora and her Husband were extremly kind. They even took us to a restaurant and explained all the activities in oporto. 100% recommended, and is a great value for money opportunity  :)",
+				"by": {
+					"_id": "622f3405e36c59e6164fb65d",
+					"fullname": "Valeria",
+					"imgUrl": "https://randomuser.me/portraits/women/85.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "March 2022",
+				"txt": "We had a great time at Aurora's, both her and her husband were really nice and made us feel just like at home. They gave us useful tips on what to see in Porto and how to get around which was very much appreciated. The room was very comfortable and the house was especially cozy and well located close to the metro and train station. My first airbnb experience was an amazing short stay thanks to both of them, definitely recommended!",
+				"by": {
+					"_id": "622f3402e36c59e6164fad19",
+					"fullname": "Aminata",
+					"imgUrl": "https://randomuser.me/portraits/women/45.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "March 2022",
+				"txt": "Aurora and Alberto were the nicest and sweetest hosts ever. They invited us to an inspiring yoga class, were dedicated to help us discovering Porto and Alberto even took us to a great local restaurant.\r\nThe room (and the house and the garden) is beautiful, cozy, clean and silent.\r\nThis is the best place you can stay in Porto. We will definitely come back!\r\n\r\n",
+				"by": {
+					"_id": "622f3403e36c59e6164fb17b",
+					"fullname": "Matthias",
+					"imgUrl": "https://randomuser.me/portraits/men/36.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "March 2022",
+				"txt": "Oh my gods (we have 8 million gods who cover everything and all aspects in Japan)! It was the first time for me to stay in an air bnb. Although I was quite confident from their profile before my arrival, the quality of my stay was even beyond my high expectations. Aurora and Alberto confirmed they are the ideal hosts, and their house and garden were the ideal place to stay. I arrived with an empty stomach, and Aurora took me to one of the neighborhood restaurants and explained the menu in English (6 Euros for everything). After lunch, Alberto showed me all flowers and trees in the garden and later he had set up the hammock between the trees. I relaxed myself in the peaceful atmosphere with birds chirping among the fragrant orange and jasmine blossoms. During the stay, my friend, Emma and I received more than what we needed: beautifully decorated room and bathroom, delicious daily breakfast (sometimes in their lovely garden), good recommendations for restaurants and 1 day trips to nearby towns (they had prepared to give us all the information we need before we arrived). They learned my precise breakfast request in one day and prepared perfectly for the rest of my 11 day-stay. Also we enjoyed their yoga classes in the studio which is located in the basement with the window opening out to the garden. They sometimes offered me the fresh vegetable-and-fruit juice and yummy soup (They are vegetarians). On Sunday, when they have no classes, they offered us to drive around town. The highlight of the tour was the museum which also has a huge garden. Alberto knows all the flowers and plants, and has a lot of stories about almost everything. I shared their tastes and felt they were my friends for years. I totally recommend this place and will come back in the near future for a longer stay. Machiko",
+				"by": {
+					"_id": "622f3403e36c59e6164fb2a3",
+					"fullname": "Machiko",
+					"imgUrl": "https://randomuser.me/portraits/men/22.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "March 2022",
+				"txt": "If you are searching for a place tot stay near centre of Porto, I can recommend the place of Aurora and Alberto.\r\n\r\nThe place is calm and lovely, has a very nice garden with you can use, a served breakfast every day, lovely, nice decorated room and even more lovely bathroom of your own. They have lots of tips what to visit in Porto and are alway wiling to help.\r\n\r\nPorto centre is at walking distance, supermarket and postoffice too.\r\nNear a metro/train station and bus to centre. \r\n\r\nIf you stay buy a massage for an even more relaxed holiday feeling after a day of exploring Porto......",
+				"by": {
+					"_id": "622f3402e36c59e6164faca9",
+					"fullname": "Karin",
+					"imgUrl": "https://randomuser.me/portraits/women/65.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "March 2022",
+				"txt": "AMAZING room in an AMAZING house with AMAZING hosts. I had a great time at Aurora's house. She offered me breakfast and her husband helped me during 45 minutes to circle the best locations in Porto on a map. I strongly recommand this place and the center of Porto is a 20 minute walk away. Very confortable and truly memorable. Thanks for everything :)",
+				"by": {
+					"_id": "622f3406e36c59e6164fbb94",
+					"fullname": "David",
+					"imgUrl": "https://randomuser.me/portraits/men/33.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf1555",
-		"name": "Air conditioning labels-Amazing pool, Cabins, OMG!, Camping",
+		"_id": "622f337d75c7d36e498aac5b",
+		"name": "Luxury Apartment Diagonal (very sunny)",
 		"type": "Hotel",
-		"labels":["Amazing pools", "Cabins", "OMG!", "Camping"],
-		"imgUrls": [
-			"093.jpeg",
-			"090.jpeg",
-			"010.jpeg",
-			"153.jpeg",
-			"094.jpeg"
+		"labels": [
+			"Amazing pools",
+			"Cabins",
+			"OMG!",
+			"Camping"
 		],
-		"price": 1000,
-		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 10,
-		"bedrooms": 5,
-		"beds": 10,
+		"imgUrls": [
+			"069.jpeg",
+			"046.jpeg",
+			"117.jpeg",
+			"028.jpeg",
+			"008.jpeg"
+		],
+		"price": 539,
+		"summary": "Places of interest: Rambla de Cataluña, Avenida Diagonal, Turo Park, Casa Pedrera. The area is unbeatable, You will love my apartment because it is very bright, and cozy. The double thermal crystals protect from outside noise-it has 4 balconies facing the Plaza Francesc Macia. The living room is very spacious and comfortable, the kitchen is fully equipped, the room is very nice with its private balcony and television - it has a bathroom with bath and another with shower + dressing room",
+		"capacity": 2,
+		"bedrooms": 1,
+		"beds": 1,
 		"amenities": [
-			"Air conditioning"
+			"Air conditioning",
+			"Wheelchair accessible",
+			"Gym"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf98",
-			"fullname": "Patrick Star",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3407e36c59e6164fbd36",
+			"fullname": "Sabrina",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/55.jpg"
 		},
 		"loc": {
-			"country": "Mexico",
-			"countryCode": "MX",
-			"city": "New Mexico",
-			"address": "New mexico, United States",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "Spain",
+			"countryCode": "ES",
+			"city": "Barcelona",
+			"address": "Barcelona, Catalunya, Spain",
+			"lat": 2.14449,
+			"lan": 41.39264
 		},
-		"bathrooms": 4,
+		"bathrooms": 2,
 		"reviewScores": {
 			"accuracy": 10,
 			"cleanliness": 10,
@@ -282,33 +496,76 @@
 			{
 				"id": "10711825",
 				"date": "May 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "Thanks for being a great host",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
+					"_id": "622f3404e36c59e6164fb5e1",
+					"fullname": "Marizen",
+					"imgUrl": "https://randomuser.me/api/portraits/women/27.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "May 2022",
+				"txt": "Great apartment",
+				"by": {
+					"_id": "622f3403e36c59e6164fb235",
+					"fullname": "Alexey",
+					"imgUrl": "https://randomuser.me/api/portraits/women/95.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "May 2022",
+				"txt": "Alquilamos el piso por un mes, fue una experiencia fabulosa. El Piso es una belleza, elegante, cómodo, tenía todo lo que se necesita y está ubicado en una de las mejores zonas de Barcelona. Sabrina siempre estuvo atenta con nosotros. Quedamos encantados con la decisión que tomamos y nos sentimos privilegiados y agradecidos. Altamente recomendado, con los ojos cerrados!\nGracias miles Sabrina!",
+				"by": {
+					"_id": "622f3402e36c59e6164fad60",
+					"fullname": "Annabell",
+					"imgUrl": "https://randomuser.me/api/portraits/women/20.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "May 2022",
+				"txt": "Estuvimos un poco mas de un mes en el apartamento de Sabrina. La verdad. Ls encantó. Es super bien ubicado, muy cómodo y agradable. Sin duda repetiremos!!",
+				"by": {
+					"_id": "622f3404e36c59e6164fb626",
+					"fullname": "Margarita",
+					"imgUrl": "https://randomuser.me/api/portraits/women/3.jpg"
+				}
+			},
+			{
+				"id": "10711825",
+				"date": "May 2022",
+				"txt": "Es un apartamento muy comodo y está muy bien situado , me gusto mucho estar allí , y todo está cerca comercios Restaurates , más bien todo lo que uno espera para sentirse como en casa!!!!!",
+				"by": {
+					"_id": "622f3406e36c59e6164fbb18",
+					"fullname": "Angelina",
+					"imgUrl": "https://randomuser.me/api/portraits/women/41.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf9",
-		"name": "Eastin Kaanapali KORVN 2BR",
+		"_id": "622f337d75c7d36e498aac5a",
+		"name": "Cozy&clean room in Sisli next to subway",
 		"type": "Apartment",
-		"labels":["Amazing pools", "Cabins", "OMG!"],
-		
-		"imgUrls": [
-			"090.jpeg",
-			"010.jpeg",
-			"153.jpeg",
-			"093.jpeg",
-			"094.jpeg"
+		"labels": [
+			"Amazing pools",
+			"Cabins",
+			"OMG!"
 		],
-		"price": 750,
-		"summary": "Eastin Kaanapali Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 6,
-		"bedrooms": 3,
-		"beds": 6,
+		"imgUrls": [
+			"074.jpeg",
+			"150.jpeg",
+			"050.jpeg",
+			"134.jpeg",
+			"035.jpeg"
+		],
+		"price": 450,
+		"summary": "Sisli, Bomonti. Walking distance to subway, metrobus and bus station. Also it’s very close to Nisantasi, Macka, Mecidiyekoy, shopping malls (City’s, Trump, Cevahir), hospitals and Bomontiada pubs-restaurants) by walking. I can host 4 guests in my house,1private room for couples and1living room will be dedicated for u.kitchen and bathroom will be common use. If you’re friendly people and looking for a cozy clean and peacefull place in the heart of İstanbul, you’re always welcome to my cozy flat!.",
+		"capacity": 2,
+		"bedrooms": 1,
+		"beds": 1,
 		"amenities": [
 			"TV",
 			"Wifi",
@@ -320,20 +577,19 @@
 			"Wheelchair accessible"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf94",
-			"fullname": "Lukas Parker",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3403e36c59e6164fb1fa",
+			"fullname": "Nur",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/34.jpg"
 		},
 		"loc": {
-			"country": "France",
-			"countryCode": "FR",
-			"city": "Paris",
-			"address": "Lahaina, HI, France",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "Turkey",
+			"countryCode": "TR",
+			"city": "Istanbul",
+			"address": "Istanbul, İstanbul, Turkey",
+			"lat": 28.98327,
+			"lan": 41.05766
 		},
-		"bathrooms": 3,
+		"bathrooms": 1,
 		"reviewScores": {
 			"accuracy": 10,
 			"cleanliness": 10,
@@ -347,112 +603,35 @@
 			{
 				"id": "10711825",
 				"date": "May 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "Güler yüzlü hoşsohbet bir ev sahibi",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
-				}
-			},
-			{
-				"id": "70072865",
-				"date": "May 2022",
-				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
-				"by": {
-					"_id": "622f3403e36c59e6164fb204",
-					"fullname": "Chris",
-					"imgUrl": "https://robohash.org/70072865?set=set1"
-				}
-			},
-			{
-				"id": "71179725",
-				"date": "May 2022",
-				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
-				"by": {
-					"_id": "622f3405e36c59e6164fb703",
-					"fullname": "Kim",
-					"imgUrl": "https://robohash.org/71179725?set=set1"
-				}
-			},
-			{
-				"id": "65593239",
-				"date": "May 2022",
-				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
-				"by": {
-					"_id": "622f3404e36c59e6164fb37f",
-					"fullname": "Tracy",
-					"imgUrl": "https://robohash.org/65593239?set=set1"
-				}
-			},
-			{
-				"id": "26215688",
-				"date": "May 2022",
-				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
-				"by": {
-					"_id": "622f3403e36c59e6164fb105",
-					"fullname": "Duyen",
-					"imgUrl": "https://robohash.org/26215688?set=set1"
-				}
-			},
-			{
-				"id": "117390236",
-				"date": "May 2022",
-				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
-				"by": {
-					"_id": "622f3402e36c59e6164fabbe",
-					"fullname": "Binh",
-					"imgUrl": "https://robohash.org/117390236?set=set1"
-				}
-			},
-			{
-				"id": "15143517",
-				"date": "May 2022",
-				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
-				"by": {
-					"_id": "622f3404e36c59e6164fb4af",
-					"fullname": "Samy",
-					"imgUrl": "https://robohash.org/15143517?set=set1"
-				}
-			},
-			{
-				"id": "78173091",
-				"date": "May 2022",
-				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
-				"by": {
-					"_id": "622f3405e36c59e6164fb87b",
-					"fullname": "Breanne",
-					"imgUrl": "https://robohash.org/78173091?set=set1"
-				}
-			},
-			{
-				"id": "100535039",
-				"date": "May 2022",
-				"txt": "We love Westin Kaanapalli",
-				"by": {
-					"_id": "622f3405e36c59e6164fb713",
-					"fullname": "Kimberly",
-					"imgUrl": "https://robohash.org/100535039?set=set1"
+					"_id": "622f3404e36c59e6164fb62a",
+					"fullname": "Ayşe Betül",
+					"imgUrl": "https://randomuser.me/portraits/men/72.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf8",
-		"name": "Westin Kaanapali KORVN 2BR",
-		"type": "House",
-		"labels":["Amazing pools", "Cabins", "OMG!"],
-		"imgUrls": [
-			"010.jpeg",
-			"090.jpeg",
-			"153.jpeg",
-			"093.jpeg",
-			"094.jpeg"
+		"_id": "622f337d75c7d36e498aac59",
+		"name": "Big, Bright & Convenient Sheung Wan",
+		"type": "Guesthouse",
+		"labels": [
+			"Cabins",
+			"OMG!"
 		],
-		"price": 595,
-		"summary": "Westin Kaanapali Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 8,
-		"bedrooms": 2,
-		"beds": 4,
+		"imgUrls": [
+			"100.jpeg",
+			"126.jpeg",
+			"041.jpeg",
+			"020.jpeg",
+			"007.jpeg"
+		],
+		"price": 966,
+		"summary": "Hollywood Rd Studio Only 1 apartment per floor 650sqft! Fast Wifi and Kitchen! Daily Housekeeping! NEAR 3min walk from MTR 3min walk from Escalators 5min walk from LKF (Please note I live here so some belongings kept in wardrobe)",
+		"capacity": 2,
+		"bedrooms": 0,
+		"beds": 1,
 		"amenities": [
 			"TV",
 			"Wifi",
@@ -464,18 +643,393 @@
 			"Wheelchair accessible"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf93",
-			"fullname": "Patty And Beckett",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3402e36c59e6164fad7e",
+			"fullname": "Regg",
+			"pictureUrl": "https://randomuser.me/portraits/men/72.jpg"
 		},
 		"loc": {
-			"country": "United States",
-			"countryCode": "US",
-			"city": "Maui",
-			"address": "Lahaina, HI, United States",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "Hong Kong",
+			"countryCode": "HK",
+			"city": "Hong Kong",
+			"address": "Hong Kong, Hong Kong Island, Hong Kong",
+			"lat": 114.15007,
+			"lan": 22.28422
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 10,
+			"cleanliness": 10,
+			"checkin": 10,
+			"communication": 10,
+			"location": 10,
+			"value": 10,
+			"rating": 5
+		},
+		"reviews": [
+			{
+				"id": "10711825",
+				"date": "May 2022",
+				"txt": "Regg's place is clean and bright and at the best location in Hong Kong. Regg is communicative and easy going. We enjoyed our stay very much.",
+				"by": {
+					"_id": "622f3401e36c59e6164fab51",
+					"fullname": "Winnie",
+					"imgUrl": "https://randomuser.me/portraits/men/36.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac58",
+		"name": "Spacious and well located apartment",
+		"type": "Apartment",
+		"labels": [
+			"OMG!",
+			"Design"
+		],
+		"imgUrls": [
+			"135.jpeg",
+			"153.jpeg",
+			"067.jpeg",
+			"072.jpeg",
+			"099.jpeg"
+		],
+		"price": 468,
+		"summary": "Enjoy Porto in a spacious, airy and bright apartment, fully equipped, in a building with lift, located in a region full of cafes and restaurants, close to the subway and close to the best places of the city.",
+		"capacity": 6,
+		"bedrooms": 2,
+		"beds": 3,
+		"amenities": [
+			"TV",
+			"Wifi",
+			"Air conditioning",
+			"Pool",
+			"Kitchen",
+			"Gym",
+			"Hot tub"
+		],
+		"host": {
+			"_id": "622f3403e36c59e6164faf36",
+			"fullname": "Andre",
+			"pictureUrl": "https://randomuser.me/portraits/men/45.jpg"
+		},
+		"loc": {
+			"country": "Portugal",
+			"countryCode": "PT",
+			"city": "Porto",
+			"address": "Porto, Porto, Portugal",
+			"lat": -8.6114,
+			"lan": 41.16093
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 10,
+			"cleanliness": 10,
+			"checkin": 10,
+			"communication": 10,
+			"location": 10,
+			"value": 10,
+			"rating": 4.25
+		},
+		"reviews": [
+			{
+				"id": "10711825",
+				"date": "May 2022",
+				"txt": "We arrived late in the night and the host assistant was so nice with us. She gave us some typical food and presents so that we could feel as good as home. She showed us how stuff works. Then we went together to see where the supermarkt and resaturants were. Everything was clean and tidy. The apartment was big enough for 5 people. It´s perfectly furnished!\r\nIt was located in the typical familiarly and quiet neighbourhood, only 20 minutes walking to the city center and near a Subway station. Restaurants and shops are cheaper than city center ones.\r\n\r\nHe offered him to pick us from the airport and a guided tour as well.\r\n\r\nWe´ll come back for sure! \r\n\r\n\r\nLlegamos muy tarde por la noche y la asistente del anfitrión nos enseñó la casa, nos dio dulces típicos y vino de Oporto. Vino con nosotros por el barrio para recomendarnos restaurantes y enseñarnos dónde estaba el supermercado. \r\nEl apartamento estaba limpio, ordenado y perfectamente equipado. Tenía armarios vacíos para poder dejar cómodamente las cosas. El salón es muy grande. \r\nEstá a 20 minutos andando del centro de la ciudad y tiene una parada de metro cerca. El barrio es familiar y tranquilo. Nada peligroso. Los restaurantes y tiendas eran más baratos que los del centro.\r\n\r\nEl anfitrión se ofreció a recogernos del aeropuerto y a hacernos un tour guiado por la ciudad.\r\nVolveremos!!\r\n",
+				"by": {
+					"_id": "622f3407e36c59e6164fc004",
+					"fullname": "Kiesha",
+					"imgUrl": "https://randomuser.me/api/portraits/women/92.jpg"
+				}
+			},
+			{
+				"id": "70072865",
+				"date": "May 2022",
+				"txt": "Andre was able to meet us at the apartment. We had a nice long stay there, so we got very comfortable. The apartment is lovely and well furnished and equipped with everything we could have needed. We loved the neighbourhood too!",
+				"by": {
+					"_id": "622f3402e36c59e6164fad7c",
+					"fullname": "Barbara",
+					"imgUrl": "https://randomuser.me/api/portraits/women/12.jpg"
+				}
+			},
+			{
+				"id": "71179725",
+				"date": "May 2022",
+				"txt": "Great and spacious appartment with a wonderful view and location, it is even better in real life than in photos. We spent a month there and everything worked perfectly, the person who gave us the keys was very welcoming and was always there in case we needed him. Don't hesitate to stay in this appartment, you will not regret it!",
+				"by": {
+					"_id": "622f3402e36c59e6164fadde",
+					"fullname": "Beatriz",
+					"imgUrl": "https://randomuser.me/api/portraits/women/52.jpg"
+				}
+			},
+			{
+				"id": "65593239",
+				"date": "May 2022",
+				"txt": "L'appartement est tout à fait conforme à la description (peut-être même mieux). Situé dans un immeuble calme, dans un quartier calme où l'on peut se garer.\r\nAccueillis avec une grande gentillesse par Fernando, qui a répondu à toutes nos questions et les a même devancées.\r\nA recommander !",
+				"by": {
+					"_id": "622f3403e36c59e6164fb26c",
+					"fullname": "Olivier",
+					"imgUrl": "https://randomuser.me/api/portraits/men/44.jpg"
+				}
+			},
+			{
+				"id": "26215688",
+				"date": "May 2022",
+				"txt": "It's a very lovely apartment. José Fernando welcomed us with a great kindness and answered all our questions. Thank you very much for your hospitality and port wine. Everything was clean and tidy. There was lots of space for my family of 4. Especially we enjoyed a big balcony. It's well furnished and equipped but it would be great to add a washing machine. TV has a great channels list in Portuguese and English. The apartment is located in a walking distance to the city centre, metro stations, grocery shops, bakeries and pharmacies. WiFi worked perfectly. The bath has a handle grip, it's perfect for elderly guests and young kids. There is a small lift in a building. Our experience was great and we highly recommend to stay in this apartment.",
+				"by": {
+					"_id": "622f3407e36c59e6164fc005",
+					"fullname": "Veronica",
+					"imgUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+				}
+			},
+			{
+				"id": "117390236",
+				"date": "May 2022",
+				"txt": "Malgré nos deux heures de retard l'hôte nous a reçu comme des \"princes\". Appartement conforme à nos attentes.",
+				"by": {
+					"_id": "622f3407e36c59e6164fbd75",
+					"fullname": "François",
+					"imgUrl": "https://randomuser.me/api/portraits/men/56.jpg"
+				}
+			},
+			{
+				"id": "15143517",
+				"date": "May 2022",
+				"txt": "Excellent place to stay with either family or friends. Very spacious living area and bedrooms. Close to the centre and we thoroughly enjoyed our daily walks to the centre and local bakery. José is excellent in giving directions as needed. Problems are always fixed on time with the customer in mind.Will highly recommend this place.\n\nVanessa",
+				"by": {
+					"_id": "622f3401e36c59e6164fab8f",
+					"fullname": "Vanessa",
+					"imgUrl": "https://randomuser.me/api/portraits/women/74.jpg"
+				}
+			},
+			{
+				"id": "78173091",
+				"date": "May 2022",
+				"txt": "The location was really good . You can reach the place by walking",
+				"by": {
+					"_id": "622f3403e36c59e6164fb1f6",
+					"fullname": "Sibel",
+					"imgUrl": "https://randomuser.me/api/portraits/women/66.jpg"
+				}
+			},
+			{
+				"id": "100535039",
+				"date": "May 2022",
+				"txt": "Ok",
+				"by": {
+					"_id": "622f3403e36c59e6164fb19a",
+					"fullname": "Tiago Germano",
+					"imgUrl": "https://randomuser.me/api/portraits/men/5.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac57",
+		"name": "Room w private toilet 3 min to MTR!",
+		"type": "House",
+		"labels": [
+			"Amazing pools",
+			"Camping",
+			"OMG!"
+		],
+		"imgUrls": [
+			"092.jpeg",
+			"012.jpeg",
+			"014.jpeg",
+			"109.jpeg",
+			"152.jpeg"
+		],
+		"price": 1240,
+		"summary": "Our cozy double room with separate bathroom is 3 mins walk from MTR, surrounded by lots of nice restaurants, bus stops, tram station that allows you to go travel really easily. 10 min to Promenade. Feel free to use our kitchen & living room. We have two lovely cats at home. :)",
+		"capacity": 2,
+		"bedrooms": 1,
+		"beds": 1,
+		"amenities": [
+			"TV",
+			"Wifi",
+			"Air conditioning",
+			"Pool",
+			"Kitchen",
+			"Hot tub"
+		],
+		"host": {
+			"_id": "622f3404e36c59e6164fb631",
+			"fullname": "Joanna",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/11.jpg"
+		},
+		"loc": {
+			"country": "Hong Kong",
+			"countryCode": "HK",
+			"city": "Hong Kong",
+			"address": "Quarry Bay, Hong Kong Island, Hong Kong",
+			"lat": 114.20854,
+			"lan": 22.29099
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 10,
+			"cleanliness": 10,
+			"checkin": 10,
+			"communication": 10,
+			"location": 10,
+			"value": 10,
+			"rating": 3.88
+		},
+		"reviews": [
+			{
+				"id": "10711825",
+				"date": "May 2022",
+				"txt": "The room was lovely! Large comfortable bed, separate bathroom, and an array of complimentary toiletries and water. Joanna was a wonderful, and we would highly recommend this location to anyone looking for a nice and convenient area to stay in HK.",
+				"by": {
+					"_id": "622f3406e36c59e6164fbc7c",
+					"fullname": "C",
+					"imgUrl": "https://randomuser.me/api/portraits/women/7.jpg"
+				}
+			},
+			{
+				"id": "70072865",
+				"date": "May 2022",
+				"txt": "it's really wonderful place to stay for trip,comfortable .convenient .hospitable.additionally,Joanna is lovely,sweet modern girl. you will easy to enjoy Hk \n",
+				"by": {
+					"_id": "622f3404e36c59e6164fb3b1",
+					"fullname": "丽娜",
+					"imgUrl": "https://randomuser.me/api/portraits/women/55.jpg"
+				}
+			},
+			{
+				"id": "71179725",
+				"date": "May 2022",
+				"txt": "非常好的一次体验,房东一家人非常的热情｡一出地铁口就能找到很方便,楼下就有公交车和电车,方便出行｡附近有很多食肆和士多店,网推的米芝莲美食也有,相当方便｡下次如果再去香港玩,一定会再次入住｡",
+				"by": {
+					"_id": "622f3402e36c59e6164fabe2",
+					"fullname": "若臻",
+					"imgUrl": "https://randomuser.me/api/portraits/men/22.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac56",
+		"name": "Spacious 2 Bedroom: Soho/Escalator",
+		"type": "Apartment",
+		"labels": [
+			"Design",
+			"Cabins"
+		],
+		"imgUrls": [
+			"031.jpeg",
+			"077.jpeg",
+			"075.jpeg",
+			"035.jpeg",
+			"005.jpeg"
+		],
+		"price": 1703,
+		"summary": "Bright and spacious two bedroom apartment located in Soho along the famous HK escalator.  Numerous restaurants, cafes and bars (including the Lan Kwai Fong district) are only minutes away on foot. All comforts are provided including clean sheets, towels, shampoo, conditioner, body wash, hair dryer, laundry, hand soap, full kitchen amenities and wifi.",
+		"capacity": 5,
+		"bedrooms": 2,
+		"beds": 3,
+		"amenities": [
+			"TV",
+			"Pool",
+			"Wifi"
+		],
+		"host": {
+			"_id": "622f3403e36c59e6164fb247",
+			"fullname": "Tara",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/10.jpg"
+		},
+		"loc": {
+			"country": "Hong Kong",
+			"countryCode": "HK",
+			"city": "Hong Kong",
+			"address": "Hong Kong, Hong Kong Island, Hong Kong",
+			"lat": 114.15315,
+			"lan": 22.28028
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 10,
+			"cleanliness": 10,
+			"checkin": 10,
+			"communication": 10,
+			"location": 10,
+			"value": 10,
+			"rating": 4.59
+		},
+		"reviews": [
+			{
+				"id": "10711825",
+				"date": "May 2022",
+				"txt": "This place is a gem!  It's in the heart of everything from western restaurants to shopping to the nightlife district.  It was still very quiet though in the building.  The place looks exactly as the photos and was recently renovated completely. The concierge was helpful when we needed help. Tara was fantastic as well. She waited for us for over a 1.5 hours when we were late, gave us a thorough run down of the apartment and neighbourhood, and made some very good recommendations for places to eat around there in her welcome guide package. Would highly recommend this place and going with her suggestions.",
+				"by": {
+					"_id": "622f3402e36c59e6164fadb5",
+					"fullname": "Fergus",
+					"imgUrl": "https://randomuser.me/api/portraits/women/21.jpg"
+				}
+			},
+			{
+				"id": "70072865",
+				"date": "May 2022",
+				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
+				"by": {
+					"_id": "622f3403e36c59e6164fb204",
+					"fullname": "Chris",
+					"imgUrl": "https://randomuser.me/api/portraits/men/80.jpg"
+				}
+			},
+			{
+				"id": "71179725",
+				"date": "May 2022",
+				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
+				"by": {
+					"_id": "622f3405e36c59e6164fb703",
+					"fullname": "Kim",
+					"imgUrl": "https://randomuser.me/api/portraits/women/15.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac55",
+		"name": "Loft styled apartment /Terrace at Copacabana Beach",
+		"type": "House",
+		"labels": [
+			"Islands",
+			"Lakefront",
+			"Arctic!"
+		],
+		"imgUrls": [
+			"079.jpeg",
+			"017.jpeg",
+			"031.jpeg",
+			"098.jpeg",
+			"104.jpeg"
+		],
+		"price": 560,
+		"summary": "It is located in the heart of Copacabana an area full of restaurants, coffee-shops, pubs, banks, pharmacies, gyms, etc. The closest metro (Ipanema). One Room with 2 beds (one queen size another double bed), 1 bath . 24-hour security with cameras. Just 2 blocks from Ipanema and one block from Copacabana beach.",
+		"capacity": 4,
+		"bedrooms": 1,
+		"beds": 2,
+		"amenities": [
+			"TV",
+			"Air conditioning",
+			"Kitchen",
+			"Gym",
+			"Hot tub",
+			"Wheelchair accessible"
+		],
+		"host": {
+			"_id": "622f3402e36c59e6164face0",
+			"fullname": "Ricardo",
+			"pictureUrl": "https://randomuser.me/portraits/men/78.jpg"
+		},
+		"loc": {
+			"country": "Brazil",
+			"countryCode": "BR",
+			"city": "Rio De Janeiro",
+			"address": "Rio de Janeiro, Rio de Janeiro, Brazil",
+			"lat": -43.192410876968225,
+			"lan": -22.982475758445254
 		},
 		"bathrooms": 2,
 		"reviewScores": {
@@ -491,137 +1045,67 @@
 			{
 				"id": "10711825",
 				"date": "May 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "Ricardo's apartment is wonderful.  The patio helps you feel connected to the city, and is a scenic place to share a candlelight meal or drink.  To the right is the ocean and to the left is toward Ipanema beach.  The beds are cozy, the kitchen is stocked to cook in, the front room is a relaxing place to watch movies (or, in our case, Olympic highlights).  The neighborhood below has a grocery store, pharmacy, restaurants, juice bars, a gym, yoga...anything a traveler could need.  It is a 1 and a 1/2 block walk to Copacabana Beach and a short walk to Ipanema.  We could not have asked for a better place to stay, or for a kinder, more gracious host.  Ricardo helped us with Uber, shopping, bike rentals, getting money exchanged, what sites to see, and had some nice surprises upon our arrival.  Thank you, Ricardo.  We hope to entertain you when you visit California.",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
+					"_id": "622f3404e36c59e6164fb518",
+					"fullname": "Jay",
+					"imgUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 				}
 			},
 			{
 				"id": "70072865",
 				"date": "May 2022",
-				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
+				"txt": "O Ricardo foi um excelente anfitrião, nos deixou muito a vontade em seu apto, nos recebendo muito bem, deixando toalhas e roupas de cama, indicações do que fazer no Rio durante as Olimpíadas, dicas de restaurantes, enfim tudo para o nosso bem estar. A experiência foi ótima desde a chegada até o dia de ir embora, ele sempre muito acessível quando solicitado. \r\nO apto é muito bem localizado, com fácil acesso ao metrô, praias de Copacabana e Ipanema, além de ótimos restaurantes. Recomendamos bastante o apto do Ricardo!!",
 				"by": {
-					"_id": "622f3403e36c59e6164fb204",
-					"fullname": "Chris",
-					"imgUrl": "https://robohash.org/70072865?set=set1"
-				}
-			},
-			{
-				"id": "71179725",
-				"date": "May 2022",
-				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
-				"by": {
-					"_id": "622f3405e36c59e6164fb703",
-					"fullname": "Kim",
-					"imgUrl": "https://robohash.org/71179725?set=set1"
-				}
-			},
-			{
-				"id": "65593239",
-				"date": "May 2022",
-				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
-				"by": {
-					"_id": "622f3404e36c59e6164fb37f",
-					"fullname": "Tracy",
-					"imgUrl": "https://robohash.org/65593239?set=set1"
-				}
-			},
-			{
-				"id": "26215688",
-				"date": "May 2022",
-				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
-				"by": {
-					"_id": "622f3403e36c59e6164fb105",
-					"fullname": "Duyen",
-					"imgUrl": "https://robohash.org/26215688?set=set1"
-				}
-			},
-			{
-				"id": "117390236",
-				"date": "May 2022",
-				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
-				"by": {
-					"_id": "622f3402e36c59e6164fabbe",
-					"fullname": "Binh",
-					"imgUrl": "https://robohash.org/117390236?set=set1"
-				}
-			},
-			{
-				"id": "15143517",
-				"date": "May 2022",
-				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
-				"by": {
-					"_id": "622f3404e36c59e6164fb4af",
-					"fullname": "Samy",
-					"imgUrl": "https://robohash.org/15143517?set=set1"
-				}
-			},
-			{
-				"id": "78173091",
-				"date": "May 2022",
-				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
-				"by": {
-					"_id": "622f3405e36c59e6164fb87b",
-					"fullname": "Breanne",
-					"imgUrl": "https://robohash.org/78173091?set=set1"
-				}
-			},
-			{
-				"id": "100535039",
-				"date": "May 2022",
-				"txt": "We love Westin Kaanapalli",
-				"by": {
-					"_id": "622f3405e36c59e6164fb713",
-					"fullname": "Kimberly",
-					"imgUrl": "https://robohash.org/100535039?set=set1"
+					"_id": "622f3403e36c59e6164fb05c",
+					"fullname": "Milton",
+					"imgUrl": "https://randomuser.me/api/portraits/men/62.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf10",
-		"name": "Woodburg view",
+		"_id": "622f337d75c7d36e498aac54",
+		"name": "Aloha, Kihei Bay Surf, New Pool and BBQ",
 		"type": "Guesthouse",
-		"labels":["Amazing pools", "Cabins", "OMG!"],
-		"imgUrls": [
-			"153.jpeg",
-			"090.jpeg",
-			"010.jpeg",
-			"093.jpeg",
-			"094.jpeg"
+		"labels": [
+			"Amazing pools",
+			"Cabins",
+			"OMG!"
 		],
-		"price": 555,
-		"summary": "Woodburg view Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
+		"imgUrls": [
+			"114.jpeg",
+			"089.jpeg",
+			"135.jpeg",
+			"071.jpeg",
+			"149.jpeg"
+		],
+		"price": 277,
+		"summary": "Welcome!  Amazing unit across the street from the ocean, an ancient Hawaiian fish pond, small park, the Hawaiian Islands Humpback Whale National Marine Sanctuary, and an awesome Indian restaurant.    Great BBQ area, pool, tennis courts,  and relaxing hot tub.   You will also be near the beginning of the longest uninterrupted white sand beach in all of Hawaii!  Come for the vacation of your dreams.  There's a 15% vacation tax that will be collected before getting the keys.",
 		"capacity": 4,
-		"bedrooms": 2,
+		"bedrooms": 0,
 		"beds": 2,
 		"amenities": [
-			"TV",
 			"Wifi",
 			"Air conditioning",
 			"Pool",
-			"Kitchen",
 			"Gym",
-			"Hot tub",
-			"Wheelchair accessible"
+			"Hot tub"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf96",
-			"fullname": "David Beckham",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3403e36c59e6164fb12c",
+			"fullname": "John",
+			"pictureUrl": "https://randomuser.me/portraits/men/18.jpg"
 		},
 		"loc": {
-			"country": "Israel",
-			"countryCode": "IR",
-			"city": "Petah Tikva",
-			"address": "Borhov 9 , Israel",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "United States",
+			"countryCode": "US",
+			"city": "Maui",
+			"address": "Kihei, HI, United States",
+			"lat": -156.4587,
+			"lan": 20.76445
 		},
-		"bathrooms": 5,
+		"bathrooms": 1,
 		"reviewScores": {
 			"accuracy": 10,
 			"cleanliness": 10,
@@ -635,137 +1119,352 @@
 			{
 				"id": "10711825",
 				"date": "May 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "Excellent place with all the facilities as described in the ad. Perfect location as the place is literally across the road from the beach and has shops and restaurants 1 mile down the road.\r\n\r\nThe complex also has a beautiful swimming pool, jacuzzi and very clean barbecue facilities.\r\n\r\nThe hosts were superb and even went out of there way to accommodate our every need.\r\n\r\nI strongly recommend this place.",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
+					"_id": "622f3404e36c59e6164fb3ab",
+					"fullname": "Costa",
+					"imgUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 				}
 			},
 			{
 				"id": "70072865",
 				"date": "May 2022",
-				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
+				"txt": "John was great at communicating and making sure I was comfortable at his studio right across the street from the beach. He even went as far as to offer me a ride to the airport which I thought was incredibly considerate. As far as the place itself it was very large and conveniently located with a very clean pool and hot tub. I would definitely recommend staying here.",
 				"by": {
-					"_id": "622f3403e36c59e6164fb204",
-					"fullname": "Chris",
-					"imgUrl": "https://robohash.org/70072865?set=set1"
+					"_id": "622f3407e36c59e6164fbfd9",
+					"fullname": "Nick",
+					"imgUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 				}
 			},
 			{
 				"id": "71179725",
 				"date": "May 2022",
-				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
+				"txt": "John was a great host. Awesome communicator and very easy going.",
 				"by": {
-					"_id": "622f3405e36c59e6164fb703",
-					"fullname": "Kim",
-					"imgUrl": "https://robohash.org/71179725?set=set1"
+					"_id": "622f3403e36c59e6164fb202",
+					"fullname": "Steve",
+					"imgUrl": "https://randomuser.me/api/portraits/men/42.jpg"
 				}
 			},
 			{
 				"id": "65593239",
 				"date": "May 2022",
-				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
+				"txt": "Staying at John's listing was a great experience from start to finish. The place was great and customized with hand-picked flowers and \"where to go in maui\" for my first visit to the island. The place was very clean, very nicely kept and had all the amenities I needed especially in the kitchen.",
 				"by": {
-					"_id": "622f3404e36c59e6164fb37f",
-					"fullname": "Tracy",
-					"imgUrl": "https://robohash.org/65593239?set=set1"
-				}
-			},
-			{
-				"id": "26215688",
-				"date": "May 2022",
-				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
-				"by": {
-					"_id": "622f3403e36c59e6164fb105",
-					"fullname": "Duyen",
-					"imgUrl": "https://robohash.org/26215688?set=set1"
-				}
-			},
-			{
-				"id": "117390236",
-				"date": "May 2022",
-				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
-				"by": {
-					"_id": "622f3402e36c59e6164fabbe",
-					"fullname": "Binh",
-					"imgUrl": "https://robohash.org/117390236?set=set1"
-				}
-			},
-			{
-				"id": "15143517",
-				"date": "May 2022",
-				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
-				"by": {
-					"_id": "622f3404e36c59e6164fb4af",
-					"fullname": "Samy",
-					"imgUrl": "https://robohash.org/15143517?set=set1"
-				}
-			},
-			{
-				"id": "78173091",
-				"date": "May 2022",
-				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
-				"by": {
-					"_id": "622f3405e36c59e6164fb87b",
-					"fullname": "Breanne",
-					"imgUrl": "https://robohash.org/78173091?set=set1"
-				}
-			},
-			{
-				"id": "100535039",
-				"date": "May 2022",
-				"txt": "We love Westin Kaanapalli",
-				"by": {
-					"_id": "622f3405e36c59e6164fb713",
-					"fullname": "Kimberly",
-					"imgUrl": "https://robohash.org/100535039?set=set1"
+					"_id": "622f3406e36c59e6164fbb3e",
+					"fullname": "Noddy",
+					"imgUrl": "https://randomuser.me/api/portraits/men/77.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf15",
-		"name": "Westview Resort",
-		"type": "Hotel",
-		"labels":["Amazing pools", "Cabins", "OMG!"],
-		"imgUrls": [
-			"093.jpeg",
-			"090.jpeg",
-			"010.jpeg",
-			"153.jpeg",
-			"094.jpeg"
+		"_id": "622f337d75c7d36e498aac52",
+		"name": "Cute Attic room Beyoğlu, Istanbul",
+		"type": "Guesthouse",
+		"labels": [
+			"Amazing pools",
+			"Cabins",
+			"Design",
+			"Islands"
 		],
-		"price": 1000,
-		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 10,
-		"bedrooms": 5,
-		"beds": 10,
+		"imgUrls": [
+			"049.jpeg",
+			"103.jpeg",
+			"141.jpeg",
+			"006.jpeg",
+			"062.jpeg"
+		],
+		"price": 985,
+		"summary": "This is a room in an Ottoman liberty style townhouse in Beyoglu. The location is very central, walking distance to istiklal street, one of the main centers in Istanbul. There are many cafes, restaurants, bars, and shopping, night life.",
+		"capacity": 1,
+		"bedrooms": 1,
+		"beds": 1,
+		"amenities": [
+			"TV",
+			"Air conditioning",
+			"Pool",
+			"Kitchen",
+			"Hot tub"
+		],
+		"host": {
+			"_id": "622f3406e36c59e6164fbcc2",
+			"fullname": "Fatma",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "Turkey",
+			"countryCode": "TR",
+			"city": "Istanbul",
+			"address": "İstanbul, İstanbul, Turkey",
+			"lat": 28.97675,
+			"lan": 41.03782
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 10,
+			"cleanliness": 10,
+			"checkin": 10,
+			"communication": 10,
+			"location": 10,
+			"value": 10,
+			"rating": 3.88
+		},
+		"reviews": [
+			{
+				"id": "10711825",
+				"date": "May 2022",
+				"txt": "What a guy, what a welcome, what a place! If you're looking for a homely space, comfortable and clean and well located, this is your spot! Throw in a welcoming host with a great sense of humour, willingness to help you find a cold beer upon arrival and give you great tips on island life, you may well have hit the perfect combo!! Mahalo Johnny :) See you next time champ!!",
+				"by": {
+					"_id": "622f3406e36c59e6164fb9c6",
+					"fullname": "Mark",
+					"imgUrl": "https://randomuser.me/api/portraits/men/35.jpg"
+				}
+			},
+			{
+				"id": "70072865",
+				"date": "May 2022",
+				"txt": "Great place, has everything you need. The lanai (balcony) is spacious and wraps around corner. Has everything you need for beach; towels, cooler, etc. Nice pool area with hot tub and grill. Conveniently located in Kihei, short drive to some of the best beaches in Maui, big and little beach, and across the street from kalepolepo beach and fish pond. Many restaurants and businesses just down the road on S. Kihei Rd. Communication could have been a little better. Could only respond via text, no voicemail or calling, and some of the texts were delayed or vague. With that said, I did leave an item behind and John stayed in touch so I was able to retrieve it two days later - so thank you John. Would recommend this place if staying in Kihei.",
+				"by": {
+					"_id": "622f3403e36c59e6164fb043",
+					"fullname": "Matthew",
+					"imgUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+				}
+			},
+			{
+				"id": "71179725",
+				"date": "May 2022",
+				"txt": "The place is absolutely amazing! So clean, cute and cozy! The location is absolutely perfect. I will definitely recommend John to all my friends here on Oahu.",
+				"by": {
+					"_id": "622f3402e36c59e6164facb6",
+					"fullname": "Marquita",
+					"imgUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+				}
+			},
+			{
+				"id": "65593239",
+				"date": "May 2022",
+				"txt": "Felt right at home at John's apartment. Accurate listing description. Easy to communicate with, would definitely stay here again. ",
+				"by": {
+					"_id": "622f3402e36c59e6164fadcd",
+					"fullname": "Blaine",
+					"imgUrl": "https://randomuser.me/api/portraits/women/34.jpg"
+				}
+			},
+			{
+				"id": "26215688",
+				"date": "May 2022",
+				"txt": "Great experience",
+				"by": {
+					"_id": "622f3402e36c59e6164faf05",
+					"fullname": "Christina",
+					"imgUrl": "https://randomuser.me/api/portraits/women/11.jpg"
+				}
+			},
+			{
+				"id": "117390236",
+				"date": "May 2022",
+				"txt": "I enjoyed staying Kihei Bay Surf. This family is very sweet and willing to help me out all the time! Neighbor hood is very quite and beach is right cross from the apartment. It's such a peaceful place to stay. However, you need a car because there is not grocery stores and restaurant. You can walk to those places but it takes about 20minutes. I'd love to visit this place again :)",
+				"by": {
+					"_id": "622f3407e36c59e6164fbf16",
+					"fullname": "Sunni",
+					"imgUrl": "https://randomuser.me/api/portraits/women/88.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac51",
+		"name": "Mongkok Luxury Studio, New Reno *4A",
+		"type": "Apartment",
+		"labels": [
+			"Amazing pools",
+			"Cabins",
+			"OMG!",
+			"Camping",
+			"Tiny homes",
+			"Arctic"
+		],
+		"imgUrls": [
+			"007.jpeg",
+			"111.jpeg",
+			"064.jpeg",
+			"136.jpeg",
+			"023.jpeg"
+		],
+		"price": 350,
+		"summary": "Lovely walkup studio apartment on the fourth floor with kitchenette in the heart of Mongkok. Minutes away from numerous tourist attractions such as the Ladies Market and shopping malls, this is the perfect unit for any solo traveler. The unit is newly renovated as well!",
+		"capacity": 1,
+		"bedrooms": 0,
+		"beds": 1,
+		"amenities": [
+			"TV",
+			"Wifi",
+			"Air conditioning",
+			"Hot tub"
+		],
+		"host": {
+			"_id": "622f3405e36c59e6164fb913",
+			"fullname": "Tane Residence",
+			"pictureUrl": "https://randomuser.me/portraits/men/53.jpg"
+		},
+		"loc": {
+			"country": "Hong Kong",
+			"countryCode": "HK",
+			"city": "Hong Kong",
+			"address": "Hong Kong, Kowloon, Hong Kong",
+			"lat": 114.16984,
+			"lan": 22.31915
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 10,
+			"cleanliness": 10,
+			"checkin": 10,
+			"communication": 10,
+			"location": 10,
+			"value": 10,
+			"rating": 3.88
+		},
+		"reviews": [
+			{
+				"id": "70072865",
+				"date": "May 2022",
+				"txt": "The room is clean and modern looking. Great stay. The foldable bed makes more space during the day.",
+				"by": {
+					"_id": "622f3402e36c59e6164fadd0",
+					"fullname": "Albert",
+					"imgUrl": "https://randomuser.me/api/portraits/men/52.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac50",
+		"name": "Best location 1BR Apt in HK - Shops & Sights",
+		"type": "Hotel",
+		"labels": [
+			"Design",
+			"Islands"
+		],
+		"imgUrls": [
+			"038.jpeg",
+			"112.jpeg",
+			"136.jpeg",
+			"109.jpeg",
+			"024.jpeg"
+		],
+		"price": 997,
+		"summary": "Welcome to my apartment, 1BR newly renovated and furnished. Located in the heart of Hong Kong's shopping, food and culture center.  1 minute walk to TST MTR station, airport transfer and all major transport.",
+		"capacity": 4,
+		"bedrooms": 1,
+		"beds": 2,
+		"amenities": [
+			"Wifi",
+			"Air conditioning",
+			"Pool",
+			"Kitchen"
+		],
+		"host": {
+			"_id": "622f3403e36c59e6164fb05e",
+			"fullname": "Simon",
+			"pictureUrl": "https://randomuser.me/portraits/men/66.jpg"
+		},
+		"loc": {
+			"country": "Hong Kong",
+			"countryCode": "HK",
+			"city": "Hong Kong",
+			"address": "Hong Kong, Kowloon, Hong Kong",
+			"lat": 114.17088,
+			"lan": 22.29663
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 10,
+			"cleanliness": 10,
+			"checkin": 10,
+			"communication": 10,
+			"location": 10,
+			"value": 10,
+			"rating": 3.88
+		},
+		"reviews": [
+			{
+				"id": "10711825",
+				"date": "May 2022",
+				"txt": "The unit is as it appears on the description, small and cozy, located in the heart of Kowloon. I find it good for young travellers that want to discover the city (our case). Not recommended for copuples seeking a romantic trip since is quite busy and noisy. Big dissapointed was that Water heater didnt work and had to take a cold water shower. Regarding owner response, it took a while for him/her to answer but afterwards everything was fine.",
+				"by": {
+					"_id": "622f3401e36c59e6164fab93",
+					"fullname": "Rodrigo",
+					"imgUrl": "https://randomuser.me/api/portraits/men/81.jpg"
+				}
+			},
+			{
+				"id": "70072865",
+				"date": "May 2022",
+				"txt": "It was my first Airbnb experience and we like its brand new and great location of this apartment. Jenkin is a fabulous host that has answered all needs in a quick manner. We will definitely stay again at his place in the future (Website hidden by Airbnb)",
+				"by": {
+					"_id": "622f3402e36c59e6164fabf1",
+					"fullname": "Tulip",
+					"imgUrl": "https://randomuser.me/api/portraits/women/90.jpg"
+				}
+			},
+			{
+				"id": "71179725",
+				"date": "May 2022",
+				"txt": "Really nice!The apartment is new and comfortable.The bed is soft.And there are a lot of restaurants and shopping malls near by.House keeper is so warm because she help us a lot.",
+				"by": {
+					"_id": "622f3407e36c59e6164fbd70",
+					"fullname": "Selene",
+					"imgUrl": "https://randomuser.me/api/portraits/women/47.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac4f",
+		"name": "Nice appartement in central",
+		"type": "Hotel",
+		"labels": [
+			"Beach",
+			"Lakefront",
+			"OMG!"
+		],
+		"imgUrls": [
+			"141.jpeg",
+			"131.jpeg",
+			"083.jpeg",
+			"024.jpeg",
+			"028.jpeg"
+		],
+		"price": 438,
+		"summary": "1 bedroom in a 2 bedrooms cosy apartment, all furnished. Located in central midlevels really close from the escalator, calm and clear. 2 minutes walk from the Soho area with bars and restaurants. Many supermarkets and groceries around. And also bus and taxis. MTR central station is 10 minutes walk.",
+		"capacity": 1,
+		"bedrooms": 1,
+		"beds": 1,
 		"amenities": [
 			"TV",
 			"Wifi",
 			"Air conditioning",
 			"Pool",
 			"Kitchen",
-			"Gym",
 			"Hot tub",
 			"Wheelchair accessible"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf98",
-			"fullname": "Patrick Star",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3405e36c59e6164fb6c3",
+			"fullname": "Audrey",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/88.jpg"
 		},
 		"loc": {
-			"country": "Mexico",
-			"countryCode": "MX",
-			"city": "New Mexico",
-			"address": "New mexico, United States",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "Hong Kong",
+			"countryCode": "HK",
+			"city": "Hong Kong",
+			"address": "Hong Kong, Hong Kong Island, Hong Kong",
+			"lat": 114.15103,
+			"lan": 22.28109
 		},
-		"bathrooms": 4,
+		"bathrooms": 1,
 		"reviewScores": {
 			"accuracy": 10,
 			"cleanliness": 10,
@@ -799,108 +1498,79 @@
 			{
 				"id": "71179725",
 				"date": "May 2022",
-				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
+				"txt": "Audrey est très gentille et réactive au questions durant le séjour. L'appartement est fonctionnel bien équipé et se trouve dans un quartier calme et non loin du centre! La chambre est cosie, je recommande ce logement!",
 				"by": {
-					"_id": "622f3405e36c59e6164fb703",
-					"fullname": "Kim",
-					"imgUrl": "https://robohash.org/71179725?set=set1"
+					"_id": "622f3403e36c59e6164fb05b",
+					"fullname": "Alix",
+					"imgUrl": "https://randomuser.me/api/portraits/women/1.jpg"
 				}
 			},
 			{
 				"id": "65593239",
 				"date": "May 2022",
-				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
+				"txt": "Audrey's flat very nice and exactly as on the pictures. The location is great and area is full of bars and restaurants - thanks:)",
 				"by": {
-					"_id": "622f3404e36c59e6164fb37f",
-					"fullname": "Tracy",
-					"imgUrl": "https://robohash.org/65593239?set=set1"
+					"_id": "622f3402e36c59e6164fadd2",
+					"fullname": "Judith",
+					"imgUrl": "https://randomuser.me/api/portraits/women/49.jpg"
 				}
 			},
 			{
 				"id": "26215688",
 				"date": "May 2022",
-				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
+				"txt": "The place is my standart of staying in HK, bright, comfy, clean,  perfect size rooms, picture perfect kitchen, especially sweet scented candles in every rooms which I found rarely in HK. Convenient location and Audrey is truly amazing host!",
 				"by": {
-					"_id": "622f3403e36c59e6164fb105",
-					"fullname": "Duyen",
-					"imgUrl": "https://robohash.org/26215688?set=set1"
-				}
-			},
-			{
-				"id": "117390236",
-				"date": "May 2022",
-				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
-				"by": {
-					"_id": "622f3402e36c59e6164fabbe",
-					"fullname": "Binh",
-					"imgUrl": "https://robohash.org/117390236?set=set1"
-				}
-			},
-			{
-				"id": "15143517",
-				"date": "May 2022",
-				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
-				"by": {
-					"_id": "622f3404e36c59e6164fb4af",
-					"fullname": "Samy",
-					"imgUrl": "https://robohash.org/15143517?set=set1"
-				}
-			},
-			{
-				"id": "78173091",
-				"date": "May 2022",
-				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
-				"by": {
-					"_id": "622f3405e36c59e6164fb87b",
-					"fullname": "Breanne",
-					"imgUrl": "https://robohash.org/78173091?set=set1"
-				}
-			},
-			{
-				"id": "100535039",
-				"date": "May 2022",
-				"txt": "We love Westin Kaanapalli",
-				"by": {
-					"_id": "622f3405e36c59e6164fb713",
-					"fullname": "Kimberly",
-					"imgUrl": "https://robohash.org/100535039?set=set1"
+					"_id": "622f3403e36c59e6164fb0a5",
+					"fullname": "Dee",
+					"imgUrl": "https://randomuser.me/api/portraits/men/67.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf91",
-		"name": "Eastin Kaanapali KORVN 2BR",
+		"_id": "622f337d75c7d36e498aac4e",
+		"name": "B5.Walk to MTR 1 min/Economy room/Twin single bed",
 		"type": "Apartment",
-		"labels":["Amazing pools", "Cabins", "OMG!"],
-		"imgUrls": [
-			"090.jpeg",
-			"010.jpeg",
-			"153.jpeg",
-			"093.jpeg",
-			"094.jpeg"
+		"labels": [
+			"Amazing pools",
+			"Design",
+			"OMG!",
+			"Arctic"
 		],
-		"price": 750,
-		"summary": "Eastin Kaanapali Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 6,
-		"bedrooms": 3,
-		"beds": 6,
-		"amenities": [],
+		"imgUrls": [
+			"047.jpeg",
+			"123.jpeg",
+			"083.jpeg",
+			"089.jpeg",
+			"005.jpeg"
+		],
+		"price": 1000,
+		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
+		"capacity": 2,
+		"bedrooms": 1,
+		"beds": 2,
+		"amenities": [
+			"TV",
+			"Wifi",
+			"Air conditioning",
+			"Pool",
+			"Kitchen",
+			"Gym"
+		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf942",
-			"fullname": "Lukas Parker",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3402e36c59e6164fadf1",
+			"fullname": "Jojo",
+			"pictureUrl": "https://randomuser.me/api/portraits/men/28.jpg"
 		},
 		"loc": {
-			"country": "France",
-			"countryCode": "FR",
-			"city": "Paris",
-			"address": "Lahaina, HI, France",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "Hong Kong",
+			"countryCode": "HK",
+			"city": "Hong Kong",
+			"address": "Hong Kong, Hong Kong Island, Hong Kong",
+			"lat": 114.15103,
+			"lan": 22.28109
 		},
-		"bathrooms": 3,
+		"bathrooms": 1,
 		"reviewScores": {
 			"accuracy": 10,
 			"cleanliness": 10,
@@ -908,141 +1578,72 @@
 			"communication": 10,
 			"location": 10,
 			"value": 10,
-			"rating": 4.59
+			"rating": 3.88
 		},
 		"reviews": [
 			{
 				"id": "10711825",
 				"date": "May 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "Location very good, in the shopping center, and many fast food place,  traffic is very convenien !",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
+					"_id": "622f3406e36c59e6164fba7d",
+					"fullname": "Tin Hung",
+					"imgUrl": "https://randomuser.me/api/portraits/women/99.jpg"
 				}
 			},
 			{
 				"id": "70072865",
 				"date": "May 2022",
-				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
+				"txt": "交通确实很方便,香港住的地方都不大,好在即便如此设施也都有｡性价比高",
 				"by": {
-					"_id": "622f3403e36c59e6164fb204",
-					"fullname": "Chris",
-					"imgUrl": "https://robohash.org/70072865?set=set1"
-				}
-			},
-			{
-				"id": "71179725",
-				"date": "May 2022",
-				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
-				"by": {
-					"_id": "622f3405e36c59e6164fb703",
-					"fullname": "Kim",
-					"imgUrl": "https://robohash.org/71179725?set=set1"
-				}
-			},
-			{
-				"id": "65593239",
-				"date": "May 2022",
-				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
-				"by": {
-					"_id": "622f3404e36c59e6164fb37f",
-					"fullname": "Tracy",
-					"imgUrl": "https://robohash.org/65593239?set=set1"
-				}
-			},
-			{
-				"id": "26215688",
-				"date": "May 2022",
-				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
-				"by": {
-					"_id": "622f3403e36c59e6164fb105",
-					"fullname": "Duyen",
-					"imgUrl": "https://robohash.org/26215688?set=set1"
-				}
-			},
-			{
-				"id": "117390236",
-				"date": "May 2022",
-				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
-				"by": {
-					"_id": "622f3402e36c59e6164fabbe",
-					"fullname": "Binh",
-					"imgUrl": "https://robohash.org/117390236?set=set1"
-				}
-			},
-			{
-				"id": "15143517",
-				"date": "May 2022",
-				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
-				"by": {
-					"_id": "622f3404e36c59e6164fb4af",
-					"fullname": "Samy",
-					"imgUrl": "https://robohash.org/15143517?set=set1"
-				}
-			},
-			{
-				"id": "78173091",
-				"date": "May 2022",
-				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
-				"by": {
-					"_id": "622f3405e36c59e6164fb87b",
-					"fullname": "Breanne",
-					"imgUrl": "https://robohash.org/78173091?set=set1"
-				}
-			},
-			{
-				"id": "100535039",
-				"date": "May 2022",
-				"txt": "We love Westin Kaanapalli",
-				"by": {
-					"_id": "622f3405e36c59e6164fb713",
-					"fullname": "Kimberly",
-					"imgUrl": "https://robohash.org/100535039?set=set1"
+					"_id": "622f3405e36c59e6164fb9b5",
+					"fullname": "浩",
+					"imgUrl": "https://randomuser.me/api/portraits/women/3.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf8322",
-		"name": "Westin Kaanapali KORVN 2BR",
-		"type": "House",
-		"labels":["Amazing pools", "Cabins", "OMG!"],
-		"imgUrls": [
-			"010.jpeg",
-			"090.jpeg",
-			"153.jpeg",
-			"093.jpeg",
-			"094.jpeg"
+		"_id": "622f337d75c7d36e498aac4d",
+		"name": "Luxurious, bright, spacious Plaza Catalunya",
+		"type": "Guesthouse",
+		"labels": [
+			"Tiny homes",
+			"Design",
+			"OMG!",
+			"Arctic"
 		],
-		"price": 595,
-		"summary": "Westin Kaanapali Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 8,
-		"bedrooms": 2,
-		"beds": 4,
+		"imgUrls": [
+			"087.jpeg",
+			"040.jpeg",
+			"119.jpeg",
+			"114.jpeg",
+			"107.jpeg"
+		],
+		"price": 1210,
+		"summary": "Magnificent apartment situated in the heart of Barcelona. Located in a prestigious building with concierge next to Rambla de Cataluña, this apartment is the ideal choice to accomodate up to 6 people. The apartment is composed by an entrance hall, living room, dining room and a fully equipped kitchen with all the kitchen utensils. There are 2 dormitories with 2 single beds, a big bedroom with a double bed and two bathrooms.  Tourist licence HUTB - 003179.",
+		"capacity": 6,
+		"bedrooms": 3,
+		"beds": 0,
 		"amenities": [
 			"TV",
-			"Wifi",
 			"Air conditioning",
 			"Pool",
 			"Kitchen",
-			"Gym",
-			"Hot tub",
-			"Wheelchair accessible"
+			"Gym"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf93",
-			"fullname": "Patty And Beckett",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3405e36c59e6164fb89a",
+			"fullname": "Tendency",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/89.jpg"
 		},
 		"loc": {
-			"country": "United States",
-			"countryCode": "US",
-			"city": "Maui",
-			"address": "Lahaina, HI, United States",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "Spain",
+			"countryCode": "ES",
+			"city": "Barcelona",
+			"address": "Barcelona, Catalunya, Spain",
+			"lat": 2.16589,
+			"lan": 41.39002
 		},
 		"bathrooms": 2,
 		"reviewScores": {
@@ -1052,287 +1653,74 @@
 			"communication": 10,
 			"location": 10,
 			"value": 10,
-			"rating": 5
+			"rating": 3.88
 		},
 		"reviews": [
 			{
 				"id": "10711825",
 				"date": "May 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "Lovely and very central apartment in the heart of Barcelona. It's position made exploring the city very easy either on foot or using public transport. Plenty of shopping areas and restaurants around and a lovely organic and vegetarian shop near by. \n\nThe apartment is quite airy but unfortunately the blinds do not work in the rooms so there is no natural light. Even though the apartment is very central all the windows are on internal patios ( the living room windows are enormous and let lots of light) which makes it very quiet.\n\nWe had a lovely time and we certainly will use it again when we return to Barcelona.",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
+					"_id": "622f3404e36c59e6164fb32f",
+					"fullname": "Elizabeth",
+					"imgUrl": "https://randomuser.me/api/portraits/women/91.jpg"
 				}
 			},
 			{
 				"id": "70072865",
 				"date": "May 2022",
-				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
+				"txt": "Great neighbourhood, and very central.",
 				"by": {
-					"_id": "622f3403e36c59e6164fb204",
-					"fullname": "Chris",
-					"imgUrl": "https://robohash.org/70072865?set=set1"
-				}
-			},
-			{
-				"id": "71179725",
-				"date": "May 2022",
-				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
-				"by": {
-					"_id": "622f3405e36c59e6164fb703",
-					"fullname": "Kim",
-					"imgUrl": "https://robohash.org/71179725?set=set1"
-				}
-			},
-			{
-				"id": "65593239",
-				"date": "May 2022",
-				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
-				"by": {
-					"_id": "622f3404e36c59e6164fb37f",
-					"fullname": "Tracy",
-					"imgUrl": "https://robohash.org/65593239?set=set1"
-				}
-			},
-			{
-				"id": "26215688",
-				"date": "May 2022",
-				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
-				"by": {
-					"_id": "622f3403e36c59e6164fb105",
-					"fullname": "Duyen",
-					"imgUrl": "https://robohash.org/26215688?set=set1"
-				}
-			},
-			{
-				"id": "117390236",
-				"date": "May 2022",
-				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
-				"by": {
-					"_id": "622f3402e36c59e6164fabbe",
-					"fullname": "Binh",
-					"imgUrl": "https://robohash.org/117390236?set=set1"
-				}
-			},
-			{
-				"id": "15143517",
-				"date": "May 2022",
-				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
-				"by": {
-					"_id": "622f3404e36c59e6164fb4af",
-					"fullname": "Samy",
-					"imgUrl": "https://robohash.org/15143517?set=set1"
-				}
-			},
-			{
-				"id": "78173091",
-				"date": "May 2022",
-				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
-				"by": {
-					"_id": "622f3405e36c59e6164fb87b",
-					"fullname": "Breanne",
-					"imgUrl": "https://robohash.org/78173091?set=set1"
-				}
-			},
-			{
-				"id": "100535039",
-				"date": "May 2022",
-				"txt": "We love Westin Kaanapalli",
-				"by": {
-					"_id": "622f3405e36c59e6164fb713",
-					"fullname": "Kimberly",
-					"imgUrl": "https://robohash.org/100535039?set=set1"
+					"_id": "622f3406e36c59e6164fbaba",
+					"fullname": "Paula",
+					"imgUrl": "https://randomuser.me/api/portraits/women/8.jpg"
 				}
 			}
 		]
 	},
 	{
-		"_id": "622f337a75c7d36e498aaaf104",
-		"name": "Woodburg view",
-		"type": "Guesthouse",
-		"labels":["Amazing pools", "Cabins", "OMG!"],
-		"imgUrls": [
-			"153.jpeg",
-			"090.jpeg",
-			"010.jpeg",
-			"093.jpeg",
-			"094.jpeg"
+		"_id": "622f337d75c7d36e498aac4c",
+		"name": "BEST REVIEWS*BEST MALLS*SAFE STAY*DIMSUM*CWB*MTR",
+		"type": "Apartment",
+		"labels": [
+			"Tiny homes",
+			"Design",
+			"Arctic",
+			"Islands"
 		],
-		"price": 555,
-		"summary": "Woodburg view Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 4,
-		"bedrooms": 2,
-		"beds": 2,
+		"imgUrls": [
+			"069.jpeg",
+			"148.jpeg",
+			"065.jpeg",
+			"118.jpeg",
+			"008.jpeg"
+		],
+		"price": 1210,
+		"summary": "Location is OUTSTANDING as MTR Causeway BAY is within 1 min walk. You are in the very heart of a fancy busy shopping attractive Causeway Bay. There can be few homes as beautiful and practical as this one, from the  interior of the reception and 3 bedrooms and 2 pretty bathrooms. Ideal for Families --- within a stroll to Victoria Park with swimming pool, the very best spot for brand shopping, and thousands of food stalls, international restaurants, cafes, and bars are in the immediate area.",
+		"capacity": 8,
+		"bedrooms": 3,
+		"beds": 4,
 		"amenities": [
-			"TV",
-			"Wifi",
 			"Air conditioning",
 			"Pool",
 			"Kitchen",
 			"Gym",
-			"Hot tub",
-			"Wheelchair accessible"
+			"Hot tub"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf96",
-			"fullname": "David Beckham",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
+			"_id": "622f3407e36c59e6164fbdcc",
+			"fullname": "Susann",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/83.jpg"
 		},
 		"loc": {
-			"country": "Israel",
-			"countryCode": "IR",
-			"city": "Petah Tikva",
-			"address": "Borhov 9 , Israel",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"country": "Hong Kong",
+			"countryCode": "HK",
+			"city": "Hong Kong",
+			"address": "Causeway Bay, Hong Kong",
+			"lat": 114.18445,
+			"lan": 22.27878
 		},
-		"bathrooms": 5,
-		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
-			"rating": 4.25
-		},
-		"reviews": [
-			{
-				"id": "10711825",
-				"date": "May 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
-				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
-				}
-			},
-			{
-				"id": "70072865",
-				"date": "May 2022",
-				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
-				"by": {
-					"_id": "622f3403e36c59e6164fb204",
-					"fullname": "Chris",
-					"imgUrl": "https://robohash.org/70072865?set=set1"
-				}
-			},
-			{
-				"id": "71179725",
-				"date": "May 2022",
-				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
-				"by": {
-					"_id": "622f3405e36c59e6164fb703",
-					"fullname": "Kim",
-					"imgUrl": "https://robohash.org/71179725?set=set1"
-				}
-			},
-			{
-				"id": "65593239",
-				"date": "May 2022",
-				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
-				"by": {
-					"_id": "622f3404e36c59e6164fb37f",
-					"fullname": "Tracy",
-					"imgUrl": "https://robohash.org/65593239?set=set1"
-				}
-			},
-			{
-				"id": "26215688",
-				"date": "May 2022",
-				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
-				"by": {
-					"_id": "622f3403e36c59e6164fb105",
-					"fullname": "Duyen",
-					"imgUrl": "https://robohash.org/26215688?set=set1"
-				}
-			},
-			{
-				"id": "117390236",
-				"date": "May 2022",
-				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
-				"by": {
-					"_id": "622f3402e36c59e6164fabbe",
-					"fullname": "Binh",
-					"imgUrl": "https://robohash.org/117390236?set=set1"
-				}
-			},
-			{
-				"id": "15143517",
-				"date": "May 2022",
-				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
-				"by": {
-					"_id": "622f3404e36c59e6164fb4af",
-					"fullname": "Samy",
-					"imgUrl": "https://robohash.org/15143517?set=set1"
-				}
-			},
-			{
-				"id": "78173091",
-				"date": "May 2022",
-				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
-				"by": {
-					"_id": "622f3405e36c59e6164fb87b",
-					"fullname": "Breanne",
-					"imgUrl": "https://robohash.org/78173091?set=set1"
-				}
-			},
-			{
-				"id": "100535039",
-				"date": "May 2022",
-				"txt": "We love Westin Kaanapalli",
-				"by": {
-					"_id": "622f3405e36c59e6164fb713",
-					"fullname": "Kimberly",
-					"imgUrl": "https://robohash.org/100535039?set=set1"
-				}
-			}
-		]
-	},
-	{
-		"_id": "622f337a75c7d36e498aaaf155",
-		"name": "Westview Resort",
-		"type": "Hotel",
-		"labels":["Amazing pools", "Cabins", "OMG!"],
-		"imgUrls": [
-			"093.jpeg",
-			"090.jpeg",
-			"010.jpeg",
-			"153.jpeg",
-			"094.jpeg"
-		],
-		"price": 1000,
-		"summary": "Westview resort Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"capacity": 10,
-		"bedrooms": 5,
-		"beds": 10,
-		"amenities": [
-			"TV",
-			"Wifi",
-			"Air conditioning",
-			"Pool",
-			"Kitchen",
-			"Gym",
-			"Hot tub",
-			"Wheelchair accessible"
-		],
-		"host": {
-			"_id": "622f3403e36c59e6164faf98",
-			"fullname": "Patrick Star",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium"
-		},
-		"loc": {
-			"country": "Mexico",
-			"countryCode": "MX",
-			"city": "New Mexico",
-			"address": "New mexico, United States",
-			"lat": -156.6917,
-			"lan": 20.93792
-		},
-		"bathrooms": 4,
+		"bathrooms": 2,
 		"reviewScores": {
 			"accuracy": 10,
 			"cleanliness": 10,
@@ -1346,91 +1734,41 @@
 			{
 				"id": "10711825",
 				"date": "May 2022",
-				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter.",
+				"txt": "Susan and her team are fabulous.  They received us at the apartment and explained how everything worked.  The location is unbeatable.  We had a really good time.",
 				"by": {
-					"_id": "622f3407e36c59e6164fc004",
-					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1"
+					"_id": "622f3404e36c59e6164fb2e4",
+					"fullname": "Vinay",
+					"imgUrl": "https://randomuser.me/api/portraits/women/55.jpg"
 				}
 			},
 			{
 				"id": "70072865",
 				"date": "May 2022",
-				"txt": "Peter quickly responded to any questions I had before, and during the trip. Will use again, highly recommend. ",
+				"txt": "The apartment is very near the Metro system and plenty of shops and restaurants nearby. Very good service from manager on arrival and also from the staff at entrance to the building during our stay. The apartment itself is in our view somewhat smaller than it appears on the photos - the sofa pictured accommodates no more than 2 persons of european size.",
 				"by": {
-					"_id": "622f3403e36c59e6164fb204",
-					"fullname": "Chris",
-					"imgUrl": "https://robohash.org/70072865?set=set1"
+					"_id": "622f3405e36c59e6164fb849",
+					"fullname": "Jesper",
+					"imgUrl": "https://randomuser.me/api/portraits/men/8.jpg"
 				}
 			},
 			{
-				"id": "71179725",
+				"id": "70072865",
 				"date": "May 2022",
-				"txt": "We had the perfect location for a room, first floor right in front of the pool. The resort is beautiful, and the staff is so friendly! I enjoyed it so much, we talked about buying a timeshare ourselves.",
+				"txt": "My wife and our 2 children stayed in the apartment for a week. It was perfect for us. Great location very close to MTR and in the middle of busy Causeway Bay. Wjile the apartment was small by western standards it was good for us and gave everybody their own space. A much better option than a hotel. The fridge and small kitchen were functional and allowed us to prepare small snacks and breakfast if we wanted. Let's face it you will be mainly eating out in HK. All communication with Susann, Joanna & Szilvi was prompt, professional and helpful. We would recommend highly.",
 				"by": {
-					"_id": "622f3405e36c59e6164fb703",
-					"fullname": "Kim",
-					"imgUrl": "https://robohash.org/71179725?set=set1"
+					"_id": "622f3406e36c59e6164fbb35",
+					"fullname": "Alex",
+					"imgUrl": "https://randomuser.me/api/portraits/women/4.jpg"
 				}
 			},
 			{
-				"id": "65593239",
+				"id": "70072865",
 				"date": "May 2022",
-				"txt": "Beautiful location. Patty & Peter were super helpful and easy to work with!",
+				"txt": "Perfect apartment in the Center of Honkong island, we enjoyed our stay for 4 days and I can recommend 100%. The service prior arriving is well organized. I plan to come again for the next exhibition. ",
 				"by": {
-					"_id": "622f3404e36c59e6164fb37f",
-					"fullname": "Tracy",
-					"imgUrl": "https://robohash.org/65593239?set=set1"
-				}
-			},
-			{
-				"id": "26215688",
-				"date": "May 2022",
-				"txt": "Great spot for the kids and family and close to beach and everything at the resort. We will definitely be back.",
-				"by": {
-					"_id": "622f3403e36c59e6164fb105",
-					"fullname": "Duyen",
-					"imgUrl": "https://robohash.org/26215688?set=set1"
-				}
-			},
-			{
-				"id": "117390236",
-				"date": "May 2022",
-				"txt": "The unit and the Westin offer variety of amenities you can possibly ask for. Sofa beds are very comfortable to sleep in. But there is charge for ocean view upgrade. Overall, I highly recommend to book with Patty and Peter. ",
-				"by": {
-					"_id": "622f3402e36c59e6164fabbe",
-					"fullname": "Binh",
-					"imgUrl": "https://robohash.org/117390236?set=set1"
-				}
-			},
-			{
-				"id": "15143517",
-				"date": "May 2022",
-				"txt": "We spent a great week at Patty and Peter's place. The place was exactly as shown in the pictures, very comfortable, nice view, with all amenities. The resort is great with several pools, a long beach, many restaurants, and of course a lot of great activities all around.",
-				"by": {
-					"_id": "622f3404e36c59e6164fb4af",
-					"fullname": "Samy",
-					"imgUrl": "https://robohash.org/15143517?set=set1"
-				}
-			},
-			{
-				"id": "78173091",
-				"date": "May 2022",
-				"txt": "This place was perfect for my family. We had plenty of room to spread out and the service could not have been any better",
-				"by": {
-					"_id": "622f3405e36c59e6164fb87b",
-					"fullname": "Breanne",
-					"imgUrl": "https://robohash.org/78173091?set=set1"
-				}
-			},
-			{
-				"id": "100535039",
-				"date": "May 2022",
-				"txt": "We love Westin Kaanapalli",
-				"by": {
-					"_id": "622f3405e36c59e6164fb713",
-					"fullname": "Kimberly",
-					"imgUrl": "https://robohash.org/100535039?set=set1"
+					"_id": "622f3405e36c59e6164fb7ee",
+					"fullname": "Christoph",
+					"imgUrl": "https://randomuser.me/api/portraits/men/10.jpg"
 				}
 			}
 		]

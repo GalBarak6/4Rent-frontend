@@ -92,7 +92,7 @@ export const StayDetails = () => {
                         <h2>Cabin hosted by {stay.host.fullname}</h2>
                         <p className='flex align-center'>{stay.capacity} guests <span className='dot'></span> {stay.bedrooms} bedrooms <span className='dot'></span> {stay.beds} beds</p>
                     </div>
-                    <img src="http://res.cloudinary.com/dqj9g5gso/image/upload/v1643442255/allzuvxs7ig4wxgmdjh0.jpg" alt="" className='host-img' />
+                    <img src={stay.host.pictureUrl} alt="" className='host-img' />
                 </div>
                 <ul className='main-amenities flex flex-column'>
                     <li className='flex'>
@@ -145,10 +145,10 @@ export const StayDetails = () => {
                         <div className='order-inputs'>
                             <div className='dates-container flex space-between'>
                                 <label htmlFor="startDate" className='flex flex-column'>
-                                    Check-in<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin"/>
+                                    Check-in<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin" />
                                 </label>
                                 <label htmlFor="endDate" className='flex flex-column'>
-                                    Check-out<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout"/>
+                                    Check-out<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" />
                                 </label>
                             </div>
 
@@ -217,7 +217,7 @@ export const StayDetails = () => {
                         </div>
                         <div className='total-sum flex space-between'>
                             <span>Total</span>
-                            <span>${stay.price * 5 + stay.price * 0.04 + stay.price * 0.005}</span>
+                            <span>${(stay.price * 5 + stay.price * 0.04 + stay.price * 0.005).toFixed(2)}</span>
                         </div>
                     </div>
                 </div>
