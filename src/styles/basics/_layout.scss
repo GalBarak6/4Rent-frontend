@@ -1,9 +1,14 @@
 .main-layout {
     display: grid;
-    grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
+    // grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
+    grid-template-columns: var(--padding) 1fr var(--padding);
 
-    >* {
+    .app-header {
         grid-column: 2;
+    }
+
+    >*:not(.app-header) {
+        grid-column: var(--grid-column)
     }
 
     >*.full {

@@ -1,3 +1,9 @@
+:root {
+    --padding: 80px;
+    --position: sticky;
+    --grid-column: 2 ;
+}
+
 //COLOR PATTERNS
 $clr1: #FF385C;
 $clr2: #717171;
@@ -5,6 +11,7 @@ $clr3: #222222;
 $clr4: #484848;
 $clr5: #dddddd;
 $clr6: #ebebeb;
+$clr6-opacity: #ebebeb9a;
 $clr7: #f7f7f7;
 $clr8: #ffffff;
 $clr9: #DDDDDD;

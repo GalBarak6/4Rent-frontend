@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useLayoutEffect } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import { stayService } from '../services/stay.service'
 import { utilService } from '../services/util.service'
@@ -25,11 +25,24 @@ export const StayDetails = () => {
     const params = useParams()
     // const location = useLocation()
 
+    useEffect(()=>{
+        loadStay()
+        return ()=>{
+            document.documentElement.style.setProperty('--padding', '80px')
+            document.documentElement.style.setProperty('--position', 'fixed')
+        }
+
+    }, [])
+   
     useEffect(() => {
         console.log('loading stay details')
         loadStay()
-
     }, [params.stayId])
+
+    useLayoutEffect(() => {
+        document.documentElement.style.setProperty('--padding', '125px')
+        document.documentElement.style.setProperty('--position', 'block')
+    }, [])
 
     const loadStay = async () => {
         const stay = await stayService.getById(params.stayId)
@@ -145,10 +158,10 @@ export const StayDetails = () => {
                         <div className='order-inputs'>
                             <div className='dates-container flex space-between'>
                                 <label htmlFor="startDate" className='flex flex-column'>
-                                    Check-in<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin"/>
+                                    Check-in<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin" />
                                 </label>
                                 <label htmlFor="endDate" className='flex flex-column'>
-                                    Check-out<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout"/>
+                                    Check-out<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" />
                                 </label>
                             </div>
 
