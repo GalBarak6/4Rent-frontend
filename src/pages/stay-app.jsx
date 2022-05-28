@@ -4,7 +4,7 @@ import { loadStays, setFilter } from '../store/actions/stay.actions'
 
 import { StayList } from '../cmps/stay-list'
 import { StayFilter } from '../cmps/stay-filter'
-import { UserMenuModal } from '../cmps/user-menu-modal'
+
 
 export const StayApp = () => {
 
@@ -13,7 +13,7 @@ export const StayApp = () => {
     const [filterByPrice, setFilterPrice] = useState(100)
     const [filterByAmenities, setFilterByAmenities] = useState([])
     const [filterByLabel, setFilterByLabel] = useState('')
-    const [isOpenModal, setIsOpenModal] = useState(false)
+
 
     const dispatch = useDispatch()
 
@@ -21,7 +21,6 @@ export const StayApp = () => {
         console.log('loading')
         dispatch(loadStays())
     }, [])
-
 
 
     // useEffect(() => {
@@ -83,7 +82,7 @@ export const StayApp = () => {
 
     const onLabelChange = (value) => {
         console.log(value)
-        if (value==='All') setFilterByLabel('')
+        if (value === 'All') setFilterByLabel('')
         else setFilterByLabel(value)
     }
     const onPriceChange = ({ target }) => {
@@ -106,6 +105,5 @@ export const StayApp = () => {
             onPriceChange={onPriceChange}
         />
         <StayList stays={stays} />
-        <UserMenuModal />
     </section>
 }

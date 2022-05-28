@@ -1,6 +1,32 @@
 .hero {
     height: 80vh;
-    background-image: url(../../assets/Images/hero2.jpg);
-    // align-items: center;
-    // justify-content: center;
+    background-image: url(../../assets/Images/hero6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+
+    .hero-title {
+        color: $clr8;
+        font-size: rem(35px);
+        text-shadow: 2px 2px 4px $clr3;
+    }
+
+    .hero-button {
+        border-radius: 25px;
+        height: 50px;
+        transition: background-color .5s;
+        width: 150px;
+        background-color: $clr9;
+
+        span {
+            font-size: rem(20px);
+            font-family: circular-light;
+            -webkit-text-fill-color: transparent;
+            background: -webkit-linear-gradient(#72019b, #ad0187, #e91f95);
+            -webkit-background-clip: text;
+            font-weight: bold;
+            padding: 20px 30px;
+        }
+    }
 }

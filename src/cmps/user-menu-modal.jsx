@@ -4,7 +4,7 @@ export const UserMenuModal = () => {
 
     const [isOpenModal, setIsOpenModal] = useState(false)
 
-    return <section className="user-menu-modal">
+    return <section className="user-menu-modal swing-in-top-bck">
         <ul>
             <li>
                 Trips

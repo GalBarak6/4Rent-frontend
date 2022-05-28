@@ -13,6 +13,9 @@ export const StayDetails = () => {
     const [order, setOrder] = useState({ startDate: '', endDate: '', guests: 0 })
     const [stay, setStay] = useState(null)
     const [isGuestModal, setIsGuestModal] = useState(false)
+    const [arrowIcon, setArrowIcon] = useState('down-arrow')
+    // const [totalCount, setTotalCount] = useState(1)
+    // const [guestCount, setGuestCount] = useState({ adult: 1, children: 1, infant: 1 })
     const params = useParams()
     const location = useLocation()
 
@@ -39,9 +42,18 @@ export const StayDetails = () => {
     }
 
     const onOpenGuestModal = () => {
-        console.log('opening');
+        console.log('opening')
+        const arrow = (arrowIcon === 'down-arrow') ? 'up-arrow' : 'down-arrow'
+        setArrowIcon(arrow)
         setIsGuestModal(!isGuestModal)
     }
+
+    // const onGuestCount = (indicator, type) => {
+    //     const field = type
+    //     setGuestCount(prevCount => ({...prevCount, [field] : prevCount.field + indicator}))
+    //     if ((guestCount + indicator) < 1 || (guestCount + indicator) > 15) return
+    //     setTotalCount(totalCount + indicator)
+    // }
 
     // const handleMouseMouve = (e) => {
     //     console.log(e);
@@ -128,18 +140,21 @@ export const StayDetails = () => {
                             {/* <label htmlFor="guests">
                                 Guests<input type="number" name='guests' onChange={onHandleChange} />
                             </label> */}
-                            <div className='guest-input flex flex-column' onClick={onOpenGuestModal}>
+                            <div className='guest-input flex flex-column'>
                                 <label htmlFor="guests" className='guests-label'>GUESTS</label>
-                                <div className='open-guests-btn flex space-between'>
+                                <div className='open-guests-btn flex space-between' onClick={onOpenGuestModal}>
                                     <div>1 guest</div>
-                                    <img src={require('../assets/icons/down-arrow.png')} alt="" className='order-icon' />
+                                    <img src={require(`../assets/icons/${arrowIcon}.png`)} alt="" className='order-icon' />
                                 </div>
 
                                 {isGuestModal &&
-                                    <div className='guests-modal flex flex-column'>
+                                    <div className='guests-modal flex flex-column swing-in-top-bck'>
                                         <div className='guest-type flex space-between align-center'>
-                                            <div className='guest-detail'>Adults</div>
-                                            <div className='guest-count'>
+                                            <div className='guest-detail'>
+                                                <div className='type'>Adults</div>
+                                                <div className='type-exact'>Age 13+</div>
+                                            </div>
+                                            <div className='guest-count flex align-center'>
                                                 <button><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
                                                 <span>1</span>
                                                 <button><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
@@ -147,8 +162,11 @@ export const StayDetails = () => {
                                         </div>
 
                                         <div className='guest-type flex space-between align-center'>
-                                            <div className='guest-detail'>Children</div>
-                                            <div className='guest-count'>
+                                            <div className='guest-detail'>
+                                                <div className='type'>Children</div>
+                                                <div className='type-exact'>Ages 2-12</div>
+                                            </div>
+                                            <div className='guest-count flex align-center'>
                                                 <button><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
                                                 <span>1</span>
                                                 <button><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
@@ -156,15 +174,17 @@ export const StayDetails = () => {
                                         </div>
 
                                         <div className='guest-type flex space-between align-center'>
-                                            <div className='guest-detail'>Infants</div>
-                                            <div className='guest-count'>
+                                            <div className='guest-detail'>
+                                                <div className='type'>Infants</div>
+                                                <div className='type-exact'>Under 2</div>
+                                            </div>
+                                            <div className='guest-count flex align-center'>
                                                 <button><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
                                                 <span>1</span>
                                                 <button><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
                                             </div>
                                         </div>
                                     </div>}
-
 
                             </div>
                         </div>

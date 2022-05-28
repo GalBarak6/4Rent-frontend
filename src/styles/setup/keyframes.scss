@@ -1,0 +1,32 @@
+.slide-bottom {
+	animation: slide-bottom 0.3s cubic-bezier(0.250, 0, 0.450, 0.940) both;
+}
+
+ @keyframes slide-bottom {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100px);
+    }
+  }
+  
+
+
+  .swing-in-top-bck {
+	animation: swing-in-top-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+ @keyframes swing-in-top-bck {
+    0% {
+      transform: rotateX(70deg);
+      transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0deg);
+      transform-origin: top;
+      opacity: 1;
+    }
+  }
+  
