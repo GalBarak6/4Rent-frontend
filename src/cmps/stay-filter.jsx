@@ -14,7 +14,7 @@ export const StayFilter = ({ onHandleChange, onAmenitiesChange, labelChange, onP
         setIsModalOpen(false)
     }
 
-    const onLabelChange = (value) =>{
+    const onLabelChange = (value) => {
         setSelectedFilter(value)
         labelChange(value)
 
@@ -97,12 +97,12 @@ export const StayFilter = ({ onHandleChange, onAmenitiesChange, labelChange, onP
                     <div>Lakefront</div>
                 </button>}
 
-            {
+            {/* {
                 (className = (selectedFilter === 'Arctic') ? 'btn-label selected' : 'btn-label') &&
                 <button onClick={() => { onLabelChange("Arctic") }} className={className} >
                     <img src={require(`../assets/icons/Arctic.jpg`)} alt="" />
                     <div>Arctic</div>
-                </button>}
+                </button>} */}
 
 
 

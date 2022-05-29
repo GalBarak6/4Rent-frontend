@@ -160,10 +160,10 @@ export const StayDetails = () => {
                         <div className='order-inputs'>
                             <div className='dates-container flex space-between'>
                                 <label htmlFor="startDate" className='flex flex-column'>
-                                    Check-in<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin" />
+                                    CHECK-IN<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin" />
                                 </label>
                                 <label htmlFor="endDate" className='flex flex-column'>
-                                    Check-out<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" />
+                                    CHECKOUT<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" />
                                 </label>
                             </div>
 
