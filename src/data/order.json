@@ -1,0 +1,86 @@
+[
+    {
+        "startDate": "2025/10/15",
+        "endDate": "2025/10/17",
+        "guests": {
+            "adults": 2,
+            "kids": 1,
+            "infants": 1
+        },
+        "dest": {
+            "country": "Portugal",
+            "countryCode": "PT",
+            "address": "Porto,Portugal",
+            "lat": -8.61308,
+            "lng": 41.1413
+        },
+
+        "host": {
+            "_id": "622f3401e36c59e6164fab4e",
+            "fullName": "Leo",
+            "imgUrl": "https://robohash.org/59985?set=set1"
+        },
+
+        "booker": {
+            "_id": "622f3401e36c59e6164fab4d",
+            "fullName": "Edgar",
+            "imgUrl": "https://robohash.org/59985?set=set1"
+        }
+    },
+    {
+        "startDate": "2025/10/15",
+        "endDate": "2025/10/17",
+        "guests": {
+            "adults": 2,
+            "kids": 1,
+            "infants": 1
+        },
+        "dest": {
+            "country": "Portugal",
+            "countryCode": "PT",
+            "address": "Porto,Portugal",
+            "lat": -8.61308,
+            "lng": 41.1413
+        },
+
+        "host": {
+            "_id": "622f3401e36c59e6164fab4e",
+            "fullName": "Leo",
+            "imgUrl": "https://robohash.org/59985?set=set1"
+        },
+
+        "booker": {
+            "_id": "622f3401e36c59e6164fab4f",
+            "fullName": "Margaux",
+            "imgUrl": "https://robohash.org/59985?set=set1"
+        }
+    },
+    {
+        "startDate": "2025/10/15",
+        "endDate": "2025/10/17",
+        "guests": {
+            "adults": 2,
+            "kids": 1,
+            "infants": 1
+        },
+        "dest": {
+            "country": "Portugal",
+            "countryCode": "PT",
+            "address": "Porto,Portugal",
+            "lat": -8.61308,
+            "lng": 41.1413
+        },
+
+        "host": {
+            "_id": "622f3401e36c59e6164fab4e",
+            "fullName": "Leo",
+            "imgUrl": "https://robohash.org/59985?set=set1"
+        },
+
+        "booker": {
+            "_id": "622f3401e36c59e6164fab50",
+            "fullName": "Francine",
+            "imgUrl": "https://robohash.org/59985?set=set1"
+        }
+    }
+]
