@@ -1,24 +1,14 @@
 import { NavLink } from "react-router-dom"
 import { ReactComponent as Logo } from "../assets/icons/logo.svg"
-import { useNavigate, useLocation } from "react-router-dom";
-import { useEffect, useState } from 'react'
+import { useNavigate } from "react-router-dom";
 
 export const AppHeader = ({ onOpenModal }) => {
 
     const history = useNavigate()
-    // const location = useLocation()
-    // const [layout, setLayout] = useState('')
-
-    // useEffect(() => {
-    //     if (location.pathname.includes('aaa')) setLayout('details-layout')
-    //     else setLayout('main-layout')
-    // }, [location.pathname])
 
     function onGoBack() {
         history("/")
     }
-
-    // const headerClass = `app-header flex space-between align-center ${layout}`
 
     return <header className="app-header flex space-between align-center">
         <div className="logo flex align-center gap" onClick={onGoBack}>
@@ -41,7 +31,6 @@ export const AppHeader = ({ onOpenModal }) => {
             </button>
 
         </div>
-
 
     </header>
 }
