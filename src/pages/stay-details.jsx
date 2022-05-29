@@ -37,7 +37,7 @@ export const StayDetails = () => {
     }, [params.stayId])
 
     useLayoutEffect(() => {
-        document.documentElement.style.setProperty('--padding', '400px')
+        document.documentElement.style.setProperty('--padding', '350px')
     }, [])
 
     const loadStay = async () => {

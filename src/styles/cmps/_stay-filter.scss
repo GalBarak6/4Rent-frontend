@@ -17,37 +17,41 @@
         height: rem(47px);
         background-color: unset;
     }
-    
+
     .btn-label {
         color: $clr2;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-weight: bold;
-        font-size:rem(12px);
+        font-size: rem(12px);
         gap: rem(10px);
         padding: 10px 0 10px;
         // border: solid 1px black;
         height: rem(70px);
-       
+
         img {
             height: rem(24px);
             width: rem(24px);
             opacity: 0.55;
         }
     }
+
     .btn-label:hover {
         color: $clr3;
         border-bottom: solid 2px $clr5;
-        img{
+
+        img {
             opacity: 1;
         }
     }
+
     .btn-label {
-        &.selected{
+        &.selected {
             color: $clr3;
             border-bottom: solid 2px $clr3;
-            img{
+
+            img {
                 opacity: 1;
             }
         }
@@ -74,9 +78,9 @@
         justify-content: center;
         gap: rem(8px);
     }
-    
 
-    .filters-modal{
+
+    .filters-modal {
         border: solid 1px $clr9;
         border-radius: 15px;
         width: 55%;
@@ -86,14 +90,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
-    
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background-color: $clr8;
         // overflow: auto;
 
-        .modal-title{
+        .modal-title {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -102,25 +106,25 @@
             font-size: rem(16px);
             color: $clr3;
             border-bottom: solid 1px $clr9;
-            flex:1;
-            
+            flex: 1;
+
         }
 
-        .modal-details{
+        .modal-details {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             padding: 0 rem(25px);
             overflow: auto;
-            flex:8;
+            flex: 8;
 
-            > * {
+            >* {
                 padding: rem(20px) 0;
                 border-bottom: solid 1px $clr9;
 
             }
 
-            .title{
+            .title {
                 font-size: rem(22px);
                 color: $clr3;
                 font-weight: bold;
@@ -128,32 +132,36 @@
             }
 
 
-            .amenities-content{
+            .amenities-content {
                 padding: 12px 0;
-                    display: flex;
-                    > * {
-                        flex-basis: 50%;
-                    }
+                display: flex;
+
+                >* {
+                    flex-basis: 50%;
+                }
 
             }
-            .price{
-                input{
+
+            .price {
+                input {
                     -webkit-appearance: none;
                     background-color: $clr2;
                     height: 2px;
                     width: 60%;
                     border: none;
                 }
-                
+
             }
         }
 
-        .modal-footer{
+        .modal-footer {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 20px 25px;
-            flex:1;
-            .show-btn{
+            flex: 1;
+
+            .show-btn {
                 background-color: $clr3;
                 color: $clr8;
                 font-weight: bold;
@@ -164,7 +172,7 @@
 
             }
 
-            .clear-btn{
+            .clear-btn {
                 font-size: rem(16px);
                 font-weight: bold;
                 text-decoration: underline;
