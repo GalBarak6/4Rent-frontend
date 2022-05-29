@@ -43,8 +43,8 @@ export const StayApp = () => {
     }, [filterByAmenities])
 
     useEffect(() => {
-        dispatch(setFilter({ ...filterBy, label: filterByLabel}))
-        console.log('after filterByLabel ',filterBy)
+        dispatch(setFilter({ ...filterBy, label: filterByLabel }))
+        console.log('after filterByLabel ', filterBy)
     }, [filterByLabel])
 
     const onHandleChange = ({ target }) => {
@@ -92,9 +92,14 @@ export const StayApp = () => {
         setFilterPrice(value)
     }
 
+    if (!stays) return <div class="dots">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     return <section className="stay-app">
-        <StayFilter filterBy={filterBy} 
-        onHandleChange={onHandleChange}
+        <StayFilter filterBy={filterBy}
+            onHandleChange={onHandleChange}
             onAmenitiesChange={onAmenitiesChange}
             onLabelChange={onLabelChange}
             onPriceChange={onPriceChange}

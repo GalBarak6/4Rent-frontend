@@ -1,7 +1,10 @@
 .app-footer {
+    background-color: white;
     height: 5vh;
     border-top: solid 1px $clr9;
-    // position: fixed;
-    // bottom: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 200;
     // grid-row: 4;
 }

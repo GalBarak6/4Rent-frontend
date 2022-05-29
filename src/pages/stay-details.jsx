@@ -1,5 +1,5 @@
 import { useEffect, useState, useLayoutEffect } from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { stayService } from '../services/stay.service'
 import { utilService } from '../services/util.service'
 import * as React from 'react';
@@ -15,7 +15,6 @@ export const StayDetails = () => {
     // const [y, setY] = useState(0)
     // const [bgc, setBgc] = useState('green') 
 
-    // const { isDetailsPage } = useSelector((storeState) => storeState.stayModule)
     const [order, setOrder] = useState({ startDate: '', endDate: '', guests: 0 })
     const [stay, setStay] = useState(null)
     const [isGuestModal, setIsGuestModal] = useState(false)
@@ -23,13 +22,11 @@ export const StayDetails = () => {
     const [totalCount, setTotalCount] = useState(1)
     const [guestCount, setGuestCount] = useState({ adult: 1, children: 0, infant: 0 })
     const params = useParams()
-    // const location = useLocation()
 
     useEffect(() => {
         loadStay()
         return () => {
             document.documentElement.style.setProperty('--padding', '80px')
-            document.documentElement.style.setProperty('--position', 'fixed')
         }
 
     }, [])
@@ -40,8 +37,7 @@ export const StayDetails = () => {
     }, [params.stayId])
 
     useLayoutEffect(() => {
-        document.documentElement.style.setProperty('--padding', '125px')
-        document.documentElement.style.setProperty('--position', 'block')
+        document.documentElement.style.setProperty('--padding', '400px')
     }, [])
 
     const loadStay = async () => {
@@ -86,7 +82,11 @@ export const StayDetails = () => {
     //     console.log(x, y);
     // }
 
-    if (!stay) return <div>Loading..</div>
+    if (!stay) return <div class="dots">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     return <section className="stay-details flex flex-column">
         <h1 className='stay-name'>{stay.name}</h1>
         {/* <button onMouseMove={handleMouseMouve} style={{backgroundColor: bgc, backgroundPositionX: x, backgroundPositionY: y}}>testing is bgc working?</button> */}

@@ -1,14 +1,12 @@
 .app-header {
-    border-bottom: solid 1px $clr9;
+    border-bottom-style: var(--border-style);
+    border-bottom-width: var(--border-width);
+    border-bottom-color: var(--border-color);
     background-color: none;
-
+    padding: 0 var(--padding);
     height: 80px;
-
-    // position: var(--position);
-    // position:absolute;
-
-    // width: 100%;
-    // z-index: 10;
+    position: var(--position);
+    width: 100%;
 
     .main-nav {
         margin-inline-end: 10px;

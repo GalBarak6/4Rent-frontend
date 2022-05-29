@@ -17,9 +17,9 @@ const App = () => {
     setIsOpenModal(!isOpenModal)
   }
   return <Router>
-    <div className='app main-layout'>
+    <div className='app'>
       <AppHeader onOpenModal={onOpenModal} />
-      <main>
+      <main className='main-layout'>
         <Routes>
           <Route path="/stay/:stayId" element={<StayDetails />} />
           {/* <Route path="/login" element={<Login />}/> */}
