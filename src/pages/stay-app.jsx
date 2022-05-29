@@ -92,7 +92,7 @@ export const StayApp = () => {
         setFilterPrice(value)
     }
 
-    if (!stays) return <div class="dots">
+    if (!stays) return <div className="dots">
         <div></div>
         <div></div>
         <div></div>

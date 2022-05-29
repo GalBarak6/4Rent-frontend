@@ -25,8 +25,10 @@ export const StayDetails = () => {
 
     useEffect(() => {
         loadStay()
+        document.documentElement.style.setProperty('--right', '20%')
         return () => {
             document.documentElement.style.setProperty('--padding', '80px')
+            document.documentElement.style.setProperty('--right', '5%')
         }
 
     }, [])
@@ -82,7 +84,7 @@ export const StayDetails = () => {
     //     console.log(x, y);
     // }
 
-    if (!stay) return <div class="dots">
+    if (!stay) return <div className="dots">
         <div></div>
         <div></div>
         <div></div>

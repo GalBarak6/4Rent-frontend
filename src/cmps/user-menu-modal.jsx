@@ -1,8 +1,8 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 
 export const UserMenuModal = () => {
 
-    const [isOpenModal, setIsOpenModal] = useState(false)
+    // const [isOpenModal, setIsOpenModal] = useState(false)
 
     return <section className="user-menu-modal swing-in-top-bck">
         <ul>
