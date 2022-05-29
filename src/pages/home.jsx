@@ -5,6 +5,7 @@ import { DemoCarousel } from "../cmps/carousel";
 export const Home = () => {
 
     const history = useNavigate()
+    // const { topRatedList, popularDestination } = useSelector((storeState) => storeState.stayModule)
 
     useEffect(() => {
         document.documentElement.style.setProperty('--grid-colum', '1/-1')
@@ -37,5 +38,10 @@ export const Home = () => {
             </button>
 
         </div>
+
+
     </section>
+
+        // <List list={topRatedList} />
+        // <List list={popularDestination} />
 }

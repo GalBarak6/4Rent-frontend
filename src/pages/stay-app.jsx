@@ -81,7 +81,7 @@ export const StayApp = () => {
         }
     }
 
-    const onLabelChange = (value) => {
+    const labelChange = (value) => {
         console.log(value)
         if (value === 'All') setFilterByLabel('')
         else setFilterByLabel(value)
@@ -101,7 +101,7 @@ export const StayApp = () => {
         <StayFilter filterBy={filterBy}
             onHandleChange={onHandleChange}
             onAmenitiesChange={onAmenitiesChange}
-            onLabelChange={onLabelChange}
+            labelChange={labelChange}
             onPriceChange={onPriceChange}
         />
         <StayList stays={stays} />
