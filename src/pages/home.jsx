@@ -4,6 +4,7 @@ import { useEffect, useState, useLayoutEffect } from 'react'
 export const Home = () => {
 
     const history = useNavigate()
+    // const { topRatedList, popularDestination } = useSelector((storeState) => storeState.stayModule)
 
     useEffect(() => {
         document.documentElement.style.setProperty('--grid-colum', '1/-1')
@@ -36,5 +37,10 @@ export const Home = () => {
                 <span>Explore</span>
             </button>
         </div>
+
+
     </section>
+
+        // <List list={topRatedList} />
+        // <List list={popularDestination} />
 }
