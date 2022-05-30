@@ -24,24 +24,19 @@ export function loadReviews() {
   }
 }
 
-export function addReview(review) {
-  return async dispatch => {
-    try {
-      const addedReview = await reviewService.add(review)
-      dispatch(getActionAddReview(addedReview))
+// export function addReview(review) {
+//   return async dispatch => {
+//     try {
+//       const addedReview = await reviewService.add(review)
+//       dispatch(getActionAddReview(addedReview))
 
-      // Change the score in user kept in sessionStorage
-      userService.saveLocalUser(addedReview.byUser)
-      const {score} = addedReview.byUser
-      // const score = await userService.changeScore(SCORE_FOR_REVIEW)
-      dispatch({ type: 'SET_SCORE', score })
       
-    } catch (err) {
-      console.log('ReviewActions: err in addReview', err)
-      throw err
-    }
-  }
-}
+//     } catch (err) {
+//       console.log('ReviewActions: err in addReview', err)
+//       throw err
+//     }
+//   }
+// }
 
 export function removeReview(reviewId) {
   return async dispatch => {

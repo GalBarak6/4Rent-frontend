@@ -1,4 +1,5 @@
 import { storageService } from './async-storage.service.js'
+import { utilService } from './util.service.js'
 // import { userService } from './user.service.js'
 
 const STORAGE_KEY = 'stay'
@@ -8,6 +9,7 @@ export const stayService = {
     getById,
     save,
     remove,
+    addReview
 }
 
 async function query(filterBy) {
@@ -63,5 +65,14 @@ async function save(stay) {
         // stay.owner = userService.getLoggedinUser()
         savedStay = await storageService.post(STORAGE_KEY, stay)
     }
+    return savedStay
+}
+
+
+async function addReview(txt, stay) {
+    console.log('addreview');
+    const review = {id: utilService.makeId(), txt, date: 'March 2022', by: {_id: '622f3407e36c59e6164fbe6a', fullname: 'Mike', imgUrl: 'https://randomuser.me/portraits/men/69.jpg'}}
+    stay.reviews.push(review)
+    const savedStay = save(stay)
     return savedStay
 }

@@ -22,6 +22,7 @@ export function getActionUpdateStay(stay) {
     }
 }
 
+
 export function loadStays() {
     return async (dispatch, getState) => {
         const filterBy = getState().stayModule.filterBy
@@ -90,3 +91,17 @@ export function setFilter(filterBy) {
     }
 }
 
+export function addReviewToStay(txt, stay) {
+    return async (dispatch) => {
+        try {
+            console.log('hi')
+            const savedStay = await stayService.addReview(txt, stay)
+            console.log('Updated Stay', savedStay)
+            dispatch(getActionUpdateStay(savedStay))
+            showSuccessMsg('Stay updated')
+        } catch (err) {
+            showErrorMsg('Cannot update stay')
+            console.log('Cannot update stay', err)
+        }
+    }
+}

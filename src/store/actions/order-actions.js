@@ -53,6 +53,7 @@ export function removeOrder(orderId) {
 }
 
 export function addOrder(order) {
+    console.log(order);
     return async (dispatch) => {
         try {
             const savedOrder = await orderService.save(order)

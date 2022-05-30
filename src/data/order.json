@@ -25,7 +25,8 @@
             "_id": "622f3401e36c59e6164fab4d",
             "fullName": "Edgar",
             "imgUrl": "https://robohash.org/59985?set=set1"
-        }
+        },
+        "status": "pending"
     },
     {
         "startDate": "2025/10/15",
@@ -53,7 +54,8 @@
             "_id": "622f3401e36c59e6164fab4f",
             "fullName": "Margaux",
             "imgUrl": "https://robohash.org/59985?set=set1"
-        }
+        },
+        "status": "rejected"
     },
     {
         "startDate": "2025/10/15",
@@ -81,6 +83,7 @@
             "_id": "622f3401e36c59e6164fab50",
             "fullName": "Francine",
             "imgUrl": "https://robohash.org/59985?set=set1"
-        }
+        },
+        "status": "approved"
     }
 ]

@@ -19,7 +19,7 @@ export const AppHeader = ({ onOpenModal }) => {
         <div className="flex align-center">
 
             <nav className="main-nav flex">
-                <NavLink to="/">Home</NavLink>
+                {/* <NavLink to="/">Home</NavLink> */}
                 {/* <NavLink to="/login">Login</NavLink> */}
                 <NavLink to="/stay">Explore</NavLink>
                 <NavLink to="/">Become a host</NavLink>

@@ -8,6 +8,10 @@ import { GoogleMap } from '../cmps/google-map';
 import { UserMsg } from '../cmps/user-msg'
 
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service'
+import { DatePicker } from '../cmps/date-range';
+import { addReviewToStay } from '../store/actions/stay.actions';
+import { addOrder } from '../store/actions/order-actions';
+import { useDispatch } from 'react-redux';
 
 export const StayDetails = () => {
 
@@ -22,6 +26,7 @@ export const StayDetails = () => {
     const [totalCount, setTotalCount] = useState(1)
     const [guestCount, setGuestCount] = useState({ adult: 1, children: 0, infant: 0 })
     const params = useParams()
+    const dispatch = useDispatch()
 
     useEffect(() => {
         loadStay()
@@ -55,8 +60,26 @@ export const StayDetails = () => {
         setOrder(prevOrder => ({ ...prevOrder, [field]: value }))
     }
 
-    const onSubmit = (ev) => {
+    const onSubmit = async (ev) => {
         ev.preventDefault()
+        const newOrder = {
+            startDate: order.startDate,
+            endDate: order.endDate,
+            guests: {
+                adults: guestCount.adult,
+                kids: guestCount.children,
+                infants: guestCount.infant
+            },
+            dest: {
+                country: stay.loc.country,
+                countryCode: stay.loc.countryCode,
+                address: stay.loc.address,
+                lat: stay.loc.lat,
+                lng: stay.loc.lan
+            }
+        }
+        console.log(guestCount);
+        await dispatch(addOrder(newOrder))
     }
 
     const onOpenGuestModal = () => {
@@ -77,6 +100,16 @@ export const StayDetails = () => {
         showSuccessMsg('Reservation succeed!')
     }
 
+    const onAddReview = async (ev) => {
+        ev.preventDefault()
+        const txt = ev.target[0].value
+        console.log(txt)
+        console.log(stay)
+        await dispatch(addReviewToStay(txt, stay))
+        loadStay()
+        ev.target[0].value = ''
+    }
+
     // const handleMouseMouve = (e) => {
     //     console.log(e);
     //     setX(e.clientX)
@@ -91,6 +124,7 @@ export const StayDetails = () => {
     </div>
     return <section className="stay-details flex flex-column">
         <h1 className='stay-name'>{stay.name}</h1>
+        {/* <DatePicker /> */}
         {/* <button onMouseMove={handleMouseMouve} style={{backgroundColor: bgc, backgroundPositionX: x, backgroundPositionY: y}}>testing is bgc working?</button> */}
         <div className='start-info flex align-center'>
             <img src={require('../assets/icons/star.svg').default} alt="" className='start-icon' />
@@ -147,13 +181,13 @@ export const StayDetails = () => {
             <div className='order-display'>
                 <div className='order-container flex flex-column'>
                     <div className='order-header flex'>
-                        <p>
-                            <span className='order-price'>${stay.price}</span> / night
-                        </p>
-                        <p>
+                        <div>
+                            <span className='order-price'>${stay.price.toLocaleString('en-IN')}</span> night
+                        </div>
+                        <div className='flex align-center'>
                             <img src={require('../assets/icons/star.svg').default} alt="" className='order-icon' />
-                            {stay.reviewScores.rating} <span className='dot'></span> {stay.reviews.length} Reviews
-                        </p>
+                            <div>{stay.reviewScores.rating} <span className='dot'></span> <span>{stay.reviews.length} Reviews</span></div>
+                        </div>
                     </div>
 
                     <form onSubmit={onSubmit} className='order-form flex flex-column'>
@@ -219,20 +253,20 @@ export const StayDetails = () => {
                     <p className='order-summary-header align-self-center'>You won't be charged yet</p>
                     <div className='order-summary flex flex-column'>
                         <div className='price-sum flex space-between'>
-                            <span>${stay.price} x 5 nights</span>
-                            <span>${stay.price * 5}</span>
+                            <span>${stay.price.toLocaleString('en-IN')} x 5 nights</span>
+                            <span>${(stay.price * 5).toLocaleString('en-IN')}</span>
                         </div>
                         <div className='cleaning-sum flex space-between'>
                             <span>Cleaning fee</span>
-                            <span>${stay.price * 0.04}</span>
+                            <span>${(stay.price * 0.04).toLocaleString('en-IN')}</span>
                         </div>
                         <div className='service-sum flex space-between'>
                             <span>Service fee</span>
-                            <span>${stay.price * 0.005}</span>
+                            <span>${(stay.price * 0.005).toLocaleString('en-IN')}</span>
                         </div>
                         <div className='total-sum flex space-between'>
                             <span>Total</span>
-                            <span>${(stay.price * 5 + stay.price * 0.04 + stay.price * 0.005).toFixed(2)}</span>
+                            <span>${(stay.price * 5 + stay.price * 0.04 + stay.price * 0.005).toLocaleString('en-IN')}</span>
                         </div>
                     </div>
                 </div>
@@ -254,7 +288,20 @@ export const StayDetails = () => {
             })}
         </div>
 
-        <div>
+        <div className='add-review-container'>
+            <div className='add-title'>
+                <h2>Add a review</h2>
+            </div>
+            <form onSubmit={onAddReview}>
+                <div>
+                    <textarea name="" id="" rows="10" placeholder='Write your review here..'></textarea>
+                </div>
+                <button>Add Review</button>
+            </form>
+        </div>
+
+        <div className='map'>
+            <h2>Where you`ll be</h2>
             <GoogleMap lat={stay.loc.lat} lng={stay.loc.lan} />
         </div>
 
