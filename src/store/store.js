@@ -7,11 +7,13 @@ import thunk from 'redux-thunk'
 // import { userReducer } from './user.reducer.js'
 // import { reviewReducer } from './review.reducer'
 import { stayReducer } from './reducers/stay.reducers'
+import { orderReducer } from './reducers/order-reducers'
 
 const rootReducer = combineReducers({
     // userModule: userReducer,
     // reviewModule: reviewReducer,
-    stayModule: stayReducer
+    stayModule: stayReducer,
+    orderModule: orderReducer
 })
 
 
