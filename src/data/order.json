@@ -5,8 +5,7 @@
         "guests": {
             "adults": 2,
             "kids": 1,
-            "infants": 1,
-            "total":4
+            "infants": 1
         },
         "dest": {
             "country": "Portugal",
@@ -17,17 +16,18 @@
         },
 
         "host": {
-            "_id": "622f3401e36c59e6164fab4e",
-            "fullName": "Leo",
-            "imgUrl": "https://robohash.org/59985?set=set1"
+			"_id": "6294cc5df218f12d17952cc5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
         },
 
         "booker": {
-            "_id": "622f3401e36c59e6164fab4d",
-            "fullName": "Edgar",
-            "imgUrl": "https://robohash.org/59985?set=set1"
+            "_id": "6294d477f218f12d17a3c74b",
+            "fullname": "Edgar",
+            "imgUrl": "https://randomuser.me/api/portraits/men/52.jpg"
         },
-        "status": "pending"
+        "status": "pending",
+        "stay": "Artsy Downtown Studio!"
     },
     {
         "startDate": "2025/10/15",
@@ -35,9 +35,7 @@
         "guests": {
             "adults": 2,
             "kids": 1,
-            "infants": 1,
-            "total":4
-
+            "infants": 1
         },
         "dest": {
             "country": "Portugal",
@@ -48,17 +46,18 @@
         },
 
         "host": {
-            "_id": "622f3401e36c59e6164fab4e",
-            "fullName": "Leo",
-            "imgUrl": "https://robohash.org/59985?set=set1"
+			"_id": "6294cc5df218f12d17952cc5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
         },
 
         "booker": {
-            "_id": "622f3401e36c59e6164fab4f",
-            "fullName": "Margaux",
-            "imgUrl": "https://robohash.org/59985?set=set1"
+            "_id": "6294d477f218f12d17a3c74b",
+            "fullname": "Edgar",
+            "imgUrl": "https://randomuser.me/api/portraits/men/52.jpg"
         },
-        "status": "rejected"
+        "status": "rejected",
+        "stay": "New 1BD Condo in Napili Ridge, Walk to Beach"
     },
     {
         "startDate": "2025/10/15",
@@ -66,9 +65,7 @@
         "guests": {
             "adults": 2,
             "kids": 1,
-            "infants": 1,
-            "total":4
-
+            "infants": 1
         },
         "dest": {
             "country": "Portugal",
@@ -79,16 +76,17 @@
         },
 
         "host": {
-            "_id": "622f3401e36c59e6164fab4e",
-            "fullName": "Leo",
-            "imgUrl": "https://robohash.org/59985?set=set1"
+			"_id": "6294cc5df218f12d17952cc5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
         },
 
         "booker": {
-            "_id": "622f3401e36c59e6164fab50",
-            "fullName": "Francine",
-            "imgUrl": "https://robohash.org/59985?set=set1"
+            "_id": "6294d477f218f12d17a3c74b",
+            "fullname": "Edgar",
+            "imgUrl": "https://randomuser.me/api/portraits/men/52.jpg"
         },
-        "status": "approved"
+        "status": "approved",
+        "stay": "B & B  Room Yoga Garden's Place"
     }
 ]

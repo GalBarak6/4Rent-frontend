@@ -70,7 +70,7 @@ async function save(stay) {
 
 
 async function addReview(txt, stay) {
-    console.log('addreview');
+    console.log('addreview')
     const review = {id: utilService.makeId(), txt, date: 'March 2022', by: {_id: '622f3407e36c59e6164fbe6a', fullname: 'Mike', imgUrl: 'https://randomuser.me/portraits/men/69.jpg'}}
     stay.reviews.push(review)
     const savedStay = save(stay)

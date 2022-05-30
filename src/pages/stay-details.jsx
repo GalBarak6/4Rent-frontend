@@ -76,7 +76,19 @@ export const StayDetails = () => {
                 address: stay.loc.address,
                 lat: stay.loc.lat,
                 lng: stay.loc.lan
-            }
+            },
+            host: {
+                _id: '6294cc5df218f12d17952cc5',
+                fullname: 'Linda-Lee',
+                pictureUrl: 'https://randomuser.me/api/portraits/women/22.jpg'
+            },
+            booker: {
+                _id: '6294d477f218f12d17a3c74b',
+                fullname: 'Edgar',
+                imgUrl: 'https://randomuser.me/api/portraits/men/52.jpg'
+            },
+            status: 'pending',
+            stay: stay.name
         }
         console.log(guestCount);
         await dispatch(addOrder(newOrder))
@@ -216,9 +228,9 @@ export const StayDetails = () => {
                                                 <div className='type-exact'>Age 13+</div>
                                             </div>
                                             <div className='guest-count flex align-center'>
-                                                <button onClick={() => onGuestCount(-1, 'adult')}><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <button type='button' onClick={() => onGuestCount(-1, 'adult')}><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
                                                 <span>{guestCount.adult}</span>
-                                                <button onClick={() => onGuestCount(1, 'adult')}><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <button type='button' onClick={() => onGuestCount(1, 'adult')}><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
                                             </div>
                                         </div>
 
@@ -228,9 +240,9 @@ export const StayDetails = () => {
                                                 <div className='type-exact'>Ages 2-12</div>
                                             </div>
                                             <div className='guest-count flex align-center'>
-                                                <button onClick={() => onGuestCount(-1, 'children')}><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <button type='button' onClick={() => onGuestCount(-1, 'children')}><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
                                                 <span className='guest-amount'>{guestCount.children}</span>
-                                                <button onClick={() => onGuestCount(1, 'children')}><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <button type='button' onClick={() => onGuestCount(1, 'children')}><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
                                             </div>
                                         </div>
 
@@ -240,9 +252,9 @@ export const StayDetails = () => {
                                                 <div className='type-exact'>Under 2</div>
                                             </div>
                                             <div className='guest-count flex align-center'>
-                                                <button onClick={() => onGuestCount(-1, 'infant')}><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <button type='button' onClick={() => onGuestCount(-1, 'infant')}><img src={require('../assets/icons/minus.png')} alt="" className='plus-minus-icon' /></button>
                                                 <span>{guestCount.infant}</span>
-                                                <button onClick={() => onGuestCount(1, 'infant')}><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
+                                                <button type='button' onClick={() => onGuestCount(1, 'infant')}><img src={require('../assets/icons/plus.png')} alt="" className='plus-minus-icon' /></button>
                                             </div>
                                         </div>
                                     </div>}
