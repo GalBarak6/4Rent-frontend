@@ -22,7 +22,7 @@ export const AppHeader = ({ onOpenModal }) => {
                 {/* <NavLink to="/">Home</NavLink> */}
                 {/* <NavLink to="/login">Login</NavLink> */}
                 <NavLink to="/stay">Explore</NavLink>
-                <NavLink to="/">Become a host</NavLink>
+                <NavLink to="/host">Become a host</NavLink>
             </nav>
 
             <button className="user-menu" onClick={onOpenModal}>

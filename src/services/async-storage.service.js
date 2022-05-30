@@ -1,4 +1,7 @@
-import profile from '../data/stay.json'
+// import profile from '../data/stay.json'
+const stays = require('../data/stay.json')
+const orders = require('../data/order.json')
+
 
 export const storageService = {
     query,
@@ -11,7 +14,7 @@ export const storageService = {
 
 function query(entityType, delay = 600) {
     var entities = JSON.parse(localStorage.getItem(entityType))
-    if(!entities) entities = _createEntities()
+    if(!entities) entities = _createEntities(entityType)
     _save(entityType, entities)
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
@@ -78,6 +81,7 @@ function postMany(entityType, newEntities) {
         })
 }
 
-function _createEntities() {
-    return profile
+function _createEntities(entityType) {
+    if (entityType==='stay') return stays
+    if (entityType==='order') return orders
 }

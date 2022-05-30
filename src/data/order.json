@@ -5,7 +5,8 @@
         "guests": {
             "adults": 2,
             "kids": 1,
-            "infants": 1
+            "infants": 1,
+            "total":4
         },
         "dest": {
             "country": "Portugal",
@@ -34,7 +35,9 @@
         "guests": {
             "adults": 2,
             "kids": 1,
-            "infants": 1
+            "infants": 1,
+            "total":4
+
         },
         "dest": {
             "country": "Portugal",
@@ -63,7 +66,9 @@
         "guests": {
             "adults": 2,
             "kids": 1,
-            "infants": 1
+            "infants": 1,
+            "total":4
+
         },
         "dest": {
             "country": "Portugal",
