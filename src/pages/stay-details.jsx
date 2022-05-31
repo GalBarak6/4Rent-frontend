@@ -11,6 +11,7 @@ import { Reviews } from '../cmps/reviews'
 import { MainAmenities } from '../cmps/main-amenities'
 import { StayGallery } from '../cmps/stay-gallery'
 // import {SendBtn} from '../cmps/send-btn'
+import {OrderModal} from '../cmps/order-modal'
 
 export const StayDetails = () => {
 
@@ -70,6 +71,8 @@ export const StayDetails = () => {
     </div>
 
     return <section className="stay-details flex flex-column">
+                <OrderModal/>
+
         <h1 className='stay-name'>{stay.name}</h1>
         {/* <button onMouseMove={handleMouseMouve} style={{backgroundColor: bgc, backgroundPositionX: x, backgroundPositionY: y}}>testing is bgc working?</button> */}
 
