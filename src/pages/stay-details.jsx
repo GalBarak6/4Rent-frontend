@@ -73,7 +73,6 @@ export const StayDetails = () => {
     return <section className="stay-details flex flex-column">
 
         <h1 className='stay-name'>{stay.name}</h1>
-        <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
         {/* <button onMouseMove={handleMouseMouve} style={{backgroundColor: bgc, backgroundPositionX: x, backgroundPositionY: y}}>testing is bgc working?</button> */}
 
         <div className='start-info flex align-center'>
@@ -111,26 +110,32 @@ export const StayDetails = () => {
                 {stay.reviewScores.rating} <span className='dot'></span> <div>{stay.reviews.length} Reviews</div>
             </div>
 
-            {/* <div className='reviews-summary'>
-                <div className='stats-container'>
+            <div className='reviews-summary'>
+                <div className='stats-container flex align-center'>
                     <div>Cleanliness</div>
+                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
                 </div>
-                <div className='stats-container'>
+                <div className='stats-container flex align-center'>
                     <div>Communication</div>
+                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
                 </div>
-                <div className='stats-container'>
+                <div className='stats-container flex align-center'>
                     <div>Check-in</div>
+                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
                 </div>
-                <div className='stats-container'>
+                <div className='stats-container flex align-center'>
                     <div>Accuracy</div>
+                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
                 </div>
-                <div className='stats-container'>
+                <div className='stats-container flex align-center'>
                     <div>Location</div>
+                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
                 </div>
-                <div className='stats-container'>
+                <div className='stats-container flex align-center'>
                     <div>Value</div>
+                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
                 </div>
-            </div> */}
+            </div>
         </div>
 
 
