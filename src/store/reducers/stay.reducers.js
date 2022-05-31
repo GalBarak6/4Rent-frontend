@@ -6,7 +6,7 @@ const initialState = {
         price: '',
         label: ''
     },
-    reviews: []
+    // reviews: []
 }
 export function stayReducer(state = initialState, action) {
     var newState = state

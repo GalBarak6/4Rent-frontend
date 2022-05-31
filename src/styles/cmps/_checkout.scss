@@ -181,4 +181,50 @@
         }
     }
 
+
+    .mouse-cursor-gradient-tracking {
+        position: relative;
+        // background: linear-gradient(90deg, #f1254b 0, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%);
+        // padding: 0.5rem 1rem;
+        // font-size: 1.2rem;
+        // border: none;
+        // color: white;
+        // cursor: pointer;
+        outline: none;
+        overflow: hidden;
+
+
+        height: 48px;
+        width: 100%;
+        background: linear-gradient(90deg, #f1254b 0, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%);
+        border-radius: 8px;
+        font-size: rem(16px);
+        color: $clr8;
+        font-weight: bold;
+
+
+      }
+      
+      .mouse-cursor-gradient-tracking span {
+        position: relative;
+      }
+      
+      .mouse-cursor-gradient-tracking:before {
+        --size: 0;
+        content: '';
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--size);
+        height: var(--size);
+        // background: radial-gradient( rgb(209, 14, 47), transparent);
+        background: radial-gradient(circle closest-side, #e64462 , transparent);
+        transform: translate(-50%, -50%);
+        transition: width 0.2s ease, height 0.2s ease;
+      }
+      
+      .mouse-cursor-gradient-tracking:hover:before {
+        --size: 200px;
+      }
+
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { addOrder } from '../store/actions/order-actions';
 import { useDispatch } from 'react-redux';
 import { stayService } from '../services/stay.service';
@@ -8,9 +8,18 @@ import { OrderModal } from './order-modal';
 export const Checkout = ({ stay }) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
 
-    // const onOpenModal = () => {
-    //     setIsModalOpen(true)
-    // }
+    useEffect(() => {
+        let btn = document.querySelector('.mouse-cursor-gradient-tracking');
+        btn.addEventListener('mousemove', e => {
+            let rect = e.target.getBoundingClientRect();
+            let x = e.clientX - rect.left;
+            let y = e.clientY - rect.top;
+            btn.style.setProperty('--x', x + 'px');
+            btn.style.setProperty('--y', y + 'px');
+        });
+
+    }, [])
+
     const closeModal = () => {
         setIsModalOpen(false)
     }
@@ -53,6 +62,8 @@ export const Checkout = ({ stay }) => {
         const totalCount = stayService.getTotalGuestCount(guestCount)
         return totalCount
     }
+
+
 
     return <div className='order-display'>
         <div className='order-container flex flex-column'>
@@ -124,7 +135,13 @@ export const Checkout = ({ stay }) => {
                             </div>}
                     </div>
                 </div>
-                <button type='submit' className='reserve-btn'>Reserve</button>
+                {/* <button type='submit' className='reserve-btn'>Reserve</button> */}
+                <button type='submit' className='mouse-cursor-gradient-tracking'>
+                    <span>Reserve</span>
+                </button>
+                {/* <button class="mouse-cursor-gradient-tracking">
+                    <span>Hover me</span>
+                </button> */}
             </form>
             <p className='order-summary-header align-self-center'>You won't be charged yet</p>
             <div className='order-summary flex flex-column'>

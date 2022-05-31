@@ -13,28 +13,53 @@ export const StayFilterModal = ({ onCloseModal }) => {
     // const [filterByPrice, setFilterPrice] = useState(100)
     // const [filterByAmenities, setFilterByAmenities] = useState([])
 
+    // var filterByType 
+    // var filterByAmenities 
+    // var filterByPrice 
+
+    // useEffect(() => {
+    //     loadFilters()
+    // console.log({filterByType})
+    // console.log({filterByAmenities})
+    // console.log({filterByPrice})
+    // }, [])
+
+    // const loadFilters = () => {
+    //      filterByType = filterBy.type
+    //      filterByType.forEach( type=> {
+    //          $(`input[name=${type}]`).prop('checked', true)
+    //          console.log('after forEach')
+    //      })
+
+    //      filterByAmenities = filterBy.amenities
+    //      filterByPrice = filterBy.price
+    // }
+
     let filterByType = []
     let filterByAmenities = []
     let filterByPrice = 100
 
-    const onTypeChange = ({ target }) => {
-        const field = target.name
+    // const onTypeChange = ({ target }) => {
+    //     const field = target.name
 
-        if (target.checked) {
-            console.log('check onTypeChange')
-            filterByType = [...filterByType, field]
-        }
+    //     if (target.checked) {
+    //         console.log('check onTypeChange')
+    //         filterByType = [...filterByType, field]
+    //     }
 
-        if (!target.checked) {
-            filterByType = filterByType.filter(type => type !== field)
-        }
+    //     if (!target.checked) {
+    //         filterByType = filterByType.filter(type => type !== field)
+    //     }
+    // }
+
+    const onTypeChange = (value) => {
+        filterByType = [...filterByType, value]
     }
 
     const onAmenitiesChange = ({ target }) => {
         const field = target.name
 
         if (target.checked) {
-            console.log('check onTypeChange')
             filterByAmenities = [...filterByAmenities, field]
         }
 
@@ -42,7 +67,7 @@ export const StayFilterModal = ({ onCloseModal }) => {
             filterByAmenities = filterByAmenities.filter(amenity => amenity !== field)
         }
 
-   }
+    }
 
     const onPriceChange = ({ target }) => {
         let { value } = target
@@ -53,7 +78,7 @@ export const StayFilterModal = ({ onCloseModal }) => {
     const onSetFilters = (ev) => {
         ev.preventDefault()
         onCloseModal()
-        console.log('stay-filter.onSetFilters')
+        // console.log('stay-filter.onSetFilters')
         setFilters(filterByType, filterByAmenities, filterByPrice)
     }
 
@@ -81,17 +106,48 @@ export const StayFilterModal = ({ onCloseModal }) => {
             <div className="modal-details">
                 <div className="property-type">
                     <div className="title">Property type</div>
-                    <input type="checkbox" id="House" name="House" value="House" onChange={onTypeChange} />
-                    <label htmlFor="House">House</label>
+                    <div className="property-type-labels">
+                        <button type="button" className="property-type-btn" onClick={()=> {onTypeChange ("House")}} >
+                            <img src={require(`../assets/icons/house.jpg`)} alt="" />
+                            <div>House</div>
+                        </button>
+                        <button type="button" className="property-type-btn" onClick={()=>{onTypeChange ("Apartment")}} >
+                            <img src={require(`../assets/icons/apartment.jpg`)} alt="" />
+                            <div>Apartment</div>
+                        </button>
+                        <button type="button" className="property-type-btn" onClick={()=>{onTypeChange ("Guesthouse")}} >
+                            <img src={require(`../assets/icons/guesthouse.jpg`)} alt="" />
+                            <div>Guesthouse</div>
+                        </button>
+                        <button type="button" className="property-type-btn" onClick={()=>{onTypeChange ("Hotel")}} >
+                            <img src={require(`../assets/icons/hotel.jpg`)} alt="" />
+                            <div>Hotel</div>
+                        </button>
 
-                    <input type="checkbox" id="Apartment" name="Apartment" value="Apartment" onChange={onTypeChange} />
-                    <label htmlFor="Apartment">Apartment</label>
+{/* 
 
-                    <input type="checkbox" id="House" name="Guesthouse" value="Guesthouse" onChange={onTypeChange} />
-                    <label htmlFor="Guesthouse">Guesthouse</label>
+                        <label>
+                            <input className="checkbox" type="checkbox" name="House" value="House" onChange={onTypeChange} />
+                            House
+                        </label>
 
-                    <input type="checkbox" id="Hotel" name="Hotel" value="Hotel" onChange={onTypeChange} />
-                    <label htmlFor="Hotel">Hotel</label>
+                        <label>
+                            <input type="checkbox"  name="Apartment" value="Apartment" onChange={onTypeChange} />
+                            Apartment
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox"name="Guesthouse" value="Guesthouse" onChange={onTypeChange} />
+                            Guesthouse
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="Hotel" value="Hotel" onChange={onTypeChange} />
+                            Hotel
+                        </label> */}
+
+                    </div>
 
                 </div>
 
@@ -140,7 +196,7 @@ export const StayFilterModal = ({ onCloseModal }) => {
                     </div>
 
 
-                </div>
+                </div> 
 
                 <div className="price">
                     <div className="title">Price range</div>
