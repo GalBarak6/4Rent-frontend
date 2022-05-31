@@ -2,7 +2,7 @@
 	{
 		"fullname": "Linda-Lee",
 		"imgUrl": "https://randomuser.me/api/portraits/women/22.jpg",
-		"username": "114216441",
+		"username": "Linda-Lee",
 		"password": "Linda-Lee",
 		"_id": "6295cf09d722c15469ebe4f5",
 		"isHost": true
@@ -10,7 +10,7 @@
 	{
 		"fullname": "Edgar",
 		"imgUrl": "https://randomuser.me/api/portraits/men/52.jpg",
-		"username": "75091963",
+		"username": "Edgar",
 		"password": "Edgar",
 		"_id": "6295ce47c5274e3f84a8c2b5",
 		"isHost": false
@@ -18,7 +18,7 @@
 
 
 
-
+	
 	{
 		"fullname": "Leo",
 		"imgUrl": "https://robohash.org/59985?set=set1",
