@@ -1,84 +1,18 @@
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
+
 var $ = require("jquery");
 
-export const StayFilter = ({ setFilters, labelChange }) => {
-    const [isModalOpen, setIsModalOpen] = useState(false)
+export const StayFilter = ({ labelChange, onOpenModal }) => {
     const [selectedFilter, setSelectedFilter] = useState('All')
 
-    const { filterBy } = useSelector((storeState) => storeState.stayModule)
-
-    const [filterByType, setFilterByType] = useState([])
-    const [filterByPrice, setFilterPrice] = useState(100)
-    const [filterByAmenities, setFilterByAmenities] = useState([])
-
-    const onTypeChange = ({ target }) => {
-        const field = target.name
-        let { value } = target
-        console.log({ value })
-        console.log({ field })
-
-        if (target.checked) {
-            setFilterByType((prevState) => (
-                [...prevState, field]
-            ))
-        }
-
-        if (!target.checked) {
-            setFilterByType((prevState) => (
-                prevState.filter(type => type !== field)
-            ))
-        }
-    }
-    const onAmenitiesChange = ({ target }) => {
-        const field = target.name
-
-        if (target.checked) {
-            setFilterByAmenities((prevState) => (
-                [...prevState, field]
-            ))
-        }
-
-        if (!target.checked) {
-            setFilterByAmenities((prevState) => (
-                prevState.filter(amenity => amenity !== field)
-            ))
-        }
-    }
-
-    const onPriceChange = ({ target }) => {
-        const field = target.name
-        let { value } = target
-        setFilterPrice(value)
-    }
 
     const onLabelChange = (value) => {
         setSelectedFilter(value)
         labelChange(value)
     }
-
-    const onOpenModal = () => {
-        setIsModalOpen(true)
-    }
-    const onCloseModal = () => {
-        setIsModalOpen(false)
-    }
-
-    const onSetFilters = (ev) => {
-        ev.preventDefault()
-        setIsModalOpen(false)
-        console.log('stay-filter.onSetFilters')
-        setFilters(filterByType, filterByAmenities, filterByPrice)
-    }
-
-    const onClearFilters = () => {
-        $('input[type="checkbox"]').prop('checked', false);
-        setFilterPrice(100)
-        setFilterByAmenities([])
-        setFilterByType([])
-    }
-
-
+ 
+ 
     let className = ''
     return <section className="stay-filter">
 
@@ -155,7 +89,7 @@ export const StayFilter = ({ setFilters, labelChange }) => {
 
         </div>
         <div>
-            <button className="btn-filters" onClick={() => { onOpenModal() }}>
+            <button className="btn-filters" onClick={onOpenModal}>
                 <span ><svg className="icon-container" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" >
                     <path d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
                 </span>
@@ -163,99 +97,5 @@ export const StayFilter = ({ setFilters, labelChange }) => {
 
             </button>
         </div>
-        {
-            isModalOpen &&
-            <div className="filters-modal">
-                <form onSubmit={onSetFilters}>
-
-                    <div className="modal-title">
-                        <button className="close-btn" onClick={() => { onCloseModal() }}>X</button>
-                        <div>Filters</div>
-                    </div>
-
-                    <div className="modal-details">
-                        <div className="property-type">
-                            <div className="title">Property type</div>
-                            <input type="checkbox" id="House" name="House" value="House" onChange={onTypeChange} />
-                            <label htmlFor="House">House</label>
-
-                            <input type="checkbox" id="Apartment" name="Apartment" value="Apartment" onChange={onTypeChange} />
-                            <label htmlFor="Apartment">Apartment</label>
-
-                            <input type="checkbox" id="House" name="Guesthouse" value="Guesthouse" onChange={onTypeChange} />
-                            <label htmlFor="Guesthouse">Guesthouse</label>
-
-                            <input type="checkbox" id="Hotel" name="Hotel" value="Hotel" onChange={onTypeChange} />
-                            <label htmlFor="Hotel">Hotel</label>
-
-                        </div>
-
-                        <div className="amenities">
-                            <div className="title">Amenities</div>
-                            <div className="amenities-content">
-
-                                <div>
-                                    <div>
-                                        <input type="checkbox" id="TV" name="TV" value="TV" onChange={onAmenitiesChange} />
-                                        <label htmlFor="TV">TV</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="Wifi" name="Wifi" value="Wifi" onChange={onAmenitiesChange} />
-                                        <label htmlFor="Wifi">Wifi</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="Kitchen" name="Kitchen" value="Kitchen" onChange={onAmenitiesChange} />
-                                        <label htmlFor="Kitchen">Kitchen</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="Pool" name="Pool" value="Pool" onChange={onAmenitiesChange} />
-                                        <label htmlFor="Pool">Pool</label>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <input type="checkbox" id="Air conditioning" name="Air conditioning" value="Air conditioning" onChange={onAmenitiesChange} />
-                                        <label htmlFor="Air conditioning">Air conditioning</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="Hot tub" name="Hot tub" value="Hot tub" price />
-                                        <label htmlFor="Hot tub">Hot tub</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="Gym" name="Gym" value="Gym" onChange={onAmenitiesChange} />
-                                        <label htmlFor="Gym">Gym</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="Self check-in" name="Self check-in" value="Self check-in" onChange={onAmenitiesChange} />
-                                        <label htmlFor="Self check-in">Self check-in</label>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                        <div className="price">
-                            <div className="title">Price range</div>
-                            <span>100</span>
-                            <input type="range" id="price" name="price" min="100" max="10000" onChange={onPriceChange} />
-                            <span>10,000</span>
-                        </div>
-                    </div>
-
-                    <div className="modal-footer">
-                        <button type="button" className="clear-btn" onClick={() => { onClearFilters() }}>Clear all</button>
-                        <button className="show-btn">Show 1,000+ stays</button>
-                    </div>
-                </form>
-
-            </div>
-        }
-
-
-
-
     </section >
 }

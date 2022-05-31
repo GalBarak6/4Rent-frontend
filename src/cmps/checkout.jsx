@@ -2,16 +2,16 @@ import { useState } from 'react'
 import { addOrder } from '../store/actions/order-actions';
 import { useDispatch } from 'react-redux';
 import { stayService } from '../services/stay.service';
-import {utilService} from '../services/util.service'
+import { utilService } from '../services/util.service'
 import { OrderModal } from './order-modal';
 
 export const Checkout = ({ stay }) => {
-    const [isModalOpen, setIsModalOpen] = useState(true)
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
-    const onOpenModal = () => {
-        setIsModalOpen(true)
-    }
-    const onCloseModal = () => {
+    // const onOpenModal = () => {
+    //     setIsModalOpen(true)
+    // }
+    const closeModal = () => {
         setIsModalOpen(false)
     }
 
@@ -44,6 +44,7 @@ export const Checkout = ({ stay }) => {
 
     const onSubmit = async (ev) => {
         ev.preventDefault()
+        setIsModalOpen(true)
         const newOrder = stayService.getNewOrder(order, guestCount, stay)
         await dispatch(addOrder(newOrder))
     }
@@ -144,6 +145,11 @@ export const Checkout = ({ stay }) => {
                     <span>${(stay.price * 5 + stay.price * 0.04 + stay.price * 0.005).toLocaleString('en-IN')}</span>
                 </div>
             </div>
+
+
         </div>
+        {isModalOpen &&
+            <OrderModal closeModal={closeModal} />
+        }
     </div>
 }

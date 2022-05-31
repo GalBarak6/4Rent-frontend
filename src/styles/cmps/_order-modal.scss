@@ -1,8 +1,8 @@
 .order-modal{
     border: solid 1px $clr9;
     border-radius: 15px;
-    width: 40%;
-    height: 40%;
+    width: rem(550px);
+    height: rem(260px);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -14,13 +14,14 @@
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: $clr8;
 
     .modal-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        padding-bottom: 10px;
         font-weight: bold;
         font-size: rem(16px);
         color: $clr3;
@@ -40,6 +41,18 @@
             padding: 0 0 12px;
         }
     
+    }
+
+    .btn {
+        height: rem(47px);
+        background-color: $clr3;
+        color: $clr8;
+        font-weight: bold;
+        font-size: rem(16px);
+        padding-left: rem(25px);
+        padding-right: rem(25px);
+        border-radius: $btnBorderRadius;
+        align-self: flex-end;
     }
 
 }
