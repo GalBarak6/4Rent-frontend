@@ -110,30 +110,49 @@ export const StayDetails = () => {
                 {stay.reviewScores.rating} <span className='dot'></span> <div>{stay.reviews.length} Reviews</div>
             </div>
 
-            <div className='reviews-summary'>
+            <div className='reviews-summary flex align-center'>
                 <div className='stats-container flex align-center'>
                     <div>Cleanliness</div>
-                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
+                    <div className='rating-bar flex align-center'>
+                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
+                        <span>5</span>
+                    </div>
+
                 </div>
                 <div className='stats-container flex align-center'>
                     <div>Communication</div>
-                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
+                    <div className='rating-bar flex align-center'>
+                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
+                        <span>5</span>
+                    </div>
                 </div>
                 <div className='stats-container flex align-center'>
                     <div>Check-in</div>
-                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
+                    <div className='rating-bar flex align-center'>
+                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
+                        <span>5</span>
+                    </div>
                 </div>
                 <div className='stats-container flex align-center'>
                     <div>Accuracy</div>
-                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
+                    <div className='rating-bar flex align-center'>
+                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
+                        <span>5</span>
+                    </div>
                 </div>
                 <div className='stats-container flex align-center'>
                     <div>Location</div>
-                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
+                    <div className='rating-bar flex align-center'>
+                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
+                        <span>5</span>
+                    </div>
                 </div>
                 <div className='stats-container flex align-center'>
                     <div>Value</div>
-                    <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
+                    <div className='rating-bar flex align-center'>
+                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
+                        <span>5</span>
+                    </div>
                 </div>
             </div>
         </div>
