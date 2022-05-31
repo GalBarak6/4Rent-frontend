@@ -2,11 +2,13 @@ import { useState } from 'react'
 import { addOrder } from '../store/actions/order-actions';
 import { useDispatch } from 'react-redux';
 import { stayService } from '../services/stay.service';
-import {utilService} from '../services/util.service'
-import { OrderModal } from './order-modal';
+import { DatePicker } from './date-range';
+import { utilService } from '../services/util.service'
+// import { OrderModal } from './order-modal';
 
-export const Checkout = ({ stay }) => {
+export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     const [isModalOpen, setIsModalOpen] = useState(true)
+
 
     const onOpenModal = () => {
         setIsModalOpen(true)
@@ -14,6 +16,13 @@ export const Checkout = ({ stay }) => {
     const onCloseModal = () => {
         setIsModalOpen(false)
     }
+
+    const [dateRange, setDateRange] = useState([
+        {
+            startDate: utilService.formatDate(new Date),
+            endDate: utilService.formatDate(new Date(new Date().getTime() + (120 * 60 * 60 * 1000))),
+        },
+    ])
 
     const [order, setOrder] = useState({ startDate: '', endDate: '', guests: 0 })
     const [isGuestModal, setIsGuestModal] = useState(false)
@@ -53,6 +62,10 @@ export const Checkout = ({ stay }) => {
         return totalCount
     }
 
+    // const onHandleDates = () => {
+
+    // }
+
     return <div className='order-display'>
         <div className='order-container flex flex-column'>
             <div className='order-header flex'>
@@ -61,18 +74,20 @@ export const Checkout = ({ stay }) => {
                 </div>
                 <div className='flex align-center'>
                     <img src={require('../assets/icons/star.svg').default} alt="" className='order-icon' />
-                    <div>{stay.reviewScores.rating} <span className='dot'></span> <span>{stay.reviews.length} Reviews</span></div>
+                    <div>{onGetTotalReviewScore()} <span className='dot'></span> <span>{stay.reviews.length} Reviews</span></div>
                 </div>
             </div>
 
             <form onSubmit={onSubmit} className='order-form flex flex-column'>
                 <div className='order-inputs'>
                     <div className='dates-container flex space-between'>
+                        {/* <DatePicker /> */}
                         <label htmlFor="startDate" className='flex flex-column'>
-                            CHECK-IN<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin" />
+                            CHECK-IN<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin" value={dateRange.startDate} />
                         </label>
                         <label htmlFor="endDate" className='flex flex-column'>
-                            CHECKOUT<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" />
+                            {/* CHECKOUT<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" value={utilService.formatDate(new Date)}/> */}
+                            CHECKOUT<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" value={dateRange.endDate} />
                         </label>
                     </div>
 

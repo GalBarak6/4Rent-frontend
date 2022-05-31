@@ -10,8 +10,7 @@ import { Checkout } from '../cmps/checkout'
 import { Reviews } from '../cmps/reviews'
 import { MainAmenities } from '../cmps/main-amenities'
 import { StayGallery } from '../cmps/stay-gallery'
-// import {SendBtn} from '../cmps/send-btn'
-import { OrderModal } from '../cmps/order-modal'
+import {SendBtn} from '../cmps/send-btn'
 
 export const StayDetails = () => {
 
@@ -57,6 +56,12 @@ export const StayDetails = () => {
         ev.target[0].value = ''
     }
 
+    const onGetTotalReviewScore = () => {
+        const totalScores = stayService.getTotalReviewScore(stay.reviewScores)
+        console.log(totalScores);
+        return totalScores
+    }
+
     // const handleMouseMouve = (e) => {
     //     console.log(e)
     //     setX(e.clientX)
@@ -77,7 +82,7 @@ export const StayDetails = () => {
 
         <div className='start-info flex align-center'>
             <img src={require('../assets/icons/star.svg').default} alt="" className='start-icon' />
-            {stay.reviewScores.rating} <span className='dot'></span> <a href="#reviews-container">{stay.reviews.length} Reviews</a> <span className='dot'></span> {stay.loc.city} {stay.loc.address} {stay.loc.country}
+            {onGetTotalReviewScore()} <span className='dot'></span> <a href="#reviews-container">{stay.reviews.length} Reviews</a> <span className='dot'></span> {stay.loc.city} {stay.loc.address} {stay.loc.country}
         </div>
 
         <StayGallery imgUrls={stay.imgUrls} />
@@ -101,64 +106,10 @@ export const StayDetails = () => {
                 <Amenities stay={stay} />
             </div>
 
-            <Checkout stay={stay} />
+            <Checkout stay={stay} onGetTotalReviewScore={onGetTotalReviewScore} />
         </div>
 
-        <div className='curr-reviews'>
-            <div className='flex align-center'>
-                <img src={require('../assets/icons/star.svg').default} alt="" className='star-icon' />
-                {stay.reviewScores.rating} <span className='dot'></span> <div>{stay.reviews.length} Reviews</div>
-            </div>
-
-            <div className='reviews-summary flex align-center'>
-                <div className='stats-container flex align-center'>
-                    <div>Cleanliness</div>
-                    <div className='rating-bar flex align-center'>
-                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
-                        <span>5</span>
-                    </div>
-
-                </div>
-                <div className='stats-container flex align-center'>
-                    <div>Communication</div>
-                    <div className='rating-bar flex align-center'>
-                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
-                        <span>5</span>
-                    </div>
-                </div>
-                <div className='stats-container flex align-center'>
-                    <div>Check-in</div>
-                    <div className='rating-bar flex align-center'>
-                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
-                        <span>5</span>
-                    </div>
-                </div>
-                <div className='stats-container flex align-center'>
-                    <div>Accuracy</div>
-                    <div className='rating-bar flex align-center'>
-                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
-                        <span>5</span>
-                    </div>
-                </div>
-                <div className='stats-container flex align-center'>
-                    <div>Location</div>
-                    <div className='rating-bar flex align-center'>
-                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
-                        <span>5</span>
-                    </div>
-                </div>
-                <div className='stats-container flex align-center'>
-                    <div>Value</div>
-                    <div className='rating-bar flex align-center'>
-                        <meter max="5" min="0" value="5" high="0.75" low="0.25" ></meter>
-                        <span>5</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <Reviews reviews={stay.reviews} />
+        <Reviews stay={stay} onGetTotalReviewScore={onGetTotalReviewScore}/>
 
         <div className='add-review-container'>
             <div className='add-title'>
@@ -166,10 +117,10 @@ export const StayDetails = () => {
             </div>
             <form onSubmit={onAddReview}>
                 <div>
-                    <textarea name="" id="" rows="10" placeholder='Write your review here..'></textarea>
+                    <textarea name="new-review" id="new-review" rows="10" placeholder='Write your review here..'></textarea>
                 </div>
-                <button>Add Review</button>
-                {/* <SendBtn /> */}
+                {/* <button>Add Review</button> */}
+                <SendBtn />
             </form>
         </div>
 

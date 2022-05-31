@@ -11,7 +11,8 @@ export const stayService = {
     remove,
     addReview,
     getNewOrder,
-    getTotalGuestCount
+    getTotalGuestCount,
+    getTotalReviewScore
 }
 
 async function query(filterBy) {
@@ -112,4 +113,15 @@ function getNewOrder(order, guestCount, stay) {
 function getTotalGuestCount(guestCount) {
     const totalCount = guestCount.adult + guestCount.children + guestCount.infant
     return totalCount
+}
+
+function getTotalReviewScore(reviewScores) {
+    let totalScores = 0
+    for (let value in reviewScores) {
+        totalScores += reviewScores[value]
+    }
+    totalScores = totalScores / Object.keys(reviewScores).length
+    // const totalScores = ((reviewScores.accuracy + reviewScores.cleanliness +
+    //     reviewScores.communication + reviewScores.checkin + reviewScores.location + reviewScores.value) / Object.keys(reviewScores).length).toFixed(1)
+    return totalScores.toFixed(1)
 }

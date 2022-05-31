@@ -26,7 +26,6 @@
         :nth-child(2) {
             font-size: rem(14px);
             font-weight: 600;
-            padding-left: 4px;
 
             span:nth-child(2) {
                 text-decoration: underline;
@@ -35,7 +34,7 @@
 
         .dot {
             font-size: 1.2rem;
-            margin: 0 3px;
+            margin: 0;
         }
 
     }
@@ -93,7 +92,8 @@
     }
 
     .order-icon {
-        width: 12px;
+        width: 16px;
+        padding-right: 5px;
     }
 
     .order-price {

@@ -45,12 +45,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"cleanliness": 3,
+			"accuracy": 5,
+			"communication": 3.5,
+			"checkin": 2.5,
+			"location": 3,
+			"value": 4,
 			"rating": 5
 		},
 		"reviews": [
@@ -197,12 +197,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 5,
+			"cleanliness": 5,
+			"checkin": 5,
+			"communication": 4.5,
+			"location": 4.5,
+			"value": 3,
 			"rating": 4.5
 		},
 		"reviews": [
@@ -269,12 +269,12 @@
 		},
 		"bathrooms": 2,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 3,
+			"cleanliness": 3,
+			"checkin": 2,
+			"communication": 5,
+			"location": 3,
+			"value": 2,
 			"rating": 5
 		},
 		"reviews": [
@@ -422,12 +422,12 @@
 		},
 		"bathrooms": 2,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 2,
+			"cleanliness": 2,
+			"checkin": 5,
+			"communication": 5,
+			"location": 3,
+			"value": 4,
 			"rating": 4.2
 		},
 		"reviews": [
@@ -529,12 +529,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 3,
+			"cleanliness": 3,
+			"checkin": 5,
+			"communication": 4,
+			"location": 4,
+			"value": 4,
 			"rating": 4.59
 		},
 		"reviews": [
@@ -553,10 +553,6 @@
 
 
 
-
-
-
-	
 	{
 		"_id": "622f337d75c7d36e498aac59",
 		"name": "Big, Bright & Convenient Sheung Wan",
@@ -602,12 +598,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 2.5,
+			"cleanliness": 3,
+			"checkin": 3,
+			"communication": 5,
+			"location": 5,
+			"value": 4.5,
 			"rating": 5
 		},
 		"reviews": [
@@ -667,12 +663,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 1,
+			"cleanliness": 1,
+			"checkin": 4,
+			"communication": 2,
+			"location": 1,
+			"value": 4,
 			"rating": 4.25
 		},
 		"reviews": [
@@ -812,12 +808,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 3,
+			"cleanliness": 3.5,
+			"checkin": 4.5,
+			"communication": 5,
+			"location": 5,
+			"value": 3,
 			"rating": 3.5
 		},
 		"reviews": [
@@ -893,12 +889,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 2,
+			"cleanliness": 2,
+			"checkin": 1.5,
+			"communication": 3.5,
+			"location": 3,
+			"value": 2,
 			"rating": 4.1
 		},
 		"reviews": [
@@ -978,12 +974,12 @@
 		},
 		"bathrooms": 2,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 5,
+			"cleanliness": 5,
+			"checkin": 4,
+			"communication": 4,
+			"location": 4,
+			"value": 4,
 			"rating": 5
 		},
 		"reviews": [
@@ -1052,12 +1048,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 1,
+			"cleanliness": 2.5,
+			"checkin": 4,
+			"communication": 4,
+			"location": 5,
+			"value": 3,
 			"rating": 4.85
 		},
 		"reviews": [
@@ -1147,12 +1143,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 4,
+			"cleanliness": 4,
+			"checkin": 2,
+			"communication": 3.5,
+			"location": 4,
+			"value": 3,
 			"rating": 3.8
 		},
 		"reviews": [
@@ -1263,12 +1259,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 4,
+			"cleanliness": 2.5,
+			"checkin": 2.5,
+			"communication": 4,
+			"location": 3,
+			"value": 3,
 			"rating": 3.32
 		},
 		"reviews": [
@@ -1325,12 +1321,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 4,
+			"cleanliness": 4,
+			"checkin": 5,
+			"communication": 5,
+			"location": 2.5,
+			"value": 4,
 			"rating": 2.2
 		},
 		"reviews": [
@@ -1411,12 +1407,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 5,
+			"cleanliness": 1,
+			"checkin": 1,
+			"communication": 3.5,
+			"location": 2,
+			"value": 2.5,
 			"rating": 4.7
 		},
 		"reviews": [
@@ -1517,12 +1513,12 @@
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 3.5,
+			"cleanliness": 3.5,
+			"checkin": 4,
+			"communication": 4,
+			"location": 5,
+			"value": 3,
 			"rating": 2.9
 		},
 		"reviews": [
@@ -1592,12 +1588,12 @@
 		},
 		"bathrooms": 2,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 1,
+			"cleanliness": 1,
+			"checkin": 3,
+			"communication": 1,
+			"location": 2,
+			"value": 2,
 			"rating": 1.9
 		},
 		"reviews": [
@@ -1667,12 +1663,12 @@
 		},
 		"bathrooms": 2,
 		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
+			"accuracy": 2,
+			"cleanliness": 3,
+			"checkin": 3,
+			"communication": 3,
+			"location": 2.5,
+			"value": 2.5,
 			"rating": 4.0
 		},
 		"reviews": [

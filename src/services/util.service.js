@@ -3,7 +3,8 @@ export const utilService = {
     makeLorem,
     getRandomIntInclusive,
     delay,
-    getDate
+    getDate,
+    formatDate
 }
 
 function makeId(length = 6) {
@@ -44,4 +45,18 @@ function getDate () {
     // const newDate = `${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`
     const newDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
     return newDate
+}
+
+function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+        
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
 }
