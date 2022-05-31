@@ -1,15 +1,13 @@
 import { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { loadStays, setFilter } from '../store/actions/stay.actions'
-// import $ from "jquery";
+import { useSelector } from 'react-redux'
 var $ = require( "jquery" );
 
-// export const StayFilter = ({ onTypeChange, onAmenitiesChange, labelChange, onPriceChange, onSetFilters }) => {
 export const StayFilter = ({ setFilters, labelChange }) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedFilter, setSelectedFilter] = useState('All')
 
     const { filterBy } = useSelector((storeState) => storeState.stayModule)
+    
     const [filterByType, setFilterByType] = useState([])
     const [filterByPrice, setFilterPrice] = useState(100)
     const [filterByAmenities, setFilterByAmenities] = useState([])
@@ -58,7 +56,6 @@ export const StayFilter = ({ setFilters, labelChange }) => {
         setSelectedFilter(value)
         labelChange(value)
     }
-
     
     const onOpenModal = () => {
         setIsModalOpen(true)
@@ -75,7 +72,6 @@ export const StayFilter = ({ setFilters, labelChange }) => {
     }
 
     const onClearFilters = () => {
-        // document.getElementById("House").checked = false
         $( 'input[type="checkbox"]' ).prop('checked', false);
         setFilterPrice(100)
         setFilterByAmenities([])
@@ -94,7 +90,6 @@ export const StayFilter = ({ setFilters, labelChange }) => {
                     <div>All Homes</div>
                 </button>
             }
-
 
             {
                 (className = (selectedFilter === 'Design') ? 'btn-label selected' : 'btn-label') &&

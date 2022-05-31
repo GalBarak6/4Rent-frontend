@@ -20,9 +20,16 @@
 // COMPONENTS
 @import 'cmps/app-header';
 @import 'cmps/app-footer';
+
+//page: stay-app
+
 @import 'cmps/stay-filter';
 @import 'cmps/stay-list';
 @import 'cmps/stay-preview';
+
+//page: stay-details
+
 @import 'cmps/user-menu-modal';
 @import 'cmps/google-map';
 @import 'cmps/user-msg';
+@import 'cmps/order-modal';

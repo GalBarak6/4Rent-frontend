@@ -8,13 +8,14 @@ export const OrderList = ({ orders }) => {
                 <tr>
                     {/* <th>Date</th> */}
                     <th>Booker</th>
+                    <th>Stay</th>
                     {/* <th>Stay</th> */}
                     <th>Start Date</th>
                     <th>End Date</th>
                     {/* <th>Nights</th> */}
                     <th>Guests</th>
                     {/* <th>Amount</th> */}
-                    {/* <th>Status</th> */}
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>

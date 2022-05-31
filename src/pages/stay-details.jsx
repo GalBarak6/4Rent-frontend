@@ -6,6 +6,8 @@ import * as React from 'react';
 import { GoogleMap } from '../cmps/google-map';
 // import { useSelector } from 'react-redux'
 import { UserMsg } from '../cmps/user-msg'
+import { OrderModal } from '../cmps/order-modal'
+
 
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service'
 import { DatePicker } from '../cmps/date-range';
@@ -135,6 +137,8 @@ export const StayDetails = () => {
         <div></div>
     </div>
     return <section className="stay-details flex flex-column">
+                <OrderModal/>
+
         <h1 className='stay-name'>{stay.name}</h1>
         {/* <DatePicker /> */}
         {/* <button onMouseMove={handleMouseMouve} style={{backgroundColor: bgc, backgroundPositionX: x, backgroundPositionY: y}}>testing is bgc working?</button> */}
