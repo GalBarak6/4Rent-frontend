@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-var $ = require( "jquery" );
+var $ = require("jquery");
 
 export const StayFilter = ({ setFilters, labelChange }) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedFilter, setSelectedFilter] = useState('All')
 
     const { filterBy } = useSelector((storeState) => storeState.stayModule)
-    
+
     const [filterByType, setFilterByType] = useState([])
     const [filterByPrice, setFilterPrice] = useState(100)
     const [filterByAmenities, setFilterByAmenities] = useState([])
@@ -56,28 +56,23 @@ export const StayFilter = ({ setFilters, labelChange }) => {
         setSelectedFilter(value)
         labelChange(value)
     }
-    
+
     const onOpenModal = () => {
         setIsModalOpen(true)
     }
     const onCloseModal = () => {
         setIsModalOpen(false)
     }
-    
-    const onSetFilters = () => {
-        // ev.preventDefault()
+
+    const onSetFilters = (ev) => {
+        ev.preventDefault()
         setIsModalOpen(false)
         console.log('stay-filter.onSetFilters')
         setFilters(filterByType, filterByAmenities, filterByPrice)
     }
 
     const onClearFilters = () => {
-<<<<<<< HEAD
-        // document.getElementById("House").checked = false
-        $( 'input[type="checkbox"]' ).prop('checked', false)
-=======
-        $( 'input[type="checkbox"]' ).prop('checked', false);
->>>>>>> 2c948cc1f01326aaae963b6f103bacee3376d104
+        $('input[type="checkbox"]').prop('checked', false);
         setFilterPrice(100)
         setFilterByAmenities([])
         setFilterByType([])
@@ -171,7 +166,7 @@ export const StayFilter = ({ setFilters, labelChange }) => {
         {
             isModalOpen &&
             <div className="filters-modal">
-                <form onSubmit={() => { onSetFilters() }}>
+                <form onSubmit={onSetFilters}>
 
                     <div className="modal-title">
                         <button className="close-btn" onClick={() => { onCloseModal() }}>X</button>
@@ -251,7 +246,7 @@ export const StayFilter = ({ setFilters, labelChange }) => {
                     </div>
 
                     <div className="modal-footer">
-                        <button type="button" className="clear-btn" onClick={() => { onClearFilters() }}>Clear all</button> 
+                        <button type="button" className="clear-btn" onClick={() => { onClearFilters() }}>Clear all</button>
                         <button className="show-btn">Show 1,000+ stays</button>
                     </div>
                 </form>

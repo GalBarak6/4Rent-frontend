@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { store } from './store/store'
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './styles/styles.scss'
 import App from './root-cmp'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'

@@ -3,8 +3,17 @@ import { addOrder } from '../store/actions/order-actions';
 import { useDispatch } from 'react-redux';
 import { stayService } from '../services/stay.service';
 import {utilService} from '../services/util.service'
+import { OrderModal } from './order-modal';
 
 export const Checkout = ({ stay }) => {
+    const [isModalOpen, setIsModalOpen] = useState(true)
+
+    const onOpenModal = () => {
+        setIsModalOpen(true)
+    }
+    const onCloseModal = () => {
+        setIsModalOpen(false)
+    }
 
     const [order, setOrder] = useState({ startDate: '', endDate: '', guests: 0 })
     const [isGuestModal, setIsGuestModal] = useState(false)
@@ -60,7 +69,7 @@ export const Checkout = ({ stay }) => {
                 <div className='order-inputs'>
                     <div className='dates-container flex space-between'>
                         <label htmlFor="startDate" className='flex flex-column'>
-                            CHECK-IN<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin" value={utilService.getDate()}/>
+                            CHECK-IN<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin" />
                         </label>
                         <label htmlFor="endDate" className='flex flex-column'>
                             CHECKOUT<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" />

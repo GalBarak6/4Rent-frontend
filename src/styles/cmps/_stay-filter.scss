@@ -84,7 +84,7 @@
         border: solid 1px $clr9;
         border-radius: 15px;
         width: 55%;
-        height: 90%;
+        // height: 90%;
         position: fixed;
         top: 50%;
         left: 50%;
@@ -185,4 +185,8 @@
     }
 
 
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background: transparent;
 }

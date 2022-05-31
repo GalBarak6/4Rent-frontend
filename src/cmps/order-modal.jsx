@@ -1,7 +1,6 @@
 
 import React from 'react'
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 export const OrderModal = () => {
     const [isModalOpen, setIsModalOpen] = useState(true)

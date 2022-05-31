@@ -11,7 +11,7 @@ import { Reviews } from '../cmps/reviews'
 import { MainAmenities } from '../cmps/main-amenities'
 import { StayGallery } from '../cmps/stay-gallery'
 // import {SendBtn} from '../cmps/send-btn'
-import {OrderModal} from '../cmps/order-modal'
+import { OrderModal } from '../cmps/order-modal'
 
 export const StayDetails = () => {
 
@@ -71,9 +71,9 @@ export const StayDetails = () => {
     </div>
 
     return <section className="stay-details flex flex-column">
-                <OrderModal/>
 
         <h1 className='stay-name'>{stay.name}</h1>
+        <meter max="5" min="0" value="1" high="0.75" low="0.25" optimum="0.5"></meter>
         {/* <button onMouseMove={handleMouseMouve} style={{backgroundColor: bgc, backgroundPositionX: x, backgroundPositionY: y}}>testing is bgc working?</button> */}
 
         <div className='start-info flex align-center'>
@@ -104,6 +104,35 @@ export const StayDetails = () => {
 
             <Checkout stay={stay} />
         </div>
+
+        <div className='curr-reviews'>
+            <div className='flex align-center'>
+                <img src={require('../assets/icons/star.svg').default} alt="" className='star-icon' />
+                {stay.reviewScores.rating} <span className='dot'></span> <div>{stay.reviews.length} Reviews</div>
+            </div>
+
+            {/* <div className='reviews-summary'>
+                <div className='stats-container'>
+                    <div>Cleanliness</div>
+                </div>
+                <div className='stats-container'>
+                    <div>Communication</div>
+                </div>
+                <div className='stats-container'>
+                    <div>Check-in</div>
+                </div>
+                <div className='stats-container'>
+                    <div>Accuracy</div>
+                </div>
+                <div className='stats-container'>
+                    <div>Location</div>
+                </div>
+                <div className='stats-container'>
+                    <div>Value</div>
+                </div>
+            </div> */}
+        </div>
+
 
         <Reviews reviews={stay.reviews} />
 

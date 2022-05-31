@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 var Carousel = require('react-responsive-carousel').Carousel;
 
 export class DemoCarousel extends Component {
