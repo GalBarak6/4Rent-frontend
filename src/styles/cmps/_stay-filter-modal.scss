@@ -1,0 +1,142 @@
+.stay-filter-modal {
+    border: solid 1px $clr9;
+    border-radius: 15px;
+    width: rem(780px);
+    height: rem(530px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $clr8;
+    // overflow: scroll;
+
+    button {
+        height: rem(47px);
+        background-color: unset;
+    }
+
+    label {
+        font-size: rem(18px);
+    }
+
+    .property-type-labels {
+        display: flex;
+        gap: rem(20px)
+    }
+
+    .property-type-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: rem(10px);
+        padding:rem(20px);
+        width: rem(170px);
+        height: rem(120px);
+        border: solid 1px $clr9;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: rem(16px);
+
+        img{
+            width: rem(30px);
+            height: rem(30px);
+
+        }
+    }
+
+    .modal-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 25px;
+        font-weight: bold;
+        font-size: rem(16px);
+        color: $clr3;
+        border-bottom: solid 1px $clr9;
+        flex: 1;
+
+    }
+
+    .modal-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 rem(25px);
+        overflow: auto;
+        flex: 2;
+        height: rem(380px);
+
+        >* {
+            padding: rem(20px) 0;
+            border-bottom: solid 1px $clr9;
+
+        }
+
+        .title {
+            font-size: rem(22px);
+            color: $clr3;
+            font-weight: bold;
+            padding: 0 0 12px;
+        }
+
+
+        .amenities-content {
+            padding: 12px 0;
+            display: flex;
+
+            >* {
+                flex-basis: 50%;
+            }
+
+        }
+
+        .price {
+            input {
+                -webkit-appearance: none;
+                background-color: $clr2;
+                height: 2px;
+                width: 60%;
+                border: none;
+            }
+
+        }
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 25px;
+        flex: 1;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: $clr8;
+        border-top: solid 1px $clr9;
+        border-bottom-left-radius:15px;
+        border-bottom-right-radius:15px;
+
+
+        .show-btn {
+            background-color: $clr3;
+            color: $clr8;
+            font-weight: bold;
+            font-size: rem(16px);
+            padding-left: rem(25px);
+            padding-right: rem(25px);
+            border-radius: $btnBorderRadius;
+        }
+
+        .clear-btn {
+            font-size: rem(16px);
+            font-weight: bold;
+            text-decoration: underline;
+            color: $clr3;
+        }
+    }
+}

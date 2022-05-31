@@ -1,31 +1,30 @@
 
 import React from 'react'
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-export const OrderModal = () => {
-    const [isModalOpen, setIsModalOpen] = useState(true)
+export const OrderModal = ({ closeModal }) => {
 
-    const onOpenModal = () => {
-        setIsModalOpen(true)
-    }
     const onCloseModal = () => {
-        setIsModalOpen(false)
+        closeModal()
     }
 
     return <section className="order-modal">
-        {isModalOpen && <React.Fragment>
-            <div className="modal-title">
-                <button className="close-btn" onClick={() => { onCloseModal() }}>X</button>
-                <div>Order number: 2893840825</div>
-            </div>
-            <div className="modal-details">
-                <div className="title">Thanks for your order!</div>
-                <div>Your reservation was sent to host</div>
-                <div>Host will reply shortly</div>
+        <div className="modal-title">
+            <button className="close-btn" onClick={() => { onCloseModal() }}>X</button>
+            <div>Order number: 2893840825</div>
+        </div>
+        <div className="modal-details">
+            <div className="title">Thanks for your order!</div>
+            <div>Your reservation was sent to the host</div>
+            <div>The host will reply shortly</div>
 
-            </div>
-        </React.Fragment>
-        }
+        </div>
+        <button className="btn">
+            <Link to={`/stay`} >
+                Continue Exploring
+            </Link>
+
+        </button>
     </section>
 
 }

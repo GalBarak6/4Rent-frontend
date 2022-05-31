@@ -1,19 +1,26 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { addOrder } from '../store/actions/order-actions';
 import { useDispatch } from 'react-redux';
 import { stayService } from '../services/stay.service';
-import { DatePicker } from './date-range';
 import { utilService } from '../services/util.service'
-// import { OrderModal } from './order-modal';
+import { OrderModal } from './order-modal';
 
 export const Checkout = ({ stay, onGetTotalReviewScore }) => {
-    const [isModalOpen, setIsModalOpen] = useState(true)
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
+    useEffect(() => {
+        let btn = document.querySelector('.mouse-cursor-gradient-tracking');
+        btn.addEventListener('mousemove', e => {
+            let rect = e.target.getBoundingClientRect();
+            let x = e.clientX - rect.left;
+            let y = e.clientY - rect.top;
+            btn.style.setProperty('--x', x + 'px');
+            btn.style.setProperty('--y', y + 'px');
+        });
 
-    const onOpenModal = () => {
-        setIsModalOpen(true)
-    }
-    const onCloseModal = () => {
+    }, [])
+
+    const closeModal = () => {
         setIsModalOpen(false)
     }
 
@@ -53,6 +60,7 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
 
     const onSubmit = async (ev) => {
         ev.preventDefault()
+        setIsModalOpen(true)
         const newOrder = stayService.getNewOrder(order, guestCount, stay)
         await dispatch(addOrder(newOrder))
     }
@@ -65,6 +73,7 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     // const onHandleDates = () => {
 
     // }
+
 
     return <div className='order-display'>
         <div className='order-container flex flex-column'>
@@ -138,7 +147,10 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
                             </div>}
                     </div>
                 </div>
-                <button type='submit' className='reserve-btn'>Reserve</button>
+                {/* <button type='submit' className='reserve-btn'>Reserve</button> */}
+                <button type='submit' className='mouse-cursor-gradient-tracking'>
+                    <span>Reserve</span>
+                </button>
             </form>
             <p className='order-summary-header align-self-center'>You won't be charged yet</p>
             <div className='order-summary flex flex-column'>
@@ -159,6 +171,11 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
                     <span>${(stay.price * 5 + stay.price * 0.04 + stay.price * 0.005).toLocaleString('en-IN')}</span>
                 </div>
             </div>
+
+
         </div>
+        {isModalOpen &&
+            <OrderModal closeModal={closeModal} />
+        }
     </div>
 }

@@ -4,42 +4,42 @@ import { loadStays, setFilter } from '../store/actions/stay.actions'
 
 import { StayList } from '../cmps/stay-list'
 import { StayFilter } from '../cmps/stay-filter'
+import { StayFilterModal } from '../cmps/stay-filter-modal'
 
 
 export const StayApp = () => {
 
     const { stays, filterBy } = useSelector((storeState) => storeState.stayModule)
-    const [filterByLabel, setFilterByLabel] = useState('')
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
     const dispatch = useDispatch()
 
     useEffect(() => {
-        console.log('loading')
         dispatch(loadStays())
-    }, [])
-
-    useEffect(() => {
-        dispatch(loadStays())
-        // console.log('stay-app.useEffect -- after setFilterBy ', filterBy)
     }, [filterBy])
 
     useEffect(() => {
-        dispatch(setFilter({ ...filterBy, label: filterByLabel }))
-    }, [filterByLabel])
+        dispatch(loadStays())
+    }, [isModalOpen])
 
 
     const labelChange = (value) => {
         console.log(value)
         if (value === 'All') {
-            setFilterByLabel('')
-            setFilters([],[],100)
-
+            dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: 100 }))
         }
-        else setFilterByLabel(value)
+        else dispatch(setFilter({ ...filterBy, label: value }))
     }
 
-    const setFilters = (filterByType, filterByAmenities, filterByPrice) => {
-        dispatch(setFilter({ ...filterBy, type: filterByType, amenities: filterByAmenities, price: filterByPrice }))
+    // const setFilters = (filterByType, filterByAmenities, filterByPrice) => {
+    //     dispatch(setFilter({ ...filterBy, type: filterByType, amenities: filterByAmenities, price: filterByPrice }))
+    // }
+
+    const onOpenModal = () => {
+        setIsModalOpen(true)
+    }
+    const onCloseModal = () => {
+        setIsModalOpen(false)
     }
 
     if (!stays) return <div className="dots">
@@ -48,7 +48,9 @@ export const StayApp = () => {
         <div></div>
     </div>
     return <section className="stay-app">
-        <StayFilter labelChange={labelChange} setFilters={setFilters}/>
+        <StayFilter labelChange={labelChange}  onOpenModal={onOpenModal}   />
         <StayList stays={stays} />
+        {isModalOpen && <StayFilterModal  onCloseModal={onCloseModal} />}
+
     </section>
 }
