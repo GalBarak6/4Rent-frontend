@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { ReactComponent as Logo } from "../assets/icons/logo.svg"
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 
 export const AppHeader = ({ onOpenModal }) => {
 

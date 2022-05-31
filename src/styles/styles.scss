@@ -17,12 +17,23 @@
 @import 'pages/stay-app';
 @import 'pages/stay-details';
 
+
 // COMPONENTS
+  //MAIN
 @import 'cmps/app-header';
 @import 'cmps/app-footer';
-@import 'cmps/stay-filter';
+@import 'cmps/user-menu-modal';
+@import 'cmps/user-msg';
+
+  //STAY-APP
 @import 'cmps/stay-list';
 @import 'cmps/stay-preview';
-@import 'cmps/user-menu-modal';
+@import 'cmps/stay-filter';
+
+  //STAY-DETAILS
+@import 'cmps/amenities';
+@import 'cmps/main-amenities';
+@import 'cmps/checkout';
+@import 'cmps/stay-gallery';
+@import 'cmps/reviews';
 @import 'cmps/google-map';
-@import 'cmps/user-msg';

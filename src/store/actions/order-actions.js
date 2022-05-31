@@ -1,5 +1,5 @@
-import { orderService } from "../../services/order.service.js";
-// import { userService } from "../../services/user.service.js";
+import { orderService } from "../../services/order.service.js"
+// import { userService } from "../../services/user.service.js"
 import { showSuccessMsg, showErrorMsg } from '../../services/event-bus.service.js'
 
 
@@ -42,9 +42,9 @@ export function removeOrder(orderId) {
     return async (dispatch) => {
         try {
             await orderService.remove(orderId)
-            console.log('Deleted Succesfully!');
+            console.log('Deleted Succesfully!')
             dispatch(getActionRemoveOrder(orderId))
-            showSuccessMsg('Order removed')
+            // showSuccessMsg('Order removed')
         } catch (err) {
             showErrorMsg('Cannot remove order')
             console.log('Cannot remove order', err)
@@ -53,13 +53,13 @@ export function removeOrder(orderId) {
 }
 
 export function addOrder(order) {
-    console.log(order);
+    // console.log(order)
     return async (dispatch) => {
         try {
             const savedOrder = await orderService.save(order)
             console.log('Added Order', savedOrder)
             dispatch(getActionAddOrder(savedOrder))
-            showSuccessMsg('Order added')
+            // showSuccessMsg('Order added')
         } catch (err) {
             showErrorMsg('Cannot add order')
             console.log('Cannot add order', err)
@@ -73,7 +73,7 @@ export function updateOrder(order) {
             const savedOrder = await orderService.save(order)
             console.log('Updated Order:', savedOrder)
             dispatch(getActionUpdateOrder(savedOrder))
-            showSuccessMsg('Order updated')
+            // showSuccessMsg('Order updated')
         } catch (err) {
             showErrorMsg('Cannot update order')
             console.log('Cannot save order', err)

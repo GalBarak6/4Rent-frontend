@@ -1,5 +1,5 @@
-import { stayService } from "../../services/stay.service.js";
-// import { userService } from "../../services/user.service.js";
+import { stayService } from "../../services/stay.service.js"
+// import { userService } from "../../services/user.service.js"
 import { showSuccessMsg, showErrorMsg } from '../../services/event-bus.service.js'
 
 
@@ -28,7 +28,7 @@ export function loadStays() {
         const filterBy = getState().stayModule.filterBy
         try {
             const stays = await stayService.query(filterBy)
-            console.log('Stays from DB:', stays)
+            // console.log('Stays from DB:', stays)
             dispatch({
                 type: 'SET_STAYS',
                 stays
@@ -44,7 +44,7 @@ export function removeStay(stayId) {
     return async (dispatch) => {
         try {
             await stayService.remove(stayId)
-            console.log('Deleted Succesfully!');
+            console.log('Deleted Succesfully!')
             dispatch(getActionRemoveStay(stayId))
             showSuccessMsg('Stay removed')
         } catch (err) {

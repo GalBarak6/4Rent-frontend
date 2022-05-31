@@ -2,7 +2,8 @@ export const utilService = {
     makeId,
     makeLorem,
     getRandomIntInclusive,
-    delay
+    delay,
+    getDate
 }
 
 function makeId(length = 6) {
@@ -38,3 +39,9 @@ function delay(ms = 1500) {
     })
 }
 
+function getDate () {
+    let date = new Date()
+    // const newDate = `${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`
+    const newDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+    return newDate
+}

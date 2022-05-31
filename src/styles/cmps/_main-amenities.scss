@@ -1,0 +1,13 @@
+.main-amenities {
+    box-shadow: inset 0 -0.7px 0 0 $clr5;
+    padding: 40px 0;
+    gap: 15px;
+
+    .main-amenity-info {
+        padding-left: 30px;
+    }
+
+    .amenity-icon {
+        width: 26px;
+    }
+}

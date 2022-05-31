@@ -1,4 +1,5 @@
 // import { useState } from 'react'
+import { Link } from "react-router-dom"
 
 export const UserMenuModal = () => {
 
@@ -9,18 +10,20 @@ export const UserMenuModal = () => {
             <li>
                 Trips
             </li>
+
             <li>
                 Wishlist
             </li>
+
             <li>
-                Signup
+                <Link to="/login">Login</Link>
+                {/* Login */}
             </li>
-            <li>
-                Login
-            </li>
+
             <li>
                 About
             </li>
+
         </ul>
     </section>
 }

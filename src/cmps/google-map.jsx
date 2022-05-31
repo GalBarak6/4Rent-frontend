@@ -13,8 +13,8 @@ export class GoogleMap extends Component {
     }
 
     // componentDidMount() {
-    //     console.log(this.props.lat);
-    //     console.log(this.props.lng);
+    //     console.log(this.props.lat)
+    //     console.log(this.props.lng)
     //     // this.setState(prevState => ({ ...prevState, center: { lat: this.props.lat, lng: this.props.lng } }))
     //     const center = {
     //         lat: +this.props.lat.toFixed(2),
@@ -53,7 +53,7 @@ export class GoogleMap extends Component {
                     />
                 </GoogleMapReact>
             </div>
-        );
+        )
     }
 }
 

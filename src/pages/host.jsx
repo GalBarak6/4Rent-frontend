@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadOrders } from '../store/actions/order-actions'
 import { OrderList } from '../cmps/order-list'

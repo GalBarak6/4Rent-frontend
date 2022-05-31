@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadStays, setFilter } from '../store/actions/stay.actions'
-// import $ from "jquery";
-var $ = require( "jquery" );
+// import $ from "jquery"
+var $ = require( "jquery" )
 
 // export const StayFilter = ({ onTypeChange, onAmenitiesChange, labelChange, onPriceChange, onSetFilters }) => {
 export const StayFilter = ({ setFilters, labelChange }) => {
@@ -76,7 +76,7 @@ export const StayFilter = ({ setFilters, labelChange }) => {
 
     const onClearFilters = () => {
         // document.getElementById("House").checked = false
-        $( 'input[type="checkbox"]' ).prop('checked', false);
+        $( 'input[type="checkbox"]' ).prop('checked', false)
         setFilterPrice(100)
         setFilterByAmenities([])
         setFilterByType([])

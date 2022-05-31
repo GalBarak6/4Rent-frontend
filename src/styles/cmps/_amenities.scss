@@ -1,0 +1,21 @@
+.amenities {
+    padding: 40px 0;
+
+    .amenities-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .amenities-list-header {
+        padding-bottom: 15px;
+    }
+
+    .amenity-icon {
+        width: 26px;
+    }
+
+    .amenity-name {
+        padding-left: 20px;
+    }
+}

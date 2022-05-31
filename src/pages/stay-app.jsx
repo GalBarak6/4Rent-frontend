@@ -24,7 +24,7 @@ export const StayApp = () => {
 
     useEffect(() => {
         dispatch(loadStays())
-        console.log('stay-app.useEffect -- after setFilterBy ', filterBy)
+        // console.log('stay-app.useEffect -- after setFilterBy ', filterBy)
     }, [filterBy])
 
     // useEffect(() => {

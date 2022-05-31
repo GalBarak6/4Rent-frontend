@@ -1,6 +1,5 @@
-import { useNavigate } from "react-router-dom";
-import { useEffect, useState, useLayoutEffect } from 'react'
-import { DemoCarousel } from "../cmps/carousel";
+import { useNavigate } from "react-router-dom"
+import { useEffect, useLayoutEffect } from 'react'
 
 export const Home = () => {
 
