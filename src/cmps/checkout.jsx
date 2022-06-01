@@ -1,46 +1,32 @@
 import { useState, useEffect } from 'react'
-import { addOrder } from '../store/actions/order-actions';
-import { useDispatch } from 'react-redux';
-import { stayService } from '../services/stay.service';
+import { addOrder } from '../store/actions/order-actions'
+import { useDispatch } from 'react-redux'
+import { stayService } from '../services/stay.service'
 import { utilService } from '../services/util.service'
-import { OrderModal } from './order-modal';
+import { OrderModal } from './order-modal'
+import { orderService } from '../services/order.service'
 
 export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
 
     useEffect(() => {
-        let btn = document.querySelector('.mouse-cursor-gradient-tracking');
-        btn.addEventListener('mousemove', e => {
-            let rect = e.target.getBoundingClientRect();
-            let x = e.clientX - rect.left;
-            let y = e.clientY - rect.top;
-            btn.style.setProperty('--x', x + 'px');
-            btn.style.setProperty('--y', y + 'px');
-        });
-
+        orderService.getBtnMouseListener()
     }, [])
 
     const closeModal = () => {
         setIsModalOpen(false)
     }
 
-    const [dateRange, setDateRange] = useState([
+    const [dateRange, setDateRange] = useState(
         {
-            startDate: utilService.formatDate(new Date),
-            endDate: utilService.formatDate(new Date(new Date().getTime() + (120 * 60 * 60 * 1000))),
-        },
-    ])
+            startDate: utilService.formatDate(new Date()),
+            endDate: utilService.formatDate(new Date(new Date().getTime() + (120 * 60 * 60 * 1000)))
+        }
+    )
 
-    const [order, setOrder] = useState({ startDate: '', endDate: '', guests: 0 })
     const [isGuestModal, setIsGuestModal] = useState(false)
     const [guestCount, setGuestCount] = useState({ adult: 1, children: 0, infant: 0 })
     const dispatch = useDispatch()
-
-    const onHandleChange = ({ target }) => {
-        const value = target.type === 'number' ? +target.value : target.value
-        const field = target.name
-        setOrder(prevOrder => ({ ...prevOrder, [field]: value }))
-    }
 
     const onGuestCount = (indicator, type) => {
         const field = type
@@ -61,19 +47,27 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     const onSubmit = async (ev) => {
         ev.preventDefault()
         setIsModalOpen(true)
-        const newOrder = stayService.getNewOrder(order, guestCount, stay)
+        const newOrder = orderService.getNewOrder(dateRange, guestCount, stay)
         await dispatch(addOrder(newOrder))
+        setDateRange(prevDates => ({ ...prevDates, startDate: utilService.formatDate(new Date()), endDate: utilService.formatDate(new Date(new Date().getTime() + (120 * 60 * 60 * 1000))) }))
+        setGuestCount(prevCount => ({ ...prevCount, adult: 1, children: 0, infant: 0 }))
     }
 
-    const onGetTotalCount = () => {
+    const totalGuestCount = () => {
         const totalCount = stayService.getTotalGuestCount(guestCount)
         return totalCount
     }
 
-    // const onHandleDates = () => {
+    const calculateSum = (type) => {
+        const total = orderService.getCalculatedPrice(type, stay.price)
+        return (total)
+    }
 
-    // }
-
+    const onHandleDates = ({ target }) => {
+        const field = target.name
+        const value = target.value
+        setDateRange(prevDates => ({ ...prevDates, [field]: value }))
+    }
 
     return <div className='order-display'>
         <div className='order-container flex flex-column'>
@@ -83,27 +77,26 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
                 </div>
                 <div className='flex align-center'>
                     <img src={require('../assets/icons/star.svg').default} alt="" className='order-icon' />
-                    <div>{onGetTotalReviewScore()} <span className='dot'></span> <span>{stay.reviews.length} Reviews</span></div>
+                    <div>{onGetTotalReviewScore()} <span className='dot'></span> <span>{stay.reviews.length} reviews</span></div>
                 </div>
             </div>
 
             <form onSubmit={onSubmit} className='order-form flex flex-column'>
                 <div className='order-inputs'>
                     <div className='dates-container flex space-between'>
-                        {/* <DatePicker /> */}
-                        <label htmlFor="startDate" className='flex flex-column'>
-                            CHECK-IN<input type="date" name='startDate' onChange={onHandleChange} className="check-date checkin" value={dateRange.startDate} />
+                        <label className='flex flex-column'>
+                            CHECK-IN<input type="date" name='startDate' onChange={onHandleDates} className="check-date checkin" value={dateRange.startDate} />
                         </label>
-                        <label htmlFor="endDate" className='flex flex-column'>
-                            {/* CHECKOUT<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" value={utilService.formatDate(new Date)}/> */}
-                            CHECKOUT<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" value={dateRange.endDate} />
+                        <label className='flex flex-column'>
+                            CHECKOUT<input type="date" name='endDate' onChange={onHandleDates} className="check-date checkout" value={dateRange.endDate} />
+                            {/* CHECKOUT<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" value={dateRange.endDate} /> */}
                         </label>
                     </div>
 
                     <div className='guest-input flex flex-column'>
                         <label htmlFor="guests" className='guests-label'>GUESTS</label>
                         <div className='open-guests-btn flex space-between' onClick={onOpenGuestModal}>
-                            <div>{onGetTotalCount()} guest</div>
+                            <div className='total-guests'>{totalGuestCount()} guest</div>
                             <img src={require(`../assets/icons/${onArrowToggle()}.png`)} alt="" className='order-icon' />
                         </div>
 
@@ -155,23 +148,22 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
             <p className='order-summary-header align-self-center'>You won't be charged yet</p>
             <div className='order-summary flex flex-column'>
                 <div className='price-sum flex space-between'>
-                    <span>${stay.price.toLocaleString('en-IN')} x 5 nights</span>
-                    <span>${(stay.price * 5).toLocaleString('en-IN')}</span>
+                    <span>${calculateSum('night')} x 5 nights</span>
+                    <span>${calculateSum('nights')}</span>
                 </div>
                 <div className='cleaning-sum flex space-between'>
                     <span>Cleaning fee</span>
-                    <span>${(stay.price * 0.04).toLocaleString('en-IN')}</span>
+                    <span>${calculateSum('cleaning')}</span>
                 </div>
                 <div className='service-sum flex space-between'>
                     <span>Service fee</span>
-                    <span>${(stay.price * 0.005).toLocaleString('en-IN')}</span>
+                    <span>${calculateSum('service')}</span>
                 </div>
                 <div className='total-sum flex space-between'>
                     <span>Total</span>
-                    <span>${(stay.price * 5 + stay.price * 0.04 + stay.price * 0.005).toLocaleString('en-IN')}</span>
+                    <span>${calculateSum('sum')}</span>
                 </div>
             </div>
-
 
         </div>
         {isModalOpen &&

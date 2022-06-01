@@ -7,7 +7,7 @@ export const Reviews = ({ stay, onGetTotalReviewScore}) => {
                 {onGetTotalReviewScore()} <span className='dot'></span> <div>{stay.reviews.length} Reviews</div>
             </div>
 
-            <div className='reviews-summary flex align-center space-between'>
+            <div className='reviews-summary flex align-center'>
                 <div className='stats-container flex align-center space-between'>
                     <div>Cleanliness</div>
                     <div className='rating-bar flex align-center'>

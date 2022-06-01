@@ -1,7 +1,7 @@
 import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
 // import { userService } from './user.service.js'
-
+import { httpService } from './http.service.js'
 const STORAGE_KEY = 'stay'
 
 export const stayService = {
@@ -10,46 +10,53 @@ export const stayService = {
     save,
     remove,
     addReview,
-    getNewOrder,
     getTotalGuestCount,
     getTotalReviewScore
 }
 
-async function query(filterBy) {
-    // console.log('from stay.service', { filterBy })
+// async function query(filterBy) {
+//     // console.log('from stay.service', { filterBy })
 
-    let stays = await storageService.query(STORAGE_KEY)
-    // console.log('from stay.service.query', { stays })
+//     let stays = await storageService.query(STORAGE_KEY)
+//     // console.log('from stay.service.query', { stays })
 
-    if (filterBy.type.length > 0) {
-        stays = stays.filter(stay =>
-            filterBy.type.includes(stay.type))
-    }
-    if (filterBy.amenities.length > 0) {
-        stays = stays.filter(stay =>
-            filterBy.amenities.every(amenity => { return stay.amenities.includes(amenity) }))
-    }
+//     if (filterBy.type.length > 0) {
+//         stays = stays.filter(stay =>
+//             filterBy.type.includes(stay.type))
+//     }
+//     if (filterBy.amenities.length > 0) {
+//         stays = stays.filter(stay =>
+//             filterBy.amenities.every(amenity => { return stay.amenities.includes(amenity) }))
+//     }
 
-    if (filterBy.price) {
-        stays = stays.filter(stay => stay.price >= filterBy.price)
-    }
-    if (filterBy.label) {
-        // stays = stays.filter(stay => filterBy.label.includes(stay.labels))
-        stays = stays.filter(stay => {
-            // console.log(stay.labels)
-            return stay.labels.includes(filterBy.label)
-        })
-    }
+//     if (filterBy.price) {
+//         stays = stays.filter(stay => stay.price >= filterBy.price)
+//     }
+//     if (filterBy.label) {
+//         // stays = stays.filter(stay => filterBy.label.includes(stay.labels))
+//         stays = stays.filter(stay => {
+//             // console.log(stay.labels)
+//             return stay.labels.includes(filterBy.label)
+//         })
+//     }
+//     return stays
+
+//     // return storageService.query(STORAGE_KEY)
+//     // return axios.get(`/api/stay`)
+//     // await httpService.get(`stay/`)
+// }
+
+async function query() {
+    let stays = await httpService.get('stay')
     return stays
-
-    // return storageService.query(STORAGE_KEY)
-    // return axios.get(`/api/stay`)
 }
 
-function getById(stayId) {
-    return storageService.get(STORAGE_KEY, stayId)
-    // return axios.get(`/api/stay/${stayId}`)
+async function getById(stayId) {
+    // return storageService.get(STORAGE_KEY, stayId)
+    let stay = await httpService.get(`stay/${stayId}`)
+    return stay
 }
+
 
 async function remove(stayId) {
     await storageService.remove(STORAGE_KEY, stayId)
@@ -78,41 +85,14 @@ async function addReview(txt, stay) {
     return savedStay
 }
 
-function getNewOrder(order, guestCount, stay) {
-    const newOrder = {
-        startDate: order.startDate,
-        endDate: order.endDate,
-        guests: {
-            adults: guestCount.adult,
-            kids: guestCount.children,
-            infants: guestCount.infant
-        },
-        dest: {
-            country: stay.loc.country,
-            countryCode: stay.loc.countryCode,
-            address: stay.loc.address,
-            lat: stay.loc.lat,
-            lng: stay.loc.lan
-        },
-        host: {
-            _id: '6294cc5df218f12d17952cc5',
-            fullname: 'Linda-Lee',
-            pictureUrl: 'https://randomuser.me/api/portraits/women/22.jpg'
-        },
-        booker: {
-            _id: '6294d477f218f12d17a3c74b',
-            fullname: 'Edgar',
-            imgUrl: 'https://randomuser.me/api/portraits/men/52.jpg'
-        },
-        status: 'pending',
-        stay: stay.name
-    }
-    return newOrder
-}
-
 function getTotalGuestCount(guestCount) {
-    const totalCount = guestCount.adult + guestCount.children + guestCount.infant
-    return totalCount
+    // const totalCount = guestCount.adult + guestCount.children + guestCount.infant
+    // return totalCount
+    let totalGuests = 0
+    for (let value in guestCount) {
+        totalGuests += guestCount[value]
+    }
+    return totalGuests
 }
 
 function getTotalReviewScore(reviewScores) {

@@ -50,8 +50,7 @@
 			"communication": 3.5,
 			"checkin": 2.5,
 			"location": 3,
-			"value": 4,
-			"rating": 5
+			"value": 4
 		},
 		"reviews": [
 			{
@@ -202,8 +201,7 @@
 			"checkin": 5,
 			"communication": 4.5,
 			"location": 4.5,
-			"value": 3,
-			"rating": 4.5
+			"value": 3
 		},
 		"reviews": [
 			{
@@ -274,8 +272,7 @@
 			"checkin": 2,
 			"communication": 5,
 			"location": 3,
-			"value": 2,
-			"rating": 5
+			"value": 2
 		},
 		"reviews": [
 			{
@@ -427,8 +424,7 @@
 			"checkin": 5,
 			"communication": 5,
 			"location": 3,
-			"value": 4,
-			"rating": 4.2
+			"value": 4
 		},
 		"reviews": [
 			{
@@ -534,8 +530,7 @@
 			"checkin": 5,
 			"communication": 4,
 			"location": 4,
-			"value": 4,
-			"rating": 4.59
+			"value": 4
 		},
 		"reviews": [
 			{
@@ -584,9 +579,9 @@
 			"Wheelchair accessible"
 		],
 		"host": {
-			"_id": "622f3402e36c59e6164fad7e",
-			"fullname": "Regg",
-			"pictureUrl": "https://randomuser.me/portraits/men/72.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Hong Kong",
@@ -649,9 +644,9 @@
 			"Hot tub"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164faf36",
-			"fullname": "Andre",
-			"pictureUrl": "https://randomuser.me/portraits/men/45.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Portugal",
@@ -794,9 +789,9 @@
 			"Hot tub"
 		],
 		"host": {
-			"_id": "622f3404e36c59e6164fb631",
-			"fullname": "Joanna",
-			"pictureUrl": "https://randomuser.me/api/portraits/women/11.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Hong Kong",
@@ -875,9 +870,9 @@
 			"Wifi"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164fb247",
-			"fullname": "Tara",
-			"pictureUrl": "https://randomuser.me/api/portraits/women/10.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Hong Kong",
@@ -960,9 +955,9 @@
 			"Wheelchair accessible"
 		],
 		"host": {
-			"_id": "622f3402e36c59e6164face0",
-			"fullname": "Ricardo",
-			"pictureUrl": "https://randomuser.me/portraits/men/78.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Brazil",
@@ -1034,9 +1029,9 @@
 			"Hot tub"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164fb12c",
-			"fullname": "John",
-			"pictureUrl": "https://randomuser.me/portraits/men/18.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "United States",
@@ -1129,8 +1124,8 @@
 			"Hot tub"
 		],
 		"host": {
-			"_id": "622f3406e36c59e6164fbcc2",
-			"fullname": "Fatma",
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
 			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
@@ -1245,9 +1240,9 @@
 			"Hot tub"
 		],
 		"host": {
-			"_id": "622f3405e36c59e6164fb913",
-			"fullname": "Tane Residence",
-			"pictureUrl": "https://randomuser.me/portraits/men/53.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Hong Kong",
@@ -1307,9 +1302,9 @@
 			"Kitchen"
 		],
 		"host": {
-			"_id": "622f3403e36c59e6164fb05e",
-			"fullname": "Simon",
-			"pictureUrl": "https://randomuser.me/portraits/men/66.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Hong Kong",
@@ -1393,9 +1388,9 @@
 			"Wheelchair accessible"
 		],
 		"host": {
-			"_id": "622f3405e36c59e6164fb6c3",
-			"fullname": "Audrey",
-			"pictureUrl": "https://randomuser.me/api/portraits/women/88.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Hong Kong",
@@ -1499,9 +1494,9 @@
 			"Gym"
 		],
 		"host": {
-			"_id": "622f3402e36c59e6164fadf1",
-			"fullname": "Jojo",
-			"pictureUrl": "https://randomuser.me/api/portraits/men/28.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Hong Kong",
@@ -1574,9 +1569,9 @@
 			"Gym"
 		],
 		"host": {
-			"_id": "622f3405e36c59e6164fb89a",
-			"fullname": "Tendency",
-			"pictureUrl": "https://randomuser.me/api/portraits/women/89.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Spain",
@@ -1649,9 +1644,9 @@
 			"Hot tub"
 		],
 		"host": {
-			"_id": "622f3407e36c59e6164fbdcc",
-			"fullname": "Susann",
-			"pictureUrl": "https://randomuser.me/api/portraits/women/83.jpg"
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
 		},
 		"loc": {
 			"country": "Hong Kong",

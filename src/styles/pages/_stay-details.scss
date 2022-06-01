@@ -44,8 +44,12 @@
     .dot {
         font-size: 1.5rem;
         margin: 0 5px;
-    }
 
+        &:after {
+            content: " \2219 ";
+        }
+    }
+    
     .add-review-container {
 
         padding-top: 30px;
@@ -76,10 +80,6 @@
         height: 56px;
         object-fit: cover;
         width: 56px;
-    }
-
-    .dot:after {
-        content: " \2219 ";
     }
 
     .map {

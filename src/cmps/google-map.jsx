@@ -49,7 +49,7 @@ export class GoogleMap extends Component {
                     <AnyReactComponent
                         lat={center.lat}
                         lng={center.lng}
-                        text="🚩"
+                        text="🏠"
                     />
                 </GoogleMapReact>
             </div>

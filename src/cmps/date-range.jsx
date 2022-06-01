@@ -23,16 +23,16 @@ export function DatePicker() {
   }
 
   return (
-      <>
-        <div onClick={() => setToggleCalender((prevToggle) =>  !prevToggle)}>
-            <input type="date" name='startDate' value={convert(dateRange[0].startDate)} onChange={onHandleChange} className="check-date checkin" />
-            <input type="date" name='endDate' value={convert(dateRange[0].endDate)} onChange={onHandleChange} className="check-date checkout" />
-        </div>
-        {toggleCalender && <DateRange
-            onChange={onHandleChange}
-            moveRangeOnFirstSelection={false}
-            ranges={dateRange}
-        />}
+    <>
+      <div onClick={() => setToggleCalender((prevToggle) => !prevToggle)}>
+        <input type="date" name='startDate' value={convert(dateRange[0].startDate)} onChange={onHandleChange} className="check-date checkin" />
+        <input type="date" name='endDate' value={convert(dateRange[0].endDate)} onChange={onHandleChange} className="check-date checkout" />
+      </div>
+      {toggleCalender && <DateRange
+        onChange={onHandleChange}
+        moveRangeOnFirstSelection={false}
+        ranges={dateRange}
+      />}
     </>
   )
 }

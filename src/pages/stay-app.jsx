@@ -5,6 +5,7 @@ import { loadStays, setFilter } from '../store/actions/stay.actions'
 import { StayList } from '../cmps/stay-list'
 import { StayFilter } from '../cmps/stay-filter'
 import { StayFilterModal } from '../cmps/stay-filter-modal'
+import { loadUsers } from '../store/actions/user.actions'
 
 
 export const StayApp = () => {
@@ -14,8 +15,13 @@ export const StayApp = () => {
 
     const dispatch = useDispatch()
 
+    // useEffect(() => {
+    //     dispatch(loadUsers())
+    // },[])
+
     useEffect(() => {
         dispatch(loadStays())
+        dispatch(loadUsers())
     }, [filterBy])
 
     useEffect(() => {

@@ -12,17 +12,34 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { onSignup } from '../store/actions/user.actions'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from "react-router-dom"
 
 const theme = createTheme()
 
 export function SignUp() {
+
+    const dispatch = useDispatch()
+
+    const history = useNavigate()
+
+    function onGoBack() {
+        history("/stay")
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault()
         const data = new FormData(event.currentTarget)
-        console.log({
-            email: data.get('email'),
+        const newUser = {
+            username: data.get('username'),
             password: data.get('password'),
-        })
+            fullname: `${data.get('firstName')} ${data.get('lastName')}`,
+            isHost: false,
+            imgUrl: 'https://randomuser.me/api/portraits/men/57.jpg'
+        }
+        dispatch(onSignup(newUser))
+        onGoBack()
     }
 
     return (
@@ -65,7 +82,7 @@ export function SignUp() {
                                     autoComplete="family-name"
                                 />
                             </Grid>
-                            <Grid item xs={12}>
+                            {/* <Grid item xs={12}>
                                 <TextField
                                     required
                                     fullWidth
@@ -73,6 +90,15 @@ export function SignUp() {
                                     label="Email Address"
                                     name="email"
                                     autoComplete="email"
+                                /> */}
+                            <Grid item xs={12}>
+                                <TextField
+                                    required
+                                    fullWidth
+                                    id="username"
+                                    label="Username"
+                                    name="username"
+                                    autoComplete="new-username"
                                 />
                             </Grid>
                             <Grid item xs={12}>

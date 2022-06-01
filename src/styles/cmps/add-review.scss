@@ -1,0 +1,24 @@
+.add-review-ratings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 20px;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    >* {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 110px;
+    }
+
+    .css-dqr9h-MuiRating-label {
+        color: $clr1;
+    }
+
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+    background: white;
+}

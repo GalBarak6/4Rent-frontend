@@ -1,6 +1,6 @@
 import { orderService } from "../../services/order.service.js"
 // import { userService } from "../../services/user.service.js"
-import { showSuccessMsg, showErrorMsg } from '../../services/event-bus.service.js'
+// import { showErrorMsg } from '../../services/event-bus.service.js'
 
 
 export function getActionRemoveOrder(orderId) {
@@ -32,7 +32,7 @@ export function loadOrders() {
                 orders
             })
         } catch (err) {
-            showErrorMsg('Cannot load orders')
+            // showErrorMsg('Cannot load orders')
             console.log('Cannot load orders', err)
         }
     }
@@ -46,7 +46,7 @@ export function removeOrder(orderId) {
             dispatch(getActionRemoveOrder(orderId))
             // showSuccessMsg('Order removed')
         } catch (err) {
-            showErrorMsg('Cannot remove order')
+            // showErrorMsg('Cannot remove order')
             console.log('Cannot remove order', err)
         }
     }
@@ -61,7 +61,7 @@ export function addOrder(order) {
             dispatch(getActionAddOrder(savedOrder))
             // showSuccessMsg('Order added')
         } catch (err) {
-            showErrorMsg('Cannot add order')
+            // showErrorMsg('Cannot add order')
             console.log('Cannot add order', err)
         }
     }
@@ -75,7 +75,7 @@ export function updateOrder(order) {
             dispatch(getActionUpdateOrder(savedOrder))
             // showSuccessMsg('Order updated')
         } catch (err) {
-            showErrorMsg('Cannot update order')
+            // showErrorMsg('Cannot update order')
             console.log('Cannot save order', err)
         }
     }

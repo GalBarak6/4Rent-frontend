@@ -3,8 +3,8 @@ import * as React from 'react'
 import Button from '@mui/material/Button'
 import CssBaseline from '@mui/material/CssBaseline'
 import TextField from '@mui/material/TextField'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import Checkbox from '@mui/material/Checkbox'
+// import FormControlLabel from '@mui/material/FormControlLabel'
+// import Checkbox from '@mui/material/Checkbox'
 // import Link from '@mui/material/Link'
 import { Link } from "react-router-dom"
 import Grid from '@mui/material/Grid'
@@ -12,18 +12,28 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
-
+import { onLogin } from '../store/actions/user.actions'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from "react-router-dom"
 
 const theme = createTheme()
 
 export function Login() {
+
+  const dispatch = useDispatch()
+
+  const history = useNavigate()
+
+  function onGoBack() {
+      history("/stay")
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    })
+    const loginUser = {username: data.get('username'), password: data.get('password')}
+    dispatch(onLogin(loginUser))
+    onGoBack()
   }
 
   return (
@@ -44,7 +54,7 @@ export function Login() {
             Sign in
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-            <TextField
+            {/* <TextField
               margin="normal"
               required
               fullWidth
@@ -52,6 +62,16 @@ export function Login() {
               label="Email Address"
               name="email"
               autoComplete="email"
+              autoFocus
+            /> */}
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              id="username"
+              label="Username"
+              name="username"
+              autoComplete="new-username"
               autoFocus
             />
             <TextField
@@ -64,10 +84,10 @@ export function Login() {
               id="password"
               autoComplete="current-password"
             />
-            <FormControlLabel
+            {/* <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
-            />
+            /> */}
             <Button
               type="submit"
               fullWidth
