@@ -64,6 +64,9 @@
             width: 100%;
             border: 1px solid $clr9;
             resize: none;
+            border-radius: rem(15px);
+            gap: 5px;
+
 
             &::placeholder {
                 font-size: 18px;

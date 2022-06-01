@@ -39,6 +39,10 @@ export const stayService = {
 //             return stay.labels.includes(filterBy.label)
 //         })
 //     }
+
+//     if (filterBy.rating) {
+//         stays = stays.filter(stay => stay.reviewScores.rating >= filterBy.rating)
+//     }
 //     return stays
 
 //     // return storageService.query(STORAGE_KEY)
@@ -46,9 +50,9 @@ export const stayService = {
 //     // await httpService.get(`stay/`)
 // }
 
+
 async function query() {
     let stays = await httpService.get('stay')
-    return stays
 }
 
 async function getById(stayId) {

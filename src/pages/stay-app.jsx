@@ -5,13 +5,14 @@ import { loadStays, setFilter } from '../store/actions/stay.actions'
 import { StayList } from '../cmps/stay-list'
 import { StayFilter } from '../cmps/stay-filter'
 import { StayFilterModal } from '../cmps/stay-filter-modal'
-import { loadUsers } from '../store/actions/user.actions'
+// import { loadUsers } from '../store/actions/user.actions'
 
 
 export const StayApp = () => {
 
     const { stays, filterBy } = useSelector((storeState) => storeState.stayModule)
     const [isModalOpen, setIsModalOpen] = useState(false)
+    const [isFilterOn, setIsFilterOn] = useState(false)
 
     const dispatch = useDispatch()
 
@@ -21,7 +22,8 @@ export const StayApp = () => {
 
     useEffect(() => {
         dispatch(loadStays())
-        dispatch(loadUsers())
+        if (filterBy.type.length > 0 || filterBy.amenities.length > 0 || filterBy.price) setIsFilterOn(true)
+        console.log(filterBy)
     }, [filterBy])
 
     useEffect(() => {
@@ -32,14 +34,11 @@ export const StayApp = () => {
     const labelChange = (value) => {
         console.log(value)
         if (value === 'All') {
-            dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: 100 }))
+            setIsFilterOn(false)
+            dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: '' }))
         }
         else dispatch(setFilter({ ...filterBy, label: value }))
     }
-
-    // const setFilters = (filterByType, filterByAmenities, filterByPrice) => {
-    //     dispatch(setFilter({ ...filterBy, type: filterByType, amenities: filterByAmenities, price: filterByPrice }))
-    // }
 
     const onOpenModal = () => {
         setIsModalOpen(true)
@@ -54,9 +53,9 @@ export const StayApp = () => {
         <div></div>
     </div>
     return <section className="stay-app">
-        <StayFilter labelChange={labelChange}  onOpenModal={onOpenModal}   />
+        <StayFilter labelChange={labelChange} onOpenModal={onOpenModal} isFilterOn={isFilterOn} />
         <StayList stays={stays} />
-        {isModalOpen && <StayFilterModal  onCloseModal={onCloseModal} />}
+        {isModalOpen && <StayFilterModal onCloseModal={onCloseModal} />}
 
     </section>
 }
