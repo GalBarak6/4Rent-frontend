@@ -40,6 +40,10 @@ async function query(filterBy) {
             return stay.labels.includes(filterBy.label)
         })
     }
+
+    if (filterBy.rating) {
+        stays = stays.filter(stay => stay.reviewScores.rating >= filterBy.rating)
+    }
     return stays
 
     // return storageService.query(STORAGE_KEY)

@@ -74,6 +74,11 @@
         align-items: center;
         justify-content: center;
         gap: rem(8px);
+
+        &.selected{
+            border: solid 2px $clr3;
+
+        }
     }
 
 

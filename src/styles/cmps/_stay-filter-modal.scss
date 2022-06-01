@@ -24,30 +24,30 @@
         font-size: rem(18px);
     }
 
-    .property-type-labels {
-        display: flex;
-        gap: rem(20px)
-    }
+    // .property-type-labels {
+    //     display: flex;
+    //     gap: rem(20px)
+    // }
 
-    .property-type-btn {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: rem(10px);
-        padding:rem(20px);
-        width: rem(170px);
-        height: rem(120px);
-        border: solid 1px $clr9;
-        border-radius: 15px;
-        font-weight: bold;
-        font-size: rem(16px);
+    // .property-type-btn {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    //     gap: rem(10px);
+    //     padding:rem(20px);
+    //     width: rem(170px);
+    //     height: rem(120px);
+    //     border: solid 1px $clr9;
+    //     border-radius: 15px;
+    //     font-weight: bold;
+    //     font-size: rem(16px);
 
-        img{
-            width: rem(30px);
-            height: rem(30px);
+    //     img{
+    //         width: rem(30px);
+    //         height: rem(30px);
 
-        }
-    }
+    //     }
+    // }
 
     .modal-title {
         display: flex;
@@ -84,6 +84,37 @@
             padding: 0 0 12px;
         }
 
+        .property-type-labels {
+            display: flex;
+            gap: rem(20px)
+        }
+    
+        .property-type-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: rem(10px);
+            padding:rem(20px);
+            width: rem(170px);
+            height: rem(120px);
+            border: solid 1px $clr9;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: rem(16px);
+            color: $clr3-opacity;
+    
+            img{
+                width: rem(30px);
+                height: rem(30px);
+    
+            }
+
+            &.selected{
+                border: solid 2px $clr3;
+                background-color: $clr6-opacity;
+            }
+        }
+
 
         .amenities-content {
             padding: 12px 0;
@@ -102,6 +133,23 @@
                 height: 2px;
                 width: 60%;
                 border: none;
+            }
+        .minmax-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: rem(35px);
+            
+            .minmax{
+                width: rem(310px);
+                height: rem(60px);
+                border: solid 1px $clr9;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: rem(14px);
+
+            }
+
             }
 
         }

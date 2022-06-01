@@ -8,52 +8,17 @@ export const StayFilterModal = ({ onCloseModal }) => {
 
     const { filterBy } = useSelector((storeState) => storeState.stayModule)
     const dispatch = useDispatch()
+    const [filterByPrice, setFilterPrice] = useState(filterBy.price)
+    const [filterByType, setFilterByType] = useState(filterBy.type)
 
-    // const [filterByType, setFilterByType] = useState([])
-    // const [filterByPrice, setFilterPrice] = useState(100)
-    // const [filterByAmenities, setFilterByAmenities] = useState([])
-
-    // var filterByType 
-    // var filterByAmenities 
-    // var filterByPrice 
-
-    // useEffect(() => {
-    //     loadFilters()
-    // console.log({filterByType})
-    // console.log({filterByAmenities})
-    // console.log({filterByPrice})
-    // }, [])
-
-    // const loadFilters = () => {
-    //      filterByType = filterBy.type
-    //      filterByType.forEach( type=> {
-    //          $(`input[name=${type}]`).prop('checked', true)
-    //          console.log('after forEach')
-    //      })
-
-    //      filterByAmenities = filterBy.amenities
-    //      filterByPrice = filterBy.price
-    // }
-
-    let filterByType = []
     let filterByAmenities = []
-    let filterByPrice = 100
 
-    // const onTypeChange = ({ target }) => {
-    //     const field = target.name
-
-    //     if (target.checked) {
-    //         console.log('check onTypeChange')
-    //         filterByType = [...filterByType, field]
-    //     }
-
-    //     if (!target.checked) {
-    //         filterByType = filterByType.filter(type => type !== field)
-    //     }
-    // }
 
     const onTypeChange = (value) => {
-        filterByType = [...filterByType, value]
+        setFilterByType((prevState) => (
+            [...prevState, value]
+        ))
+        // filterByType = [...filterByType, value]
     }
 
     const onAmenitiesChange = ({ target }) => {
@@ -71,14 +36,13 @@ export const StayFilterModal = ({ onCloseModal }) => {
 
     const onPriceChange = ({ target }) => {
         let { value } = target
-        filterByPrice = value
+        setFilterPrice(value)
     }
 
 
     const onSetFilters = (ev) => {
         ev.preventDefault()
         onCloseModal()
-        // console.log('stay-filter.onSetFilters')
         setFilters(filterByType, filterByAmenities, filterByPrice)
     }
 
@@ -88,12 +52,11 @@ export const StayFilterModal = ({ onCloseModal }) => {
 
 
     const onClearFilters = () => {
-        $('input[type="checkbox"]').prop('checked', false);
-        // setFilterPrice(100)
-        // setFilterByAmenities([])
-        // setFilterByType([])
+        $('input[type="checkbox"]').prop('checked', false)
+        setFilterByType([])
     }
 
+    let typeClassName = ''
 
     return <section className="stay-filter-modal">
         <form onSubmit={onSetFilters}>
@@ -104,48 +67,59 @@ export const StayFilterModal = ({ onCloseModal }) => {
             </div>
 
             <div className="modal-details">
+
+                <div className="price">
+                    <div className="title">Price range</div>
+                    <div>The average nightly price is $600</div>
+                    <input type="range" id="price" name="price" min="100" max="5000" onChange={onPriceChange} value={filterByPrice || 100} />
+                    <div className="minmax-container">
+                        <div className="minmax">
+                            <div>min price</div>
+                            {filterByPrice && <div>${filterByPrice}</div>}
+                            {!filterByPrice && <div>$100</div>}
+
+                        </div>
+                        <span>-</span>
+                        <div className="minmax">
+                            <div>max price</div>
+                            <div>$5,000+</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="property-type">
                     <div className="title">Property type</div>
                     <div className="property-type-labels">
-                        <button type="button" className="property-type-btn" onClick={()=> {onTypeChange ("House")}} >
-                            <img src={require(`../assets/icons/house.jpg`)} alt="" />
-                            <div>House</div>
-                        </button>
-                        <button type="button" className="property-type-btn" onClick={()=>{onTypeChange ("Apartment")}} >
-                            <img src={require(`../assets/icons/apartment.jpg`)} alt="" />
-                            <div>Apartment</div>
-                        </button>
-                        <button type="button" className="property-type-btn" onClick={()=>{onTypeChange ("Guesthouse")}} >
-                            <img src={require(`../assets/icons/guesthouse.jpg`)} alt="" />
-                            <div>Guesthouse</div>
-                        </button>
-                        <button type="button" className="property-type-btn" onClick={()=>{onTypeChange ("Hotel")}} >
-                            <img src={require(`../assets/icons/hotel.jpg`)} alt="" />
-                            <div>Hotel</div>
-                        </button>
+                        {
+                            (typeClassName = filterByType.includes('House') ? 'property-type-btn selected' : 'property-type-btn') &&
+                            <button type="button" className={typeClassName} onClick={() => { onTypeChange("House") }} >
+                                <img src={require(`../assets/icons/house.jpg`)} alt="" />
+                                <div>House</div>
+                            </button>
+                        }
+                        {
+                            (typeClassName = filterByType.includes('Apartment') ? 'property-type-btn selected' : 'property-type-btn') &&
+                            <button type="button" className={typeClassName} onClick={() => { onTypeChange("Apartment") }} >
+                                <img src={require(`../assets/icons/apartment.jpg`)} alt="" />
+                                <div>Apartment</div>
+                            </button>
+                        }
 
-{/* 
+                        {
+                            (typeClassName = filterByType.includes('Guesthouse') ? 'property-type-btn selected' : 'property-type-btn') &&
+                            <button type="button" className={typeClassName} onClick={() => { onTypeChange("Guesthouse") }} >
+                                <img src={require(`../assets/icons/guesthouse.jpg`)} alt="" />
+                                <div>Guesthouse</div>
+                            </button>
 
-                        <label>
-                            <input className="checkbox" type="checkbox" name="House" value="House" onChange={onTypeChange} />
-                            House
-                        </label>
-
-                        <label>
-                            <input type="checkbox"  name="Apartment" value="Apartment" onChange={onTypeChange} />
-                            Apartment
-                        </label>
-
-
-                        <label>
-                            <input type="checkbox"name="Guesthouse" value="Guesthouse" onChange={onTypeChange} />
-                            Guesthouse
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="Hotel" value="Hotel" onChange={onTypeChange} />
-                            Hotel
-                        </label> */}
+                        }
+                        {
+                            (typeClassName = filterByType.includes('Hotel') ? 'property-type-btn selected' : 'property-type-btn') &&
+                            <button type="button" className={typeClassName} onClick={() => { onTypeChange("Hotel") }} >
+                                <img src={require(`../assets/icons/hotel.jpg`)} alt="" />
+                                <div>Hotel</div>
+                            </button>
+                        }
 
                     </div>
 
@@ -160,6 +134,7 @@ export const StayFilterModal = ({ onCloseModal }) => {
                                 <input type="checkbox" id="TV" name="TV" value="TV" onChange={onAmenitiesChange} />
                                 <label htmlFor="TV">TV</label>
                             </div>
+
                             <div>
                                 <input type="checkbox" id="Wifi" name="Wifi" value="Wifi" onChange={onAmenitiesChange} />
                                 <label htmlFor="Wifi">Wifi</label>
@@ -190,19 +165,8 @@ export const StayFilterModal = ({ onCloseModal }) => {
                                 <input type="checkbox" id="Self check-in" name="Self check-in" value="Self check-in" onChange={onAmenitiesChange} />
                                 <label htmlFor="Self check-in">Self check-in</label>
                             </div>
-
                         </div>
-
                     </div>
-
-
-                </div> 
-
-                <div className="price">
-                    <div className="title">Price range</div>
-                    <span>100</span>
-                    <input type="range" id="price" name="price" min="100" max="10000" onChange={onPriceChange} />
-                    <span>10,000</span>
                 </div>
             </div>
 

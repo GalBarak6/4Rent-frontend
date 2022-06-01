@@ -1,19 +1,43 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import { useEffect, useLayoutEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { loadStays, setFilter } from '../store/actions/stay.actions'
 
+import { TopRatedList } from '../cmps/top-rated-list'
 export const Home = () => {
 
     const history = useNavigate()
+    const { stays, filterBy } = useSelector((storeState) => storeState.stayModule)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(setFilter({ ...filterBy, rating: 5 }))
+        dispatch(loadStays())
+        let btn = document.querySelector('.mouse-cursor-gradient-tracking');
+        btn.addEventListener('mousemove', e => {
+            let rect = e.target.getBoundingClientRect();
+            let x = e.clientX - rect.left;
+            let y = e.clientY - rect.top;
+            btn.style.setProperty('--x', x + 'px');
+            btn.style.setProperty('--y', y + 'px');
+        });
+
+
+    }, [])
+
     // const { topRatedList, popularDestination } = useSelector((storeState) => storeState.stayModule)
 
     useEffect(() => {
         document.documentElement.style.setProperty('--grid-colum', '1/-1')
         document.documentElement.style.setProperty('--position', 'fixed')
         document.documentElement.style.setProperty('--border-style', 'none')
+        dispatch(setFilter({ ...filterBy, rating: 5 }))
+        dispatch(loadStays())
         return () => {
             document.documentElement.style.setProperty('--grid-column', '2')
             document.documentElement.style.setProperty('--position', 'block')
             document.documentElement.style.setProperty('--border-style', 'solid')
+            dispatch(setFilter({ ...filterBy, rating: '' }))
         }
 
     }, [])
@@ -35,12 +59,18 @@ export const Home = () => {
             <button onClick={onExplore} className="hero-button">
                 <span>Explore</span>
             </button>
-
         </div>
+        <div className="top-rated-title">Top Rated</div>
 
-
+        <TopRatedList stays={stays} />
+        <div className="host-img">
+            <div className="txt-container">
+                <div>Open your door</div>
+                <div>to hosting</div>
+                <Link to={`/signup`} >
+                    <button className='mouse-cursor-gradient-tracking'><span>Try Hosting</span></button>
+                </Link>
+            </div>
+        </div>
     </section>
-
-        // <List list={topRatedList} />
-        // <List list={popularDestination} />
 }
