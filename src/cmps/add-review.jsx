@@ -6,7 +6,7 @@ import { addReviewToStay } from '../store/actions/stay.actions'
 import { SendBtn } from './send-btn'
 import { useDispatch } from 'react-redux'
 
-export const AddReview = ({ loadStay , stay}) => {
+export const AddReview = ({ loadStay, stay }) => {
 
     const dispatch = useDispatch()
 

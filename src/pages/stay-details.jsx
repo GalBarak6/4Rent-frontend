@@ -1,7 +1,8 @@
+import * as React from 'react'
 import { useEffect, useState, useLayoutEffect } from 'react'
+import { useSelector } from "react-redux";
 import { useParams } from 'react-router-dom'
 import { stayService } from '../services/stay.service'
-import * as React from 'react'
 import { GoogleMap } from '../cmps/google-map'
 import { Amenities } from '../cmps/amenities'
 import { Checkout } from '../cmps/checkout'
@@ -14,13 +15,14 @@ export const StayDetails = () => {
 
     const [stay, setStay] = useState(null)
     const params = useParams()
+    const { user } = useSelector((storeState) => storeState.userModule)
 
     useEffect(() => {
         loadStay()
-        document.documentElement.style.setProperty('--right', '20%')
+        document.documentElement.style.setProperty('--right', '18%')
         return () => {
             document.documentElement.style.setProperty('--padding', '80px')
-            document.documentElement.style.setProperty('--right', '5%')
+            document.documentElement.style.setProperty('--right', '4%')
         }
 
     }, [])
@@ -84,7 +86,7 @@ export const StayDetails = () => {
 
         <Reviews stay={stay} onGetTotalReviewScore={onGetTotalReviewScore}/>
 
-        <AddReview loadStay={loadStay} stay={stay}/>
+        {user && <AddReview loadStay={loadStay} stay={stay}/>}
 
         <div className='map'>
             <h2>Where you`ll be</h2>

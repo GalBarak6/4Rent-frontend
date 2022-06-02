@@ -6,26 +6,45 @@ export const UserMenuModal = () => {
 
     // const [isOpenModal, setIsOpenModal] = useState(false)
     const { user } = useSelector((storeState) => storeState.userModule)
-    console.log(user);
     return <section className="user-menu-modal swing-in-top-bck">
-        <ul>
+        {!user && <ul>
             <li>
-                Trips
+                <Link to="/login">Login</Link>
             </li>
 
-            <li>
-                Wishlist
-            </li>
-
-            <li>
-                {!user && <Link to="/login">Login</Link>}
-                {user && 'Logout'}
+            <li className="menu-limit">
+                <Link to="/signup">Signup</Link>
             </li>
 
             <li>
                 About
             </li>
 
-        </ul>
+            <li>
+                Help
+            </li>
+
+        </ul>}
+
+        {user && <ul>
+
+            <li>
+                Trips
+            </li>
+
+            <li className="menu-limit">
+                Wishlist
+            </li>
+
+            <li>
+                Help
+            </li>
+
+            <li>
+                Logout
+            </li>
+
+        </ul>}
+
     </section>
 }

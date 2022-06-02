@@ -69,6 +69,15 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
         setDateRange(prevDates => ({ ...prevDates, [field]: value }))
     }
 
+    // const calculateNights = () => {
+    //     const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+    //     const firstDate = new Date(2008, 1, 12);
+    //     const secondDate = new Date(2008, 1, 22);
+
+    //     const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+    //     console.log(diffDays);
+    // }
+
     return <div className='order-display'>
         <div className='order-container flex flex-column'>
             <div className='order-header flex'>

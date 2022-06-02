@@ -1,7 +1,7 @@
 .user-menu-modal {
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 3px 2px 3px #ebebeb;
+    // box-shadow: 3px 2px 3px #ebebeb;
     height: 240px;
     overflow: hidden;
     position: absolute;
@@ -10,8 +10,10 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     transition: .3s;
-    width: 230px;
+    width: 180px;
     z-index: 50;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+
 
     ul {
         display: flex;
@@ -19,7 +21,24 @@
         height: 100%;
         justify-content: space-evenly;
         list-style: none;
-        padding-left: 10px;
+
+        :nth-child(1) {
+            font-weight: 600;
+        }
+
+        :nth-child(2) {
+            font-weight: 600;
+        }
+    }
+
+    li {
+        padding-left: 15px;
+        font-size: rem(14px);
+    }
+
+    .menu-limit {
+        box-shadow: inset 0 -0.7px 0 0 $clr5;
+        padding-bottom: 20px;
     }
 
 }

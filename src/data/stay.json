@@ -18,7 +18,7 @@
 			"088.jpeg",
 			"140.jpeg"
 		],
-		"price": 12550,
+		"price": 650,
 		"summary": "Newly Renovated 1 BD, 1 BTH Condo With A Brand New Queen Size Bed And New Pull Out Sofa. The complex has Pool, Laundry and Bbq area.  5 minutes walk to the crystal clear waters of Napili Bay. Perfect for snorkeling paddle boarding or just relax on the beach. Sea House Restaurant for Best Happy Hour Pupus on the Island. Restaurants, golf and tennis courts are also in walking distance. Short drive to World Class Kapalua Golf , 15 min to famouse Kaanapali Beach and 25 min to Lahaina. TAX INCLUDED!",
 		"capacity": 3,
 		"bedrooms": 1,
@@ -28,7 +28,10 @@
 			"Wifi",
 			"Air conditioning",
 			"Pool",
-			"Kitchen"
+			"Kitchen",
+			"Hair dryer",
+			"Hangers",
+			"Netflix services"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -40,8 +43,8 @@
 			"countryCode": "US",
 			"city": "Maui",
 			"address": "Lahaina, HI, United States",
-			"lat": -156.6917,
-			"lan": 20.93792
+			"lat": 20.798363,
+			"lan": -156.331924
 		},
 		"bathrooms": 1,
 		"reviewScores": {
@@ -50,7 +53,8 @@
 			"communication": 3.5,
 			"checkin": 2.5,
 			"location": 3,
-			"value": 4
+			"value": 4,
+			"rating": 3.5
 		},
 		"reviews": [
 			{
@@ -170,7 +174,7 @@
 			"113.jpeg",
 			"106.jpeg"
 		],
-		"price": 5635,
+		"price": 1525,
 		"summary": "Downtown, convenient, cosy and bright semi basement. It is both my home and art studio. Perfect for one but could fit 2 people. Near museums, bars, atwater metro and guy-concordia station. One street away from St-Catherine but surprisingly calm! Also; an equipped, separate kitchen + wifi is included.",
 		"capacity": 2,
 		"bedrooms": 0,
@@ -179,7 +183,10 @@
 			"TV",
 			"Kitchen",
 			"Hot tub",
-			"Wifi"
+			"Wifi",
+			"Netflix",
+			"Hair dryer",
+			"Coffe maker"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -201,7 +208,8 @@
 			"checkin": 5,
 			"communication": 4.5,
 			"location": 4.5,
-			"value": 3
+			"value": 3,
+			"rating": 4.5
 		},
 		"reviews": [
 			{
@@ -228,7 +236,7 @@
 	},
 	{
 		"_id": "622f337d75c7d36e498aac5c",
-		"name": "B & B  Room Yoga Garden's Place",
+		"name": "Yoga Garden's Place",
 		"type": "Guesthouse",
 		"labels": [
 			"OMG!",
@@ -250,7 +258,10 @@
 			"Wifi",
 			"TV",
 			"Kitchen",
-			"Gym"
+			"Gym",
+			"Washer machine",
+			"Free parking",
+			"Lockbox"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -262,17 +273,18 @@
 			"countryCode": "PT",
 			"city": "Porto",
 			"address": "Porto, Porto, Portugal",
-			"lat": -8.59097,
-			"lan": 41.1541
+			"lat": 41.150223,
+			"lan": -8.629932
 		},
 		"bathrooms": 2,
 		"reviewScores": {
-			"accuracy": 3,
-			"cleanliness": 3,
-			"checkin": 2,
+			"accuracy": 5,
+			"cleanliness": 5,
+			"checkin": 5,
 			"communication": 5,
-			"location": 3,
-			"value": 2
+			"location": 5,
+			"value": 5,
+			"rating": 5
 		},
 		"reviews": [
 			{
@@ -402,7 +414,10 @@
 		"amenities": [
 			"Air conditioning",
 			"Wheelchair accessible",
-			"Gym"
+			"Gym",
+			"Free parking",
+			"Lockbox",
+			"Coffe maker"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -414,8 +429,8 @@
 			"countryCode": "ES",
 			"city": "Barcelona",
 			"address": "Barcelona, Catalunya, Spain",
-			"lat": 2.14449,
-			"lan": 41.39264
+			"lat": 41.390205,
+			"lan": 2.154007
 		},
 		"bathrooms": 2,
 		"reviewScores": {
@@ -424,7 +439,8 @@
 			"checkin": 5,
 			"communication": 5,
 			"location": 3,
-			"value": 4
+			"value": 4,
+			"rating": 3.5
 		},
 		"reviews": [
 			{
@@ -481,7 +497,7 @@
 	},
 	{
 		"_id": "622f337d75c7d36e498aac5a",
-		"name": "Cozy&clean room in Sisli next to subway",
+		"name": "Cozy&clean room in Sisli",
 		"type": "Apartment",
 		"labels": [
 			"Amazing pools",
@@ -508,7 +524,9 @@
 			"Kitchen",
 			"Gym",
 			"Hot tub",
-			"Wheelchair accessible"
+			"Wheelchair accessible",
+			"Hangers",
+			"Hair dryer"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -520,17 +538,18 @@
 			"countryCode": "TR",
 			"city": "Istanbul",
 			"address": "Istanbul, İstanbul, Turkey",
-			"lat": 28.98327,
-			"lan": 41.05766
+			"lat": 41.015137,
+			"lan": 28.979530
 		},
 		"bathrooms": 1,
 		"reviewScores": {
-			"accuracy": 3,
-			"cleanliness": 3,
+			"accuracy": 5,
+			"cleanliness": 5,
 			"checkin": 5,
-			"communication": 4,
-			"location": 4,
-			"value": 4
+			"communication": 5,
+			"location": 5,
+			"value": 5,
+			"rating": 5
 		},
 		"reviews": [
 			{
@@ -545,6 +564,7 @@
 			}
 		]
 	},
+
 
 
 
@@ -576,7 +596,9 @@
 			"Kitchen",
 			"Gym",
 			"Hot tub",
-			"Wheelchair accessible"
+			"Wheelchair accessible",
+			"Free parking",
+			"Netflix services"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -588,8 +610,8 @@
 			"countryCode": "HK",
 			"city": "Hong Kong",
 			"address": "Hong Kong, Hong Kong Island, Hong Kong",
-			"lat": 114.15007,
-			"lan": 22.28422
+			"lat": 22.28422,
+			"lan": 114.15007
 		},
 		"bathrooms": 1,
 		"reviewScores": {
@@ -599,7 +621,7 @@
 			"communication": 5,
 			"location": 5,
 			"value": 4.5,
-			"rating": 5
+			"rating": 3.8
 		},
 		"reviews": [
 			{
@@ -641,7 +663,9 @@
 			"Pool",
 			"Kitchen",
 			"Gym",
-			"Hot tub"
+			"Hot tub",
+			"Coffe maker",
+			"Lockbox"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -653,8 +677,8 @@
 			"countryCode": "PT",
 			"city": "Porto",
 			"address": "Porto, Porto, Portugal",
-			"lat": -8.6114,
-			"lan": 41.16093
+			"lat": 41.150223,
+			"lan": -8.629932
 		},
 		"bathrooms": 1,
 		"reviewScores": {
@@ -664,7 +688,7 @@
 			"communication": 2,
 			"location": 1,
 			"value": 4,
-			"rating": 4.25
+			"rating": 2.1
 		},
 		"reviews": [
 			{
@@ -786,7 +810,11 @@
 			"Air conditioning",
 			"Pool",
 			"Kitchen",
-			"Hot tub"
+			"Hot tub",
+			"Netflix services",
+			"Hair dryer",
+			"Lockbox",
+			"Hangers"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -798,8 +826,8 @@
 			"countryCode": "HK",
 			"city": "Hong Kong",
 			"address": "Quarry Bay, Hong Kong Island, Hong Kong",
-			"lat": 114.20854,
-			"lan": 22.29099
+			"lat": 22.29099,
+			"lan": 114.20854
 		},
 		"bathrooms": 1,
 		"reviewScores": {
@@ -809,7 +837,7 @@
 			"communication": 5,
 			"location": 5,
 			"value": 3,
-			"rating": 3.5
+			"rating": 4
 		},
 		"reviews": [
 			{
@@ -867,7 +895,11 @@
 		"amenities": [
 			"TV",
 			"Pool",
-			"Wifi"
+			"Wifi",
+			"Coffe maker",
+			"Free parking",
+			"Gym",
+			"Lockbox"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -879,8 +911,8 @@
 			"countryCode": "HK",
 			"city": "Hong Kong",
 			"address": "Hong Kong, Hong Kong Island, Hong Kong",
-			"lat": 114.15315,
-			"lan": 22.28028
+			"lat": 22.28028,
+			"lan": 114.15315
 		},
 		"bathrooms": 1,
 		"reviewScores": {
@@ -890,7 +922,7 @@
 			"communication": 3.5,
 			"location": 3,
 			"value": 2,
-			"rating": 4.1
+			"rating": 2.3
 		},
 		"reviews": [
 			{
@@ -941,7 +973,7 @@
 			"098.jpeg",
 			"104.jpeg"
 		],
-		"price": 560,
+		"price": 590,
 		"summary": "It is located in the heart of Copacabana an area full of restaurants, coffee-shops, pubs, banks, pharmacies, gyms, etc. The closest metro (Ipanema). One Room with 2 beds (one queen size another double bed), 1 bath . 24-hour security with cameras. Just 2 blocks from Ipanema and one block from Copacabana beach.",
 		"capacity": 4,
 		"bedrooms": 1,
@@ -952,7 +984,10 @@
 			"Kitchen",
 			"Gym",
 			"Hot tub",
-			"Wheelchair accessible"
+			"Wheelchair accessible",
+			"Netflix services",
+			"Lockbox",
+			"Free parking"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -964,8 +999,8 @@
 			"countryCode": "BR",
 			"city": "Rio De Janeiro",
 			"address": "Rio de Janeiro, Rio de Janeiro, Brazil",
-			"lat": -43.192410876968225,
-			"lan": -22.982475758445254
+			"lat": -22.982475758445254,
+			"lan": -43.192410876968225
 		},
 		"bathrooms": 2,
 		"reviewScores": {
@@ -975,7 +1010,7 @@
 			"communication": 4,
 			"location": 4,
 			"value": 4,
-			"rating": 5
+			"rating": 4.3
 		},
 		"reviews": [
 			{
@@ -1002,7 +1037,7 @@
 	},
 	{
 		"_id": "622f337d75c7d36e498aac54",
-		"name": "Aloha, Kihei Bay Surf, New Pool and BBQ",
+		"name": "Restview resort",
 		"type": "Guesthouse",
 		"labels": [
 			"Amazing pools",
@@ -1026,7 +1061,10 @@
 			"Air conditioning",
 			"Pool",
 			"Gym",
-			"Hot tub"
+			"Hot tub",
+			"Free parking",
+			"Coffe maker",
+			"Hangers"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -1038,8 +1076,8 @@
 			"countryCode": "US",
 			"city": "Maui",
 			"address": "Kihei, HI, United States",
-			"lat": -156.4587,
-			"lan": 20.76445
+			"lat": 20.76445,
+			"lan": -156.4587
 		},
 		"bathrooms": 1,
 		"reviewScores": {
@@ -1049,7 +1087,7 @@
 			"communication": 4,
 			"location": 5,
 			"value": 3,
-			"rating": 4.85
+			"rating": 3.2
 		},
 		"reviews": [
 			{
@@ -1121,7 +1159,10 @@
 			"Air conditioning",
 			"Pool",
 			"Kitchen",
-			"Hot tub"
+			"Hot tub",
+			"Hair dryer",
+			"Free parking",
+			"Netflix services"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -1133,8 +1174,8 @@
 			"countryCode": "TR",
 			"city": "Istanbul",
 			"address": "İstanbul, İstanbul, Turkey",
-			"lat": 28.97675,
-			"lan": 41.03782
+			"lat": 41.03782,
+			"lan": 28.97675
 		},
 		"bathrooms": 1,
 		"reviewScores": {
@@ -1144,7 +1185,7 @@
 			"communication": 3.5,
 			"location": 4,
 			"value": 3,
-			"rating": 3.8
+			"rating": 3.4
 		},
 		"reviews": [
 			{
@@ -1237,7 +1278,12 @@
 			"TV",
 			"Wifi",
 			"Air conditioning",
-			"Hot tub"
+			"Hot tub",
+			"Free parking",
+			"Washer machine",
+			"Hair dryer",
+			"Hangers",
+			"Coffe maker"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -1249,8 +1295,8 @@
 			"countryCode": "HK",
 			"city": "Hong Kong",
 			"address": "Hong Kong, Kowloon, Hong Kong",
-			"lat": 114.16984,
-			"lan": 22.31915
+			"lat": 22.31915,
+			"lan": 114.16984
 		},
 		"bathrooms": 1,
 		"reviewScores": {
@@ -1260,7 +1306,7 @@
 			"communication": 4,
 			"location": 3,
 			"value": 3,
-			"rating": 3.32
+			"rating": 3.1
 		},
 		"reviews": [
 			{
@@ -1299,7 +1345,11 @@
 			"Wifi",
 			"Air conditioning",
 			"Pool",
-			"Kitchen"
+			"Kitchen",
+			"Washer machine",
+			"Netflix services",
+			"Lockbox",
+			"Free parking"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -1311,8 +1361,8 @@
 			"countryCode": "HK",
 			"city": "Hong Kong",
 			"address": "Hong Kong, Kowloon, Hong Kong",
-			"lat": 114.17088,
-			"lan": 22.29663
+			"lat": 22.29663,
+			"lan": 114.17088
 		},
 		"bathrooms": 1,
 		"reviewScores": {
@@ -1322,7 +1372,7 @@
 			"communication": 5,
 			"location": 2.5,
 			"value": 4,
-			"rating": 2.2
+			"rating": 4
 		},
 		"reviews": [
 			{
@@ -1359,8 +1409,8 @@
 	},
 	{
 		"_id": "622f337d75c7d36e498aac4f",
-		"name": "Nice appartement in central",
-		"type": "Hotel",
+		"name": "Central view apartment",
+		"type": "Apartment",
 		"labels": [
 			"Beach",
 			"Lakefront",
@@ -1385,7 +1435,9 @@
 			"Pool",
 			"Kitchen",
 			"Hot tub",
-			"Wheelchair accessible"
+			"Wheelchair accessible",
+			"Coffe maker",
+			"Lockbox"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -1397,18 +1449,18 @@
 			"countryCode": "HK",
 			"city": "Hong Kong",
 			"address": "Hong Kong, Hong Kong Island, Hong Kong",
-			"lat": 114.15103,
-			"lan": 22.28109
+			"lat": 22.28109,
+			"lan": 114.15103
 		},
 		"bathrooms": 1,
 		"reviewScores": {
 			"accuracy": 5,
-			"cleanliness": 1,
-			"checkin": 1,
-			"communication": 3.5,
-			"location": 2,
-			"value": 2.5,
-			"rating": 4.7
+			"cleanliness": 5,
+			"checkin": 5,
+			"communication": 5,
+			"location": 5,
+			"value": 5,
+			"rating": 5
 		},
 		"reviews": [
 			{
@@ -1488,8 +1540,10 @@
 		"amenities": [
 			"TV",
 			"Wifi",
+			"Lockbox",
 			"Air conditioning",
 			"Pool",
+			"Coffe maker",
 			"Kitchen",
 			"Gym"
 		],
@@ -1503,8 +1557,8 @@
 			"countryCode": "HK",
 			"city": "Hong Kong",
 			"address": "Hong Kong, Hong Kong Island, Hong Kong",
-			"lat": 114.15103,
-			"lan": 22.28109
+			"lat": 22.28109,
+			"lan": 114.15103
 		},
 		"bathrooms": 1,
 		"reviewScores": {
@@ -1514,7 +1568,7 @@
 			"communication": 4,
 			"location": 5,
 			"value": 3,
-			"rating": 2.9
+			"rating": 3.8
 		},
 		"reviews": [
 			{
@@ -1564,9 +1618,12 @@
 		"amenities": [
 			"TV",
 			"Air conditioning",
+			"Free parking",
 			"Pool",
+			"Netflix services",
 			"Kitchen",
-			"Gym"
+			"Gym",
+			"Washer machine"
 		],
 		"host": {
 			"_id": "6295cf09d722c15469ebe4f5",
@@ -1578,8 +1635,8 @@
 			"countryCode": "ES",
 			"city": "Barcelona",
 			"address": "Barcelona, Catalunya, Spain",
-			"lat": 2.16589,
-			"lan": 41.39002
+			"lat": 41.39002,
+			"lan": 2.16589
 		},
 		"bathrooms": 2,
 		"reviewScores": {
@@ -1589,7 +1646,7 @@
 			"communication": 1,
 			"location": 2,
 			"value": 2,
-			"rating": 1.9
+			"rating": 1.6
 		},
 		"reviews": [
 			{
@@ -1631,7 +1688,7 @@
 			"118.jpeg",
 			"008.jpeg"
 		],
-		"price": 1210,
+		"price": 2599,
 		"summary": "Location is OUTSTANDING as MTR Causeway BAY is within 1 min walk. You are in the very heart of a fancy busy shopping attractive Causeway Bay. There can be few homes as beautiful and practical as this one, from the  interior of the reception and 3 bedrooms and 2 pretty bathrooms. Ideal for Families --- within a stroll to Victoria Park with swimming pool, the very best spot for brand shopping, and thousands of food stalls, international restaurants, cafes, and bars are in the immediate area.",
 		"capacity": 8,
 		"bedrooms": 3,
@@ -1639,8 +1696,11 @@
 		"amenities": [
 			"Air conditioning",
 			"Pool",
+			"Hangers",
 			"Kitchen",
+			"Hair dryer",
 			"Gym",
+			"Free parking",
 			"Hot tub"
 		],
 		"host": {
@@ -1653,8 +1713,8 @@
 			"countryCode": "HK",
 			"city": "Hong Kong",
 			"address": "Causeway Bay, Hong Kong",
-			"lat": 114.18445,
-			"lan": 22.27878
+			"lat": 22.27878,
+			"lan": 114.18445
 		},
 		"bathrooms": 2,
 		"reviewScores": {
@@ -1664,7 +1724,7 @@
 			"communication": 3,
 			"location": 2.5,
 			"value": 2.5,
-			"rating": 4.0
+			"rating": 2.6
 		},
 		"reviews": [
 			{
@@ -1705,6 +1765,309 @@
 					"_id": "622f3405e36c59e6164fb7ee",
 					"fullname": "Christoph",
 					"imgUrl": "https://randomuser.me/api/portraits/men/10.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac4b",
+		"name": "linda casa com piscina em condomínio e arrumadeira",
+		"type": "House",
+		"labels": [
+			"Tiny homes",
+			"Design",
+			"Arctic"
+		],
+		"imgUrls": [
+			"050.jpeg",
+			"113.jpeg",
+			"134.jpeg",
+			"130.jpeg",
+			"137.jpeg"
+		],
+		"price": 1599,
+		"summary": "casa em condomínio fechado, à 7 km do parque olímpico. salão em 2 ambientes, excelente cozinha, lounge de frente para a piscina, churrasqueira, 2 amplas suítes ar condicionado, armário embutido, 3 tvs de led, lavanderia, decoração, lindo jardim.",
+		"capacity": 5,
+		"bedrooms": 2,
+		"beds": 3,
+		"amenities": [
+			"Air conditioning",
+			"Pool",
+			"Hangers",
+			"Washer machine",
+			"Kitchen",
+			"Hair dryer",
+			"Free parking",
+			"Coffe maker"
+		],
+		"host": {
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "Brazil",
+			"countryCode": "BR",
+			"city": "Rio De Janeiro",
+			"address": "Rio de Janeiro, Rio de Janeiro, Brazil",
+			"lat": -22.93881029842621,
+			"lan": -43.356043748726336
+		},
+		"bathrooms": 2,
+		"reviewScores": {
+			"accuracy": 4,
+			"cleanliness": 5,
+			"checkin": 3,
+			"communication": 3,
+			"location": 4,
+			"value": 4,
+			"rating": 3.8
+		},
+		"reviews": [
+			{
+				"id": "107118251010",
+				"date": "May 2022",
+				"txt": "Luiz and family met us when we arrived in Rio and drove us to the house. It was wonderful to have them greet us in a foreign city where we may have struggled to make our own way.\r\nThe house was very comfortable and having a maid service made our stay there very relaxed. Luiz and Lillian responded very quickly when we did have a little problem and got things put right very quickly.\r\nWe really appreciated the transport provided by Lillian's father Willian on several days.\r\nOverall a marvellous experience.",
+				"by": {
+					"_id": "622f3404e36c59e6164fb462",
+					"fullname": "Deborah",
+					"imgUrl": "https://randomuser.me/api/portraits/women/7.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac4a",
+		"name": "Direct Beach/Ocean front, 20 Steps to the Water!",
+		"type": "Apartment",
+		"labels": [
+			"Tiny homes",
+			"Design",
+			"Cabins",
+			"OMG!"
+		],
+		"imgUrls": [
+			"069.jpeg",
+			"148.jpeg",
+			"065.jpeg",
+			"118.jpeg",
+			"008.jpeg"
+		],
+		"price": 879,
+		"summary": "Please read entire listing prior to booking to ensure my unit is as good fit for your travel needs! :) Amazing location & view! Remodeled 2Bd/2ba condo located right on the ocean/beach w/ breath-taking ocean views. Relax by the ocean-front pool or walk down the steps to take a dip in the ocean for some  snorkeling! Located next to Honokowai Beach Park in West Maui, only a short distance to Ka'anapali, Kahana, Lahiana & Napili. Centrally located to many tourist attractions & local favorites.",
+		"capacity": 4,
+		"bedrooms": 2,
+		"beds": 2,
+		"amenities": [
+			"Air conditioning",
+			"Pool",
+			"Hangers",
+			"Kitchen",
+			"Hair dryer",
+			"Gym",
+			"Free parking",
+			"Hot tub",
+			"Netflix services",
+			"Lockbox"
+		],
+		"host": {
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "United States",
+			"countryCode": "us",
+			"city": "Maui",
+			"address": "Lahaina, HI, United States",
+			"lat": 20.95465,
+			"lan": -156.6868
+		},
+		"bathrooms": 2,
+		"reviewScores": {
+			"accuracy": 1,
+			"cleanliness": 5,
+			"checkin": 5,
+			"communication": 4,
+			"location": 5,
+			"value": 4,
+			"rating": 4
+		},
+		"reviews": [
+			{
+				"id": "107118251010",
+				"date": "May 2022",
+				"txt": "The host was very friendly and responsive, the place was right on the beach in a very well kept complex.",
+				"by": {
+					"_id": "622f3405e36c59e6164fb832",
+					"fullname": "Dale",
+					"imgUrl": "https://randomuser.me/api/portraits/men/99.jpg"
+				}
+			},
+			{
+				"id": "70072865444",
+				"date": "May 2022",
+				"txt": "A great value for the money. This unit was nearly perfect for us, in consideration that we were there for the atmosphere, not a fancy hotel experience. The view of course is unbeatable. If this unit were any closer to the ocean, it would have fish in it. It's in a smaller complex, with nobody above you. \r\n\r\nThe neighborhood is okay; appeared to be safe, and there are some eating/shopping options close by, but most restaurants and shops you may want to go to are a little further afield, but not more than a 3-5 minute drive (Kaanapali itself is about 10 minutes away, which is a good thing in my opinion). The road the complex is on is fairly busy, but not too noisy (most cars are going pretty slow here), see more below.\r\n\r\nThe complex itself is pretty old but appeared to be very well-maintained. There's a small beach adjacent to the complex that's okay for recreational bathing but not a destination in itself. The overall vibe was very private and intimate; a very friendly atmosphere. The pool was a huge added bonus for us; the kids wanted to use it practically every day. Honokowai Park was on the other side of the complex; we didn't go here, but the recon I did on a walk gave me the impression that the park was okay but nothing to write home about.\r\n\r\nThe overall noise level here was very minimal; no loud guests or screaming kids. There is some road noise in the front bedroom, and although I wasn't in that bedroom, it wouldn't have bugged me, and I'm a light sleeper. \r\n\r\nThe baths were very nice and almost resort-y; overall, they were very clean although the grout could use a good cleaning, just saying. The kitchen was more than adequate for our needs, and had quite a bit of storage space. We also used the barbecues on premise a couple of times; they're impeccably maintained.\r\n\r\nThe only thing that is a drawback to this place in my opinion is that the loft can get quite stuffy, even with the fans going full blast. We were there in August, and several nights up there were fine, some others were uncomfortable, and there was 2 nights where it was extremely hard to sleep up there.\r\n\r\nSo overall, this place is perfect if you value a tranquil atmosphere with a killer view, in a nice unit in a pleasant complex, at a fair price. If you have enough guests to where you have to utilize the loft, the weather may be a roll of the dice as to how comfortable it is.",
+				"by": {
+					"_id": "622f3405e36c59e6164fb6a0",
+					"fullname": "Tom",
+					"imgUrl": "https://randomuser.me/api/portraits/men/15.jpg"
+				}
+			},
+			{
+				"id": "7007286525",
+				"date": "May 2022",
+				"txt": "Angelica's apartment is excellent and the view is out of the world. Centrally located to almost everything from farmers market right across the street to malls to dining options to beaches to hikes to water sports. My kids 2 and 5 had a blast watching turtles from the patio and did not want to come back. I cooked many meals and enjoyed our dinners watching the sun set. The only thing i wish is this place had an AC coz the afternoons were very warm and the apartment felt like an oven. Nights get cooler though. We will be definitely going back again. Angelica is an amazing host and she was very prompt in answering all my questions. Thank you for having us stay in your gorgeous apartment.",
+				"by": {
+					"_id": "622f3406e36c59e6164fba6e",
+					"fullname": "Purnima",
+					"imgUrl": "https://randomuser.me/api/portraits/women/9.jpg"
+				}
+			},
+			{
+				"id": "70072865168",
+				"date": "May 2022",
+				"txt": "Angelica responded quick and was very helpful whenever I had any questions about the stay. \r\nThe description is accurate. It was a great place to stay with useful amenities that made the stay better.  Having the beach so close made a trip to the beach hassle free. The balcony served as the perfect spot to catch the sunset. \r\nLocation of the apt was great. It was walking distance to restaurants and stores. The drive to Lahaina and Kaanapali was easy. There is also a park around the complex that looked very nice with shaded areas. \r\nOverall, it was a very good stay and space for a family. ",
+				"by": {
+					"_id": "622f3404e36c59e6164fb4f0",
+					"fullname": "Melissa",
+					"imgUrl": "https://randomuser.me/api/portraits/women/12.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac49",
+		"name": "B4.Walk to MTR 1 min/Economy room/Twin single bed",
+		"type": "Apartment",
+		"labels": [
+			"Amazing pools",
+			"Design",
+			"Beach"
+		],
+		"imgUrls": [
+			"057.jpeg",
+			"094.jpeg",
+			"020.jpeg",
+			"100.jpeg",
+			"001.jpeg"
+		],
+		"price": 899,
+		"summary": "Our room is conveniently located in Hong Kong’s renowned commercial and entertainment district at Jordan.Located on Nathan’s Road,near Tsim Sha Tsui. 1-5 minute walk to the MTR,Airport Bus Stop,Yue Hwa Chinese Products,Prudential Center,Park Lane Shopper’s Boulevard,SASA,Bonjour,Mannings,Watsons,Temple Street Night Market,Australia Dairy Company,Tsui Wah Restaurant,Hui Lau Shan,7-ELEVEN. Whether you’re in town for business or pleasure,we will be your best choice.",
+		"capacity": 2,
+		"bedrooms": 1,
+		"beds": 2,
+		"amenities": [
+			"Air conditioning",
+			"Pool",
+			"Hangers",
+			"Kitchen",
+			"Free parking",
+			"TV",
+			"Wheelchair accessible"
+		],
+		"host": {
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "Hong Kong",
+			"countryCode": "HK",
+			"city": "Hong Kong",
+			"address": "Hong Kong, Kowloon, Hong Kong",
+			"lat": 22.27878,
+			"lan": 114.18445
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 3,
+			"cleanliness": 2.5,
+			"checkin": 3,
+			"communication": 2.5,
+			"location": 3.5,
+			"value": 3,
+			"rating": 2.9
+		},
+		"reviews": [
+			{
+				"id": "10712825441",
+				"date": "May 2022",
+				"txt": "还是不错的｡\n照骗照骗,肯定没有照片看起来那么金碧辉煌｡会比你想象的更小,更简陋｡但是这个价格,作为洗澡休息的地方,也是符合要求了｡\n另外客房工作人员态度很好,不认识路她还拿出地图给我们指路｡",
+				"by": {
+					"_id": "622f3404e36c59e6164fb45c",
+					"fullname": "海昇",
+					"imgUrl": "https://randomuser.me/api/portraits/women/59.jpg"
+				}
+			},
+			{
+				"id": "700322865",
+				"date": "May 2022",
+				"txt": "房型和图片上没有差,离澳洲牛奶公司不远,离车站也蛮近的｡点赞",
+				"by": {
+					"_id": "622f3405e36c59e6164fb8b2",
+					"fullname": "Xiong",
+					"imgUrl": "https://randomuser.me/api/portraits/men/20.jpg"
+				}
+			},
+			{
+				"id": "7005472865",
+				"date": "May 2022",
+				"txt": "有待改进",
+				"by": {
+					"_id": "622f3404e36c59e6164fb5cb",
+					"fullname": "芊芊",
+					"imgUrl": "https://randomuser.me/api/portraits/women/4.jpg"
+				}
+			},
+			{
+				"id": "70422865",
+				"date": "May 2022",
+				"txt": "Very good location and easy to go everywhere",
+				"by": {
+					"_id": "622f3403e36c59e6164fb0a7",
+					"fullname": "Safal",
+					"imgUrl": "https://randomuser.me/api/portraits/men/10.jpg"
+				}
+			},
+			{
+				"id": "70422865",
+				"date": "May 2022",
+				"txt": "地理位置很好 性价比很高 虽然很小 但是简洁 设施齐全",
+				"by": {
+					"_id": "622f3404e36c59e6164fb502",
+					"fullname": "琳琳",
+					"imgUrl": "https://randomuser.me/api/portraits/men/13.jpg"
+				}
+			},
+			{
+				"id": "70422865",
+				"date": "May 2022",
+				"txt": "房间足够大,大概有8-10平米左右,2个人1晚的价格不到500,算很亲民了｡有提供免费的WIFI,矿泉水(冷､热),房间也有空调,温度虽然不能调节,但温度设置比较低,适合香港这样比较热的地方,晚上睡觉很舒服,也不吵｡",
+				"by": {
+					"_id": "622f3401e36c59e6164fab80",
+					"fullname": "德玮",
+					"imgUrl": "https://randomuser.me/api/portraits/men/25.jpg"
+				}
+			},
+			{
+				"id": "70422865",
+				"date": "May 2022",
+				"txt": "I’m sorry but this room looks prettier in the photo but not in person. They should improve the cleanliness of the place itself. We stayed here for 1 hour and left right away.",
+				"by": {
+					"_id": "622f3406e36c59e6164fbad4",
+					"fullname": "Barang",
+					"imgUrl": "https://randomuser.me/api/portraits/women/21.jpg"
+				}
+			},
+			{
+				"id": "70422865",
+				"date": "May 2022",
+				"txt": "住宿的地方非常方便,走走就能到尖沙咀的崇光百货,离地铁站非常近,很方便｡房间除了小点没毛病｡",
+				"by": {
+					"_id": "622f3405e36c59e6164fb7e3",
+					"fullname": "佳黛",
+					"imgUrl": "https://randomuser.me/api/portraits/men/17.jpg"
 				}
 			}
 		]

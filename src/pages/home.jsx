@@ -63,7 +63,7 @@ export const Home = () => {
         <div className="top-rated-title">Top Rated</div>
 
         <TopRatedList stays={stays} />
-        <div className="host-img">
+        <div className="homepage-host-img">
             <div className="txt-container">
                 <div>Open your door</div>
                 <div>to hosting</div>

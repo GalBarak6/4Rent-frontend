@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom"
 import { ReactComponent as Logo } from "../assets/icons/logo.svg"
 import { useNavigate } from "react-router-dom"
+import { useSelector } from "react-redux";
 
 export const AppHeader = ({ onOpenModal }) => {
 
     const history = useNavigate()
+    const { user } = useSelector((storeState) => storeState.userModule)
 
     function onGoBack() {
         history("/")
@@ -27,7 +29,8 @@ export const AppHeader = ({ onOpenModal }) => {
 
             <button className="user-menu" onClick={onOpenModal}>
                 <img src={require('../assets/icons/hamburger.svg').default} alt="" />
-                <img src={require('../assets/icons/user.svg').default} alt="" />
+                {!user && <img src={require('../assets/icons/user.svg').default} alt="" />}
+                {user && <img src={user.imgUrl} alt="" className="curr-user-img"/>}
             </button>
 
         </div>

@@ -50,34 +50,6 @@
         }
     }
     
-    .add-review-container {
-
-        padding-top: 30px;
-        padding-bottom: 40px;
-        box-shadow: inset 0 -0.7px 0 0 $clr5;
-
-        .add-title {
-            padding-bottom: 20px;
-        }
-
-        textarea {
-            width: 100%;
-            border: 1px solid $clr9;
-            resize: none;
-            border-radius: rem(15px);
-            gap: 5px;
-
-
-            &::placeholder {
-                font-size: 18px;
-            }
-
-            &:focus {
-                outline: 1px solid $clr2;
-            }
-        }
-    }
-
     .user-img {
         border-radius: 50%;
         height: 56px;

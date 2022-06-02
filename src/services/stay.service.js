@@ -50,9 +50,9 @@ export const stayService = {
 //     // await httpService.get(`stay/`)
 // }
 
-
 async function query() {
     let stays = await httpService.get('stay')
+    return stays
 }
 
 async function getById(stayId) {
