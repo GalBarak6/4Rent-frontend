@@ -34,7 +34,7 @@ export function loadStays() {
                 stays
             })
         } catch (err) {
-            showErrorMsg('Cannot load stays')
+            // showErrorMsg('Cannot load stays')
             console.log('Cannot load stays', err)
         }
     }
@@ -46,9 +46,9 @@ export function removeStay(stayId) {
             await stayService.remove(stayId)
             console.log('Deleted Succesfully!')
             dispatch(getActionRemoveStay(stayId))
-            showSuccessMsg('Stay removed')
+            // showSuccessMsg('Stay removed')
         } catch (err) {
-            showErrorMsg('Cannot remove stay')
+            // showErrorMsg('Cannot remove stay')
             console.log('Cannot remove stay', err)
         }
     }
@@ -60,9 +60,9 @@ export function addStay(stay) {
             const savedStay = await stayService.save(stay)
             console.log('Added Stay', savedStay)
             dispatch(getActionAddStay(savedStay))
-            showSuccessMsg('Stay added')
+            // showSuccessMsg('Stay added')
         } catch (err) {
-            showErrorMsg('Cannot add stay')
+            // showErrorMsg('Cannot add stay')
             console.log('Cannot add stay', err)
         }
     }
@@ -74,9 +74,9 @@ export function updateStay(stay) {
             const savedStay = await stayService.save(stay)
             console.log('Updated Stay:', savedStay)
             dispatch(getActionUpdateStay(savedStay))
-            showSuccessMsg('Stay updated')
+            // showSuccessMsg('Stay updated')
         } catch (err) {
-            showErrorMsg('Cannot update stay')
+            // showErrorMsg('Cannot update stay')
             console.log('Cannot save stay', err)
         }
     }
@@ -94,13 +94,12 @@ export function setFilter(filterBy) {
 export function addReviewToStay(txt, stay) {
     return async (dispatch) => {
         try {
-            console.log('hi')
             const savedStay = await stayService.addReview(txt, stay)
             console.log('Updated Stay', savedStay)
             dispatch(getActionUpdateStay(savedStay))
-            showSuccessMsg('Stay updated')
+            // showSuccessMsg('Stay updated')
         } catch (err) {
-            showErrorMsg('Cannot update stay')
+            // showErrorMsg('Cannot update stay')
             console.log('Cannot update stay', err)
         }
     }

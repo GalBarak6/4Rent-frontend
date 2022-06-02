@@ -74,19 +74,20 @@ async function remove(stayId) {
 async function save(stay) {
     var savedStay
     if (stay._id) {
-        savedStay = await storageService.put(STORAGE_KEY, stay)
+        // savedStay = await storageService.put(STORAGE_KEY, stay)
+        savedStay = await httpService.put(`stay/${stay._id}`, stay)
 
     } else {
         // stay.owner = userService.getLoggedinUser()
         savedStay = await storageService.post(STORAGE_KEY, stay)
     }
+    console.log(savedStay);
     return savedStay
 }
 
-
 async function addReview(txt, stay) {
     console.log('addreview')
-    const review = { id: utilService.makeId(), txt, date: 'March 2022', by: { _id: '622f3407e36c59e6164fbe6a', fullname: 'Mike', imgUrl: 'https://randomuser.me/portraits/men/69.jpg' } }
+    const review = { id: utilService.makeId(), txt, date: 'June 2022', by: { _id: '6295ce47c5274e3f84a8c2b5', fullname: 'Edgar', imgUrl: 'https://randomuser.me/api/portraits/men/52.jpg' } }
     stay.reviews.push(review)
     const savedStay = save(stay)
     return savedStay

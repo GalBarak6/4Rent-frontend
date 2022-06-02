@@ -1,10 +1,10 @@
-.top-rated-list{
+.top-rated-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-    gap: rem(40px) rem(23px) ;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: rem(40px) rem(40px);
 
     padding: 0 rem(80px) rem(40px);
-    
+
     // padding-top: rem(30px);
     // padding-bottom: rem(30px);
     // padding-inline-start: rem(40px);

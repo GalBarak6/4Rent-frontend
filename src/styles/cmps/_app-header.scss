@@ -28,9 +28,10 @@
 
     .logo {
         color: $clr1;
-        font-size: 22px;
+        font-size: rem(30px);
         font-weight: bold;
-        font-family: Circular-Bold;
+        // font-family: Circular-Bold;
+        font-family: DancingScript-Regular;
         // margin-inline-start: $mainLayoutPadding;
         cursor: pointer;
     }
@@ -51,8 +52,8 @@
         }
 
         img:nth-child(1) {
-            width: 20px;
-            height: 15px;
+            width: 16px;
+            height: 16px;
         }
 
         img:nth-child(2) {

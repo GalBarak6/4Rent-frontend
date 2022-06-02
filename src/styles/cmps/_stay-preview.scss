@@ -23,19 +23,19 @@
             width: 23px;
             height: 23px;
             z-index: 5;
-
         }
     }
 
     .txt-container {
-
         color: $clr2;
         gap: 5px;
+        font-size: rem(15px);
     }
 
     .bold {
         color: $clr3;
-        font-family: Circular-Bold;
+        // font-family: Circular-Bold;
+        font-weight: 600;
     }
 
     .light {

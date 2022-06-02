@@ -32,9 +32,9 @@ export const AddReview = ({ loadStay, stay }) => {
         console.log(txt)
         console.log(stay)
         console.log(ratings);
-        // await dispatch(addReviewToStay(txt, stay))
-        // loadStay()
-        // ev.target[0].value = ''
+        await dispatch(addReviewToStay(txt, stay))
+        loadStay()
+        ev.target[0].value = ''
     }
 
     return (
@@ -71,8 +71,8 @@ export const AddReview = ({ loadStay, stay }) => {
                 </div>
             </Stack>
             <form onSubmit={onAddReview}>
-                <div>
-                    <textarea name="new-review" id="new-review" rows="10" placeholder='Write your review here..'></textarea>
+                <div className='txt-container'>
+                    <textarea name="new-review" id="new-review" rows="7" placeholder='Write your review here..'></textarea>
                 </div>
                 <SendBtn />
             </form>
