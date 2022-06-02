@@ -51,9 +51,12 @@ export const stayService = {
 // }
 
 
-async function query() {
-    let stays = await httpService.get('stay')
+async function query(filterBy = { type: [], amenities: [], price: '', label: '', rating: '' }) {
+    let stays = await httpService.get(`stay/?type=${filterBy.type}&amenities=${filterBy.amenities}
+    &price=${filterBy.price}&label=${filterBy.label}&rating=${filterBy.rating}`)
+    return stays
 }
+
 
 async function getById(stayId) {
     // return storageService.get(STORAGE_KEY, stayId)
