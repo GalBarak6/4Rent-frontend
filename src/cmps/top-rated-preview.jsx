@@ -10,7 +10,7 @@ export const TopRatedPreview = ({ stay }) => {
         </div>
             <div className="txt-container">
                 <div className="flex space-between align-center">
-                    <div className="bold">{stay.loc.city}<span>, {stay.loc.country}</span></div>
+                    <div className="bold">{stay.name} - {stay.loc.city}<span>, {stay.loc.country}</span></div>
                     <div className="flex align-center gap">
                     </div>
                 </div>

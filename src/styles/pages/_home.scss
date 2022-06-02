@@ -1,107 +1,112 @@
-.hero {
-    height: 85vh;
-    background-image: url(../../assets/Images/hero6.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
+.home{
 
-    .hero-title {
-        color: $clr8;
-        font-size: rem(35px);
-        text-shadow: 2px 2px 4px $clr3;
-        padding-bottom: 30px;
-    }
-
-    .hero-button {
-        border-radius: 25px;
-        height: 45px;
-        transition: background-color .5s;
-        width: 140px;
-        background-color: $clr6;
-
-        &:hover {
-            background-color: $clr11;
-        }
-
-        span {
-            font-size: rem(20px);
-            font-family: circular-light;
-            -webkit-text-fill-color: transparent;
-            background: -webkit-linear-gradient(#72019b, #ad0187, #e91f95);
-            -webkit-background-clip: text;
-            font-weight: bold;
-            padding: 20px 30px;
-        }
-    }
-
-}
-
-.top-rated-title {
-    padding-top: rem(20px);
-    padding-bottom: rem(20px);
-    padding-inline-start: rem(80px);
-    color: $clr3;
-    font-family: Circular-Bold;
-    font-size: rem(25px);
-}
-
-.homepage-host-img {
-    height: 80vh;
-    background-image: url(../../assets/Images/homepage-host.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: rem(40px);
-
-    .txt-container {
-        // border:1px solid black;
-        display: flex;
-        flex-direction: column;
+    .hero {
+        height: 85vh;
+        background-image: url(../../assets/Images/hero6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         align-items: center;
         justify-content: center;
-        width: 50%;
-        height: 100%;
-        font-size: rem(64px);
-        // font-family: Circular-Bold;
-        font-weight: 600 !important;
-        color: $clr8;
-
-
-        .mouse-cursor-gradient-tracking {
-            position: relative;
-            outline: none;
-            overflow: hidden;
-            height: 47px;
-            width: rem(130px);
-            background: linear-gradient(90deg, #f1254b 0, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%);
-            border-radius: 8px;
-            font-size: rem(16px);
+    
+        .hero-title {
             color: $clr8;
-            font-weight: bold;
-
+            font-size: rem(40px);
+            text-shadow: 2px 2px 4px $clr3;
+            margin-bottom: rem(70px);
         }
-
-        .mouse-cursor-gradient-tracking span {
-            position: relative;
+    }
+    
+        .hero-button {
+            border-radius: 25px;
+            height: 45px;
+            transition: background-color .5s;
+            width: 140px;
+            background-color: $clr6;
+            // margin-top: rem(50px);
+    
+            &:hover {
+                background-color: $clr11;
+            }
+    
+            span {
+                font-size: rem(20px);
+                font-family: circular-light;
+                -webkit-text-fill-color: transparent;
+                background: -webkit-linear-gradient(#72019b, #ad0187, #e91f95);
+                -webkit-background-clip: text;
+                font-weight: bold;
+                padding: 20px 30px;
+            }
         }
-
-        .mouse-cursor-gradient-tracking:before {
-            --size: 0;
-            content: '';
-            position: absolute;
-            left: var(--x);
-            top: var(--y);
-            width: var(--size);
-            height: var(--size);
-            background: radial-gradient(circle closest-side, #e64462, transparent);
-            transform: translate(-50%, -50%);
-            transition: width 0.2s ease, height 0.2s ease;
-        }
-
-        .mouse-cursor-gradient-tracking:hover:before {
-            --size: 200px;
+    
+    
+    .top-rated-title {
+        padding-top: rem(40px);
+        padding-bottom: rem(40px);
+        padding-inline-start: rem(80px);
+        color: $clr3;
+        font-family: Circular-Bold;
+        font-size: rem(25px);
+    }
+    
+    .homepage-host-img {
+        height: 75vh;
+        background-image: url(../../assets/Images/homepage-host.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    
+        .txt-container {
+            // border:1px solid black;
+            background-color:$clr3-opacity-2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 100%;
+            font-size: rem(64px);
+            // font-family: Circular-Bold;
+            font-weight: 600 !important;
+            color: $clr8;
+    
+    
+            .mouse-cursor-gradient-tracking {
+                position: relative;
+                outline: none;
+                overflow: hidden;
+                height: 47px;
+                width: rem(130px);
+                background: linear-gradient(90deg, #f1254b 0, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%);
+                border-radius: 8px;
+                font-size: rem(16px);
+                color: $clr8;
+                font-weight: bold;
+    
+            }
+    
+            .mouse-cursor-gradient-tracking span {
+                position: relative;
+            }
+    
+            .mouse-cursor-gradient-tracking:before {
+                --size: 0;
+                content: '';
+                position: absolute;
+                left: var(--x);
+                top: var(--y);
+                width: var(--size);
+                height: var(--size);
+                background: radial-gradient(circle closest-side, #e64462, transparent);
+                transform: translate(-50%, -50%);
+                transition: width 0.2s ease, height 0.2s ease;
+            }
+    
+            .mouse-cursor-gradient-tracking:hover:before {
+                --size: 200px;
+            }
         }
     }
 }
+
