@@ -25,7 +25,7 @@ const App = () => {
   }
 
   return <Router>
-    <div className='app'>
+    <div className='app flex flex-column'>
       <AppHeader onOpenModal={onOpenModal} />
       <main className='main-layout'>
         <Routes>
