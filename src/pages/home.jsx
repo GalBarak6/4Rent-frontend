@@ -11,7 +11,7 @@ export const Home = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(setFilter({ ...filterBy, rating: 5 }))
+        dispatch(setFilter({ ...filterBy, rating: 5.0 }))
         dispatch(loadStays())
         let btn = document.querySelector('.mouse-cursor-gradient-tracking');
         btn.addEventListener('mousemove', e => {
