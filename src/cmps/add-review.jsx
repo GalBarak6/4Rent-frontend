@@ -46,27 +46,27 @@ export const AddReview = ({ loadStay, stay }) => {
                 <div className="add-review-ratings">
                     <div>
                         <div>Cleanliness</div>
-                        <Rating name="cleanliness" defaultValue={2.5} precision={0.5} onChange={onHandleChange} />
+                        <Rating name="cleanliness" defaultValue={0} precision={0.5} onChange={onHandleChange} />
                     </div>
                     <div>
                         <div>Checkin</div>
-                        <Rating name="checkin" defaultValue={2.5} precision={0.5} onChange={onHandleChange} />
+                        <Rating name="checkin" defaultValue={0} precision={0.5} onChange={onHandleChange} />
                     </div>
                     <div>
                         <div>Location</div>
-                        <Rating name="location" defaultValue={2.5} precision={0.5} onChange={onHandleChange} />
+                        <Rating name="location" defaultValue={0} precision={0.5} onChange={onHandleChange} />
                     </div>
                     <div>
                         <div>Communication</div>
-                        <Rating name="communication" defaultValue={2.5} precision={0.5} onChange={onHandleChange} />
+                        <Rating name="communication" defaultValue={0} precision={0.5} onChange={onHandleChange} />
                     </div>
                     <div>
                         <div>Accuracy</div>
-                        <Rating name="accuracy" defaultValue={2.5} precision={0.5} onChange={onHandleChange} />
+                        <Rating name="accuracy" defaultValue={0} precision={0.5} onChange={onHandleChange} />
                     </div>
                     <div>
                         <div>Value</div>
-                        <Rating name="value" defaultValue={2.5} precision={0.5} onChange={onHandleChange} />
+                        <Rating name="value" defaultValue={0} precision={0.5} onChange={onHandleChange} />
                     </div>
                 </div>
             </Stack>
