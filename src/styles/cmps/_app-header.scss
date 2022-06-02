@@ -7,6 +7,7 @@
     height: 80px;
     position: var(--position);
     width: 100%;
+    color: var(--font-color);
 
     .main-nav {
         margin-inline-end: 10px;
@@ -34,6 +35,7 @@
         font-family: DancingScript-Regular;
         // margin-inline-start: $mainLayoutPadding;
         cursor: pointer;
+        color: var(--font-color);
     }
 
     .user-menu {
@@ -46,6 +48,7 @@
         width: 80px;
         border-radius: 25px;
         border: 1px solid $clr6;
+        background: var(--font-color);
 
         &:hover {
             box-shadow: 0 2px 4px rgb(0 0 0 / 18%);

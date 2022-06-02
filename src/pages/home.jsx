@@ -31,12 +31,14 @@ export const Home = () => {
         document.documentElement.style.setProperty('--grid-colum', '1/-1')
         document.documentElement.style.setProperty('--position', 'fixed')
         document.documentElement.style.setProperty('--border-style', 'none')
+        document.documentElement.style.setProperty('--font-color', '#f7f7f7')
         dispatch(setFilter({ ...filterBy, rating: 5 }))
         dispatch(loadStays())
         return () => {
             document.documentElement.style.setProperty('--grid-column', '2')
             document.documentElement.style.setProperty('--position', 'block')
             document.documentElement.style.setProperty('--border-style', 'solid')
+            document.documentElement.style.setProperty('--font-color', '#222222')
             dispatch(setFilter({ ...filterBy, rating: '' }))
         }
 
