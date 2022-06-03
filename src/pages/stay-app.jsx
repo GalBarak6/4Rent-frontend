@@ -34,7 +34,7 @@ export const StayApp = () => {
         console.log(value)
         if (value === 'All') {
             setIsFilterOn(false)
-            dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: '' }))
+            dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: '', city:''}))
         }
         else dispatch(setFilter({ ...filterBy, label: value }))
     }
