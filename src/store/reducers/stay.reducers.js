@@ -6,6 +6,7 @@ const initialState = {
         price: '',
         label: '',
         rating: '',
+        city:'',
         host: ''
     },
     // reviews: []

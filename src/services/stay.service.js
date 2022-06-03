@@ -51,9 +51,9 @@ export const stayService = {
 // }
 
 
-async function query(filterBy = { type: [], amenities: [], price: '', label: '', rating: '', host: ''}) {
-    let stays = await httpService.get(`stay/?type=${filterBy.type}&amenities=${filterBy.amenities}
-    &price=${filterBy.price}&label=${filterBy.label}&rating=${filterBy.rating}&host=${filterBy.host}`)
+
+async function query(filterBy = { type: [], amenities: [], price: '', label: '', rating: '', city:'' }) {
+    let stays = await httpService.get(`stay/?type=${filterBy.type}&city=${filterBy.city}&price=${filterBy.price}&label=${filterBy.label}&rating=${filterBy.rating}&host=${filterBy.host}`)
     return stays
 }
 

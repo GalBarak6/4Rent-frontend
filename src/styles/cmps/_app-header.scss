@@ -9,8 +9,10 @@
     width: 100%;
     color: var(--font-color);
 
-    .main-nav {
-        margin-inline-end: 10px;
+    >* {
+        // display: flex;
+        flex: 1;
+    }
 
         a {
             align-items: center;
@@ -21,11 +23,29 @@
             font-weight: 600;
             font-size: rem(14px);
         }
+    .main-nav-container {
+        justify-content: flex-end;
 
-        a:hover {
-            background-color: $clr6-opacity
+        .main-nav {
+            margin-inline-end: 10px;
+
+
+            a {
+                align-items: center;
+                border-radius: 25px;
+                display: flex;
+                height: 40px;
+                padding: 15px;
+                font-weight: 600;
+                font-size: rem(15px);
+            }
+
+            a:hover {
+                background-color: $clr6-opacity
+            }
         }
     }
+
 
     .logo {
         color: $clr1;
@@ -67,5 +87,55 @@
 
     .curr-user-img {
         border-radius: 15px;
+    }
+
+    .search-container {
+        height: 47px;
+        margin: 0 55px;
+        display: flex;
+        align-items: center;
+        border: solid 1px $clr9;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+        border-radius: 50vw;
+        white-space: nowrap;
+        background-color: $clr8;
+
+        // :hover{
+        //     box-shadow: rgb(0 0 0 / 0.18) 0px 2px 4px;
+        //     border-radius: 50vw;
+        // }
+
+        .stay-search {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            >* {
+                padding: 0px 12px;
+            }
+
+            span {
+                padding: 0px;
+            }
+
+            // .where {
+            //     border: solid 1px $clr9;
+            //     border-radius: 50vw;
+            //     padding: rem(20px) rem(20px);
+            // }
+
+            .btn {
+                font-family: Circular-Light;
+                font-size: 14px;
+            }
+
+            .search-btn {
+                background: #ff385c;
+                border-radius: 50%;
+                padding: 10px;
+            }
+        }
     }
 }
