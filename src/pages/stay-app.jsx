@@ -30,7 +30,6 @@ export const StayApp = () => {
         dispatch(loadStays())
     }, [isModalOpen])
 
-
     const labelChange = (value) => {
         console.log(value)
         if (value === 'All') {

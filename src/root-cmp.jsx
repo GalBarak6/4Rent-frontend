@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { Home } from './pages/home'
 import { Host } from './pages/host'
@@ -13,26 +13,25 @@ import { UserMenuModal } from './cmps/user-menu-modal'
 const App = () => {
 
   const [isOpenModal, setIsOpenModal] = useState(false)
+  const location = useLocation()
 
-  // useEffect(() => {
-  //   return () => {
-  //     setIsOpenModal(false)
-  //   }
-  // }, [])
+  useEffect(() => {
+      setIsOpenModal(false)
+  }, [location.pathname])
 
   const onOpenModal = () => {
     setIsOpenModal(!isOpenModal)
   }
 
-  return <Router>
-    <div className='app flex flex-column'>
+  return <div className='app'>
       <AppHeader onOpenModal={onOpenModal} />
       <main className='main-layout'>
         <Routes>
           <Route path="/stay/:stayId" element={<StayDetails />} />
+          <Route path="/host" element={<Host />} />
+          {/* <Route path="/host:userId" element={<Host />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/host" element={<Host />} />
           <Route path="/stay" element={<StayApp />} />
           <Route path="/" element={<Home />} />
         </Routes>
@@ -40,6 +39,5 @@ const App = () => {
       <AppFooter />
       {isOpenModal && <UserMenuModal />}
     </div>
-  </Router>
 }
 export default App

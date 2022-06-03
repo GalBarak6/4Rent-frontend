@@ -4,7 +4,9 @@ export const utilService = {
     getRandomIntInclusive,
     delay,
     getDate,
-    formatDate
+    formatDate,
+    changeDateFormat,
+    datesDiff
 }
 
 function makeId(length = 6) {
@@ -40,7 +42,7 @@ function delay(ms = 1500) {
     })
 }
 
-function getDate () {
+function getDate() {
     let date = new Date()
     // const newDate = `${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`
     const newDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
@@ -51,12 +53,28 @@ function formatDate(date) {
     var d = new Date(date),
         month = '' + (d.getMonth() + 1),
         day = '' + d.getDate(),
-        year = d.getFullYear();
-        
-    if (month.length < 2) 
-        month = '0' + month;
-    if (day.length < 2) 
-        day = '0' + day;
+        year = d.getFullYear()
 
-    return [year, month, day].join('-');
+    if (month.length < 2)
+        month = '0' + month
+    if (day.length < 2)
+        day = '0' + day
+
+    return [year, month, day].join('-')
+}
+
+function changeDateFormat(input) {
+    var datePart = input.match(/\d+/g),
+        year = datePart[0].substring(2),
+        month = datePart[1], day = datePart[2]
+    return day + '/' + month + '/' + year
+}
+
+function datesDiff(date1, date2) {
+    date1 = new Date(date1)
+    date2 = new Date(date2)
+    var timeDiff = Math.abs(date2.getTime() - date1.getTime())
+    var numberOfNights = Math.ceil(timeDiff / (1000 * 3600 * 24))
+    // console.log(numberOfNights + " nights")
+    return numberOfNights
 }

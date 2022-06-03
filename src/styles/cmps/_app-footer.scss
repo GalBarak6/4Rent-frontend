@@ -1,8 +1,18 @@
 .app-footer {
     height: 60px;
     margin-top: 24px;
+    position: relative;
+    bottom: 0;
     font-size: 14px;
     border-top: 1px solid $clr9;
+    width: 100%;
+
+    :first-child {
+
+        >*:not(:last-child) {
+            margin-right: 9px;
+        }
+    }
 
     .txt-container {
         width: 100%;
@@ -14,5 +24,32 @@
         height: 16px;
         margin-right: 7px;
     }
-}
 
+    .footer-info {
+        font-weight: 600;
+
+        :first-child {
+            margin-right: 8px;
+        }
+
+        >*:not(:first-child) {
+            margin-right: 24px;
+        }
+    }
+
+    .dot {
+        font-size: rem(14px);
+        // margin: 0 5px;
+
+        &:after {
+            content: " \2219 ";
+        }
+    }
+
+    .social {
+
+        >*:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+}

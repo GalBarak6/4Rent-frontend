@@ -69,14 +69,11 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
         setDateRange(prevDates => ({ ...prevDates, [field]: value }))
     }
 
-    // const calculateNights = () => {
-    //     const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-    //     const firstDate = new Date(2008, 1, 12);
-    //     const secondDate = new Date(2008, 1, 22);
-
-    //     const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
-    //     console.log(diffDays);
-    // }
+    const numOfNights = () => {
+        const nights = utilService.datesDiff(dateRange.startDate, dateRange.endDate)
+        const value = (nights === 1) ? `${nights} night` : `${nights} nights`
+        return value
+    }
 
     return <div className='order-display'>
         <div className='order-container flex flex-column'>
@@ -157,7 +154,7 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
             <p className='order-summary-header align-self-center'>You won't be charged yet</p>
             <div className='order-summary flex flex-column'>
                 <div className='price-sum flex space-between'>
-                    <span>${calculateSum('night')} x 5 nights</span>
+                    <span>${calculateSum('night')} x {numOfNights()}</span>
                     <span>${calculateSum('nights')}</span>
                 </div>
                 <div className='cleaning-sum flex space-between'>

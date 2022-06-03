@@ -1,15 +1,14 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import { ReactComponent as Logo } from "../assets/icons/logo.svg"
-import { useNavigate } from "react-router-dom"
 import { useSelector } from "react-redux";
 
 export const AppHeader = ({ onOpenModal }) => {
 
-    const history = useNavigate()
+    const navigate = useNavigate()
     const { user } = useSelector((storeState) => storeState.userModule)
 
     function onGoBack() {
-        history("/")
+        navigate('/')
     }
 
     return <header className="app-header flex space-between align-center">
@@ -24,13 +23,16 @@ export const AppHeader = ({ onOpenModal }) => {
                 {/* <NavLink to="/">Home</NavLink> */}
                 {/* <NavLink to="/login">Login</NavLink> */}
                 <NavLink to="/stay">Explore</NavLink>
-                <NavLink to="/host">Become a host</NavLink>
+                {/* {user.isHost && <NavLink to={`/host/${user._id}`}>Booking Reports</NavLink>}
+                {!user.isHost && <NavLink to={`/host/${user._id}`}>Become a host</NavLink>} */}
+                {user && user.isHost && <NavLink to='/host/'>Booking Reports</NavLink>}
+                {(!user || !user.isHost) && <NavLink to='/host/'>Become a host</NavLink>}
             </nav>
 
             <button className="user-menu" onClick={onOpenModal}>
                 <img src={require('../assets/icons/hamburger.svg').default} alt="" />
                 {!user && <img src={require('../assets/icons/user.svg').default} alt="" />}
-                {user && <img src={user.imgUrl} alt="" className="curr-user-img"/>}
+                {user && <img src={user.imgUrl} alt="" className="curr-user-img" />}
             </button>
 
         </div>

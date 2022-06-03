@@ -3,9 +3,17 @@ export const AppFooter = () => {
     return <section className="app-footer full flex center">
         <div className="txt-container flex space-between align-center">
             {/* <div>Coffee Rights © www.DrinkACoffee.com</div> */}
-            <div>© 2022 4Rent, Inc.</div>
-            <div className='flex align-center space-between'>
-                <div className='footer-info'>
+            <div className='flex align-center'>
+                <span>© 2022 4Rent, Inc.</span>
+                <span className='dot'></span>
+                 <span>Privacy</span>
+                 <span className='dot'></span>
+                 <span>Terms</span>
+                 <span className='dot'></span>
+                 <span>Sitemap</span>
+             </div>
+            <div className='flex align-center'>
+                <div className='footer-info flex align-center'>
                     <img src={require('../assets/icons/language.svg').default} alt="" className='footer-icon' />
                     <span>English(US)</span>
                     <span>$ USD</span>
