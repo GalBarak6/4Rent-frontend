@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom"
 import { ReactComponent as Logo } from "../assets/icons/logo.svg"
 import { useNavigate } from "react-router-dom"
 import { useSelector } from "react-redux";
+import { StaySearch } from "../cmps/stay-search"
 
 export const AppHeader = ({ onOpenModal }) => {
 
@@ -17,9 +18,10 @@ export const AppHeader = ({ onOpenModal }) => {
             {<Logo />}
             <div>4Rent</div>
         </div>
-
-        <div className="flex align-center">
-
+        <div className="search-container">
+            <StaySearch />
+        </div>
+        <div className="main-nav-container flex align-center">
             <nav className="main-nav flex">
                 {/* <NavLink to="/">Home</NavLink> */}
                 {/* <NavLink to="/login">Login</NavLink> */}
@@ -30,7 +32,7 @@ export const AppHeader = ({ onOpenModal }) => {
             <button className="user-menu" onClick={onOpenModal}>
                 <img src={require('../assets/icons/hamburger.svg').default} alt="" />
                 {!user && <img src={require('../assets/icons/user.svg').default} alt="" />}
-                {user && <img src={user.imgUrl} alt="" className="curr-user-img"/>}
+                {user && <img src={user.imgUrl} alt="" className="curr-user-img" />}
             </button>
 
         </div>

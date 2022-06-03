@@ -5,7 +5,8 @@ const initialState = {
         amenities: [],
         price: '',
         label: '',
-        rating: ''
+        rating: '',
+        city:''
     },
     // reviews: []
 }
