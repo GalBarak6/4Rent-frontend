@@ -1,7 +1,7 @@
 .order-status-modal {
     border: solid 1px $clr9;
     border-radius: 10px;
-    width: rem(350px);
+    width: rem(150px);
     height: rem(230px);
     position: fixed;
     top: 25%;
@@ -26,8 +26,8 @@
         border-bottom: solid 1px $clr9;
 
         .exit-icon {
-            width: 25px;
-            height: 25px;
+            width: 20px;
+            height: 20px;
         }
     }
 
@@ -39,16 +39,32 @@
         height: 200px;
         justify-content: space-evenly;
 
-        :first-child {
-            color: #009879;
-            font-weight: 600;
-            font-size: rem(20px);
+        >* {
+            cursor: pointer;
+            gap: 30px;
+            width: 100%;
+            height: 50px;
+            padding: 0 10px;
         }
 
-        :nth-child(2) {
-            color: #e61e4d;
+        div:first-of-type {
+            background-color: #009879;
+        }
+
+        div:last-of-type {
+            background-color: #e61e4d;
+        }
+
+        .approve-icon,
+        .decline-icon {
+            width: 35px;
+            height: 35px;
+        }
+
+        span {
+            color: $clr8;
             font-weight: 600;
-            font-size: rem(20px);
+            font-size: rem(16px);
         }
     }
 }

@@ -11,15 +11,14 @@ export const HostingList = () => {
     useEffect(() => {
         dispatch(setFilter({ ...filterBy, host: 'Linda-Lee' }))
         dispatch(loadStays())
-        console.log(stays);
-        
+        console.log(stays)
     }, [])
 
     
-    return <section className="order-list">
+    return <section className="hosting-list">
         <table>
             <tbody>
-                {/* {user && user.isHost && orders.map(order => { return <OrderPreview order={order} key={order._id} /> })} */}
+                {user && user.isHost && stays.map(stay => { return <HostingPreview stay={stay} key={stay.host._id} /> })}
             </tbody>
         </table>
     </section>
