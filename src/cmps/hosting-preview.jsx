@@ -1,18 +1,21 @@
-// import { stayService } from "../services/stay.service"
-// import { utilService } from "../services/util.service"
+export const HostingPreview = ({ stay }) => {
+    return <tr className="hosting-preview">
+        <td>
+            <img src={require(`../assets/Images/${stay.imgUrls[0]}`)} alt="" className='stay-host-img' />
+        </td>
+        <td>
+            {stay.name}
+            {stay.type}
+        </td>
+        <td>
+            <img src={require('../assets/icons/star.svg').default} alt="" className='star-icon' />
+            {stay.reviewScores.rating}
+            <span>({stay.reviews.length})</span>
+        </td>
+        <td>
+            <button>Edit</button>
+            <button>Remove</button>
+        </td>
+    </tr>
 
-// export const OrderPreview = () => {
-//     // console.log(order)
-//     return <tr className="order-preview">
-//         <td>{(order._id).substring(0,8)}</td>
-//         <td>{utilService.changeDateFormat(order.startDate)}</td>
-//         <td>{order.booker.fullname}</td>
-//         {/* <td>{order.booker._id}</td> */}
-//         <td>{order.stay}</td>
-//         <td>{utilService.datesDiff(order.startDate, order.endDate)}</td>
-//         <td>{stayService.getTotalGuestCount(order.guests)}</td>
-//         <td>{order.status}</td>
-//         <td>{order.status}</td>
-//     </tr>
-
-// }
+}

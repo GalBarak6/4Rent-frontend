@@ -9,15 +9,10 @@ export const OrderList = ({ orders }) => {
         <table>
             <thead>
                 <tr>
-                    {/* <th>Date</th> */}
                     <th>Reservation Num.</th>
                     <th>Arrival</th>
                     <th>Booker</th>
                     <th>Stay</th>
-                    {/* <th>Stay</th> */}
-                    {/* <th>Start Date</th>
-                    <th>End Date</th> */}
-                    {/* <th>Nights</th> */}
                     <th>Nights</th>
                     <th>Guests</th>
                     <th>Status</th>

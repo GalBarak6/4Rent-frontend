@@ -1,0 +1,18 @@
+.order-preview {
+
+    td:nth-child(7) {
+        font-weight: 600;
+    }
+
+    .green {
+        color: #009879;
+    }
+
+    .red {
+        color: #e61e4d;
+    }
+
+    .black {
+        color: $clr3;
+    }
+}
