@@ -22,7 +22,7 @@ export const StayApp = () => {
 
     useEffect(() => {
         dispatch(loadStays())
-        if (filterBy.type.length > 0 || filterBy.amenities.length > 0 || filterBy.price) setIsFilterOn(true)
+        if (filterBy.type.length > 0 || filterBy.amenities.length > 0 || filterBy.price || filterBy.city || filterBy.capacity) setIsFilterOn(true)
         console.log(filterBy)
     }, [filterBy])
 
@@ -34,7 +34,7 @@ export const StayApp = () => {
         console.log(value)
         if (value === 'All') {
             setIsFilterOn(false)
-            dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: '', city:''}))
+            dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: '', city:'', capacity: ''}))
         }
         else dispatch(setFilter({ ...filterBy, label: value }))
     }
