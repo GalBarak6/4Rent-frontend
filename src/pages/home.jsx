@@ -32,6 +32,7 @@ export const Home = () => {
         document.documentElement.style.setProperty('--position', 'fixed')
         document.documentElement.style.setProperty('--border-style', 'none')
         document.documentElement.style.setProperty('--font-color', '#f7f7f7')
+        document.documentElement.style.setProperty('--logo-color', '#f7f7f7')
         dispatch(setFilter({ ...filterBy, rating: 5 }))
         dispatch(loadStays())
         return () => {
@@ -39,6 +40,7 @@ export const Home = () => {
             document.documentElement.style.setProperty('--position', 'block')
             document.documentElement.style.setProperty('--border-style', 'solid')
             document.documentElement.style.setProperty('--font-color', '#222222')
+            document.documentElement.style.setProperty('--logo-color', '#FF385C')
             dispatch(setFilter({ ...filterBy, rating: '' }))
         }
 
