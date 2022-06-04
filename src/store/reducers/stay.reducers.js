@@ -7,7 +7,8 @@ const initialState = {
         label: '',
         rating: '',
         city:'',
-        host: ''
+        host: '',
+        capacity: ''
     },
     // reviews: []
 }
