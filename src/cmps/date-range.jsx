@@ -12,9 +12,10 @@ export function DatePicker({onHandleDates}) {
   const [toggleCalender, setToggleCalender] = useState(false)
 
   const onHandleChange = (item) => {
-    console.log(item);
     setDateRange([item.selection])
-    // onHandleDates(dateRange.startDate,dateRange.endDate)
+    const {startDate} = item.selection
+    const {endDate} = item.selection
+    onHandleDates(startDate,endDate)
   }
 
   const convert = (str) => {
@@ -40,6 +41,7 @@ export function DatePicker({onHandleDates}) {
       onChange={onHandleChange}
       moveRangeOnFirstSelection={false}
       ranges={dateRange}
+      rangeColors={['#222222']}
     />
   }
     </>

@@ -6,21 +6,21 @@ import { NavLink, useNavigate } from "react-router-dom"
 
 export const StaySearch = () => {
     const { filterBy } = useSelector((storeState) => storeState.stayModule)
-    const [filterByCity, setFilterByCity] = useState('')
+    const [filterByCity, setFilterByCity] = useState(filterBy.city)
     const [isGuestModalOpen, setIsGuestModalOpen] = useState(false)
     const [totalGuests, setTotalGuests] = useState('Add')
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
     
-    useEffect(() => {
-        if (filterBy.capacity) setTotalGuests(filterBy.capacity)
-        else setTotalGuests('Add')
+    // useEffect(() => {
+    //     if (filterBy.capacity) setTotalGuests(filterBy.capacity)
+    //     else setTotalGuests('Add')
 
-        if (filterBy.city) setFilterByCity(filterBy.city)
-        else setFilterByCity('')
-        console.log(filterBy)
-    }, [filterBy])
+    //     if (filterBy.city) setFilterByCity(filterBy.city)
+    //     else setFilterByCity('')
+    //     console.log('search' , filterBy)
+    // }, [filterBy])
 
     
     function goToExplore() {
@@ -39,8 +39,8 @@ export const StaySearch = () => {
     const onSearch = (ev) => {
         ev.preventDefault()
         setIsGuestModalOpen(false)
-        goToExplore()
         dispatch(setFilter({ ...filterBy, city: filterByCity, capacity: totalGuests }))
+        goToExplore()
     }
 
     const onSetGuests = () => {

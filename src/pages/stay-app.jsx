@@ -23,7 +23,7 @@ export const StayApp = () => {
     useEffect(() => {
         dispatch(loadStays())
         if (filterBy.type.length > 0 || filterBy.amenities.length > 0 || filterBy.price || filterBy.city || filterBy.capacity) setIsFilterOn(true)
-        console.log(filterBy)
+        console.log('filterby',filterBy)
     }, [filterBy])
 
     useEffect(() => {
@@ -31,7 +31,6 @@ export const StayApp = () => {
     }, [isModalOpen])
 
     const labelChange = (value) => {
-        console.log(value)
         if (value === 'All') {
             setIsFilterOn(false)
             dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: '', city:'', capacity: ''}))
