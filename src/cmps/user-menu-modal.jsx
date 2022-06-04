@@ -1,11 +1,22 @@
-// import { useState } from 'react'
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom"
+import { useSelector, useDispatch } from "react-redux"
+import { Link, useNavigate } from "react-router-dom"
+import { onLogout } from "../store/actions/user.actions"
 
 export const UserMenuModal = () => {
 
-    // const [isOpenModal, setIsOpenModal] = useState(false)
+    const dispatch = useDispatch()
+    const history = useNavigate()
     const { user } = useSelector((storeState) => storeState.userModule)
+
+    const logOut = () => {
+        dispatch(onLogout())
+        onGoBack()
+    }
+
+    const onGoBack = () => {
+        history("/stay")
+    }
+
     return <section className="user-menu-modal swing-in-top-bck">
         {!user && <ul>
             <li>
@@ -40,7 +51,7 @@ export const UserMenuModal = () => {
                 Help
             </li>
 
-            <li>
+            <li onClick={logOut}>
                 Logout
             </li>
 

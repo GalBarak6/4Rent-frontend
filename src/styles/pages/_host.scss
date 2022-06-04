@@ -1,3 +1,35 @@
 .host {
     padding-top: 30px;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+
+    .hosting-header {
+        width: 1100px;
+        padding-top: 30px;
+
+        :nth-child(2) {
+            color: $clr2;
+            text-decoration: underline;
+            font-family: Circular-Light;
+            font-size: rem(14px);
+            font-weight: 600;
+        }
+    }
+
+    .statistics {
+
+        justify-self: end;
+        margin-top: 50px;
+        gap: 30px;
+
+        >* {
+            border: solid 1px $clr9;
+            border-radius: 10px;
+            width: rem(200px);
+            height: rem(200px);
+            box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+            padding: 20px;
+        }
+
+    }
 }

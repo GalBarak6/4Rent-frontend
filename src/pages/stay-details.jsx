@@ -9,7 +9,7 @@ import { Checkout } from '../cmps/checkout'
 import { Reviews } from '../cmps/reviews'
 import { MainAmenities } from '../cmps/main-amenities'
 import { StayGallery } from '../cmps/stay-gallery'
-import {AddReview} from '../cmps/add-review'
+import { AddReview } from '../cmps/add-review'
 
 export const StayDetails = () => {
 
@@ -55,9 +55,21 @@ export const StayDetails = () => {
     return <section className="stay-details flex flex-column">
 
         <h1 className='stay-name'>{stay.name}</h1>
-        <div className='start-info flex align-center'>
-            <img src={require('../assets/icons/star.svg').default} alt="" className='start-icon' />
-            {onGetTotalReviewScore()} <span className='dot'></span> <a href="#reviews-container">{stay.reviews.length} Reviews</a> <span className='dot'></span> {stay.loc.city} {stay.loc.address} {stay.loc.country}
+        <div className='start-info flex align-center space-between'>
+            <div className='flex align-center'>
+                <img src={require('../assets/icons/star.svg').default} alt="" className='start-icon' />
+                {onGetTotalReviewScore()} <span className='dot'></span> <a href="#reviews-container">{stay.reviews.length} Reviews</a> <span className='dot'></span> {stay.loc.city} {stay.loc.address} {stay.loc.country}
+            </div>
+            <div className='flex align-center'>
+                <button className='flex'>
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '16px', width: '16px', stroke: '#222222', strokeWidth: '2', overflow: 'visible' }}><g fill="none"><path d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9"></path><path d="M16 3v23V3z"></path><path d="M6 13l9.293-9.293a1 1 0 0 1 1.414 0L26 13"></path></g></svg>
+                    <span>Share</span>
+                </button>
+                <button className='flex'>
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '16px', width: '16px', stroke: '#222222', strokeWidth: '2', overflow: 'visible' }}><path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path></svg>
+                    <span>Save</span>
+                </button>
+            </div>
         </div>
 
         <StayGallery imgUrls={stay.imgUrls} />
@@ -84,9 +96,9 @@ export const StayDetails = () => {
             <Checkout stay={stay} onGetTotalReviewScore={onGetTotalReviewScore} />
         </div>
 
-        <Reviews stay={stay} onGetTotalReviewScore={onGetTotalReviewScore}/>
+        <Reviews stay={stay} onGetTotalReviewScore={onGetTotalReviewScore} />
 
-        {user && <AddReview loadStay={loadStay} stay={stay}/>}
+        {user && <AddReview loadStay={loadStay} stay={stay} />}
 
         <div className='map'>
             <h2>Where you`ll be</h2>

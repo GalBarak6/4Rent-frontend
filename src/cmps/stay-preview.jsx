@@ -3,7 +3,7 @@ import { DemoCarousel } from './carousel'
 
 export const StayPreview = ({ stay }) => {
     return <section className="stay-preview">
-
+        
         <div className="img-container">
             <DemoCarousel imgs={stay.imgUrls} />
             <img className="icon-heart" src={require('../assets/icons/grey heart.svg').default} alt="" />

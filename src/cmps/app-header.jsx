@@ -25,10 +25,11 @@ export const AppHeader = ({ onOpenModal }) => {
                 {/* <NavLink to="/">Home</NavLink> */}
                 {/* <NavLink to="/login">Login</NavLink> */}
                 <NavLink to="/stay">Explore</NavLink>
-                {/* {user.isHost && <NavLink to={`/host/${user._id}`}>Booking Reports</NavLink>}
-                {!user.isHost && <NavLink to={`/host/${user._id}`}>Become a host</NavLink>} */}
-                {user && user.isHost && <NavLink to='/host/'>Booking Reports</NavLink>}
-                {(!user || !user.isHost) && <NavLink to='/host/'>Become a host</NavLink>}
+                {user && user.isHost && <NavLink to={`/host/${user._id}`}>Booking Reports</NavLink>}
+                {(user && !user.isHost) && <NavLink to={`/host/${user._id}`}>Become a host</NavLink>}
+                {(!user) && <NavLink to={'/host/Id'}>Become a host</NavLink>}
+                {/* {user && user.isHost && <NavLink to='/host/'>Booking Reports</NavLink>}
+                {(!user || !user.isHost) && <NavLink to='/host/'>Become a host</NavLink>} */}
             </nav>
 
             <button className="user-menu" onClick={onOpenModal}>

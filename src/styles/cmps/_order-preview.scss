@@ -1,4 +1,8 @@
 .order-preview {
+    
+    td {
+        white-space: nowrap;
+    }
 
     td:nth-child(7) {
         font-weight: 600;

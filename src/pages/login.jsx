@@ -24,14 +24,14 @@ export function Login() {
 
   const history = useNavigate()
 
-  function onGoBack() {
-      history("/stay")
+  const onGoBack = () => {
+    history("/stay")
   }
 
   const handleSubmit = (event) => {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
-    const loginUser = {username: data.get('username'), password: data.get('password')}
+    const loginUser = { username: data.get('username'), password: data.get('password') }
     dispatch(onLogin(loginUser))
     onGoBack()
   }
