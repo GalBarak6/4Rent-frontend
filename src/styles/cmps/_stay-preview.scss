@@ -34,16 +34,15 @@
 
     .bold {
         color: $clr3;
-        // font-family: Circular-Bold;
         font-weight: 600;
     }
 
     .light {
-        font-family: Circular-Light;
+        color: $clr2;
+        font-weight: normal;
     }
 
     .icon {
-        // height: rem(14px);
         width: rem(12px);
     }
 

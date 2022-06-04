@@ -62,8 +62,12 @@ export const StayFilterModal = ({ onCloseModal }) => {
         <form onSubmit={onSetFilters}>
 
             <div className="modal-title">
-                <button className="close-btn" onClick={() => { onCloseModal() }}>X</button>
-                <div>Filters</div>
+                {/* <button className="close-btn" onClick={() => { onCloseModal() }}>X</button> */}
+                <button className="close-btn" onClick={() => { onCloseModal() }}>
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '16px', width: '16px', stroke: 'rgb(34, 34, 34)', strokeWidth: '3', overflow: 'visible' }}><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg>
+                </button>
+
+                <div className="title">Filters</div>
             </div>
 
             <div className="modal-details">
@@ -131,7 +135,7 @@ export const StayFilterModal = ({ onCloseModal }) => {
 
                         <div>
                             <div>
-                                <input type="checkbox" id="TV" name="TV" value="TV" onChange={onAmenitiesChange} />
+                                <input className="checkbox"type="checkbox" id="TV" name="TV" value="TV" onChange={onAmenitiesChange} />
                                 <label htmlFor="TV">TV</label>
                             </div>
 

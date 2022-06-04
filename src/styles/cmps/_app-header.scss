@@ -10,7 +10,6 @@
     color: var(--font-color);
 
     >* {
-        // display: flex;
         flex: 1;
     }
 
@@ -28,7 +27,6 @@
 
         .main-nav {
             margin-inline-end: 10px;
-
 
             a {
                 align-items: center;
@@ -48,14 +46,14 @@
 
 
     .logo {
-        color: $clr1;
+        color: var(--logo-color);
         font-size: rem(30px);
         font-weight: bold;
         // font-family: Circular-Bold;
         font-family: DancingScript-Regular;
         // margin-inline-start: $mainLayoutPadding;
         cursor: pointer;
-        color: var(--font-color);
+        // color: var(--font-color);
     }
 
     .user-menu {
@@ -68,7 +66,7 @@
         width: 80px;
         border-radius: 25px;
         border: 1px solid $clr6;
-        background: var(--font-color);
+        background: $clr8;
 
         &:hover {
             box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
@@ -91,20 +89,12 @@
 
     .search-container {
 
-        // height: 47px;
-        // margin: 0 55px;
-        // display: flex;
-        // align-items: center;
-        // border: solid 1px $clr9;
-        // box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
-        // border-radius: 50vw;
-        // white-space: nowrap;
-        // background-color: $clr8;
+        .stay-search{
+            display: flex;
+            justify-content: center;
+        }
 
-        display: flex;
-        justify-content: center;
-
-        .stay-search {
+        .stay-search-form {
             flex-basis: 350px;
 
             height: 47px;
@@ -122,6 +112,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            &:hover {
+                box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+            }
 
             >* {
                 padding: 0px 12px;
