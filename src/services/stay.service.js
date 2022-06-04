@@ -1,6 +1,6 @@
 import { storageService } from './async-storage.service.js'
 import { utilService } from './util.service.js'
-// import { userService } from './user.service.js'
+import { userService } from './user.service.js'
 import { httpService } from './http.service.js'
 const STORAGE_KEY = 'stay'
 
@@ -66,9 +66,10 @@ async function getById(stayId) {
 
 
 async function remove(stayId) {
-    await storageService.remove(STORAGE_KEY, stayId)
+    // await storageService.remove(STORAGE_KEY, stayId)
     // return axios.delete(`/api/stay/${stayId}`)
-    // await httpService.delete(`review/${reviewId}`)
+    console.log(stayId);
+    await httpService.delete(`stay/${stayId}`)
 }
 
 async function save(stay) {

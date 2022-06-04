@@ -28,8 +28,8 @@ const App = () => {
       <main className='main-layout'>
         <Routes>
           <Route path="/stay/:stayId" element={<StayDetails />} />
-          <Route path="/host" element={<Host />} />
-          {/* <Route path="/host:userId" element={<Host />} /> */}
+          <Route path="/host/:userId" element={<Host />} />
+          {/* <Route path="/host" element={<Host />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/stay" element={<StayApp />} />

@@ -5,7 +5,7 @@
         margin: 25px 0;
         font-size: 1em;
         // min-width: 300px;
-        width: 1000px;
+        width: 1100px;
         border-radius: 5px 5px 0 0;
         overflow: hidden;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -13,7 +13,8 @@
 
     thead tr {
         // border: 1px solid $clr3;
-        background-color: #009879;
+        // background-color: #009879;
+        background-color: $clr3;
         color: #ffffff;
         text-align: left;
         font-weight: bold;
@@ -37,7 +38,8 @@
     }
 
     tbody tr:last-of-type {
-        border-bottom: 2px solid #009879;
+        // border-bottom: 2px solid #009879;
+        // border-bottom: 2px solid $clr3;
     }
 
     tbody tr.active-row {
