@@ -24,6 +24,8 @@
         }
     .main-nav-container {
         justify-content: flex-end;
+        white-space: nowrap;
+
 
         .main-nav {
             margin-inline-end: 10px;
