@@ -14,7 +14,7 @@
     border: 1px solid #00000030;
     border-radius: 13px;
     // box-shadow: 0 0 5px 5px #00000015;
-    box-shadow:     rgb(0 0 0 / 12%) 0px 6px 16px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
 
 
     padding: 20px;
@@ -116,27 +116,55 @@
 
             .dates-container {
 
+                // height: 56px;
+                // display: flex;
+                // align-items: center;
+                // padding-top: 15px;
+
+                // input:first-of-type {
+                //     padding-right: 30px;
+                // }
+
                 .check-date {
                     border: none;
+                    font-family: Circular-Light;
+                    font-size: rem(14px);
+                    color: $clr3;
+                    cursor: pointer;
+                    outline: none;
 
                     &::-webkit-calendar-picker-indicator {
                         background: transparent;
                         bottom: 0;
                         color: transparent;
-                        cursor: pointer;
-                        height: auto;
                         left: 0;
                         position: absolute;
                         right: 0;
                         top: 0;
                         width: auto;
+                        height: 500px;
+                        z-index: 20;
                     }
+
+                    &::-webkit-calendar-picker-indicator {
+                        display: none;
+                    }
+
+                    // &::-webkit-input-placeholder{ 
+                    //     visibility: hidden
+                    // }
                 }
 
                 label {
                     font-size: rem(10px);
                     padding: 15px 12px 10px;
                     flex-basis: 50%;
+
+                    span {
+                        color: $clr3;
+                        font-weight: bold;
+                        font-family: Circular-Light;
+                    }
 
                     &:last-child {
                         border-left: 1px solid $clr11

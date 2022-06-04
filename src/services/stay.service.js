@@ -89,7 +89,7 @@ async function save(stay) {
 async function addReview(txt, stay) {
     console.log('addreview')
     const review = { id: utilService.makeId(), txt, date: 'June 2022', by: { _id: '6295ce47c5274e3f84a8c2b5', fullname: 'Edgar', imgUrl: 'https://randomuser.me/api/portraits/men/52.jpg' } }
-    stay.reviews.push(review)
+    stay.reviews.unshift(review)
     const savedStay = save(stay)
     return savedStay
 }

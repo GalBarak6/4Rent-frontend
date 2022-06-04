@@ -10,6 +10,7 @@ import { Reviews } from '../cmps/reviews'
 import { MainAmenities } from '../cmps/main-amenities'
 import { StayGallery } from '../cmps/stay-gallery'
 import { AddReview } from '../cmps/add-review'
+import { DatePicker } from '../cmps/date-range';
 
 export const StayDetails = () => {
 

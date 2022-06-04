@@ -4,6 +4,8 @@ import { HashRouter as Router } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { store } from './store/store'
 
+import 'react-date-range/dist/styles.css'
+import 'react-date-range/dist/theme/default.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './styles/styles.scss'
 import App from './root-cmp'

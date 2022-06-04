@@ -5,6 +5,7 @@ import { stayService } from '../services/stay.service'
 import { utilService } from '../services/util.service'
 import { OrderModal } from './order-modal'
 import { orderService } from '../services/order.service'
+import { DatePicker } from './date-range'
 
 export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -47,7 +48,8 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     const onSubmit = async (ev) => {
         ev.preventDefault()
         setIsModalOpen(true)
-        const newOrder = orderService.getNewOrder(dateRange, guestCount, stay)
+        const newOrder = orderService.getNewOrder(dateRange, guestCount, stay, orderService.getTotalAsNum(stay.price, utilService.datesDiff(dateRange.startDate, dateRange.endDate)))
+        console.log(newOrder)
         await dispatch(addOrder(newOrder))
         setDateRange(prevDates => ({ ...prevDates, startDate: utilService.formatDate(new Date()), endDate: utilService.formatDate(new Date(new Date().getTime() + (120 * 60 * 60 * 1000))) }))
         setGuestCount(prevCount => ({ ...prevCount, adult: 1, children: 0, infant: 0 }))
@@ -59,14 +61,20 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     }
 
     const calculateSum = (type) => {
-        const total = orderService.getCalculatedPrice(type, stay.price)
+        const total = orderService.getCalculatedPrice(type, stay.price, utilService.datesDiff(dateRange.startDate, dateRange.endDate))
         return (total)
     }
 
-    const onHandleDates = ({ target }) => {
-        const field = target.name
-        const value = target.value
-        setDateRange(prevDates => ({ ...prevDates, [field]: value }))
+    // const onHandleDates = ({ target }) => {
+    //     const field = target.name
+    //     const value = target.value
+    //     setDateRange(prevDates => ({ ...prevDates, [field]: value }))
+    // }
+
+    const onHandleDates = ({ startDate, endDate }) => {
+        console.log(startDate);
+        console.log(endDate);
+        // setDateRange(prevDates => ({ ...prevDates, startDate, endDate }))
     }
 
     const numOfNights = () => {
@@ -89,14 +97,14 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
 
             <form onSubmit={onSubmit} className='order-form flex flex-column'>
                 <div className='order-inputs'>
-                    <div className='dates-container flex space-between'>
-                        <label className='flex flex-column'>
+                    <div className='dates-container'>
+                        {/* <label className='flex flex-column'>
                             CHECK-IN<input type="date" name='startDate' onChange={onHandleDates} className="check-date checkin" value={dateRange.startDate} />
                         </label>
                         <label className='flex flex-column'>
                             CHECKOUT<input type="date" name='endDate' onChange={onHandleDates} className="check-date checkout" value={dateRange.endDate} />
-                            {/* CHECKOUT<input type="date" name='endDate' onChange={onHandleChange} className="check-date checkout" value={dateRange.endDate} /> */}
-                        </label>
+                        </label> */}
+                        <DatePicker onHandleDates={onHandleDates}/>
                     </div>
 
                     <div className='guest-input flex flex-column'>

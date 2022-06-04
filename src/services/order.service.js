@@ -11,6 +11,7 @@ export const orderService = {
     remove,
     getBtnMouseListener,
     getCalculatedPrice,
+    getTotalAsNum,
     getNewOrder
 }
 
@@ -38,7 +39,7 @@ async function save(order) {
     var savedorder
     if (order._id) {
         // savedorder = await storageService.put(STORAGE_KEY, order)
-        savedorder = await httpService.put(`order`, order)
+        savedorder = await httpService.put(`order/${order._id}`, order)
     } else {
         // order.owner = userService.getLoggedinUser()
         // savedorder = await storageService.post(STORAGE_KEY, order)
@@ -58,14 +59,14 @@ function getBtnMouseListener() {
     })
 }
 
-function getCalculatedPrice(type, price) {
+function getCalculatedPrice(type, price, nights) {
     let total = 0
     switch (type) {
         case 'night':
             total = price.toLocaleString('en-IN', { maximumFractionDigits: 0 })
             return total
         case 'nights':
-            total = (price * 5).toLocaleString('en-IN', { maximumFractionDigits: 0 })
+            total = (price * nights).toLocaleString('en-IN', { maximumFractionDigits: 0 })
             return total
         case 'cleaning':
             total = (price * 0.04).toLocaleString('en-IN', { maximumFractionDigits: 0 })
@@ -74,12 +75,17 @@ function getCalculatedPrice(type, price) {
             total = (price * 0.005).toLocaleString('en-IN', { maximumFractionDigits: 0 })
             return total
         case 'sum':
-            total = (price * 5 + price * 0.04 + price * 0.005).toLocaleString('en-IN', { maximumFractionDigits: 0 })
+            total = (price * nights + price * 0.04 + price * 0.005).toLocaleString('en-IN', { maximumFractionDigits: 0 })
             return total
     }
 }
 
-function getNewOrder(order, guestCount, stay) {
+function getTotalAsNum(price, nights) {
+    const total = +(price * nights + price * 0.04 + price * 0.005).toFixed()
+    return total
+}
+
+function getNewOrder(order, guestCount, stay, total) {
     const newOrder = {
         startDate: order.startDate,
         endDate: order.endDate,
@@ -106,7 +112,8 @@ function getNewOrder(order, guestCount, stay) {
             imgUrl: 'https://randomuser.me/api/portraits/men/52.jpg'
         },
         status: 'pending',
-        stay: stay.name
+        stay: stay.name,
+        total
     }
     return newOrder
 }

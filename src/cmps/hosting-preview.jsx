@@ -19,7 +19,7 @@ export const HostingPreview = ({ stay }) => {
         </td>
         <td>
             <img src={require('../assets/icons/star.svg').default} alt="" className='star-icon' />
-            {stay.reviewScores.rating}
+            {(stay.reviewScores.rating).toFixed(1)}
             <span>({stay.reviews.length})</span>
         </td>
         <td>
