@@ -1,30 +1,9 @@
-import { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useState, useEffect } from 'react'
 import { stayService } from '../services/stay.service'
 
-export const SearchGuestsModal = ({handleGuestsChange}) => {
 
-    const [guestCount, setGuestCount] = useState({ adult: 0, children: 0, infant: 0 })
-    const dispatch = useDispatch()
+export const SearchGuestsModal = ({ guestCount,onGuestCount }) => {
 
-    
-    
-    const onGuestCount = (indicator, type) => {
-        console.log('onGuestCount')
-        const field = type
-        const limit = field === 'adult' ? 1 : 0
-        if (guestCount[field] + indicator < limit || guestCount[field] + indicator > 4) return
-        
-        setGuestCount(prevCount => ({ ...prevCount, [field]: prevCount[field] + indicator }))
-        const totalGuests = totalGuestCount()
-        console.log({ totalGuests })
-        handleGuestsChange(totalGuests)
-    }
-    
-    const totalGuestCount = () => {
-        const totalCount = stayService.getTotalGuestCount(guestCount)
-        return totalCount
-    }
 
     return <section className='search-guests-modal flex flex-column swing-in-top-bck'>
 
@@ -65,7 +44,5 @@ export const SearchGuestsModal = ({handleGuestsChange}) => {
         </div>
 
     </section>
-
-
 
 }
