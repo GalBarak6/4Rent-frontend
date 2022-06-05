@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { DateRange } from 'react-date-range'
 
-export function DatePicker({onHandleDates, startDate, endDate}) {
-  console.log('start and end dates', startDate, endDate);
+export function DatePicker({ onHandleDates, startDate, endDate }) {
   const [dateRange, setDateRange] = useState([
     // {
     //   startDate: new Date(),
@@ -16,19 +15,18 @@ export function DatePicker({onHandleDates, startDate, endDate}) {
     },
   ])
   const [toggleCalender, setToggleCalender] = useState(false)
-  console.log('After state', dateRange)
 
   useEffect(() => {
-    const updateDate = [{startDate, endDate, key: 'selection'}]
+    const updateDate = [{ startDate, endDate, key: 'selection' }]
     setDateRange(updateDate)
-  }, [startDate,endDate])
+  }, [startDate, endDate])
 
 
   const onHandleChange = (item) => {
     setDateRange([item.selection])
-    const {startDate} = item.selection
-    const {endDate} = item.selection
-    onHandleDates(startDate,endDate)
+    const { startDate } = item.selection
+    const { endDate } = item.selection
+    onHandleDates(startDate, endDate)
   }
 
   const convert = (str) => {
@@ -45,18 +43,18 @@ export function DatePicker({onHandleDates, startDate, endDate}) {
           <span>CHECK-IN</span><input type="date" name='startDate' value={convert(dateRange[0].startDate)} onChange={onHandleChange} className="check-date checkin" />
         </label>
         <label className='flex flex-column'>
-        <span>CHECKOUT</span><input type="date" name='endDate' value={convert(dateRange[0].endDate)} onChange={onHandleChange} className="check-date checkout" />
-      </label>
-    </div>
+          <span>CHECKOUT</span><input type="date" name='endDate' value={convert(dateRange[0].endDate)} onChange={onHandleChange} className="check-date checkout" />
+        </label>
+      </div>
       {
-    toggleCalender && <DateRange
-      editableDateInputs={true}
-      onChange={onHandleChange}
-      moveRangeOnFirstSelection={false}
-      ranges={dateRange}
-      rangeColors={['#222222']}
-    />
-  }
+        toggleCalender && <DateRange
+          editableDateInputs={true}
+          onChange={onHandleChange}
+          moveRangeOnFirstSelection={false}
+          ranges={dateRange}
+          rangeColors={['#222222']}
+        />
+      }
     </>
   )
 }

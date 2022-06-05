@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { loadStays, setFilter } from '../store/actions/stay.actions'
 
+import { loadStays, setFilter } from '../store/actions/stay.actions'
 import { StayList } from '../cmps/stay-list'
 import { StayFilter } from '../cmps/stay-filter'
 import { StayFilterModal } from '../cmps/stay-filter-modal'
-// import { loadUsers } from '../store/actions/user.actions'
-
 
 export const StayApp = () => {
 

@@ -1,18 +1,15 @@
-import { OrderPreview } from '../cmps/order-preview'
-import { useSelector } from "react-redux";
+import { TripPreview } from '../cmps/trip-preview'
 
+export const TripList = ({ orders }) => {
 
-export const OrderList = ({ orders }) => {
-
-    const { user } = useSelector((storeState) => storeState.userModule)
-
-    return <section className="order-list">
+    return <section className="trip-list">
+        <h1>Trips</h1>
         <table>
             <thead>
                 <tr>
                     <th>Reservation Num.</th>
                     <th>Arrival</th>
-                    <th>Booker</th>
+                    <th>Host</th>
                     <th>Stay</th>
                     <th>Nights</th>
                     <th>Guests</th>
@@ -21,7 +18,7 @@ export const OrderList = ({ orders }) => {
                 </tr>
             </thead>
             <tbody>
-                {user && user.isHost && orders.map(order => { return <OrderPreview order={order} key={order._id} /> })}
+                {orders.map(order => { return <TripPreview order={order} key={order._id} /> })}
             </tbody>
         </table>
     </section>

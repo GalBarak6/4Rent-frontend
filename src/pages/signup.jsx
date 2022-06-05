@@ -31,8 +31,9 @@ export function SignUp() {
             username: data.get('username'),
             password: data.get('password'),
             fullname: `${data.get('firstName')} ${data.get('lastName')}`,
+            imgUrl: 'https://randomuser.me/api/portraits/men/57.jpg',
             isHost: false,
-            imgUrl: 'https://randomuser.me/api/portraits/men/57.jpg'
+            wishlist: []
         }
         dispatch(onSignup(newUser))
         onGoBack()

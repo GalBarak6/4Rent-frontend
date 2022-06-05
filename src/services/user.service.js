@@ -17,6 +17,8 @@ export const userService = {
     getById,
     remove,
     update,
+    addWishlist
+
 }
 
 window.userService = userService
@@ -52,7 +54,7 @@ async function update(user) {
     // await storageService.put('user', user)
     user = await httpService.put(`user/${user._id}`, user)
     // Handle case in which admin updates other user's details
-    if (getLoggedinUser()._id === user._id) saveLocalUser(user)
+    // if (getLoggedinUser()._id === user._id) saveLocalUser(user)
     return user;
 }
 
@@ -66,7 +68,6 @@ async function login(userCred) {
     }
 }
 async function signup(userCred) {
-    userCred.score = 10000;
     // const user = await storageService.post('user', userCred)
     const user = await httpService.post('auth/signup', userCred)
     // socketService.login(user._id)
@@ -87,11 +88,24 @@ function getLoggedinUser() {
     return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER))
 }
 
+async function addWishlist(user, stay, type) {
+    if (type === 'unshift') {
+        user.wishlist.unshift(stay)
+    } else {
+        const idx = user.wishlist.indexOf(stay)
+        user.wishlist.splice(idx, 1)
+    }
+    console.log(user.wishlist);
+    const savedUser = update(user)
+    return savedUser
+}
+
 // ;(async ()=>{
 //     await userService.signup({fullname: 'Puki Norma', username: 'user1', password:'123',score: 10000, isAdmin: false})
 //     await userService.signup({fullname: 'Master Adminov', username: 'admin', password:'123', score: 10000, isAdmin: true})
 //     await userService.signup({fullname: 'Muki G', username: 'muki', password:'123', score: 10000})
 // })()
+
 
 
 

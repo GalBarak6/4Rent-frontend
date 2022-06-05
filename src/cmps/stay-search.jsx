@@ -109,7 +109,7 @@ export const StaySearch = () => {
 
         return DateStr
     }
-console.log( 'ednDAte' ,dateRange)
+// console.log( 'ednDAte' ,dateRange)
 
     return <section className='stay-search'>
 

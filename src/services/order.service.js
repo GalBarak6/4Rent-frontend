@@ -15,10 +15,10 @@ export const orderService = {
     getNewOrder
 }
 
-async function query(filterBy = {host: ''}) {
+async function query(filterBy = { host: '', booker: '' }) {
     // return storageService.query(STORAGE_KEY)
     // return axios.get(`/api/order`)
-    let orders = await httpService.get(`order/?host=${filterBy.host}`)
+    let orders = await httpService.get(`order/?host=${filterBy.host}&booker=${filterBy.booker}`)
     return orders
 }
 
@@ -85,7 +85,8 @@ function getTotalAsNum(price, nights) {
     return total
 }
 
-function getNewOrder(order, guestCount, stay, total) {
+function getNewOrder(order, guestCount, stay, total, host, user) {
+    console.log(host._id);
     const newOrder = {
         startDate: order.startDate,
         endDate: order.endDate,
@@ -102,14 +103,14 @@ function getNewOrder(order, guestCount, stay, total) {
             lng: stay.loc.lan
         },
         host: {
-            _id: '6295cf09d722c15469ebe4f5',
-            fullname: 'Linda-Lee',
-            pictureUrl: 'https://randomuser.me/api/portraits/women/22.jpg'
+            _id: host._id,
+            fullname: host.fullname,
+            pictureUrl: host.pictureUrl
         },
         booker: {
-            _id: '6294d477f218f12d17a3c74b',
-            fullname: 'Edgar',
-            imgUrl: 'https://randomuser.me/api/portraits/men/52.jpg'
+            _id: user._id,
+            fullname: user.fullname,
+            imgUrl: user.imgUrl
         },
         status: 'pending',
         stay: stay.name,

@@ -16,7 +16,7 @@ export const Host = () => {
     const params = useParams()
 
     useEffect(() => {
-        dispatch(loadOrders({host:params.userId}))
+        dispatch(loadOrders({ host: params.userId }))
     }, [])
 
     useEffect(() => {
@@ -76,7 +76,7 @@ export const Host = () => {
                 <h3>Total Rate</h3>
                 <div className='flex align-center'>
                     <img className="statistics-icon" src={require('../assets/icons/star2.png')} alt="" />
-                    <h4>{calculateRating()}</h4>
+                    <h4>{calculateRating().toFixed(1)}</h4>
                 </div>
             </div>
         </div>

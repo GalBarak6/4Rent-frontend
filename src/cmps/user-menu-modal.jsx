@@ -41,7 +41,7 @@ export const UserMenuModal = () => {
         {user && <ul>
 
             <li>
-                Trips
+                <Link to={`/trip/${user._id}`}>Trips</Link>
             </li>
 
             <li className="menu-limit">

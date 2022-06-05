@@ -88,3 +88,16 @@ export function loadUser(userId) {
     }
 }
 
+export function updateWishlist(user, stay, type) {
+    return async (dispatch) => {
+        try {
+            const savedUser = await userService.addWishlist(user, stay, type)
+            console.log('Updated User', savedUser)
+            dispatch({type: 'UPDATE_USER', user})
+            // showSuccessMsg('Stay updated')
+        } catch (err) {
+            // showErrorMsg('Cannot update stay')
+            console.log('Cannot update stay', err)
+        }
+    }
+}

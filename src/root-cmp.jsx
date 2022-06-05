@@ -11,6 +11,7 @@ import { SignUp } from './pages/signup'
 import { UserMenuModal } from './cmps/user-menu-modal'
 import { WishList } from './pages/wishlist'
 import { StayEdit } from './pages/stay-edit'
+import { Trip } from './pages/trip'
 
 const App = () => {
 
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/stay/:stayId" element={<StayDetails />} />
         <Route path="/host/:userId" element={<Host />} />
         <Route path="/wishlist/:userId" element={<WishList />} />
+        <Route path="/trip/:userId" element={<Trip />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/stay" element={<StayApp />} />
