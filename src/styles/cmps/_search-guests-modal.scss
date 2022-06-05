@@ -5,7 +5,10 @@
     position: absolute;
     line-height: 25px;
     top: 63px;
-    right: 25px;
+
+    // right: 25px;
+    right: 5%;
+    transform: translateX(50%);
     background-color: $clr8;
     color: $clr3;
     border-radius: 25px;

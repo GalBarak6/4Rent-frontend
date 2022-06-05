@@ -43,7 +43,6 @@ export const Home = () => {
             document.documentElement.style.setProperty('--border-style', 'solid')
             document.documentElement.style.setProperty('--font-color', '#222222')
             document.documentElement.style.setProperty('--logo-color', '#FF385C')
-            // dispatch(setFilter({ ...filterBy, rating: '' }))
         }
 
     }, [])
