@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useLayoutEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadStays, setFilter } from '../store/actions/stay.actions'
 
@@ -15,6 +15,10 @@ export const StayApp = () => {
     const [isFilterOn, setIsFilterOn] = useState(false)
 
     const dispatch = useDispatch()
+
+    // useLayoutEffect(() => {
+    //     document.documentElement.style.setProperty('--position', 'sticky')
+    // }, [])
 
     useEffect(() => {
         dispatch(loadStays())

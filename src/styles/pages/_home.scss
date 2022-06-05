@@ -12,7 +12,7 @@
             color: $clr8;
             font-size: rem(40px);
             text-shadow: 2px 2px 4px $clr3;
-            margin-bottom: rem(70px);
+            margin-top: rem(70px);
         }
     }
     
@@ -22,7 +22,7 @@
             transition: background-color .5s;
             width: 140px;
             background-color: $clr6;
-            // margin-top: rem(50px);
+            margin-top: rem(80px);
     
             &:hover {
                 background-color: $clr11;
@@ -43,7 +43,7 @@
     .top-rated-title {
         padding-top: rem(40px);
         padding-bottom: rem(40px);
-        padding-inline-start: rem(80px);
+        padding-inline-start: var(--padding);
         color: $clr3;
         font-family: Circular-Bold;
         font-size: rem(25px);
