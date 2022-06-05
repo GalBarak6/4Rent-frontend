@@ -1,7 +1,7 @@
 import { stayService } from "../services/stay.service"
 import { utilService } from "../services/util.service"
 import { OrderStatusModal } from '../cmps/order-status-modal'
-import { useEffect, useState, useRef } from 'react'
+import { useState } from 'react'
 
 export const OrderPreview = ({ order }) => {
 
