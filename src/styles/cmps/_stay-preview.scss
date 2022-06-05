@@ -18,6 +18,7 @@
 
         .icon-heart {
             position: absolute;
+            cursor: pointer;
             top: 20px;
             right: 20px;
             width: 23px;
@@ -30,6 +31,13 @@
         color: $clr2;
         gap: 5px;
         font-size: rem(15px);
+
+        .rate, .night {
+            color: $clr3;
+            font-size: rem(14px);
+            font-weight: 400;
+        }
+
     }
 
     .bold {

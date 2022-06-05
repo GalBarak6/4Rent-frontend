@@ -18,10 +18,17 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
         setIsModalOpen(false)
     }
 
+    // const [dateRange, setDateRange] = useState(
+    //     {
+    //         startDate: utilService.formatDate(new Date()),
+    //         endDate: utilService.formatDate(new Date(new Date().getTime() + (120 * 60 * 60 * 1000)))
+    //     }
+    // )
+
     const [dateRange, setDateRange] = useState(
         {
-            startDate: utilService.formatDate(new Date()),
-            endDate: utilService.formatDate(new Date(new Date().getTime() + (120 * 60 * 60 * 1000)))
+            startDate: new Date(),
+            endDate: new Date(new Date().getTime() + (120 * 60 * 60 * 1000))
         }
     )
 
@@ -51,7 +58,8 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
         const newOrder = orderService.getNewOrder(dateRange, guestCount, stay, orderService.getTotalAsNum(stay.price, utilService.datesDiff(dateRange.startDate, dateRange.endDate)))
         console.log(newOrder)
         await dispatch(addOrder(newOrder))
-        setDateRange({ startDate: utilService.formatDate(new Date()), endDate: utilService.formatDate(new Date(new Date().getTime() + (120 * 60 * 60 * 1000)))})
+        // setDateRange({ startDate: utilService.formatDate(new Date()), endDate: utilService.formatDate(new Date(new Date().getTime() + (120 * 60 * 60 * 1000)))})
+        setDateRange({ startDate: new Date(), endDate: new Date(new Date().getTime() + (120 * 60 * 60 * 1000))})
         setGuestCount(prevCount => ({ ...prevCount, adult: 1, children: 0, infant: 0 }))
     }
 
@@ -104,7 +112,7 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
                         <label className='flex flex-column'>
                             CHECKOUT<input type="date" name='endDate' onChange={onHandleDates} className="check-date checkout" value={dateRange.endDate} />
                         </label> */}
-                        <DatePicker onHandleDates={onHandleDates} />
+                        <DatePicker onHandleDates={onHandleDates} startDate={dateRange.startDate} endDate={dateRange.endDate}/>
                     </div>
 
                     <div className='guest-input flex flex-column'>

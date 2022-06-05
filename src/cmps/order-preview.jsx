@@ -1,12 +1,12 @@
 import { stayService } from "../services/stay.service"
 import { utilService } from "../services/util.service"
 import { OrderStatusModal } from '../cmps/order-status-modal'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 export const OrderPreview = ({ order }) => {
 
     const [isOpenModal, setIsOpenModal] = useState(false)
-
+    
     const onOpenModal = () => {
         setIsOpenModal(true)
     }

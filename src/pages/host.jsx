@@ -1,19 +1,22 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadOrders } from '../store/actions/order-actions'
 import { OrderList } from '../cmps/order-list'
 import { HostingList } from '../cmps/hosting-list'
 import { loadStays, setFilter } from '../store/actions/stay.actions'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
+import { orderService } from '../services/order.service'
 
 export const Host = () => {
 
+    // const [orders, setOrders] = useState('')
     const { orders } = useSelector((storeState) => storeState.orderModule)
     const { stays, filterBy } = useSelector((storeState) => storeState.stayModule)
     const dispatch = useDispatch()
     const params = useParams()
 
     useEffect(() => {
+        // orders = await orderService({host: params.userId})
         dispatch(loadOrders())
     }, [])
 
@@ -25,6 +28,7 @@ export const Host = () => {
             dispatch(setFilter({ ...filterBy, host: '' }))
         }
     }, [params.userId])
+
 
     const calculateIncome = () => {
         let income = 0
@@ -48,7 +52,8 @@ export const Host = () => {
             <OrderList orders={orders} />
             <div className='hosting-header flex space-between'>
                 <h3>Hosting</h3>
-                <button>Host new stay</button>
+                {/* <button>Host new stay</button> */}
+                <Link to={`/stay/edit/`}>Host new stay</Link>
             </div>
             <HostingList stays={stays}/>
         </div>

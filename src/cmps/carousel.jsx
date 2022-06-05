@@ -6,7 +6,7 @@ export class DemoCarousel extends Component {
     render() {
         const { imgs } = this.props
         return (
-            <Carousel showThumbs={false} showStatus={false} onClickItem={(ev) => console.log(ev)}>
+            <Carousel showThumbs={false} showStatus={false}>
                 {/* <div>
                     <img src={require(`../assets/Images/001.jpeg`)} alt="" />
                 </div>

@@ -18,7 +18,7 @@ export const orderService = {
 async function query() {
     // return storageService.query(STORAGE_KEY)
     // return axios.get(`/api/order`)
-    let orders = await httpService.get('order')
+    let orders = await httpService.get(`order/`)
     return orders
 }
 

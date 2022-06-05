@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from 'react-router-dom'
 import { removeStay } from "../store/actions/stay.actions";
 
 export const HostingPreview = ({ stay }) => {
@@ -23,7 +24,8 @@ export const HostingPreview = ({ stay }) => {
             <span>({stay.reviews.length})</span>
         </td>
         <td>
-            <button>Edit</button>
+            {/* <button>Edit</button> */}
+            <Link to={`/stay/edit/${stay._id}`}>Edit</Link>
             <button onClick={onRemoveStay}>Remove</button>
         </td>
     </tr>

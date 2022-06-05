@@ -2,7 +2,7 @@
     border-bottom-style: var(--border-style);
     border-bottom-width: var(--border-width);
     border-bottom-color: var(--border-color);
-    background-color: none;
+    background-color: transparent;
     padding: 0 var(--padding);
     height: 80px;
     position: var(--position);
@@ -14,15 +14,6 @@
         flex: 1;
     }
 
-        a {
-            align-items: center;
-            border-radius: 25px;
-            display: flex;
-            height: 40px;
-            padding: 15px;
-            font-weight: 600;
-            font-size: rem(14px);
-        }
     .main-nav-container {
         justify-content: flex-end;
         white-space: nowrap;
@@ -38,7 +29,7 @@
                 height: 40px;
                 padding: 15px;
                 font-weight: 600;
-                font-size: rem(15px);
+                font-size: rem(14px);
             }
 
             a:hover {
@@ -93,7 +84,7 @@
     .search-container {
         position: relative;
 
-        .stay-search{
+        .stay-search {
             display: flex;
             justify-content: center;
         }
@@ -135,27 +126,28 @@
             .btn {
                 font-family: Circular-Light;
                 font-size: 14px;
-                color:$clr3-opacity;
+                color: $clr3-opacity;
                 font-weight: 600;
                 border-left: solid 1px $clr9;
             }
 
-            input{
+            input {
                 width: 67px;
                 border: none;
-                color:$clr3-opacity;
+                color: $clr3-opacity;
+
                 &:focus {
                     outline: none;
                 }
 
             }
 
-            ::placeholder { 
+            ::placeholder {
                 font-family: Circular-Light;
                 font-size: 14px;
-                color:$clr3-opacity;
+                color: $clr3-opacity;
                 font-weight: 600;
-              }
+            }
 
             .search-btn {
                 background: #ff385c;
@@ -163,5 +155,16 @@
                 padding: 10px;
             }
         }
+    }
+
+}
+
+.scrolled {
+    background-color: $clr8;
+    color: $clr3;
+    box-shadow: 0 1px 12px rgba(0,0,0,.08);
+
+    .logo {
+        color: $clr1;
     }
 }

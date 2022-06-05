@@ -8,6 +8,7 @@ export const UserMenuModal = () => {
     const history = useNavigate()
     const { user } = useSelector((storeState) => storeState.userModule)
 
+
     const logOut = () => {
         dispatch(onLogout())
         onGoBack()
@@ -44,7 +45,7 @@ export const UserMenuModal = () => {
             </li>
 
             <li className="menu-limit">
-                Wishlist
+                <Link to={`/wishlist/${user._id}`}>Wishlist</Link>
             </li>
 
             <li>

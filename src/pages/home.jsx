@@ -4,12 +4,13 @@ import { useDispatch, useSelector } from 'react-redux'
 import { loadStays, setFilter } from '../store/actions/stay.actions'
 
 import { TopRatedList } from '../cmps/top-rated-list'
-import { DateRange } from "react-date-range"
+
 export const Home = () => {
 
     const history = useNavigate()
     const { stays, filterBy } = useSelector((storeState) => storeState.stayModule)
     const dispatch = useDispatch()
+
 
     useEffect(() => {
         dispatch(setFilter({ ...filterBy, rating: 5.0 }))
