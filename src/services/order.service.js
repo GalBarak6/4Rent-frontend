@@ -15,10 +15,10 @@ export const orderService = {
     getNewOrder
 }
 
-async function query() {
+async function query(filterBy = {host: ''}) {
     // return storageService.query(STORAGE_KEY)
     // return axios.get(`/api/order`)
-    let orders = await httpService.get(`order/`)
+    let orders = await httpService.get(`order/?host=${filterBy.host}`)
     return orders
 }
 
@@ -102,7 +102,7 @@ function getNewOrder(order, guestCount, stay, total) {
             lng: stay.loc.lan
         },
         host: {
-            _id: '6294cc5df218f12d17952cc5',
+            _id: '6295cf09d722c15469ebe4f5',
             fullname: 'Linda-Lee',
             pictureUrl: 'https://randomuser.me/api/portraits/women/22.jpg'
         },

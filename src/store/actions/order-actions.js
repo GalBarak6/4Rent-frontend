@@ -22,10 +22,10 @@ export function getActionUpdateOrder(order) {
     }
 }
 
-export function loadOrders() {
+export function loadOrders(filterBy) {
     return async (dispatch) => {
         try {
-            const orders = await orderService.query()
+            const orders = await orderService.query(filterBy)
             console.log('Orders from DB:', orders)
             dispatch({
                 type: 'SET_ORDERS',

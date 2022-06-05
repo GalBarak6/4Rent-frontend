@@ -25,16 +25,38 @@
         >* {
             border: solid 1px $clr9;
             border-radius: 10px;
-            width: rem(200px);
-            height: rem(200px);
+            width: rem(300px);
+            height: rem(130px);
             box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
             padding: 20px;
         }
 
-    }
+        .statistics-icon {
+            height: 50px;
+            width: 50px;
+        }
 
-    .star-icon {
-        height: 15px;
-        width: 15px;
+        h4 {
+            font-size: rem(40px);
+            font-weight: 400;
+            padding-left: 10px;
+        }
+
+        h3 {
+            color: $clr2;
+            font-size: rem(17px);
+            padding-left: 10px;
+        }
+
+        .orders,
+        .income,
+        .rate {
+
+            :last-child {
+                padding-top: 10px;
+                align-items: center;
+            }
+        }
+
     }
 }

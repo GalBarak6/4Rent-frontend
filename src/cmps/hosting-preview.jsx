@@ -6,7 +6,7 @@ export const HostingPreview = ({ stay }) => {
 
     const dispatch = useDispatch()
 
-    const onRemoveStay = async() => {
+    const onRemoveStay = async () => {
         console.log(stay._id);
         await dispatch(removeStay(stay._id))
     }
@@ -20,12 +20,12 @@ export const HostingPreview = ({ stay }) => {
         </td>
         <td>
             <img src={require('../assets/icons/star.svg').default} alt="" className='star-icon' />
-            {(stay.reviewScores.rating).toFixed(1)}
-            <span>({stay.reviews.length})</span>
+            <span>{(stay.reviewScores.rating).toFixed(1)}</span>
+            <span className="reviews">({stay.reviews.length})</span>
         </td>
         <td>
-            {/* <button>Edit</button> */}
-            <Link to={`/stay/edit/${stay._id}`}>Edit</Link>
+            <button>Edit</button>
+            {/* <Link to={`/stay/edit/${stay._id}`}>Edit</Link> */}
             <button onClick={onRemoveStay}>Remove</button>
         </td>
     </tr>

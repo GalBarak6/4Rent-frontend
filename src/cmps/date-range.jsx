@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { DateRange } from 'react-date-range'
 
 export function DatePicker({onHandleDates, startDate, endDate}) {
-console.log(startDate);
-console.log(endDate);
+  console.log('start and end dates', startDate, endDate);
   const [dateRange, setDateRange] = useState([
     // {
     //   startDate: new Date(),
@@ -17,6 +16,12 @@ console.log(endDate);
     },
   ])
   const [toggleCalender, setToggleCalender] = useState(false)
+  console.log('After state', dateRange)
+
+  useEffect(() => {
+    const updateDate = [{startDate, endDate, key: 'selection'}]
+    setDateRange(updateDate)
+  }, [startDate,endDate])
 
 
   const onHandleChange = (item) => {

@@ -3,6 +3,7 @@
     .star-icon {
         height: 15px;
         width: 15px;
+        margin-right: 10px;
     }
 
     .stay-host-img {
@@ -10,5 +11,19 @@
         height: 50px;
         object-fit: cover;
         width: 50px;
+    }
+
+    .reviews {
+        margin-left: 3px;
+        color: $clr2;
+        font-weight: 600;
+    }
+
+    button {
+        font-size: rem(16px);
+
+        &:hover {
+            color: $clr1;
+        }
     }
 }
