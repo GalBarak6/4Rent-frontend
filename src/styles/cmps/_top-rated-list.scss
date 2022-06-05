@@ -10,3 +10,9 @@
     // padding-inline-start: rem(40px);
 
 }
+
+@media (max-width: 580px) {
+    .top-rated-list{
+        padding: 0 rem(20px) rem(40px);
+    }
+}

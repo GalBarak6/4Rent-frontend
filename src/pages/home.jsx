@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { loadStays, setFilter } from '../store/actions/stay.actions'
 
 import { TopRatedList } from '../cmps/top-rated-list'
+import { StaySearch } from "../cmps/stay-search"
 
 export const Home = () => {
 
@@ -59,9 +60,10 @@ export const Home = () => {
     }
 
     return <section className="home">
+
+
         <div className="hero flex flex-column">
             <h1 className="hero-title">Find a place for your next vacation</h1>
-
             <button onClick={onExplore} className="hero-button">
                 <span>Explore</span>
             </button>

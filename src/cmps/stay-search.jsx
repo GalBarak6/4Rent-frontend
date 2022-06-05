@@ -28,12 +28,23 @@ export const StaySearch = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        setFilterByCity(filterBy.city)
-        if (!filterBy.capacity) {
+
+        if (!filterBy.capacity && !filterBy.city) {
+            setFilterByCity('')
+
             setGuestCount({ adult: 1, children: 0, infant: 0 })
             setTotalGuests('')
+            setDateRange([
+                {
+                    startDate: '',
+                    endDate: '',
+                    key: 'selection',
+                },
+            ])
+
         }
-    }, [filterBy,dateRange])
+
+    }, [filterBy])
 
 
     function goToExplore() {
@@ -76,7 +87,7 @@ export const StaySearch = () => {
             },
         ])
     }
-    
+
     const handleDatesChange = (startDate, endDate) => {
         console.log('handleDatesChange', { startDate }, { endDate })
         setDateRange([
@@ -88,8 +99,6 @@ export const StaySearch = () => {
         ])
 
     }
-
-
 
     const onSearch = (ev) => {
         ev.preventDefault()
@@ -109,7 +118,8 @@ export const StaySearch = () => {
 
         return DateStr
     }
-// console.log( 'ednDAte' ,dateRange)
+    // console.log( 'ednDAte' ,dateRange)
+    // console.log('ednDAte', dateRange)
 
     return <section className='stay-search'>
 
@@ -121,7 +131,7 @@ export const StaySearch = () => {
 
             {!dateRange[0].startDate &&
                 <button type="button" className='btn' onClick={onSetDates}>Any week
-                {/* <div>{convert(dateRange[0].startDate, dateRange[0].endDate)}</div> */}
+                    {/* <div>{convert(dateRange[0].startDate, dateRange[0].endDate)}</div> */}
                 </button>
 
             }
