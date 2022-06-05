@@ -16,21 +16,17 @@ export const StayApp = () => {
 
     const dispatch = useDispatch()
 
-    // useEffect(() => {
-    //     dispatch(loadUsers())
-    // },[])
-
     useEffect(() => {
         dispatch(loadStays())
-        if (filterBy.type.length > 0 || filterBy.amenities.length > 0 || filterBy.price || filterBy.city || filterBy.capacity) setIsFilterOn(true)
-        console.log('filterby',filterBy)
+        if (filterBy.type.length > 0 || filterBy.amenities.length > 0 || filterBy.price ) setIsFilterOn(true)
+        if (filterBy.rating) dispatch(setFilter({ ...filterBy, rating: '' }))
     }, [filterBy])
 
     useEffect(() => {
         dispatch(loadStays())
     }, [isModalOpen])
 
-    const labelChange = (value) => {
+    const handleLabelChange = (value) => {
         if (value === 'All') {
             setIsFilterOn(false)
             dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: '', city:'', capacity: ''}))
@@ -51,7 +47,7 @@ export const StayApp = () => {
         <div></div>
     </div>
     return <section className="stay-app">
-        <StayFilter labelChange={labelChange} onOpenModal={onOpenModal} isFilterOn={isFilterOn} />
+        <StayFilter handleLabelChange={handleLabelChange} onOpenModal={onOpenModal} isFilterOn={isFilterOn} />
         <StayList stays={stays} />
         {isModalOpen && <StayFilterModal onCloseModal={onCloseModal} />}
 

@@ -3,12 +3,12 @@ import { useSelector } from 'react-redux'
 
 var $ = require("jquery");
 
-export const StayFilter = ({ labelChange, onOpenModal, isFilterOn }) => {
+export const StayFilter = ({ handleLabelChange, onOpenModal, isFilterOn }) => {
     const [selectedFilter, setSelectedFilter] = useState('All')
 
     const onLabelChange = (value) => {
         setSelectedFilter(value)
-        labelChange(value)
+        handleLabelChange(value)
     }
  
  

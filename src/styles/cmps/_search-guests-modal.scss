@@ -3,27 +3,15 @@
 
     display: flex;
     position: absolute;
-    // position: fixed;
     line-height: 25px;
-    bottom: -300px;
+    top: 63px;
     right: 25px;
-
-    // bottom: 55px;   /original
-    // left: 0;        //original
-    // width: 100%;    //original
-    // background-color: #fff; //original
-
     background-color: $clr8;
     color: $clr3;
     border-radius: 25px;
-    // border-radius: 12px;  //original
-
     box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
     z-index: 2000;
-
     padding: 20px 20px;
-    // padding: 20px;  //original
-    // gap: 20px;
 
     transition: 4s;
     cursor: default;
@@ -45,8 +33,6 @@
         .type-exact {
             font-size: rem(14px);
             color: $clr2;
-            // white-space: nowrap;
-
         }
 
         &:last-child{
