@@ -53,6 +53,7 @@ export function addOrder(order) {
             const savedOrder = await orderService.save(order)
             console.log('Added Order', savedOrder)
             dispatch(getActionAddOrder(savedOrder))
+            return order
         } catch (err) {
             console.log('Cannot add order', err)
         }

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { addOrder } from '../store/actions/order-actions'
 import { useDispatch, useSelector } from 'react-redux'
 import { stayService } from '../services/stay.service'
@@ -14,6 +14,7 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [isGuestModal, setIsGuestModal] = useState(false)
     const [guestCount, setGuestCount] = useState({ adult: 1, children: 0, infant: 0 })
+    const [order, setOrder] = useState('')
     const [dateRange, setDateRange] = useState(
         {
             startDate: new Date(),
@@ -56,7 +57,8 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
             stay.host,
             user,
             utilService.makeId(10))
-        await dispatch(addOrder(newOrder))
+        const order = await dispatch(addOrder(newOrder))
+        setOrder(order)
         setDateRange({ startDate: new Date(), endDate: new Date(new Date().getTime() + (120 * 60 * 60 * 1000)) })
         setGuestCount(prevCount => ({ ...prevCount, adult: 1, children: 0, infant: 0 }))
     }
@@ -171,8 +173,14 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
             </div>
 
         </div>
-        {isModalOpen &&
-            <OrderModal closeModal={closeModal} />
+        {isModalOpen && <React.Fragment>
+
+            {/* <div className="modal-background"></div> */}
+            <OrderModal closeModal={closeModal} order={order} stay={stay} />
+
+        </React.Fragment>
         }
+
+
     </div>
 }

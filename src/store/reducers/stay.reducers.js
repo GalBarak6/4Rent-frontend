@@ -11,6 +11,7 @@ const initialState = {
         capacity: '',
         pageIdx: 0
     },
+    isModalMode: false
 }
 
 export function stayReducer(state = initialState, action) {

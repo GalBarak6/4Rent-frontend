@@ -1,5 +1,6 @@
 import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
+import { useSelector } from 'react-redux'
 import { Home } from './pages/home'
 import { Host } from './pages/host'
 import { AppHeader } from './cmps/app-header'
@@ -15,6 +16,8 @@ import { Trip } from './pages/trip'
 
 const App = () => {
 
+
+  // const { isModalMode } = useSelector((storeState) => storeState.stayModule)
   const [isOpenModal, setIsOpenModal] = useState(false)
   const [layout, setLayout] = useState('main-layout')
   const location = useLocation()
@@ -32,11 +35,16 @@ const App = () => {
     setLayout(currLayout)
   }, [location.pathname])
 
+
   const onOpenModal = () => {
     setIsOpenModal(!isOpenModal)
   }
 
   return <div className='app'>
+    {/* {isModalMode &&
+      <div className="modal-background"></div>
+    } */}
+
     <AppHeader onOpenModal={onOpenModal} />
     <main className={layout}>
       <Routes>
