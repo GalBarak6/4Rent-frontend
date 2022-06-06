@@ -72,25 +72,6 @@ export const StayFilterModal = ({ onCloseModal }) => {
 
             <div className="modal-details">
 
-                <div className="price">
-                    <div className="title">Price range</div>
-                    <div>The average nightly price is $600</div>
-                    <input type="range" id="price" name="price" min="100" max="5000" onChange={onPriceChange} value={filterByPrice || 100} />
-                    <div className="minmax-container">
-                        <div className="minmax">
-                            <div>min price</div>
-                            {filterByPrice && <div>${filterByPrice}</div>}
-                            {!filterByPrice && <div>$100</div>}
-
-                        </div>
-                        <span>-</span>
-                        <div className="minmax">
-                            <div>max price</div>
-                            <div>$5,000+</div>
-                        </div>
-                    </div>
-                </div>
-
                 <div className="property-type">
                     <div className="title">Property type</div>
                     <div className="property-type-labels">
@@ -169,6 +150,25 @@ export const StayFilterModal = ({ onCloseModal }) => {
                                 <input type="checkbox" id="Self check-in" name="Self check-in" value="Self check-in" onChange={onAmenitiesChange} />
                                 <label htmlFor="Self check-in">Self check-in</label>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="price">
+                    <div className="title">Price range</div>
+                    <div>The average nightly price is $600</div>
+                    <input type="range" id="price" name="price" min="100" max="5000" onChange={onPriceChange} value={filterByPrice || 100} />
+                    <div className="minmax-container">
+                        <div className="minmax">
+                            <div>min price</div>
+                            {filterByPrice && <div>${filterByPrice}</div>}
+                            {!filterByPrice && <div>$100</div>}
+
+                        </div>
+                        <span>-</span>
+                        <div className="minmax">
+                            <div>max price</div>
+                            <div>$5,000+</div>
                         </div>
                     </div>
                 </div>

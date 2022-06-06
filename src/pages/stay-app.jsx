@@ -46,6 +46,7 @@ export const StayApp = () => {
     </div>
     return <section className="stay-app">
         <StayFilter handleLabelChange={handleLabelChange} onOpenModal={onOpenModal} isFilterOn={isFilterOn} />
+
         <StayList stays={stays} />
         {isModalOpen && <StayFilterModal onCloseModal={onCloseModal} />}
 
