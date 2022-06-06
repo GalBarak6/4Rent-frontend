@@ -13,7 +13,9 @@ export const Home = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(setFilter({ ...filterBy, rating: 5.0 }))
+        // dispatch(setFilter({ ...filterBy, rating: 5.0 }))
+        dispatch(setFilter({ label: '', type: [], amenities: [], price: '', city: '', capacity: '', host: '', rating: 5.0 }))
+
         dispatch(loadStays())
         orderService.getBtnMouseListener()
     }, [])
@@ -24,7 +26,9 @@ export const Home = () => {
         // document.documentElement.style.setProperty('--border-style', 'none')
         // document.documentElement.style.setProperty('--font-color', '#f7f7f7')
         // document.documentElement.style.setProperty('--logo-color', '#f7f7f7')
-        dispatch(setFilter({ ...filterBy, rating: 5 }))
+        // dispatch(setFilter({ ...filterBy, rating: 5 }))
+        dispatch(setFilter({ label: '', type: [], amenities: [], price: '', city: '', capacity: '', host: '', rating: 5.0 }))
+
         dispatch(loadStays())
         return () => {
             document.documentElement.style.setProperty('--grid-column', '2')
