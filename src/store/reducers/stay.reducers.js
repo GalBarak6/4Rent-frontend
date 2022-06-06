@@ -10,6 +10,7 @@ const initialState = {
         host: '',
         capacity: ''
     },
+    isModalMode: false
 }
 
 export function stayReducer(state = initialState, action) {

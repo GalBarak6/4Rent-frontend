@@ -6,19 +6,26 @@ var $ = require("jquery");
 
 export const StayFilterModal = ({ onCloseModal }) => {
 
-    const { filterBy } = useSelector((storeState) => storeState.stayModule)
+    const { filterBy} = useSelector((storeState) => storeState.stayModule)
+
     const dispatch = useDispatch()
     const [filterByPrice, setFilterPrice] = useState(filterBy.price)
     const [filterByType, setFilterByType] = useState(filterBy.type)
 
     let filterByAmenities = []
 
+    useEffect(() => {
+        document.documentElement.style.setProperty('--overflow', 'hidden')
+        return () => {
+            document.documentElement.style.setProperty('--overflow', 'unset')
+        }
+    }, [])
+
 
     const onTypeChange = (value) => {
         setFilterByType((prevState) => (
             [...prevState, value]
         ))
-        // filterByType = [...filterByType, value]
     }
 
     const onAmenitiesChange = ({ target }) => {
@@ -62,7 +69,6 @@ export const StayFilterModal = ({ onCloseModal }) => {
         <form onSubmit={onSetFilters}>
 
             <div className="modal-title">
-                {/* <button className="close-btn" onClick={() => { onCloseModal() }}>X</button> */}
                 <button className="close-btn" onClick={() => { onCloseModal() }}>
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '16px', width: '16px', stroke: 'rgb(34, 34, 34)', strokeWidth: '3', overflow: 'visible' }}><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg>
                 </button>
@@ -116,7 +122,7 @@ export const StayFilterModal = ({ onCloseModal }) => {
 
                         <div>
                             <div>
-                                <input className="checkbox"type="checkbox" id="TV" name="TV" value="TV" onChange={onAmenitiesChange} />
+                                <input className="checkbox" type="checkbox" id="TV" name="TV" value="TV" onChange={onAmenitiesChange} />
                                 <label htmlFor="TV">TV</label>
                             </div>
 

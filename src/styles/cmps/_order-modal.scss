@@ -2,13 +2,13 @@
     border: solid 1px $clr9;
     border-radius: 15px;
     width: rem(550px);
-    height: rem(260px);
+    // height: 80%;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
-    z-index: 10;
+    z-index: 70;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -28,13 +28,29 @@
     }
 
     .modal-details {
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap:rem(6px);
+        padding: rem(10px);
 
         .title {
             font-size: rem(22px);
             color: $clr3;
             font-weight: bold;
-            padding: 0 0 12px;
+            // padding: 0 0 12px;
+        }
+        .order-txt{
+            border-bottom: solid 1px $clr9;
+            padding-bottom: rem(10px);
+
+        }
+        .order-details{
+            display: flex;
+            flex-direction: column;
+            gap:rem(5px);
+        }
+        .bold{
+            font-weight: bold;
         }
     }
 
@@ -48,6 +64,20 @@
         padding-right: rem(25px);
         border-radius: $btnBorderRadius;
         align-self: flex-end;
+    }
+
+    .img-container {
+        border: solid 1px $clr9;
+        // width: 80px;
+        height: 120px;
+        border-radius: 15px;
+        margin-bottom: 5px;
+        position: relative;
+
+        img {
+            aspect-ratio: 1 / 1;
+            border-radius: 15px;
+        }
     }
 
 }
