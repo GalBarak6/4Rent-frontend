@@ -4,7 +4,6 @@ import { CarApp } from './pages/car-app.jsx'
 import { ReviewApp } from './pages/review-app.jsx'
 import { AdminApp } from './pages/admin-app.jsx'
 
-// Routes accesible from the main navigation (in AppHeader)
 const routes = [
     {
         path: '/',

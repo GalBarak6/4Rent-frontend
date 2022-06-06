@@ -4,11 +4,12 @@ import Stack from '@mui/material/Stack';
 import { useState } from 'react'
 import { addReviewToStay } from '../store/actions/stay.actions'
 import { SendBtn } from './send-btn'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 export const AddReview = ({ loadStay, stay }) => {
 
     const dispatch = useDispatch()
+    const { user } = useSelector((storeState) => storeState.userModule)
 
     const [ratings, setRatings] = useState({
         cleanliness: '',
@@ -29,10 +30,7 @@ export const AddReview = ({ loadStay, stay }) => {
     const onAddReview = async (ev) => {
         ev.preventDefault()
         const txt = ev.target[0].value
-        console.log(txt)
-        console.log(stay)
-        console.log(ratings);
-        await dispatch(addReviewToStay(txt, stay))
+        await dispatch(addReviewToStay(txt, stay, user))
         loadStay()
         ev.target[0].value = ''
     }

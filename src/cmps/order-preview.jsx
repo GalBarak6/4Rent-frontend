@@ -6,7 +6,7 @@ import { useState } from 'react'
 export const OrderPreview = ({ order }) => {
 
     const [isOpenModal, setIsOpenModal] = useState(false)
-    
+
     const onOpenModal = () => {
         setIsOpenModal(true)
     }

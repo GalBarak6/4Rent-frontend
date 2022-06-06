@@ -1,4 +1,4 @@
-import { useEffect, useState, useLayoutEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { loadStays, setFilter } from '../store/actions/stay.actions'
@@ -14,13 +14,9 @@ export const StayApp = () => {
 
     const dispatch = useDispatch()
 
-    // useLayoutEffect(() => {
-    //     document.documentElement.style.setProperty('--position', 'sticky')
-    // }, [])
-
     useEffect(() => {
         dispatch(loadStays())
-        if (filterBy.type.length > 0 || filterBy.amenities.length > 0 || filterBy.price ) setIsFilterOn(true)
+        if (filterBy.type.length > 0 || filterBy.amenities.length > 0 || filterBy.price) setIsFilterOn(true)
         if (filterBy.rating) dispatch(setFilter({ ...filterBy, rating: '' }))
     }, [filterBy])
 
@@ -31,7 +27,7 @@ export const StayApp = () => {
     const handleLabelChange = (value) => {
         if (value === 'All') {
             setIsFilterOn(false)
-            dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: '', city:'', capacity: ''}))
+            dispatch(setFilter({ ...filterBy, label: '', type: [], amenities: [], price: '', city: '', capacity: '' }))
         }
         else dispatch(setFilter({ ...filterBy, label: value }))
     }

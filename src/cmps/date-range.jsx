@@ -3,14 +3,9 @@ import { DateRange } from 'react-date-range'
 
 export function DatePicker({ onHandleDates, startDate, endDate }) {
   const [dateRange, setDateRange] = useState([
-    // {
-    //   startDate: new Date(),
-    //   endDate: new Date(new Date().getTime() + (120 * 60 * 60 * 1000)), //tomorrow
-    //   key: 'selection',
-    // },
     {
       startDate,
-      endDate, //tomorrow
+      endDate,
       key: 'selection',
     },
   ])

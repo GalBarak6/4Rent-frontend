@@ -21,19 +21,18 @@ export const StayDetails = () => {
         loadStay()
         document.documentElement.style.setProperty('--right', '18%')
         return () => {
-            document.documentElement.style.setProperty('--padding', '80px')
+            // document.documentElement.style.setProperty('--padding', '80px')
             document.documentElement.style.setProperty('--right', '4%')
         }
 
     }, [])
 
     useEffect(() => {
-        console.log('loading stay details')
         loadStay()
     }, [params.stayId])
 
     useLayoutEffect(() => {
-        document.documentElement.style.setProperty('--padding', '350px')
+        // document.documentElement.style.setProperty('--padding', '350px')
     }, [])
 
     const loadStay = async () => {

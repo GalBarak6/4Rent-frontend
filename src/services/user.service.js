@@ -29,15 +29,9 @@ function getUsers() {
     return httpService.get('user')
 }
 
-// function onUserUpdate(user) {
-//     showSuccessMsg(`This user ${user.fullname} just got updated from socket, new score: ${user.score}`)
-//     store.dispatch({ type: 'SET_WATCHED_USER', user })
-// }
-
 async function getById(userId) {
     // const user = await storageService.get('user', userId)
     const user = await httpService.get(`user/${userId}`)
-    // gWatchedUser = user;
 
     // socketService.emit(SOCKET_EMIT_USER_WATCH, userId)
     // socketService.off(SOCKET_EVENT_USER_UPDATED, onUserUpdate)
@@ -45,6 +39,7 @@ async function getById(userId) {
 
     return user
 }
+
 function remove(userId) {
     // return storageService.remove('user', userId)
     return httpService.delete(`user/${userId}`)
@@ -67,12 +62,14 @@ async function login(userCred) {
         return saveLocalUser(user)
     }
 }
+
 async function signup(userCred) {
     // const user = await storageService.post('user', userCred)
     const user = await httpService.post('auth/signup', userCred)
     // socketService.login(user._id)
     return saveLocalUser(user)
 }
+
 async function logout() {
     sessionStorage.removeItem(STORAGE_KEY_LOGGEDIN_USER)
     // socketService.logout()
@@ -99,12 +96,6 @@ async function addWishlist(user, stay, type) {
     const savedUser = update(user)
     return savedUser
 }
-
-// ;(async ()=>{
-//     await userService.signup({fullname: 'Puki Norma', username: 'user1', password:'123',score: 10000, isAdmin: false})
-//     await userService.signup({fullname: 'Master Adminov', username: 'admin', password:'123', score: 10000, isAdmin: true})
-//     await userService.signup({fullname: 'Muki G', username: 'muki', password:'123', score: 10000})
-// })()
 
 
 

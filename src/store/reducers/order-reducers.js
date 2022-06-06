@@ -1,6 +1,7 @@
 const initialState = {
     orders: [],
 }
+
 export function orderReducer(state = initialState, action) {
     var newState = state
     var orders

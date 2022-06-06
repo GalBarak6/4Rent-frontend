@@ -16,10 +16,18 @@ import { Trip } from './pages/trip'
 const App = () => {
 
   const [isOpenModal, setIsOpenModal] = useState(false)
+  const [layout, setLayout] = useState('main-layout')
   const location = useLocation()
 
   useEffect(() => {
     setIsOpenModal(false)
+    let currLayout
+    if (location.pathname.includes('stay/')) {
+      currLayout = 'details-layout'
+    } else {
+      currLayout = 'main-layout'
+    }
+    setLayout(currLayout)
   }, [location.pathname])
 
   const onOpenModal = () => {
@@ -28,7 +36,7 @@ const App = () => {
 
   return <div className='app'>
     <AppHeader onOpenModal={onOpenModal} />
-    <main className='main-layout'>
+    <main className={layout}>
       <Routes>
         <Route path="/stay/edit/:stayId?" element={<StayEdit />} />
         <Route path="/stay/:stayId" element={<StayDetails />} />

@@ -1,10 +1,8 @@
 .order-list {
     table {
-        // border: 1px solid $clr3;
         border-collapse: collapse;
         margin: 25px 0;
         font-size: 1em;
-        // min-width: 300px;
         width: 1100px;
         border-radius: 5px 5px 0 0;
         overflow: hidden;
@@ -12,8 +10,6 @@
     }
 
     thead tr {
-        // border: 1px solid $clr3;
-        // background-color: #009879;
         background-color: $clr3;
         color: #ffffff;
         text-align: left;
@@ -35,11 +31,6 @@
 
     tbody tr:nth-of-type(even) {
         background-color: #f3f3f3;
-    }
-
-    tbody tr:last-of-type {
-        // border-bottom: 2px solid #009879;
-        // border-bottom: 1px solid $clr3;
     }
 
     tbody tr.active-row {

@@ -3,14 +3,14 @@
 :root {
     --padding: 80px;
     // --position: block;
-    --position: sticky;
+    // --position: sticky;
     --grid-column: 2;
-    --border-style: solid;
-    --border-width: 1px;
-    --border-color: #DDDDDD;
+    // --border-style: solid;
+    // --border-width: 1px;
+    // --border-color: #DDDDDD;
     --right: 4%;
-    --font-color: #222222;
-    --logo-color: #FF385C;
+    // --font-color: #222222;
+    // --logo-color: #FF385C;
 }
 
 //COLOR PATTERNS
@@ -34,14 +34,14 @@ $clr10: #71719F;
 
 // $mainLayoutPadding: 80px;
 // $mainLayoutRows: 80px;
-$detailsLayoutPadding: 400px;
+// $detailsLayoutPadding: 400px;
 
 //BUTTON
 
 $btnBorderRadius: 10px;
 
-@media (max-width: 580px) {
-    :root {
-        --padding: 20px;
-    }
-}
+// @media (max-width: 580px) {
+//     :root {
+//         --padding: 20px;
+//     }
+// }

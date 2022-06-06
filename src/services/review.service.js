@@ -21,14 +21,11 @@ import { showSuccessMsg } from '../services/event-bus.service'
 //   })
 // })()
 
-
-
 export const reviewService = {
   add,
   query,
   remove
 }
-
 
 function query(filterBy) {
   var queryStr = (!filterBy) ? '' : `?name=${filterBy.name}&sort=anaAref`
@@ -43,6 +40,7 @@ async function remove(reviewId) {
 
 
 }
+
 async function add(review) {
   // const addedReview = await httpService.post(`review`, review)
 
@@ -51,7 +49,6 @@ async function add(review) {
   const addedReview = await storageService.post('review', review)
 
   // reviewChannel.postMessage(getActionAddReview(addedReview))
-
   return addedReview
 }
 

@@ -1,4 +1,4 @@
-export const Reviews = ({ stay, onGetTotalReviewScore}) => {
+export const Reviews = ({ stay, onGetTotalReviewScore }) => {
 
     return <div className='reviews-container' id='reviews-container'>
         <div className='curr-reviews'>
@@ -53,7 +53,6 @@ export const Reviews = ({ stay, onGetTotalReviewScore}) => {
                 </div>
             </div>
         </div>
-
 
         <div className='reviews-info flex'>
             {stay.reviews.map(review => {

@@ -1,15 +1,13 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadOrders } from '../store/actions/order-actions'
 import { OrderList } from '../cmps/order-list'
 import { HostingList } from '../cmps/hosting-list'
 import { loadStays, setFilter } from '../store/actions/stay.actions'
 import { useParams, Link } from 'react-router-dom'
-import { orderService } from '../services/order.service'
 
 export const Host = () => {
 
-    // const [orders, setOrders] = useState('')
     const { orders } = useSelector((storeState) => storeState.orderModule)
     const { stays, filterBy } = useSelector((storeState) => storeState.stayModule)
     const dispatch = useDispatch()
@@ -27,7 +25,6 @@ export const Host = () => {
             dispatch(setFilter({ ...filterBy, host: '' }))
         }
     }, [params.userId])
-
 
     const calculateIncome = () => {
         let income = 0

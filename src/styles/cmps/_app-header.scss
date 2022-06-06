@@ -1,15 +1,16 @@
-.app-header {
-    border-bottom-style: var(--border-style);
-    border-bottom-width: var(--border-width);
-    border-bottom-color: var(--border-color);
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $clr5;
     background-color: transparent;
-    padding: 0 var(--padding);
+    padding: 0 350px;
     height: 80px;
-    position: var(--position);
+    position: block;
     width: 100%;
-    color: var(--font-color);
+    color: $clr3;
     z-index: 20;
-    top:0;
+    top: 0;
 
     >* {
         flex: 1;
@@ -39,16 +40,12 @@
         }
     }
 
-
     .logo {
-        color: var(--logo-color);
+        color: $clr1;
         font-size: rem(30px);
         font-weight: bold;
-        // font-family: Circular-Bold;
         font-family: DancingScript-Regular;
-        // margin-inline-start: $mainLayoutPadding;
         cursor: pointer;
-        // color: var(--font-color);
     }
 
     .user-menu {
@@ -81,91 +78,268 @@
     .curr-user-img {
         border-radius: 15px;
     }
-
-    // .search-container {
-    //     position: relative;
-
-    //     .stay-search {
-    //         display: flex;
-    //         justify-content: center;
-    //     }
-
-    //     .stay-search-form {
-    //         flex-basis: 350px;
-
-    //         height: 47px;
-    //         display: flex;
-    //         align-items: center;
-    //         border: solid 1px $clr9;
-    //         box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
-    //         border-radius: 50vw;
-    //         white-space: nowrap;
-    //         background-color: $clr8;
-
-    //         // width: 100%;
-    //         padding: 10px;
-
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: space-between;
-
-    //         &:hover {
-    //             box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
-    //         }
-
-    //         >* {
-    //             padding: 0px 12px;
-    //         }
-
-    //         span {
-    //             padding: 0px;
-    //             color: $clr9;
-    //             font-size: 20px;
-    //             font-weight: 100;
-    //         }
-
-    //         .btn {
-    //             font-family: Circular-Light;
-    //             font-size: 14px;
-    //             color: $clr3-opacity;
-    //             font-weight: 600;
-    //             border-left: solid 1px $clr9;
-    //         }
-
-    //         input {
-    //             width: 67px;
-    //             border: none;
-    //             color: $clr3-opacity;
-
-    //             &:focus {
-    //                 outline: none;
-    //             }
-
-    //         }
-
-    //         ::placeholder {
-    //             font-family: Circular-Light;
-    //             font-size: 14px;
-    //             color: $clr3-opacity;
-    //             font-weight: 600;
-    //         }
-
-    //         .search-btn {
-    //             background: #ff385c;
-    //             border-radius: 50%;
-    //             padding: 10px;
-    //         }
-    //     }
-    // }
-
 }
 
-.scrolled {
-    background-color: $clr8;
+.stay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $clr5;
+    background-color: transparent;
+    padding: 0 80px;
+    height: 80px;
+    position: block;
+    width: 100%;
     color: $clr3;
-    box-shadow: 0 1px 12px rgba(0,0,0,.08);
+    z-index: 20;
+    top: 0;
+
+    >* {
+        flex: 1;
+    }
+
+    .main-nav-container {
+        justify-content: flex-end;
+        white-space: nowrap;
+
+
+        .main-nav {
+            margin-inline-end: 10px;
+
+            a {
+                align-items: center;
+                border-radius: 25px;
+                display: flex;
+                height: 40px;
+                padding: 15px;
+                font-weight: 600;
+                font-size: rem(14px);
+            }
+
+            a:hover {
+                background-color: $clr6-opacity
+            }
+        }
+    }
 
     .logo {
         color: $clr1;
+        font-size: rem(30px);
+        font-weight: bold;
+        font-family: DancingScript-Regular;
+        cursor: pointer;
+    }
+
+    .user-menu {
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: space-between;
+        padding-inline-start: 15px;
+        position: relative;
+        width: 80px;
+        border-radius: 25px;
+        border: 1px solid $clr6;
+        background: $clr8;
+
+        &:hover {
+            box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+        }
+
+        img:nth-child(1) {
+            width: 16px;
+            height: 16px;
+        }
+
+        img:nth-child(2) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .curr-user-img {
+        border-radius: 15px;
+    }
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px $clr5 none;
+    background-color: transparent;
+    padding: 0 80px;
+    // height: 80px;
+    height: 180px;
+    position: fixed;
+    width: 100%;
+    color: $clr7;
+    z-index: 20;
+    top: 0;
+
+    >* {
+        flex: 1;
+    }
+
+    .main-nav-container {
+        justify-content: flex-end;
+        white-space: nowrap;
+        margin-bottom: 120px;
+
+        .main-nav {
+            margin-inline-end: 10px;
+
+            a {
+                align-items: center;
+                border-radius: 25px;
+                display: flex;
+                height: 40px;
+                padding: 15px;
+                font-weight: 600;
+                font-size: rem(14px);
+            }
+
+            a:hover {
+                background-color: $clr6-opacity
+            }
+        }
+    }
+
+    .logo {
+        color: $clr7;
+        font-size: rem(30px);
+        font-weight: bold;
+        font-family: DancingScript-Regular;
+        margin-bottom: 120px;
+        cursor: pointer;
+    }
+
+    .user-menu {
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: space-between;
+        padding-inline-start: 15px;
+        position: relative;
+        width: 80px;
+        border-radius: 25px;
+        border: 1px solid $clr6;
+        background: $clr8;
+
+        &:hover {
+            box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+        }
+
+        img:nth-child(1) {
+            width: 16px;
+            height: 16px;
+        }
+
+        img:nth-child(2) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .curr-user-img {
+        border-radius: 15px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $clr5;
+    background-color: transparent;
+    padding: 0 80px;
+    height: 80px;
+    position: block;
+    width: 100%;
+    color: $clr3;
+    z-index: 20;
+    top: 0;
+
+    >* {
+        flex: 1;
+    }
+
+    .main-nav-container {
+        justify-content: flex-end;
+        white-space: nowrap;
+
+
+        .main-nav {
+            margin-inline-end: 10px;
+
+            a {
+                align-items: center;
+                border-radius: 25px;
+                display: flex;
+                height: 40px;
+                padding: 15px;
+                font-weight: 600;
+                font-size: rem(14px);
+            }
+
+            a:hover {
+                background-color: $clr6-opacity
+            }
+        }
+    }
+
+    .logo {
+        color: $clr1;
+        font-size: rem(30px);
+        font-weight: bold;
+        font-family: DancingScript-Regular;
+        cursor: pointer;
+    }
+
+    .user-menu {
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: space-between;
+        padding-inline-start: 15px;
+        position: relative;
+        width: 80px;
+        border-radius: 25px;
+        border: 1px solid $clr6;
+        background: $clr8;
+
+        &:hover {
+            box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+        }
+
+        img:nth-child(1) {
+            width: 16px;
+            height: 16px;
+        }
+
+        img:nth-child(2) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .curr-user-img {
+        border-radius: 15px;
+    }
+}
+
+.scrolled {
+    height: 80px;
+    background-color: $clr8;
+    color: $clr3;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, .08);
+
+    .logo {
+        color: $clr1;
+        margin-bottom: 0 
+    }
+
+    .main-nav-container {
+        margin-bottom: 0;
     }
 }

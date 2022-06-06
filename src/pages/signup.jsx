@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Button from '@mui/material/Button'
-// import CssBaseline from '@mui/material/CssBaseline'
 import TextField from '@mui/material/TextField'
 import { Link } from "react-router-dom"
 import Grid from '@mui/material/Grid'
@@ -42,7 +41,6 @@ export function SignUp() {
     return (
         <ThemeProvider theme={theme}>
             <Container component="main" maxWidth="xs">
-                {/* <CssBaseline /> */}
                 <Box
                     sx={{
                         marginTop: 8,
@@ -51,8 +49,6 @@ export function SignUp() {
                         alignItems: 'center',
                     }}
                 >
-                    {/* <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-                    </Avatar> */}
                     <Typography component="h1" variant="h5">
                         Sign up
                     </Typography>
@@ -79,15 +75,6 @@ export function SignUp() {
                                     autoComplete="family-name"
                                 />
                             </Grid>
-                            {/* <Grid item xs={12}>
-                                <TextField
-                                    required
-                                    fullWidth
-                                    id="email"
-                                    label="Email Address"
-                                    name="email"
-                                    autoComplete="email"
-                                /> */}
                             <Grid item xs={12}>
                                 <TextField
                                     required
@@ -109,12 +96,6 @@ export function SignUp() {
                                     autoComplete="new-password"
                                 />
                             </Grid>
-                            {/* <Grid item xs={12}>
-                                <FormControlLabel
-                                    control={<Checkbox value="allowExtraEmails" color="primary" />}
-                                    label="I want to receive inspiration, marketing promotions and updates via email."
-                                />
-                            </Grid> */}
                         </Grid>
                         <Button
                             type="submit"

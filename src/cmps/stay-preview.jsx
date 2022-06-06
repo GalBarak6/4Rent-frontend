@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from "react-redux";
 import { updateWishlist } from '../store/actions/user.actions';
 
-
 export const StayPreview = ({ stay }) => {
 
     const { user } = useSelector((storeState) => storeState.userModule)
@@ -12,6 +11,7 @@ export const StayPreview = ({ stay }) => {
     const dispatch = useDispatch()
 
     const onToggleLike = async () => {
+        if (!user) return
         const type = (isLike) ? 'splice' : 'unshift'
         setIsLike(!isLike)
         await dispatch(updateWishlist(user, stay, type))

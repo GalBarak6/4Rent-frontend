@@ -14,7 +14,6 @@ export const Trip = () => {
         dispatch(loadOrders({ booker: params.userId }))
     }, [])
 
-
     return <section className="trip">
         <TripList orders={orders} />
     </section>

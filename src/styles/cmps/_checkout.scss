@@ -116,15 +116,6 @@
 
             .dates-container {
 
-                // height: 56px;
-                // display: flex;
-                // align-items: center;
-                // padding-top: 15px;
-
-                // input:first-of-type {
-                //     padding-right: 30px;
-                // }
-
                 .check-date {
                     border: none;
                     font-family: Circular-Light;
@@ -149,10 +140,6 @@
                     &::-webkit-calendar-picker-indicator {
                         display: none;
                     }
-
-                    // &::-webkit-input-placeholder{ 
-                    //     visibility: hidden
-                    // }
                 }
 
                 label {
@@ -245,7 +232,6 @@
         top: var(--y);
         width: var(--size);
         height: var(--size);
-        // background: radial-gradient( rgb(209, 14, 47), transparent);
         background: radial-gradient(circle closest-side, #e64462, transparent);
         transform: translate(-50%, -50%);
         transition: width 0.2s ease, height 0.2s ease;
@@ -265,5 +251,4 @@
 
 .rdrDayToday .rdrDayNumber span:after {
     background: transparent;
-    }
-    
+}

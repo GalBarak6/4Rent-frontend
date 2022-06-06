@@ -1,6 +1,5 @@
 import { OrderPreview } from '../cmps/order-preview'
-import { useSelector } from "react-redux";
-
+import { useSelector } from "react-redux"
 
 export const OrderList = ({ orders }) => {
 

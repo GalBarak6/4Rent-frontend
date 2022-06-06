@@ -1,7 +1,7 @@
 .main-layout {
     display: grid;
     // grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
-    grid-template-columns: var(--padding) 1fr var(--padding);
+    grid-template-columns: 80px 1fr 80px;
 
     .app-header {
         grid-column: 2;
@@ -19,7 +19,7 @@
 
 .details-layout {
     display: grid;
-    grid-template-columns: $detailsLayoutPadding 1fr $detailsLayoutPadding;
+    grid-template-columns: 350px 1fr 350px;
 
     >* {
         grid-column: 2;

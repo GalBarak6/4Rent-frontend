@@ -8,7 +8,6 @@ export const UserMenuModal = () => {
     const history = useNavigate()
     const { user } = useSelector((storeState) => storeState.userModule)
 
-
     const logOut = () => {
         dispatch(onLogout())
         onGoBack()

@@ -1,8 +1,8 @@
 import React from 'react'
-import { useState, useEffect, useRef } from 'react'
+// import { useState, useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadOrders, updateOrder } from '../store/actions/order-actions'
-import { useOutsideClick } from '../cmps/use-outside-click'
+// import { useOutsideClick } from '../cmps/use-outside-click'
 
 
 export const OrderStatusModal = ({ order, closeModal }) => {
@@ -19,11 +19,10 @@ export const OrderStatusModal = ({ order, closeModal }) => {
     // const { orders } = useSelector((storeState) => storeState.orderModule)
     // console.log(order);
 
-
     const onHandleChange = async (status) => {
         const newOrder = { ...order, status }
         await dispatch(updateOrder(newOrder))
-        // await dispatch(loadOrders())
+        await dispatch(loadOrders())
         onCloseModal()
     }
 

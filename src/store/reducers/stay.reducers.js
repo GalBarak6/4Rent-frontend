@@ -6,12 +6,12 @@ const initialState = {
         price: '',
         label: '',
         rating: '',
-        city:'',
+        city: '',
         host: '',
         capacity: ''
     },
-    // reviews: []
 }
+
 export function stayReducer(state = initialState, action) {
     var newState = state
     var stays

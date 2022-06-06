@@ -1,7 +1,5 @@
 import { utilService } from "../services/util.service"
 
-
-
 export const Amenities = ({ stay }) => {
     return <div className='amenities'>
         <h1 className='amenities-list-header'>

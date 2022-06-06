@@ -1,5 +1,3 @@
-
-
 export const MainAmenities = () => {
     return <ul className='main-amenities flex flex-column'>
         <li className='flex'>

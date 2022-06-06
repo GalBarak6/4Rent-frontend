@@ -11,6 +11,15 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
 
     const { user } = useSelector((storeState) => storeState.userModule)
     const [isModalOpen, setIsModalOpen] = useState(false)
+    const [isGuestModal, setIsGuestModal] = useState(false)
+    const [guestCount, setGuestCount] = useState({ adult: 1, children: 0, infant: 0 })
+    const dispatch = useDispatch()
+    const [dateRange, setDateRange] = useState(
+        {
+            startDate: new Date(),
+            endDate: new Date(new Date().getTime() + (120 * 60 * 60 * 1000))
+        }
+    )
 
     useEffect(() => {
         orderService.getBtnMouseListener()
@@ -19,24 +28,6 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     const closeModal = () => {
         setIsModalOpen(false)
     }
-
-    // const [dateRange, setDateRange] = useState(
-    //     {
-    //         startDate: utilService.formatDate(new Date()),
-    //         endDate: utilService.formatDate(new Date(new Date().getTime() + (120 * 60 * 60 * 1000)))
-    //     }
-    // )
-
-    const [dateRange, setDateRange] = useState(
-        {
-            startDate: new Date(),
-            endDate: new Date(new Date().getTime() + (120 * 60 * 60 * 1000))
-        }
-    )
-
-    const [isGuestModal, setIsGuestModal] = useState(false)
-    const [guestCount, setGuestCount] = useState({ adult: 1, children: 0, infant: 0 })
-    const dispatch = useDispatch()
 
     const onGuestCount = (indicator, type) => {
         const field = type
@@ -58,14 +49,12 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
         ev.preventDefault()
         if (!user) return
         setIsModalOpen(true)
-        console.log(stay.host);
         const newOrder = orderService.getNewOrder(dateRange,
             guestCount,
             stay,
             orderService.getTotalAsNum(stay.price, utilService.datesDiff(dateRange.startDate, dateRange.endDate)),
             stay.host,
             user)
-        console.log(newOrder)
         await dispatch(addOrder(newOrder))
         setDateRange({ startDate: new Date(), endDate: new Date(new Date().getTime() + (120 * 60 * 60 * 1000)) })
         setGuestCount(prevCount => ({ ...prevCount, adult: 1, children: 0, infant: 0 }))
@@ -80,12 +69,6 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
         const total = orderService.getCalculatedPrice(type, stay.price, utilService.datesDiff(dateRange.startDate, dateRange.endDate))
         return (total)
     }
-
-    // const onHandleDates = ({ target }) => {
-    //     const field = target.name
-    //     const value = target.value
-    //     setDateRange(prevDates => ({ ...prevDates, [field]: value }))
-    // }
 
     const onHandleDates = (startDate, endDate) => {
         console.log(startDate);
@@ -114,12 +97,6 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
             <form onSubmit={onSubmit} className='order-form flex flex-column'>
                 <div className='order-inputs'>
                     <div className='dates-container'>
-                        {/* <label className='flex flex-column'>
-                            CHECK-IN<input type="date" name='startDate' onChange={onHandleDates} className="check-date checkin" value={dateRange.startDate} />
-                        </label>
-                        <label className='flex flex-column'>
-                            CHECKOUT<input type="date" name='endDate' onChange={onHandleDates} className="check-date checkout" value={dateRange.endDate} />
-                        </label> */}
                         <DatePicker onHandleDates={onHandleDates} startDate={dateRange.startDate} endDate={dateRange.endDate} />
                     </div>
 
@@ -170,7 +147,6 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
                             </div>}
                     </div>
                 </div>
-                {/* <button type='submit' className='reserve-btn'>Reserve</button> */}
                 <button type='submit' className='mouse-cursor-gradient-tracking'>
                     <span>Reserve</span>
                 </button>
