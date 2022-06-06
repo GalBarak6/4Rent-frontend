@@ -1,21 +1,23 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadOrders } from '../store/actions/order-actions'
 import { OrderList } from '../cmps/order-list'
 import { HostingList } from '../cmps/hosting-list'
 import { loadStays, setFilter } from '../store/actions/stay.actions'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 export const Host = () => {
 
     const { orders } = useSelector((storeState) => storeState.orderModule)
     const { stays, filterBy } = useSelector((storeState) => storeState.stayModule)
+    const [orderPageIdx, setOrderPageIdx] = useState(0)
+    // const [stayPageIdx, setStayPageIdx] = useState(0)
     const dispatch = useDispatch()
     const params = useParams()
 
     useEffect(() => {
-        dispatch(loadOrders({ host: params.userId }))
-    }, [])
+        dispatch(loadOrders({ host: params.userId, orderPageIdx }))
+    }, [orderPageIdx])
 
     useEffect(() => {
         dispatch(setFilter({ ...filterBy, host: params.userId }))
@@ -49,19 +51,33 @@ export const Host = () => {
         stays.map(stay => {
             guests += stay.capacity
         })
-        console.log(guests)
         return guests
     }
+
+    const onHandleOrderPaging = (type) => {
+        if (type === 'previous' && orderPageIdx > 0) {
+            setOrderPageIdx(orderPageIdx - 1)
+        } else if (type === 'next') {
+            setOrderPageIdx(orderPageIdx + 1)
+        }
+    }
+
+    // const onHandleStayPaging = (type) => {
+    //     if (type === 'previous' && stayPageIdx > 0) {
+    //         setStayPageIdx(stayPageIdx - 1)
+    //     } else if (type === 'next') {
+    //         setStayPageIdx(stayPageIdx + 1)
+    //     }
+    // }
 
     if (!orders) return
     return <section className="host">
         <div className='host-tables'>
             <h3>Booking Reports</h3>
-            <OrderList orders={orders} />
+            <OrderList orders={orders} onHandleOrderPaging={onHandleOrderPaging} />
             <div className='hosting-header flex space-between'>
                 <h3>Hosting</h3>
                 <button>Host new stay</button>
-                {/* <Link to={`/stay/edit/`}>Host new stay</Link> */}
             </div>
             <HostingList stays={stays} />
         </div>

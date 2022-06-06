@@ -45,9 +45,9 @@ export const AppHeader = ({ onOpenModal }) => {
     }
 
     return <header className={(isScrolled && headerClass === 'home-header') ? `${headerClass} scrolled` : `${headerClass}`}>
-        <div className="logo flex align-center gap" onClick={onGoBack}>
+        <div className="logo flex align-center gap">
             {<Logo />}
-            <div>4Rent</div>
+            <div onClick={onGoBack}>4Rent</div>
         </div>
         <div className="search-container">
             <StaySearch />

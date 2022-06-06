@@ -24,8 +24,10 @@ const App = () => {
     let currLayout
     if (location.pathname.includes('stay/')) {
       currLayout = 'details-layout'
-    } else {
+    } else if(location.pathname === '/'){
       currLayout = 'main-layout'
+    } else {
+      currLayout = 'stay-layout'
     }
     setLayout(currLayout)
   }, [location.pathname])

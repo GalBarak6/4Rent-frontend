@@ -1,5 +1,5 @@
 import { useNavigate, Link } from "react-router-dom"
-import { useEffect, useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadStays, setFilter } from '../store/actions/stay.actions'
 
@@ -9,42 +9,13 @@ import { orderService } from "../services/order.service"
 export const Home = () => {
 
     const history = useNavigate()
-    const { stays, filterBy } = useSelector((storeState) => storeState.stayModule)
+    const { stays } = useSelector((storeState) => storeState.stayModule)
     const dispatch = useDispatch()
 
     useEffect(() => {
-        // dispatch(setFilter({ ...filterBy, rating: 5.0 }))
         dispatch(setFilter({ label: '', type: [], amenities: [], price: '', city: '', capacity: '', host: '', rating: 5.0 }))
-
         dispatch(loadStays())
         orderService.getBtnMouseListener()
-    }, [])
-
-    useEffect(() => {
-        document.documentElement.style.setProperty('--grid-colum', '1/-1')
-        // document.documentElement.style.setProperty('--position', 'fixed')
-        // document.documentElement.style.setProperty('--border-style', 'none')
-        // document.documentElement.style.setProperty('--font-color', '#f7f7f7')
-        // document.documentElement.style.setProperty('--logo-color', '#f7f7f7')
-        // dispatch(setFilter({ ...filterBy, rating: 5 }))
-        dispatch(setFilter({ label: '', type: [], amenities: [], price: '', city: '', capacity: '', host: '', rating: 5.0 }))
-
-        dispatch(loadStays())
-        return () => {
-            document.documentElement.style.setProperty('--grid-column', '2')
-            // document.documentElement.style.setProperty('--position', 'block')
-            // document.documentElement.style.setProperty('--border-style', 'solid')
-            // document.documentElement.style.setProperty('--font-color', '#222222')
-            // document.documentElement.style.setProperty('--logo-color', '#FF385C')
-        }
-
-    }, [])
-
-    useLayoutEffect(() => {
-        document.documentElement.style.setProperty('--grid-column', '1/-1')
-        // document.documentElement.style.setProperty('--position', 'fixed')
-        const val = getComputedStyle(document.documentElement).getPropertyValue('--grid-colum')
-        console.log({ val })
     }, [])
 
     function onExplore() {

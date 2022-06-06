@@ -9,11 +9,11 @@ import { DatePicker } from './date-range'
 
 export const Checkout = ({ stay, onGetTotalReviewScore }) => {
 
+    const dispatch = useDispatch()
     const { user } = useSelector((storeState) => storeState.userModule)
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [isGuestModal, setIsGuestModal] = useState(false)
     const [guestCount, setGuestCount] = useState({ adult: 1, children: 0, infant: 0 })
-    const dispatch = useDispatch()
     const [dateRange, setDateRange] = useState(
         {
             startDate: new Date(),
@@ -54,7 +54,8 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
             stay,
             orderService.getTotalAsNum(stay.price, utilService.datesDiff(dateRange.startDate, dateRange.endDate)),
             stay.host,
-            user)
+            user,
+            utilService.makeId(10))
         await dispatch(addOrder(newOrder))
         setDateRange({ startDate: new Date(), endDate: new Date(new Date().getTime() + (120 * 60 * 60 * 1000)) })
         setGuestCount(prevCount => ({ ...prevCount, adult: 1, children: 0, infant: 0 }))
@@ -71,8 +72,6 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     }
 
     const onHandleDates = (startDate, endDate) => {
-        console.log(startDate);
-        console.log(endDate);
         setDateRange(prevDates => ({ ...prevDates, startDate, endDate }))
     }
 

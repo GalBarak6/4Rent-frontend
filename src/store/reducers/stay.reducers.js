@@ -8,7 +8,8 @@ const initialState = {
         rating: '',
         city: '',
         host: '',
-        capacity: ''
+        capacity: '',
+        pageIdx: 0
     },
 }
 

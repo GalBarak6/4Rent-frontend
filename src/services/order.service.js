@@ -15,10 +15,10 @@ export const orderService = {
     getNewOrder
 }
 
-async function query(filterBy = { host: '', booker: '' }) {
+async function query(filterBy = { host: '', orderPageIdx: 0 , booker: ''}) {
     // return storageService.query(STORAGE_KEY)
     // return axios.get(`/api/order`)
-    let orders = await httpService.get(`order/?host=${filterBy.host}&booker=${filterBy.booker}`)
+    let orders = await httpService.get(`order/?host=${filterBy.host}&booker=${filterBy.booker}&orderPageIdx=${filterBy.orderPageIdx}`)
     return orders
 }
 
@@ -85,8 +85,9 @@ function getTotalAsNum(price, nights) {
     return total
 }
 
-function getNewOrder(order, guestCount, stay, total, host, user) {
+function getNewOrder(order, guestCount, stay, total, host, user, orderNum) {
     const newOrder = {
+        orderNum,
         startDate: order.startDate,
         endDate: order.endDate,
         guests: {

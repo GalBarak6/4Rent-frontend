@@ -1,6 +1,5 @@
 .main-layout {
     display: grid;
-    // grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
     grid-template-columns: 80px 1fr 80px;
 
     .app-header {
@@ -8,13 +7,30 @@
     }
 
     >*:not(.app-header) {
-        grid-column: var(--grid-column)
+        grid-column: 1/ -1;
     }
 
     >*.full {
         grid-column: 1 / -1;
     }
 
+}
+
+.stay-layout {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+
+    .app-header {
+        grid-column: 2;
+    }
+
+    >*:not(.app-header) {
+        grid-column: 2;
+    }
+
+    >*.full {
+        grid-column: 1 / -1;
+    }
 }
 
 .details-layout {
