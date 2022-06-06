@@ -29,7 +29,9 @@ export const Host = () => {
     const calculateIncome = () => {
         let income = 0
         orders.map(order => {
-            income = income + (order.total)
+            if (order.status === 'approved') {
+                income = income + (order.total)
+            }
         })
         return income
     }
@@ -40,6 +42,15 @@ export const Host = () => {
             rating += stay.reviewScores.rating
         })
         return rating / stays.length
+    }
+
+    const calculateGuests = () => {
+        let guests = 0
+        stays.map(stay => {
+            guests += stay.capacity
+        })
+        console.log(guests)
+        return guests
     }
 
     if (!orders) return
@@ -66,7 +77,7 @@ export const Host = () => {
                 <h3>Total Income</h3>
                 <div className='flex align-center'>
                     <img className="statistics-icon" src={require('../assets/icons/revenue.png')} alt="" />
-                    <h4>$ {calculateIncome().toLocaleString('en-IN')}</h4>
+                    <h4>${calculateIncome().toLocaleString('en-IN')}</h4>
                 </div>
             </div>
             <div className='rate'>
@@ -74,6 +85,13 @@ export const Host = () => {
                 <div className='flex align-center'>
                     <img className="statistics-icon" src={require('../assets/icons/star2.png')} alt="" />
                     <h4>{calculateRating().toFixed(1)}</h4>
+                </div>
+            </div>
+            <div className='guests'>
+                <h3>Total Guests</h3>
+                <div className='flex align-center'>
+                    <img className="statistics-icon" src={require('../assets/icons/guest.png')} alt="" />
+                    <h4>{calculateGuests()}</h4>
                 </div>
             </div>
         </div>

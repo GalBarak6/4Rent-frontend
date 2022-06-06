@@ -88,10 +88,13 @@
     background-color: transparent;
     padding: 0 80px;
     height: 80px;
-    position: block;
+    // position: block;
+    background-color: $clr8;
+    position: sticky;
+    top: 80px;
+    z-index: 50;
     width: 100%;
     color: $clr3;
-    z-index: 20;
     top: 0;
 
     >* {
@@ -336,7 +339,7 @@
 
     .logo {
         color: $clr1;
-        margin-bottom: 0 
+        margin-bottom: 0
     }
 
     .main-nav-container {

@@ -9,11 +9,11 @@ export const OrderList = ({ orders }) => {
         <table>
             <thead>
                 <tr>
-                    <th>Reservation Num.</th>
                     <th>Arrival</th>
+                    <th>Reservation Num.</th>
                     <th>Booker</th>
-                    <th>Stay</th>
                     <th>Nights</th>
+                    <th>Stay</th>
                     <th>Guests</th>
                     <th>Status</th>
                     <th>Total</th>

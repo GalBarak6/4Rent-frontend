@@ -28,14 +28,16 @@ export const OrderPreview = ({ order }) => {
     }
 
     return <tr className="order-preview">
-        <td>{(order._id).substring(0, 10)}</td>
+        {console.log('rendering')}
+        {/* <td>{(order._id).substring(0, 10)}</td> */}
         <td>{utilService.changeDateFormat(order.startDate)}</td>
-        <td>{order.booker.fullname}</td>
-        <td>{order.stay}</td>
+        <td>{utilService.makeId(10)}</td>
+        <td>{(order.booker.fullname).toUpperCase()}</td>
         <td>{utilService.datesDiff(order.startDate, order.endDate)}</td>
+        <td>{order.stay}</td>
         <td>{stayService.getTotalGuestCount(order.guests)}</td>
         <td className={getStatusColor(order.status)} onClick={onOpenModal}>{order.status}</td>
-        <td>$ {(order.total)}</td>
+        <td>${(order.total).toLocaleString('en-IN', { maximumFractionDigits: 0 })}</td>
         {isOpenModal && <OrderStatusModal closeModal={closeModal} order={order} />}
     </tr>
 

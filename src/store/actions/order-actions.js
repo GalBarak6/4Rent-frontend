@@ -22,7 +22,8 @@ export function getActionUpdateOrder(order) {
 export function loadOrders(filterBy) {
     return async (dispatch) => {
         try {
-            const orders = await orderService.query(filterBy)
+            let orders = await orderService.query(filterBy)
+            orders = orders.reverse()
             console.log('Orders from DB:', orders)
             dispatch({
                 type: 'SET_ORDERS',

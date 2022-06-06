@@ -86,7 +86,6 @@ function getTotalAsNum(price, nights) {
 }
 
 function getNewOrder(order, guestCount, stay, total, host, user) {
-    console.log(host._id);
     const newOrder = {
         startDate: order.startDate,
         endDate: order.endDate,
