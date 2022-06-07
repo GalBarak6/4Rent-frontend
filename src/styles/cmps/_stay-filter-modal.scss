@@ -15,6 +15,10 @@
     background-color: $clr8;
     // overflow: scroll;
 
+    // .form-container{
+    //     height: 100%;
+    // }
+
     button {
         height: rem(47px);
         background-color: unset;
@@ -26,21 +30,17 @@
 
     .modal-title {
         display: flex;
-        // justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 10px 25px;
+        padding: 20px 25px;
         font-weight: bold;
         font-size: rem(16px);
         color: $clr3;
         border-bottom: solid 1px $clr9;
-        flex: 1;
-
-        .title {
-            flex-basis: 200px;
-        }
 
         .close-btn {
-            margin-right: rem(100px)
+            position: absolute;
+            left: rem(20px);
         }
 
     }
@@ -51,8 +51,7 @@
         justify-content: space-between;
         padding: 0 rem(25px);
         overflow: auto;
-        flex: 2;
-        height: rem(380px);
+        height: 450px;
 
         >* {
             padding: rem(20px) 0;
@@ -180,7 +179,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 15px 25px;
-        flex: 1;
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -214,15 +212,7 @@
         width: rem(780px);
         height: rem(600px);
 
-        .modal-title {
-
-            .close-btn {
-                margin-right: rem(300px)
-            }
-
-        }
-
-        .modal-details {
+          .modal-details {
 
             .property-type-labels {
                 flex-wrap: nowrap;

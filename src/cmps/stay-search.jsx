@@ -53,10 +53,7 @@ export const StaySearch = () => {
 
     const onHandleCityChange = ({ target }) => {
         const { value } = target
-        console.log('handleChange', { target })
-        if (value) {
-            setFilterByCity(value)
-        }
+        setFilterByCity(value)
     }
 
     const onHandleGuestsChange = () => {
@@ -79,13 +76,18 @@ export const StaySearch = () => {
     const onSetDates = () => {
         setIsGuestModalOpen(false)
         setIsCalenderModalOpen(!isCalenderModalOpen)
-        setDateRange([
-            {
-                startDate: new Date(),
-                endDate: new Date(),
-                key: 'selection',
-            },
-        ])
+
+        if (!dateRange[0].endDate) {
+
+            setDateRange([
+                {
+                    startDate: new Date(),
+                    endDate: new Date(new Date().getTime() + (120 * 60 * 60 * 1000)),
+                    key: 'selection',
+                },
+            ])
+
+        }
     }
 
     const handleDatesChange = (startDate, endDate) => {
@@ -110,10 +112,17 @@ export const StaySearch = () => {
 
     const convert = (startDateStr, endDateStr) => {
         let startDate = new Date(startDateStr)
+        console.log('startDate...', startDate)
         let endDate = new Date(endDateStr)
+        console.log('endDate...', endDate)
+
         let month = ("0" + (startDate.getMonth() + 1))
         startDate = ("0" + startDate.getDate()).slice(-2)
+        console.log('startDate...', startDate)
+
         endDate = ("0" + endDate.getDate()).slice(-2)
+        console.log('endDate...', endDate)
+
         let DateStr = `${startDate}-${endDate}/${month}`
 
         return DateStr
@@ -124,20 +133,18 @@ export const StaySearch = () => {
         <form onSubmit={onSearch} className="stay-search-form">
 
             <div>
-                <input type="text" id="search-where" name="search-where" placeholder="Anywhere" value={filterByCity} onChange={onHandleCityChange} autoComplete="off"/>
+                <input type="text" id="search-where" name="search-where" placeholder="Anywhere" value={filterByCity} onChange={onHandleCityChange} autoComplete="off" />
             </div>
 
-            {!dateRange[0].startDate &&
+            {!dateRange[0].endDate &&
                 <button type="button" className="btn" onClick={onSetDates}>Any week
-                    {/* <div>{convert(dateRange[0].startDate, dateRange[0].endDate)}</div> */}
                 </button>
 
             }
-            {dateRange[0].startDate &&
+            {dateRange[0].endDate &&
                 <button type="button" className="btn" onClick={onSetDates}>{convert(dateRange[0].startDate, dateRange[0].endDate)}</button>
 
             }
-            {/* <div>{convert(dateRange[0].startDate, dateRange[0].endDate)}</div> */}
 
             {!totalGuests &&
                 <button type="button" className="btn" onClick={onHandleGuestsChange}>Add guests</button>
