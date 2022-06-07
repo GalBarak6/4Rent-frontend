@@ -18,7 +18,7 @@ export const AppHeader = ({ onOpenModal }) => {
             currHeaderClass = 'home-header'
         } else if (location.pathname === '/stay') {
             currHeaderClass = 'stay-header'
-        } else if(location.pathname.includes('stay/')){
+        } else if (location.pathname.includes('stay/')) {
             currHeaderClass = 'details-header'
         } else currHeaderClass = 'header'
         setHeaderClass(currHeaderClass)
@@ -50,7 +50,8 @@ export const AppHeader = ({ onOpenModal }) => {
             <div onClick={onGoBack}>4Rent</div>
         </div>
         <div className="search-container">
-            <StaySearch />
+            {headerClass === 'stay-header' && window.innerWidth > 640 && <StaySearch />}
+            {headerClass !== 'stay-header' && <StaySearch />}
         </div>
         <div className="main-nav-container flex align-center">
             <nav className="main-nav flex">
@@ -62,7 +63,7 @@ export const AppHeader = ({ onOpenModal }) => {
 
             <button className="user-menu" onClick={onOpenModal}>
                 {/* <img src={require('../assets/icons/hamburger.svg').default} alt="" /> */}
-                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{display: 'block', fill: 'none', height: '16px', width: '16px', stroke: 'var(--stroke)', strokeWidth: '3', overflow: 'visible'}}><g fill="none" fillRule="nonzero"><path d="m2 16h28"></path><path d="m2 24h28"></path><path d="m2 8h28"></path></g></svg>
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', strokeWidth: '3', overflow: 'visible' }}><g fill="none" fillRule="nonzero"><path d="m2 16h28"></path><path d="m2 24h28"></path><path d="m2 8h28"></path></g></svg>
                 {!user && <img src={require('../assets/icons/user.svg').default} alt="" />}
                 {user && <img src={user.imgUrl} alt="" className="curr-user-img" />}
             </button>

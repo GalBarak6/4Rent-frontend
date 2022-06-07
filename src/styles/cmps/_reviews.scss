@@ -40,8 +40,8 @@
             }
 
             meter::-webkit-meter-bar {
-                background: $clr6-opacity;
-                border-radius: unset;
+                background: $clr9;
+                border-radius: 10px;
             }
 
             meter::-webkit-meter-optimum-value {

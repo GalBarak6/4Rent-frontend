@@ -35,7 +35,7 @@
 
 .details-layout {
     display: grid;
-    grid-template-columns: 350px 1fr 350px;
+    grid-template-columns: 80px 1fr 80px;
 
     >* {
         grid-column: 2;
@@ -46,5 +46,11 @@
     .stay-layout {
         display: grid;
         grid-template-columns: 80px 1fr 80px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .details-layout {
+        grid-template-columns: 350px 1fr 350px;
     }
 }

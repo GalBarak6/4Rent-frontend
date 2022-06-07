@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
+import { StaySearch } from './stay-search';
 
 var $ = require("jquery");
 
@@ -10,10 +11,10 @@ export const StayFilter = ({ handleLabelChange, onOpenModal, isFilterOn }) => {
         setSelectedFilter(value)
         handleLabelChange(value)
     }
- 
- 
+
+
     let className = ''
-    let filterClassName= (isFilterOn)? 'selected': ''
+    let filterClassName = (isFilterOn) ? 'selected' : ''
 
     return <section className="stay-filter">
 
@@ -88,6 +89,9 @@ export const StayFilter = ({ handleLabelChange, onOpenModal, isFilterOn }) => {
                     <div>Arctic</div>
                 </button>} */}
 
+        </div>
+        <div className='search-container'>
+            {window.innerWidth <= 640 && <StaySearch />}
         </div>
         <div>
             <button className={`btn-filters ${filterClassName}`} onClick={onOpenModal}>

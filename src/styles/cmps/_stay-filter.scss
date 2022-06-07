@@ -59,8 +59,6 @@
         }
     }
 
-
-
     .btn-filters {
         .icon-container {
             margin-top: 3px;
@@ -186,27 +184,86 @@
             }
         }
     }
-}
 
-.carousel.carousel-slider .control-arrow:hover {
-    background: transparent;
-}
+    .search-container {
+        position: relative;
 
-
-@media (min-width: 640px) {
-    .stay-filter {
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        // height: rem(125px);
-        // background-color: $clr8;
-        // position: sticky;
-        // top: 80px;
-        // z-index: 50;
-
-        .labels-container {
+        .stay-search {
             display: flex;
-            // gap: rem(35px);
+            justify-content: center;
+        }
+
+        .stay-search-form {
+            width: rem(200px);
+            height: 47px;
+            display: flex;
+            align-items: center;
+            border: solid 1px $clr9;
+            box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+            border-radius: 50vw;
+            white-space: nowrap;
+            background-color: $clr8;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+                padding: 0px;
+                color: $clr9;
+                font-size: 20px;
+                font-weight: 100;
+            }
+
+            .btn {
+                display: none;
+            }
+
+            input {
+                width: 67px;
+                border: none;
+                color: $clr3-opacity;
+
+                &:focus {
+                    outline: none;
+                }
+
+            }
+
+            ::placeholder {
+                font-family: Circular-Light;
+                font-size: 14px;
+                color: $clr3-opacity;
+                font-weight: 600;
+            }
+
+            .search-btn {
+                background: #ff385c;
+                border-radius: 50%;
+                height: 32px;
+            }
         }
     }
+
+    .carousel.carousel-slider .control-arrow:hover {
+        background: transparent;
+    }
 }
+
+    @media (min-width: 640px) {
+        .stay-filter {
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            // height: rem(125px);
+            // background-color: $clr8;
+            // position: sticky;
+            // top: 80px;
+            // z-index: 50;
+
+            .labels-container {
+                display: flex;
+                // gap: rem(35px);
+            }
+        }
+    }
