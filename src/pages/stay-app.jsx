@@ -45,9 +45,6 @@ export const StayApp = () => {
         <div></div>
     </div>
     return <section className="stay-app">
-        {/* {isModalOpen &&
-            <div className="modal-background"></div>
-        } */}
         <StayFilter handleLabelChange={handleLabelChange} onOpenModal={onOpenModal} isFilterOn={isFilterOn} />
         <StayList stays={stays} />
         {isModalOpen && <StayFilterModal onCloseModal={onCloseModal} />}

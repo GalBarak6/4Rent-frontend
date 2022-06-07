@@ -175,12 +175,8 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
             </div>
 
         </div>
-        {isModalOpen && <React.Fragment>
-
-            {/* <div className="modal-background"></div> */}
+        {isModalOpen && 
             <OrderModal closeModal={closeModal} order={order} stay={stay} />
-
-        </React.Fragment>
         }
 
 

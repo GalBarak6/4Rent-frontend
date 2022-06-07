@@ -17,7 +17,6 @@ import { Trip } from './pages/trip'
 const App = () => {
 
 
-  // const { isModalMode } = useSelector((storeState) => storeState.stayModule)
   const [isOpenModal, setIsOpenModal] = useState(false)
   const [layout, setLayout] = useState('main-layout')
   const location = useLocation()
@@ -41,10 +40,6 @@ const App = () => {
   }
 
   return <div className='app'>
-    {/* {isModalMode &&
-      <div className="modal-background"></div>
-    } */}
-
     <AppHeader onOpenModal={onOpenModal} />
     <main className={layout}>
       <Routes>

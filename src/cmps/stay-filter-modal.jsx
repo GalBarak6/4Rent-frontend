@@ -68,7 +68,7 @@ export const StayFilterModal = ({ onCloseModal }) => {
     return <>
         <div className="modal-background"></div>
         <section className="stay-filter-modal">
-            <form onSubmit={onSetFilters}>
+            <form className="form-container" onSubmit={onSetFilters}>
                 <div className="modal-title">
                     <button className="close-btn" onClick={() => { onCloseModal() }}>
                         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: 'block', fill: 'none', height: '16px', width: '16px', stroke: 'rgb(34, 34, 34)', strokeWidth: '3', overflow: 'visible' }}><path d="m6 6 20 20"></path><path d="m26 6-20 20"></path></svg>
