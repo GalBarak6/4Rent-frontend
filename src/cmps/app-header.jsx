@@ -61,7 +61,8 @@ export const AppHeader = ({ onOpenModal }) => {
             </nav>
 
             <button className="user-menu" onClick={onOpenModal}>
-                <img src={require('../assets/icons/hamburger.svg').default} alt="" />
+                {/* <img src={require('../assets/icons/hamburger.svg').default} alt="" /> */}
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{display: 'block', fill: 'none', height: '16px', width: '16px', stroke: 'var(--stroke)', strokeWidth: '3', overflow: 'visible'}}><g fill="none" fillRule="nonzero"><path d="m2 16h28"></path><path d="m2 24h28"></path><path d="m2 8h28"></path></g></svg>
                 {!user && <img src={require('../assets/icons/user.svg').default} alt="" />}
                 {user && <img src={user.imgUrl} alt="" className="curr-user-img" />}
             </button>

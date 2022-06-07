@@ -12,9 +12,9 @@ export const StayPreview = ({ stay }) => {
 
     const onToggleLike = async () => {
         if (!user) return
-        const type = (isLike) ? 'splice' : 'unshift'
+        // const type = (isLike) ? 'splice' : 'unshift'
+        await dispatch(updateWishlist(user, stay, !isLike))
         setIsLike(!isLike)
-        await dispatch(updateWishlist(user, stay, type))
     }
 
     return <section className="stay-preview">

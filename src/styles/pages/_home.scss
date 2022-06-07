@@ -1,74 +1,79 @@
-.home{
+.home {
 
     .hero {
-        height: 85vh;
+        height: 50vh;
         background-image: url(../../assets/Images/hero6.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;
         justify-content: center;
-    
+
         .hero-title {
             color: $clr8;
-            font-size: rem(40px);
+            font-size: rem(32px);
             text-shadow: 2px 2px 4px $clr3;
-            margin-top: rem(70px);
+            margin-top: rem(120px);
+            text-align: center;
         }
     }
-    
-        .hero-button {
-            border-radius: 25px;
-            height: 45px;
-            transition: background-color .5s;
-            width: 140px;
-            background-color: $clr6;
-            margin-top: rem(80px);
-    
-            &:hover {
-                background-color: $clr11;
-            }
-    
-            span {
-                font-size: rem(20px);
-                font-family: circular-light;
-                -webkit-text-fill-color: transparent;
-                background: -webkit-linear-gradient(#72019b, #ad0187, #e91f95);
-                -webkit-background-clip: text;
-                font-weight: bold;
-                padding: 20px 30px;
-            }
+
+    .hero-button {
+        border-radius: 25px;
+        height: 40px;
+        transition: background-color .5s;
+        width: 100px;
+        background-color: $clr6;
+        margin-top: rem(80px);
+
+        // &:hover {
+        //     background-color: $clr11;
+        // }
+
+        span {
+            font-size: rem(20px);
+            font-family: circular-light;
+            -webkit-text-fill-color: transparent;
+            background: -webkit-linear-gradient(#72019b, #ad0187, #e91f95);
+            -webkit-background-clip: text;
+            font-weight: bold;
+            // padding: 20px 30px;
         }
-    
-    
+    }
+
+
     .top-rated-title {
         padding-top: rem(40px);
         padding-bottom: rem(40px);
-        padding-inline-start: var(--padding);
+        padding-inline-start: rem(20px);
         color: $clr3;
         font-family: Circular-Bold;
         font-size: rem(25px);
     }
-    
+
     .homepage-host-img {
-        height: 75vh;
+        height: 43vh;
         background-image: url(../../assets/Images/homepage-host.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;
         justify-content: center;
-    
+
         .txt-container {
-            background-color:$clr3-opacity-2;
+            background-color: $clr3-opacity-2;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 50%;
+            // width: 50%;
             height: 100%;
-            font-size: rem(64px);
+            font-size: rem(40px);
             font-weight: 600;
             color: $clr8;
-    
+
+            a {
+                margin-top: rem(20px);
+            }
+
             .mouse-cursor-gradient-tracking {
                 position: relative;
                 outline: none;
@@ -80,13 +85,13 @@
                 font-size: rem(16px);
                 color: $clr8;
                 font-weight: bold;
-    
+
             }
-    
+
             .mouse-cursor-gradient-tracking span {
                 position: relative;
             }
-    
+
             .mouse-cursor-gradient-tracking:before {
                 --size: 0;
                 content: '';
@@ -99,7 +104,7 @@
                 transform: translate(-50%, -50%);
                 transition: width 0.2s ease, height 0.2s ease;
             }
-    
+
             .mouse-cursor-gradient-tracking:hover:before {
                 --size: 200px;
             }
@@ -107,3 +112,44 @@
     }
 }
 
+@media (min-width: 640px) {
+    .home {
+
+        .hero {
+            height: 85vh;
+
+            .hero-title {
+                font-size: rem(40px);
+                margin-top: rem(70px);
+                text-align: unset;
+            }
+        }
+
+        .hero-button {
+            height: 45px;
+            width: 140px;
+            margin-top: rem(80px);
+
+            &:hover {
+                background-color: $clr11;
+            }
+
+            span {
+                padding: 20px 30px;
+            }
+        }
+
+        .top-rated-title {
+            padding-inline-start: var(--padding);
+        }
+
+        .homepage-host-img {
+            height: 75vh;
+
+            .txt-container {
+                width: 50%;
+                font-size: rem(64px);
+            }
+        }
+    }
+}

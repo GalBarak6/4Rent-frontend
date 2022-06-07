@@ -46,11 +46,13 @@ function remove(userId) {
 }
 
 async function update(user) {
+    console.log(user);
     // await storageService.put('user', user)
-    user = await httpService.put(`user/${user._id}`, user)
+    const updatedUser = await httpService.put(`user/${user._id}`, user)
+    // getLoggedinUser().wishlist = user.wishlist
     // Handle case in which admin updates other user's details
     // if (getLoggedinUser()._id === user._id) saveLocalUser(user)
-    return user;
+    return updatedUser;
 }
 
 async function login(userCred) {
@@ -85,14 +87,13 @@ function getLoggedinUser() {
     return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER))
 }
 
-async function addWishlist(user, stay, type) {
-    if (type === 'unshift') {
+async function addWishlist(user, stay, isLike) {
+    if (isLike) {
         user.wishlist.unshift(stay)
     } else {
         const idx = user.wishlist.indexOf(stay)
         user.wishlist.splice(idx, 1)
     }
-    console.log(user.wishlist);
     const savedUser = update(user)
     return savedUser
 }

@@ -48,6 +48,10 @@ export const UserMenuModal = () => {
             </li>
 
             <li>
+                <Link to={`/host/${user._id}`}>Host your home</Link>
+            </li>
+
+            <li>
                 Help
             </li>
 

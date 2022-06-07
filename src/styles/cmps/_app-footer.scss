@@ -6,6 +6,7 @@
     font-size: 14px;
     border-top: 1px solid $clr9;
     width: 100%;
+    display: none;
 
     :first-child {
 
@@ -50,5 +51,11 @@
         >*:not(:last-child) {
             margin-right: 24px;
         }
+    }
+}
+
+@media (min-width: 640px) {
+    .app-footer {
+        display: flex;
     }
 }

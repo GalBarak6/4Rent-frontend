@@ -12,6 +12,8 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
     const dispatch = useDispatch()
     const { user } = useSelector((storeState) => storeState.userModule)
     const [isModalOpen, setIsModalOpen] = useState(false)
+
+    
     const [isGuestModal, setIsGuestModal] = useState(false)
     const [guestCount, setGuestCount] = useState({ adult: 1, children: 0, infant: 0 })
     const [order, setOrder] = useState('')

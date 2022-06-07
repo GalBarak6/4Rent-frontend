@@ -81,12 +81,13 @@ export function loadUser(userId) {
     }
 }
 
-export function updateWishlist(user, stay, type) {
+export function updateWishlist(user, stay, isLike) {
     return async (dispatch) => {
         try {
-            const savedUser = await userService.addWishlist(user, stay, type)
+            const savedUser = await userService.addWishlist(user, stay, isLike)
             console.log('Updated User', savedUser)
-            dispatch({type: 'UPDATE_USER', user})
+            userService.saveLocalUser(savedUser)
+            dispatch({type: 'UPDATE_USER', savedUser})
         } catch (err) {
             console.log('Cannot update stay', err)
         }

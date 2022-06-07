@@ -171,8 +171,7 @@
     align-items: center;
     border-bottom: 1px $clr5 none;
     background-color: transparent;
-    padding: 0 80px;
-    // height: 80px;
+    // padding: 0 80px;
     height: 180px;
     position: fixed;
     width: 100%;
@@ -189,8 +188,10 @@
         white-space: nowrap;
         margin-bottom: 120px;
 
+
         .main-nav {
             margin-inline-end: 10px;
+            display: none;
 
             a {
                 align-items: center;
@@ -214,7 +215,6 @@
         font-weight: bold;
         font-family: DancingScript-Regular;
         margin-bottom: 120px;
-        cursor: pointer;
     }
 
     .user-menu {
@@ -224,10 +224,10 @@
         justify-content: space-between;
         padding-inline-start: 15px;
         position: relative;
-        width: 80px;
-        border-radius: 25px;
-        border: 1px solid $clr6;
-        background: $clr8;
+        // width: 80px;
+        // border-radius: 25px;
+        // border: 1px solid $clr6;
+        // background: $clr8;
 
         &:hover {
             box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
@@ -246,6 +246,7 @@
 
     .curr-user-img {
         border-radius: 15px;
+        display: none;
     }
 }
 
@@ -332,6 +333,7 @@
 }
 
 .scrolled {
+
     height: 80px;
     background-color: $clr8;
     color: $clr3;
@@ -344,5 +346,55 @@
 
     .main-nav-container {
         margin-bottom: 0;
+    }
+}
+
+@media (min-width: 640px) {
+
+    .home-header {
+        padding: 0 80px;
+
+        .main-nav-container {
+
+            .main-nav {
+                display: flex;
+            }
+        }
+
+        .logo {
+            font-size: rem(30px);
+            cursor: pointer;
+        }
+
+        .user-menu {
+            align-items: center;
+            display: flex;
+            height: 40px;
+            justify-content: space-between;
+            padding-inline-start: 15px;
+            position: relative;
+            width: 80px;
+            border-radius: 25px;
+            border: 1px solid $clr6;
+            background: $clr8;
+
+            &:hover {
+                box-shadow: 0 2px 4px rgb(0 0 0 / 18%);
+            }
+
+            img:nth-child(1) {
+                width: 16px;
+                height: 16px;
+            }
+
+            img:nth-child(2) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .curr-user-img {
+        display: block;
     }
 }

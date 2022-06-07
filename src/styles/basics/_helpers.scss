@@ -41,11 +41,8 @@
 }
 
 .modal-background{
-    position: absolute;
-    // top: 0;
-    // left: 0;
-    height: 100vh;
-    width: 100%;
+    position: fixed;
+    inset: 0;
     z-index: 60;
     background-color:$clr3-opacity-2;
 }

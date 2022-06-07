@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: rem(40px) rem(40px);
-
-    padding: 0 rem(80px) rem(40px);
+    padding: 0 rem(20px) rem(40px);
+    // padding: 0 rem(80px) rem(40px);
 
     // padding-top: rem(30px);
     // padding-bottom: rem(30px);
@@ -11,8 +11,8 @@
 
 }
 
-@media (max-width: 580px) {
+@media (min-width: 640px) {
     .top-rated-list{
-        padding: 0 rem(20px) rem(40px);
+        padding: 0 rem(80px) rem(40px);
     }
 }

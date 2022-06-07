@@ -7,8 +7,8 @@
     }
 
     .stay-search-form {
-        flex-basis: 350px;
-
+        // flex-basis: 350px;
+        width: rem(200px);
         height: 47px;
         display: flex;
         align-items: center;
@@ -17,10 +17,7 @@
         border-radius: 50vw;
         white-space: nowrap;
         background-color: $clr8;
-
-        // width: 100%;
         padding: 10px;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -46,6 +43,7 @@
             color: $clr3-opacity;
             font-weight: 600;
             border-left: solid 1px $clr9;
+            display: none;
         }
 
         input {
@@ -74,4 +72,23 @@
     }
 }
 
+@media (min-width: 640px) {
+    .search-container {
+        position: relative;
 
+        .stay-search {
+            display: flex;
+            justify-content: center;
+        }
+
+        .stay-search-form {
+            flex-basis: 350px;
+            width: unset;
+
+            .btn {
+                display: block;
+            }
+        }
+
+    }
+}

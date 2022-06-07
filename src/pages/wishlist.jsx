@@ -9,9 +9,10 @@ export const WishList = () => {
     const { user } = useSelector((storeState) => storeState.userModule)
 
     useEffect(() => {
+        console.log('user', user);
         setStays(user.wishlist)
     }, [])
-
+console.log('staysss', stays);
     if (!stays) return
     return <section className="wishlist">
         <h1>Wishlist</h1>

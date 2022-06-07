@@ -57,7 +57,7 @@ export const StayDetails = () => {
         <div className='start-info flex align-center space-between'>
             <div className='flex align-center'>
                 <img src={require('../assets/icons/star.svg').default} alt="" className='start-icon' />
-                {onGetTotalReviewScore()} <span className='dot'></span> <a href="#reviews-container">{stay.reviews.length} Reviews</a> <span className='dot'></span> {stay.loc.city} {stay.loc.address} {stay.loc.country}
+                {onGetTotalReviewScore()} <span className='dot'></span> <a href="reviews-container">{stay.reviews.length} Reviews</a> <span className='dot'></span> {stay.loc.city} {stay.loc.address} {stay.loc.country}
             </div>
             <div className='flex align-center'>
                 <button className='flex align-center'>

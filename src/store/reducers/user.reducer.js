@@ -20,8 +20,9 @@ export function userReducer(state = initialState, action) {
             newState = { ...state, users: action.users }
             break;
         case 'UPDATE_USER':
-            var users = state.users.map(user => (user._id === action.user._id) ? action.user : user)
-            newState = { ...state, users }
+            // var users = state.users.map(user => (user._id === action.user._id) ? action.user : user)
+            // console.log('users?' , users)
+            newState =  { ...state, user: action.savedUser }
             break;
         default:
     }
