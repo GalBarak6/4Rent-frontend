@@ -112,19 +112,11 @@ export const StaySearch = () => {
 
     const convert = (startDateStr, endDateStr) => {
         let startDate = new Date(startDateStr)
-        console.log('startDate...', startDate)
         let endDate = new Date(endDateStr)
-        console.log('endDate...', endDate)
-
         let month = ("0" + (startDate.getMonth() + 1))
         startDate = ("0" + startDate.getDate()).slice(-2)
-        console.log('startDate...', startDate)
-
         endDate = ("0" + endDate.getDate()).slice(-2)
-        console.log('endDate...', endDate)
-
         let DateStr = `${startDate}-${endDate}/${month}`
-
         return DateStr
     }
 

@@ -1,5 +1,6 @@
 const initialState = {
     orders: [],
+    count: ''
 }
 
 export function orderReducer(state = initialState, action) {
@@ -20,6 +21,9 @@ export function orderReducer(state = initialState, action) {
         case 'UPDATE_ORDER':
             orders = state.orders.map(order => (order._id === action.order._id) ? action.order : order)
             newState = { ...state, orders }
+            break
+        case 'SET_ORDERS_COUNT':
+            newState = { ...state, count: action.ordersCount }
             break
         default:
     }
