@@ -71,3 +71,19 @@ export function updateOrder(order) {
         }
     }
 }
+
+export function loadOrdersCount() {
+    return async (dispatch) => {
+        try {
+            let orders = await orderService.query()
+            console.log('Orders from DB:', orders)
+            const ordersCount = orders.length
+            dispatch({
+                type: 'SET_ORDERS_COUNT',
+                ordersCount
+            })
+        } catch (err) {
+            console.log('Cannot load orders', err)
+        }
+    }
+}

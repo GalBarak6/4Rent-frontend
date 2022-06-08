@@ -13,7 +13,6 @@
     margin-inline-start: 50px;
     border: 1px solid #00000030;
     border-radius: 13px;
-    // box-shadow: 0 0 5px 5px #00000015;
     box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
 
 
@@ -243,12 +242,39 @@
 
     .rdrCalendarWrapper {
         position: absolute;
+        right: 0;
         z-index: 50;
-        width: 100%;
+        box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px;
+        border-radius: 16px;
     }
 
 }
 
 .rdrDayToday .rdrDayNumber span:after {
     background: transparent;
+}
+
+.rdrMonth {
+    width: em(850px);
+    height: em(370px);
+}
+
+.rdrMonthPicker,
+.rdrYearPicker {
+
+    select {
+        font-weight: 600;
+        font-size: rem(16px);
+        color: $clr3;
+        font-family: Circular-Light;
+    }
+}
+
+.rdrDays {
+
+    span {
+        // font-weight: 600;
+        font-size: rem(15px);
+        color: $clr3;
+    }
 }

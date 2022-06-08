@@ -15,7 +15,7 @@ export const orderService = {
     getNewOrder
 }
 
-async function query(filterBy = { host: '', orderPageIdx: 0 , booker: ''}) {
+async function query(filterBy = { host: '', orderPageIdx: '' , booker: ''}) {
     // return storageService.query(STORAGE_KEY)
     // return axios.get(`/api/order`)
     let orders = await httpService.get(`order/?host=${filterBy.host}&booker=${filterBy.booker}&orderPageIdx=${filterBy.orderPageIdx}`)

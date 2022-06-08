@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { loadOrders } from '../store/actions/order-actions'
+import { loadOrders, loadOrdersCount } from '../store/actions/order-actions'
 import { OrderList } from '../cmps/order-list'
 import { HostingList } from '../cmps/hosting-list'
 import { loadStays, setFilter } from '../store/actions/stay.actions'
@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom'
 
 export const Host = () => {
 
+    const { count } = useSelector((storeState) => storeState.orderModule)
     const { orders } = useSelector((storeState) => storeState.orderModule)
     const { stays, filterBy } = useSelector((storeState) => storeState.stayModule)
     const [orderPageIdx, setOrderPageIdx] = useState(0)
@@ -20,6 +21,7 @@ export const Host = () => {
     }, [orderPageIdx])
 
     useEffect(() => {
+        dispatch(loadOrdersCount())
         dispatch(setFilter({ ...filterBy, host: params.userId }))
         dispatch(loadStays())
 
@@ -55,9 +57,12 @@ export const Host = () => {
     }
 
     const onHandleOrderPaging = (type) => {
+        console.log(count);
+        console.log(orderPageIdx);
+        console.log(Math.ceil(count / 4));
         if (type === 'previous' && orderPageIdx > 0) {
             setOrderPageIdx(orderPageIdx - 1)
-        } else if (type === 'next') {
+        } else if (type === 'next' && orderPageIdx + 1 < Math.ceil(count / 4)) {
             setOrderPageIdx(orderPageIdx + 1)
         }
     }
