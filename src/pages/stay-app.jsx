@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { loadStays, setFilter } from '../store/actions/stay.actions'
 import { StayList } from '../cmps/stay-list'
 import { StayFilter } from '../cmps/stay-filter'
+import { Loader } from '../cmps/loader'
 import { StayFilterModal } from '../cmps/stay-filter-modal'
 
 export const StayApp = () => {
@@ -39,14 +40,15 @@ export const StayApp = () => {
         setIsModalOpen(false)
     }
 
-    if (!stays) return <div className="dots">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    // if (!stays) return <div className="dots">
+    //     <div></div>
+    //     <div></div>
+    //     <div></div>
+    // </div>
     return <section className="stay-app">
         <StayFilter handleLabelChange={handleLabelChange} onOpenModal={onOpenModal} isFilterOn={isFilterOn} />
-        <StayList stays={stays} />
+        {/* <Loader /> */}
+        {!stays ? <Loader /> : <StayList stays={stays} /> }
         {isModalOpen && <StayFilterModal onCloseModal={onCloseModal} />}
 
     </section>
