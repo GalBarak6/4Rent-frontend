@@ -50,7 +50,7 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
 
     const onSubmit = async (ev) => {
         ev.preventDefault()
-        if (!user) return
+        if (!user || stay.host._id === user._id) return
         setIsModalOpen(true)
         const newOrder = orderService.getNewOrder(dateRange,
             guestCount,
@@ -178,7 +178,5 @@ export const Checkout = ({ stay, onGetTotalReviewScore }) => {
         {isModalOpen && 
             <OrderModal closeModal={closeModal} order={order} stay={stay} />
         }
-
-
     </div>
 }

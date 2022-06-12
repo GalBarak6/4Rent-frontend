@@ -231,6 +231,26 @@
 					"fullname": "Catherine",
 					"imgUrl": "https://randomuser.me/api/portraits/women/41.jpg"
 				}
+			},
+			{
+				"id": "1071182544",
+				"date": "April 2022",
+				"txt": "Nous nous sommes sentis les bienvenus et Marie-Amelie était très disponible en cas de besoin. L'appartement correspond tout à fait à la description et la localisation est parfaite (rue résidentielle très calme à seulement quelques pas de Ste-Catherine). Nous y retournerions sans hésiter !",
+				"by": {
+					"_id": "622f3407e36c59e6164fbeef",
+					"fullname": "Catherine",
+					"imgUrl": "https://randomuser.me/api/portraits/women/41.jpg"
+				}
+			},
+			{
+				"id": "1071182544",
+				"date": "April 2022",
+				"txt": "Nous nous sommes sentis les bienvenus et Marie-Amelie était très disponible en cas de besoin. L'appartement correspond tout à fait à la description et la localisation est parfaite (rue résidentielle très calme à seulement quelques pas de Ste-Catherine). Nous y retournerions sans hésiter !",
+				"by": {
+					"_id": "622f3407e36c59e6164fbeef",
+					"fullname": "Catherine",
+					"imgUrl": "https://randomuser.me/api/portraits/women/41.jpg"
+				}
 			}
 		]
 	},
@@ -2068,6 +2088,845 @@
 					"_id": "622f3405e36c59e6164fb7e3",
 					"fullname": "佳黛",
 					"imgUrl": "https://randomuser.me/api/portraits/men/17.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac4d",
+		"name": "Luxurious, bright, spacious Plaza Catalunya",
+		"type": "Apartment",
+		"labels": [
+			"Amazing pools",
+			"Design",
+			"Beach",
+			"Tiny homes"
+		],
+		"imgUrls": [
+			"087.jpeg",
+			"040.jpeg",
+			"119.jpeg",
+			"114.jpeg",
+			"107.jpeg"
+		],
+		"price": 435,
+		"summary": "Magnificent apartment situated in the heart of Barcelona. Located in a prestigious building with concierge next to Rambla de Cataluña, this apartment is the ideal choice to accomodate up to 6 people. The apartment is composed by an entrance hall, living room, dining room and a fully equipped kitchen with all the kitchen utensils. There are 2 dormitories with 2 single beds, a big bedroom with a double bed and two bathrooms.  Tourist licence HUTB - 003179.",
+		"capacity": 6,
+		"bedrooms": 3,
+		"beds": 0,
+		"amenities": [
+			"Air conditioning",
+			"Pool",
+			"Hangers",
+			"Kitchen",
+			"Free parking",
+			"TV",
+			"Wheelchair accessible",
+			"Coffe maker"
+		],
+		"host": {
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "Spain",
+			"countryCode": "ES",
+			"city": "Barcelona",
+			"address": "Barcelona, Catalunya, Spain",
+			"lat": 41.39002,
+			"lan": 2.16589
+		},
+		"bathrooms": 2,
+		"reviewScores": {
+			"accuracy": 4,
+			"cleanliness": 4,
+			"checkin": 4.5,
+			"communication": 4,
+			"location": 5,
+			"value": 4,
+			"rating": 4.25
+		},
+		"reviews": [
+			{
+				"id": "101043886",
+				"date": "June 2022",
+				"txt": "Lovely and very central apartment in the heart of Barcelona. It's position made exploring the city very easy either on foot or using public transport. Plenty of shopping areas and restaurants around and a lovely organic and vegetarian shop near by. \n\nThe apartment is quite airy but unfortunately the blinds do not work in the rooms so there is no natural light. Even though the apartment is very central all the windows are on internal patios ( the living room windows are enormous and let lots of light) which makes it very quiet.\n\nWe had a lovely time and we certainly will use it again when we return to Barcelona.",
+				"by": {
+					"_id": "622f3404e36c59e6164fb32f",
+					"fullname": "Elizabeth",
+					"imgUrl": "https://randomuser.me/api/portraits/women/79.jpg"
+				}
+			},
+			{
+				"id": "98835250",
+				"date": "June 2022",
+				"txt": "Great neighbourhood, and very central.",
+				"by": {
+					"_id": "622f3406e36c59e6164fbaba",
+					"fullname": "Paula",
+					"imgUrl": "https://randomuser.me/api/portraits/women/51.jpg"
+				}
+			},
+			{
+				"id": "7428018",
+				"date": "June 2022",
+				"txt": "Apartment clean, wide and cozy. Near to Casa Battlò, Placa de Catalunya and many restaurants, it's a perfect place for families. The host was kind and helpful, we didn't have any problem during our stay.",
+				"by": {
+					"_id": "622f3407e36c59e6164fbe49",
+					"fullname": "Mauro",
+					"imgUrl": "https://randomuser.me/api/portraits/men/13.jpg"
+				}
+			},
+			{
+				"id": "44354996",
+				"date": "June 2022",
+				"txt": "Bel appartement très bien placé et silencieux. \nPar contre pas de parking comme indiqué et pas de demodulateur pour avoir des chaînes françaises ",
+				"by": {
+					"_id": "622f3402e36c59e6164fabc9",
+					"fullname": "Mickaël",
+					"imgUrl": "https://randomuser.me/api/portraits/men/26.jpg"
+				}
+			},
+			{
+				"id": "41442524",
+				"date": "June 2022",
+				"txt": "the apartment has very central  location, near to Placa Catalunia. It is bright, beautiful and comfortable, with all the ecquipment one can need. good for 5-6 people. Thanks to Tendency!",
+				"by": {
+					"_id": "622f3406e36c59e6164fbac2",
+					"fullname": "Tako",
+					"imgUrl": "https://randomuser.me/api/portraits/men/86.jpg"
+				}
+			},
+			{
+				"id": "39980862",
+				"date": "June 2022",
+				"txt": "Increíble! Súper buena la ubicación y un departamento de lujo!",
+				"by": {
+					"_id": "622f3406e36c59e6164fbbe1",
+					"fullname": "Leonel Hernán",
+					"imgUrl": "https://randomuser.me/api/portraits/men/99.jpg"
+				}
+			},
+			{
+				"id": "3630381",
+				"date": "June 2022",
+				"txt": "Very well located and great looking place.",
+				"by": {
+					"_id": "622f3403e36c59e6164fb20b",
+					"fullname": "Juan",
+					"imgUrl": "https://randomuser.me/api/portraits/men/48.jpg"
+				}
+			},
+			{
+				"id": "18257376",
+				"date": "June 2022",
+				"txt": "Very good location and flat. Everything was perfectly clean, bright and as described. We had a very nice stay. \nWe use the bagages services company that the host advised us during our check in: for €5 they come to get your luggages and bring them later at the airport (because our check out was at 11am). \nI would just recommend to bring your own hairdryer (if you are coming for special occasion as us - we were in BCN for a wedding). \nI really recommend this flat\n",
+				"by": {
+					"_id": "622f3404e36c59e6164fb37b",
+					"fullname": "Floride",
+					"imgUrl": "https://randomuser.me/api/portraits/women/19.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337d75c7d36e498aac52",
+		"name": "Cute Attic room Beyoğlu, Istanbul",
+		"type": "House",
+		"labels": [
+			"Amazing pools",
+			"Design",
+			"Beach",
+			"OMG!",
+			"Cabins"
+		],
+		"imgUrls": [
+			"049.jpeg",
+			"103.jpeg",
+			"141.jpeg",
+			"006.jpeg",
+			"062.jpeg"
+		],
+		"price": 250,
+		"summary": "This is a room in an Ottoman liberty style townhouse in Beyoglu. The location is very central, walking distance to istiklal street, one of the main centers in Istanbul. There are many cafes, restaurants, bars, and shopping, night life.  ",
+		"capacity": 1,
+		"bedrooms": 1,
+		"beds": 2,
+		"amenities": [
+			"Air conditioning",
+			"Pool",
+			"Hangers",
+			"Kitchen",
+			"Hair dryer",
+			"Free parking",
+			"TV",
+			"Wheelchair accessible"
+		],
+		"host": {
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "Turkey",
+			"countryCode": "TR",
+			"city": "Istanbul",
+			"address": "İstanbul, İstanbul, Turkey",
+			"lat": 41.03782,
+			"lan": 28.97675
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 3.5,
+			"cleanliness": 4.5,
+			"checkin": 5,
+			"communication": 5,
+			"location": 4.5,
+			"value": 4,
+			"rating": 4.41
+		},
+		"reviews": [
+			{
+				"id": "783458",
+				"date": "June 2022",
+				"txt": "Comment raconter en quelques mots les trois semaines magnifiques passées chez Fatma ! Impossible. La pension est charmante et possède une terrasse très chaleureuse. Fatma est une personne extrèmement intéressante avec qui il faut absolument prendre un café dès quelle le propose (ce qui arrive très souvent !). Elle cuisine merveilleusement. Elle connait Istanbul comme sa poche. La chambre est au dernier étage, elle est calme et douce. Elle a un accès direct sur la terrasse ce qui permet de bouquiner avant d'aller dormir ou de faire un peu de yoga le matin. Le quartier est au coeur de Beyoglu avec une foultitude de restaurants et de bonnes adresses à découvrir. Si vous hésitez encore à réserver, n'hésitez plus ! Quant à moi, je reviendrais le plus vite possible !",
+				"by": {
+					"_id": "622f3403e36c59e6164fb0f9",
+					"fullname": "Aline",
+					"imgUrl": "https://randomuser.me/api/portraits/women/61.jpg"
+				}
+			},
+			{
+				"id": "8283434",
+				"date": "June 2022",
+				"txt": "Ich bin unheimlich glücklich bei Fatma Abla gestrandet zu sein. Es ist immer was los und selbst wenn mankein türkisch kann,Fatma Abla versucht mit English und Händen und Füßen zu reden. Eine unglaublich sympathische und unterhaltsame Dame, die ich sehr schnell ins Herz geschlossen habe. Sonntags sind wir zusammen zum Bio Bazar gelaufen und an einigen Tagen kochen wir sogar was zusammen.  Mein Zimmer befindet sich im obersten Stock, wo ich komplett meine Ruhe habe. gegenüber von meinem Zimmer ist eine wunderschöne Terasse, die zum Yoga machen oder ein Buch lesen einlädt. Gäste sind auch immer willkommen. Fatma hat ihre eigenen Stil, welches dem ganzen Haus, bis auf den Eingangsbereich, einen unglaublichen charm gibt. Jedes Zimmer ist individuell und man muss sagen, dass bis her die Leute, die ich im Haus kennengelernt habe, echt toll sind. Wenn man sich für Fatma entscheidet, sollte man auf alle Fälle kulturoffen sein und sich diesem schönen antiken Stil und der Nostalgie einfach fallen lassen. Ich bin durch Fatma und durch die Wohnung in einem alten Istanbul angekommen und fühle mich super wohl. Zu meiner Arbeit in Cihangir laufe ich täglich zu Fuß. Die Lage ist sehr perfekt. Ich brauche kaum Bus oder Bahn zu benutzen, da ich alles in Beyoglu und Taksim finde, was ich brauche. Nur für meine Touristentour habe ich lediglich die Bahn benutzt. Obwohl man zum Eminönu auch zu Fuß laufen kann, wenn man spazieren gehen mag. Ich danke Dir, Fatma abla, so wie ich dich gerne zu nennen pflege, für Deine Offenheit und Deine Wärme. Ich werde Dich sehr bald wieder besuchen kommen und hoffentlich sogar mein altes Zimmer beziehen im obersten Stock. ",
+				"by": {
+					"_id": "622f3405e36c59e6164fb7e5",
+					"fullname": "Kobra",
+					"imgUrl": "https://randomuser.me/api/portraits/men/93.jpg"
+				}
+			},
+			{
+				"id": "9367330",
+				"date": "June 2022",
+				"txt": "Fatma's home is a perfect place to enjoy Istanbul : peacefull place, independence, located close to main places ... Fatma is nice, and other people staying in Fatma's house so you can meet new people etc\r\nSo I recommend it !",
+				"by": {
+					"_id": "622f3405e36c59e6164fb79b",
+					"fullname": "David",
+					"imgUrl": "https://randomuser.me/api/portraits/men/16.jpg"
+				}
+			},
+			{
+				"id": "3369680",
+				"date": "June 2022",
+				"txt": "I stayed with Fatma for many weeks in December 2013, in the attic room on my own, and then with my boyfriend in the larger double room, and had an amazing time. \nThe neighbourhood, Tarlabaşı, is different and more down to earth than the posher neighbourhoods around. The location is wonderful: it's easy to get anywhere by foot, taxi, bus, dolmus, metro or boat.\nFatma, who lives there, and her daughter Elvan, who lives in Italy but is quick to communicate by email, are extremely friendly and helpful. \nFatma also cooks wonderfully and even offers cooking classes. \nI would definitely recommend staying there, for three nights or three months, and hope to stay there again myself.\nBe aware though that if you have respiratory issues, this might not be a good choice as there is a fair amount of smoking happening inside, and even the neighbourhood is quite smoky because of the coal heating.",
+				"by": {
+					"_id": "622f3403e36c59e6164fb1bf",
+					"fullname": "Caroline & Maxime",
+					"imgUrl": "https://randomuser.me/api/portraits/women/38.jpg"
+				}
+			},
+			{
+				"id": "13956550",
+				"date": "June 2022",
+				"txt": "Sono stata 5 giorni ospite da Fatma. Purtroppo non l'ho conosciuta perchè era in Italia dalla figlia, con cui sono riuscita a comunicare molto bene in italiano (dato che il mio inglese è molto scarso..), è stata gentilissima! come anche gli ospiti che mi hanno accolto lì a Istanbul! Si è creato un bel clima e anche se spesso ero fuori per visitare la città, ho passato due bellissime serate in un clima multiculturale! \r\n",
+				"by": {
+					"_id": "622f3403e36c59e6164faf5f",
+					"fullname": "Giulia",
+					"imgUrl": "https://randomuser.me/api/portraits/women/50.jpg"
+				}
+			},
+			{
+				"id": "162494",
+				"date": "June 2022",
+				"txt": "The perfect visit. \r\n\r\nFor me, this attic room in Beyoglu was perfect for my time in Istanbul. My hosts were wonderful, the room is great, the terrace is greater, and the location is fantastic. I was in Istanbul for a intensive summer school at their Technology University, and got the privacy, space and support I needed to get everything done, and to a high standard. I was sad to leave and am looking forward to returning again in a few months. \r\n\r\nThank you thank you thank you, and will miss you guys!\r\n\r\nBeau x ",
+				"by": {
+					"_id": "622f3403e36c59e6164fb21d",
+					"fullname": "Beau",
+					"imgUrl": "https://randomuser.me/api/portraits/men/29.jpg"
+				}
+			},
+			{
+				"id": "3417889",
+				"date": "June 2022",
+				"txt": "Fatma, Elvan, her daughter, Hasan, her husband, and all of the other guests with whom I shared the house made this one of my best travel experiences. Fatma really tries to make everyone at home in her home and in her city. We shared dinner on the terrace several times with her past guests / friends, and they made me feel so welcome and quickly become knowledgable about Istanbul and the broader society. \r\n\r\nThe room, itself, and the neighborhood have been correctly detailed in the room information, guest feedback, and the feedback for Fatma's other rooms' feedback. I encourage you to read them all to get a clear idea. \r\n\r\nAll said, the room is good value for money, and the people will make it a fond, memorable experience.",
+				"by": {
+					"_id": "622f3402e36c59e6164fad55",
+					"fullname": "Clayton",
+					"imgUrl": "https://randomuser.me/api/portraits/men/25.jpg"
+				}
+			},
+			{
+				"id": "6146024",
+				"date": "June 2022",
+				"txt": "I stayed for one month in the attic room and was very pleased with how everything turned out. Fatma and Hasan are very welcoming, and I have many good memories of my stay (like drinking raki and talking about Turkish music with Hasan at the dinner table). If you stay here you will meet many interesting people from Turkey and around the world passing through the house. The area will not be to every ones tastes, but I highly recommend it for the more adventurous among you.",
+				"by": {
+					"_id": "622f3407e36c59e6164fbfae",
+					"fullname": "Nick",
+					"imgUrl": "https://randomuser.me/api/portraits/men/17.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337c75c7d36e498aac23",
+		"name": "Adorable Garden Gingerbread House",
+		"type": "House",
+		"labels": [
+			"Beach",
+			"Cabins",
+			"OMG!",
+			"Tiny homes"
+		],
+		"imgUrls": [
+			"106.jpeg",
+			"017.jpeg",
+			"062.jpeg",
+			"057.jpeg",
+			"027.jpeg"
+		],
+		"price": 125,
+		"summary": "Romantic hideaway! This property has the lush beauty and privacy of Hana, without the drive! Only 15-20 minutes to the airport, 10 minutes to beaches, 2 minutes to restaurants and shops...on a private gated property with organic nursery. BEAUTIFUL!",
+		"capacity": 2,
+		"bedrooms": 0,
+		"beds": 1,
+		"amenities": [
+			"Air conditioning",
+			"Lockbox",
+			"Wifi",
+			"Kitchen",
+			"TV",
+			"Wheelchair accessible"
+		],
+		"host": {
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "United States",
+			"countryCode": "US",
+			"city": "Maui",
+			"address": "Makawao, HI, United States",
+			"lat": 20.86967,
+			"lan": -156.31183
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 3,
+			"cleanliness": 2.5,
+			"checkin": 3,
+			"communication": 2.5,
+			"location": 3.5,
+			"value": 3,
+			"rating": 2.9
+		},
+		"reviews": [
+			{
+				"id": "10262225",
+				"date": "June 2022",
+				"txt": "We had a great time at your brand newly upgraded cozy, little gingerbread home! Eve and Steve (Jeff Bridges twin brother LOL!!!) are amazing hosts. This is a beautiful location, very lush, wooded garden with a nice river in the back of the cabin. Eve has an awesome sacred garden located on the property. It is very unique, peaceful, serene, excellent for relaxing and meditation. The gingerbread is close to a cool little beach town called Paia and the Baldwin Beach Park. Thank you for letting us enjoy your beautiful property. We definitely recommend the Gingerbread House for couples!\nP.S. Don't bring an alarm clock, the roosters will be happy to wake you up in the morning!  ",
+				"by": {
+					"_id": "622f3402e36c59e6164fac07",
+					"fullname": "Martin Federico",
+					"imgUrl": "https://randomuser.me/api/portraits/men/66.jpg"
+				}
+			},
+			{
+				"id": "9794883",
+				"date": "June 2022",
+				"txt": "This was a great place to stay and a great experience.  There are interesting grounds and the amazing plant nursery to explore, and there is also Eve's Forbidden Fruit Stand.  The Gingerbread House is truely unique.  It is very interesting and has been recently remodeled.  A beautiful place inside and out.  The grounds offer a variety of fruit trees and it is set in tropical rain forest.  It was a most pleasurable base for our adventures on Maui.",
+				"by": {
+					"_id": "622f3403e36c59e6164fb1df",
+					"fullname": "Denis",
+					"imgUrl": "https://randomuser.me/api/portraits/men/30.jpg"
+				}
+			},
+			{
+				"id": "10813446",
+				"date": "June 2022",
+				"txt": "Eve's enchanted jungle cottage was amazing! It was just what we needed! The seasonal creek behind the house was flowing, the tangerines were juicy and ripe, and the succulent garden was spectacular! Eve has really created a special place with her creativity and green thumb! The labyrinths arranged on the property were fantastic for clearing the mind so we even bought a book Eve wrote about labyrinths. Thanks for the beautiful accommodations! Bodhi the dog is super chilled out and cool to have around too. Very private but not overly isolated. Perfect place!",
+				"by": {
+					"_id": "622f3402e36c59e6164fae3a",
+					"fullname": "Emily",
+					"imgUrl": "https://randomuser.me/api/portraits/women/6.jpg"
+				}
+			},
+			{
+				"id": "10276525",
+				"date": "June 2022",
+				"txt": "We love this place and this house. It's a small paradise. Eve is a great host and woman.",
+				"by": {
+					"_id": "622f3406e36c59e6164fba1b",
+					"fullname": "Sandra",
+					"imgUrl": "https://randomuser.me/api/portraits/women/18.jpg"
+				}
+			},
+			{
+				"id": "2957709",
+				"date": "June 2022",
+				"txt": "Eve's place is sweet, cozy and a complemented our Maui experience. Nestled next to a stream with trees laden with oranges, lemons and bananas, the Gingerbread House delivered all the comforts and ease of home, while providing great views of the tropical trees towering above us. Morning chickens would cluck near our door and the friendliest dog in the world, Bodhi, always gave us a nuzzle. The house is on property shared with Eve's plant nursery -a beautiful setting that completes the picture. ",
+				"by": {
+					"_id": "622f3402e36c59e6164fad58",
+					"fullname": "Ruby",
+					"imgUrl": "https://randomuser.me/api/portraits/women/49.jpg"
+				}
+			},
+			{
+				"id": "12006194",
+				"date": "June 2022",
+				"txt": "We loved this cozy little cottage!  It was close to the airport, and only a few miles away from Paia, a happening little town.  The Sacred Garden was pretty amazing. The grounds were quiet, and we loved the rain at night falling on our rooftop.  It was a very peaceful and relaxing place.  Thanks Eve for letting us stay.  Hoping to come back and visit again one day. Mahalo!",
+				"by": {
+					"_id": "622f3405e36c59e6164fb771",
+					"fullname": "Kristin",
+					"imgUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+				}
+			},
+			{
+				"id": "1308685",
+				"date": "June 2022",
+				"txt": "Eve and Steve were really outgoing and helpful -- and the cottage was fantastic. The place is situated in a beautiful landscape with lots to explore. Inside it's cozy, clean and the sort of place you want to tuck away inside for a few days to relax. There's a great little kitchen and big bathroom so there's no \"roughing it\" about this place. Highly recommend this spot as Eve and Steve have clearly thought through all of the details to make it a great place to stay in Maui.",
+				"by": {
+					"_id": "622f3407e36c59e6164fc011",
+					"fullname": "Charley",
+					"imgUrl": "https://randomuser.me/api/portraits/men/75.jpg"
+				}
+			},
+			{
+				"id": "594787",
+				"date": "June 2022",
+				"txt": "This beautiful, clean, comfy cabin is located in a gorgeous haven called the Sacred Garden.  It was everything we hoped it would be!!",
+				"by": {
+					"_id": "622f3406e36c59e6164fba35",
+					"fullname": "Tobin",
+					"imgUrl": "https://randomuser.me/api/portraits/men/55.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337c75c7d36e498aac14",
+		"name": "Cozy Chinatown studio apartment",
+		"type": "Apartment",
+		"labels": [
+			"Amazing pools",
+			"Beach",
+			"Lakefront"
+		],
+		"imgUrls": [
+			"138.jpeg",
+			"047.jpeg",
+			"022.jpeg",
+			"036.jpeg",
+			"074.jpeg"
+		],
+		"price": 239,
+		"summary": "Neighborhood feels like old New York, the last authentic part of Manhattan. Our cozy studio apartment comfortably fits 2 ppl. 10 minute walk to LES, SoHo, TriBeca, South street seaport and great restaurants and bars nearby. Very close to B,D,F trains. A,C,E,4,5,6 also walking distance.",
+		"capacity": 2,
+		"bedrooms": 0,
+		"beds": 1,
+		"amenities": [
+			"Pool",
+			"Hangers",
+			"Kitchen",
+			"Wifi",
+			"Coffe maker",
+			"Air conditioning",
+			"TV",
+			"Free parking",
+			"Wheelchair accessible"
+		],
+		"host": {
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "United States",
+			"countryCode": "US",
+			"city": "New York",
+			"address": "New York, NY, United States",
+			"lat": 40.7113,
+			"lan": -73.99442
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 4,
+			"cleanliness": 4,
+			"checkin": 5,
+			"communication": 5,
+			"location": 5,
+			"value": 4.5,
+			"rating": 4.58
+		},
+		"reviews": [
+			{
+				"id": "17933928",
+				"date": "June 2022",
+				"txt": "Maia's description of her studio flat is perfectly accurate. It is very cozy, well-located and is really in such a vibrant area of NYC and the last part of Manhattan that hasn't been gentrified - offering a truly unique and authentic experience. The flat is a good sized studio (the pictures make it look smaller than it is) and is well-equipped. Maia was a fantastic host - leaving a bag of wonderful coffee, excellent local recommendations and responding promptly to all of our queries. The flat is great and I recommend it to all. I stayed there with a close friend and it was easy to share the space and it served us well. ",
+				"by": {
+					"_id": "622f3402e36c59e6164facea",
+					"fullname": "Kaylyn",
+					"imgUrl": "https://randomuser.me/api/portraits/women/1.jpg"
+				}
+			},
+			{
+				"id": "5951275",
+				"date": "June 2022",
+				"txt": "Awesome gem in a great neighborhood. Really cute and tidy place - has everything you want, including a small kitchen. Perfect for a couple wanting to be close to the city but in a unique neighborhood. F train is super close. Highly recommended - would stay there again!",
+				"by": {
+					"_id": "622f3402e36c59e6164faef9",
+					"fullname": "Elaine",
+					"imgUrl": "https://randomuser.me/api/portraits/women/3.jpg"
+				}
+			},
+			{
+				"id": "101109032",
+				"date": "June 2022",
+				"txt": "Great place",
+				"by": {
+					"_id": "622f3402e36c59e6164fac4e",
+					"fullname": "Mariano",
+					"imgUrl": "https://randomuser.me/api/portraits/men/4.jpg"
+				}
+			},
+			{
+				"id": "153468159",
+				"date": "June 2022",
+				"txt": "The location was absolutely perfect and very central. Maia and her husband were very gracious and helpful whether that be suggesting a nice restaurant to offering to let me store my luggage in their home past checkout time. Would suggest as a nice place for singles/couples who would like to be in a authentic part of town!",
+				"by": {
+					"_id": "622f3405e36c59e6164fb9b2",
+					"fullname": "Elizabeth",
+					"imgUrl": "https://randomuser.me/api/portraits/women/84.jpg"
+				}
+			},
+			{
+				"id": "6957579",
+				"date": "June 2022",
+				"txt": "The host canceled this reservation 11 days before arrival. This is an automated posting.",
+				"by": {
+					"_id": "622f3403e36c59e6164fafaf",
+					"fullname": "Harry",
+					"imgUrl": "https://randomuser.me/api/portraits/men/47.jpg"
+				}
+			},
+			{
+				"id": "32187776",
+				"date": "June 2022",
+				"txt": "The host canceled this reservation 68 days before arrival. This is an automated posting.",
+				"by": {
+					"_id": "622f3403e36c59e6164fb19c",
+					"fullname": "Henriette",
+					"imgUrl": "https://randomuser.me/api/portraits/men/32.jpg"
+				}
+			},
+			{
+				"id": "78491283",
+				"date": "June 2022",
+				"txt": "This is an amazing place! Much bigger than it looks in the photos. Great New York neighborhood. Clean and open and bright. Maia could not have been a more gracious host. Magical little space. I highly recommend.",
+				"by": {
+					"_id": "622f3402e36c59e6164fac8c",
+					"fullname": "Caroline",
+					"imgUrl": "https://randomuser.me/api/portraits/women/39.jpg"
+				}
+			},
+			{
+				"id": "3005135",
+				"date": "June 2022",
+				"txt": "This apartment is a gem and Maia was a nice host. I stayed for five nights while in NY for work. It was under 30 minutes to get to my office at Union Square. The apartment was comfortable and was perfect for this trip. I would recommend this for anyone who appreciates a quiet space to retreat to at the end of the day.",
+				"by": {
+					"_id": "622f3406e36c59e6164fbc63",
+					"fullname": "Kat",
+					"imgUrl": "https://randomuser.me/api/portraits/women/67.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337c75c7d36e498aac09",
+		"name": "Chic City Pad with Leafy Outlook",
+		"type": "Apartment",
+		"labels": [
+			"Amazing pools",
+			"OMG!",
+			"Tiny homes"
+		],
+		"imgUrls": [
+			"077.jpeg",
+			"113.jpeg",
+			"103.jpeg",
+			"084.jpeg",
+			"057.jpeg"
+		],
+		"price": 899,
+		"summary": "Recently renovated and truly spacious studio apartment in the heart of Potts Point. Within walking distance to some of Sydney's best attractions and an easy 8 min walk to Kings Cross Train Station. Beautifully renovated and appointed, you will have access to free Wi-Fi, the new kitchen with cooking facilities, washer & dryer and the building's stunning pool!  The space works for solo adventurers and business travellers, with the comfortable queen sized bed making it perfect for couples.",
+		"capacity": 2,
+		"bedrooms": 1,
+		"beds": 1,
+		"amenities": [
+			"Air conditioning",
+			"Kitchen",
+			"Hangers",
+			"Free parking",
+			"Pool",
+			"TV",
+			"Wifi",
+			"Netflix"
+		],
+		"host": {
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "Australia",
+			"countryCode": "AU",
+			"city": "Sydney",
+			"address": "Elizabeth Bay, NSW, Australia",
+			"lat": -33.87049,
+			"lan": 151.22488
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 4.5,
+			"cleanliness": 5,
+			"checkin": 5,
+			"communication": 5,
+			"location": 5,
+			"value": 4.7,
+			"rating": 4.8
+		},
+		"reviews": [
+			{
+				"id": "55858446",
+				"date": "June 2022",
+				"txt": "Spend a great 2 nights at Vickie's studio. Well decorated, had everything we need and surprisingly spacious. It was my first time in Sydney, so the location was just perfect; many good cafes and restaurants near by.\n\nVickie is an amazing host, she made sure we were comfortable and well adjusted. Great person to communicate with. \n\n\n",
+				"by": {
+					"_id": "622f3405e36c59e6164fb89d",
+					"fullname": "Matthew",
+					"imgUrl": "https://randomuser.me/api/portraits/men/66.jpg"
+				}
+			},
+			{
+				"id": "46821847",
+				"date": "June 2022",
+				"txt": "Merci Victoria pour votre charmant accueil, votre appartement est charmant dans un quartier animé avec des cafés et restaurants à proximité. 15 mn à pied de CBD et de l'opéra de Sydney. La vue de l'appartement est dégagée et très bien exposé.\r\nMerci pour vos messages de compassion suite aux attentants de Nice. Je vous recommande cette adresse.\r\nFabienne",
+				"by": {
+					"_id": "622f3402e36c59e6164faf00",
+					"fullname": "Fabienne",
+					"imgUrl": "https://randomuser.me/api/portraits/men/39.jpg"
+				}
+			},
+			{
+				"id": "31680155",
+				"date": "June 2022",
+				"txt": "What a fabulous Studio in the centre of Potts Point. I was lucky enough to be one of the first to stay here. Everything is lovely, fresh and new. It's quiet, but at the same time has everything on the doorstep. Vickie is a wonderful host and made sure I was comfortable. ",
+				"by": {
+					"_id": "622f3403e36c59e6164fb0f6",
+					"fullname": "Jason",
+					"imgUrl": "https://randomuser.me/api/portraits/men/8.jpg"
+				}
+			},
+			{
+				"id": "41881328",
+				"date": "June 2022",
+				"txt": "Vickie was a lovely host and did everything she could to help and make our stay enjoyable. The apartment is in an excellent position - close to restaurants and cafes as well as walking distance from the city. The apartment itself is great with a very comfortable bed and has everything you need.",
+				"by": {
+					"_id": "622f3403e36c59e6164fb05a",
+					"fullname": "Chloe",
+					"imgUrl": "https://randomuser.me/api/portraits/women/15.jpg"
+				}
+			},
+			{
+				"id": "11314974",
+				"date": "June 2022",
+				"txt": "Vickie is an amazing host with a beautiful apartment. Location is incredible- right by lovely restaurants and bars, and only a quick ride into the city. The apartment itself was gorgeous- so clean, light and airy. Queen bed is super comfortable as well. I highly recommend this apartment, and would love to stay here again. Perfect Airbnb experience. ",
+				"by": {
+					"_id": "622f3403e36c59e6164fb130",
+					"fullname": "Alexandra",
+					"imgUrl": "https://randomuser.me/api/portraits/women/45.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337c75c7d36e498aabf7",
+		"name": "New apartment - 1 room",
+		"type": "Apartment",
+		"labels": [
+			"Cabins",
+			"Tiny homes"
+		],
+		"imgUrls": [
+			"089.jpeg",
+			"130.jpeg",
+			"049.jpeg",
+			"148.jpeg",
+			"050.jpeg"
+		],
+		"price": 299,
+		"summary": "New and cozy apartment with 1 room available.",
+		"capacity": 2,
+		"bedrooms": 1,
+		"beds": 2,
+		"amenities": [
+			"Air conditioning",
+			"Kitchen",
+			"Free parking",
+			"TV",
+			"Lockbox",
+			"Hair dryer"
+		],
+		"host": {
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "Brazil",
+			"countryCode": "BR",
+			"city": "Rio De Janeiro",
+			"address": "Rio de Janeiro, Rio de Janeiro, Brazil",
+			"lat": -22.957538646861146,
+			"lan": -43.19321647887779
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 4,
+			"cleanliness": 4,
+			"checkin": 4,
+			"communication": 4,
+			"location": 4.5,
+			"value": 4,
+			"rating": 4.1
+		},
+		"reviews": [
+			{
+				"id": "6896406",
+				"date": "June 2022",
+				"txt": "O apartamento da Gabriela é incrível. Super bem cuidado. Estava organizado, limpo e ainda recebi um kit de boas vindas :) Me senti muito bem acolhida. A localização é muito boa. Recomendo.",
+				"by": {
+					"_id": "622f3402e36c59e6164facc4",
+					"fullname": "Patricia",
+					"imgUrl": "https://randomuser.me/api/portraits/women/71.jpg"
+				}
+			}
+		]
+	},
+	{
+		"_id": "622f337a75c7d36e498aab06",
+		"name": "*CoZy Private Williamsburg Home*",
+		"type": "Apartment",
+		"labels": [
+			"Beach",
+			"Lakefront",
+			"Camping"
+		],
+		"imgUrls": [
+			"027.jpeg",
+			"048.jpeg",
+			"089.jpeg",
+			"123.jpeg",
+			"035.jpeg"
+		],
+		"price": 250,
+		"summary": "*NO PARTIES OR EVENTS* **Minutes From MANHATTAN / NYC BY TRAIN* 1 BLOCK FROM GRAND ST. First Floor Newly Renovated And Furnished Williamsburg Apartment Duplex  Back yard access. Wood Floors. Wifi. Marble & Granite Bathroom. *NEW-CLEAN* *BAKYARD PATIO* *CABLE TV*",
+		"capacity": 4,
+		"bedrooms": 2,
+		"beds": 4,
+		"amenities": [
+			"Air conditioning",
+			"Free parking",
+			"Wifi",
+			"Kitchen",
+			"TV",
+			"Hair dryer",
+			"Netflix",
+			"Lockbox"
+		],
+		"host": {
+			"_id": "6295cf09d722c15469ebe4f5",
+			"fullname": "Linda-Lee",
+			"pictureUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"loc": {
+			"country": "United States",
+			"countryCode": "US",
+			"city": "New York",
+			"address": "Brooklyn, NY, United States",
+			"lat": 40.70998,
+			"lan": -73.94854
+		},
+		"bathrooms": 1,
+		"reviewScores": {
+			"accuracy": 5,
+			"cleanliness": 5,
+			"checkin": 5,
+			"communication": 4.8,
+			"location": 5,
+			"value": 5,
+			"rating": 4.9
+		},
+		"reviews": [
+			{
+				"id": "3010632",
+				"date": "June 2022",
+				"txt": "The host canceled this reservation the day before arrival. This is an automated posting.",
+				"by": {
+					"_id": "622f3402e36c59e6164facca",
+					"fullname": "Franz",
+					"imgUrl": "https://randomuser.me/api/portraits/men/77.jpg"
+				}
+			},
+			{
+				"id": "23181786",
+				"date": "June 2022",
+				"txt": "Fantastic place. Clean and convenient to all of Williamsburg. My parents actually stayed here and the host was great to them, checking in all the time and making sure they had everything they needed. ",
+				"by": {
+					"_id": "622f3403e36c59e6164faf76",
+					"fullname": "Shanna",
+					"imgUrl": "https://randomuser.me/api/portraits/women/57.jpg"
+				}
+			},
+			{
+				"id": "60482808",
+				"date": "June 2022",
+				"txt": "Todo perfecto, ningun problema. Departamento muy lindo en una zona muy buena.",
+				"by": {
+					"_id": "622f3404e36c59e6164fb2cc",
+					"fullname": "Agustin",
+					"imgUrl": "https://randomuser.me/api/portraits/men/12.jpg"
+				}
+			},
+			{
+				"id": "27629646",
+				"date": "June 2022",
+				"txt": "everything nice and easy and good neighborhood too.\r\nI enjoyed my trim to NYC.\r\nThanks!",
+				"by": {
+					"_id": "622f3404e36c59e6164fb2d9",
+					"fullname": "Raymond",
+					"imgUrl": "https://randomuser.me/api/portraits/men/64.jpg"
+				}
+			},
+			{
+				"id": "5008015",
+				"date": "June 2022",
+				"txt": "Great apartment and backyard patio in a great location!!\nWalk to anything you could want in Willimsburg or a short subway or uber ride to NYC for everything else. Nicely updated apartment with easy on street parking and wonderful hosts and recommendations. Highly recommend!!",
+				"by": {
+					"_id": "622f3402e36c59e6164fac18",
+					"fullname": "Robert",
+					"imgUrl": "https://randomuser.me/api/portraits/men/41.jpg"
+				}
+			},
+			{
+				"id": "75277003",
+				"date": "June 2022",
+				"txt": "This place was awesome. Huge space in a perfect location close to bars and restaurants etc. The owner was very nice and accommodating. Took me a while to pick out an Air bnb in NYC because they were all too \"lived in\" this one didnt feel like i was invading somebody's home. Kind of like a two story hotel- i loved it. Also great backyard",
+				"by": {
+					"_id": "622f3407e36c59e6164fbe19",
+					"fullname": "Jack",
+					"imgUrl": "https://randomuser.me/api/portraits/men/83.jpg"
 				}
 			}
 		]
