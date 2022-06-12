@@ -40,15 +40,10 @@ export const StayApp = () => {
         setIsModalOpen(false)
     }
 
-    // if (!stays) return <div className="dots">
-    //     <div></div>
-    //     <div></div>
-    //     <div></div>
-    // </div>
     return <section className="stay-app">
         <StayFilter handleLabelChange={handleLabelChange} onOpenModal={onOpenModal} isFilterOn={isFilterOn} />
         {/* <Loader /> */}
-        {!stays ? <Loader /> : <StayList stays={stays} /> }
+        {!stays ? <Loader /> : <StayList stays={stays} />}
         {isModalOpen && <StayFilterModal onCloseModal={onCloseModal} />}
 
     </section>
