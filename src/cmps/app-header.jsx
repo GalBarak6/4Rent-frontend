@@ -2,6 +2,7 @@ import { NavLink, useNavigate, useLocation } from "react-router-dom"
 import { ReactComponent as Logo } from "../assets/icons/logo.svg"
 import { useSelector } from "react-redux";
 import { StaySearch } from "../cmps/stay-search"
+import { StaySearchExpand } from "../cmps/stay-search-expand"
 import { useEffect, useState } from "react";
 
 export const AppHeader = ({ onOpenModal }) => {
@@ -53,6 +54,10 @@ export const AppHeader = ({ onOpenModal }) => {
             {headerClass === 'stay-header' && window.innerWidth > 640 && <StaySearch />}
             {headerClass !== 'stay-header' && <StaySearch />}
         </div>
+        {/* <div className="expand-search-container">
+            <StaySearchExpand />
+        </div> */}
+
         <div className="main-nav-container flex align-center">
             <nav className="main-nav flex">
                 <NavLink to="/stay">Explore</NavLink>
